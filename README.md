@@ -73,4 +73,6 @@
 
 此外，仓库已补齐第一版 MkDocs 静态站骨架：站点内容位于 `docs/`，当前专题已落位到 `docs/series/agentic-engineering-patterns/`，并预留了 `articles/`、`resources/` 与 `assets/` 目录，以便后续继续加入不相关的新文章、图片资源与公式渲染支持。站点配置见 [mkdocs.yml](./mkdocs.yml)，本地预览与 GitHub Pages 发布说明见 [docs/resources/deployment.md](./docs/resources/deployment.md)。
 
+如果线上页面虽然能打开、但风格看起来像 GitHub Pages 默认文档页而不是 MkDocs Material，优先检查仓库 `Settings -> Pages` 是否仍设置为 `Deploy from a branch`。当前这套站点必须切到 `GitHub Actions`，否则 GitHub 很可能直接把 `docs/` 下的 Markdown 按 Jekyll 风格渲染出来。
+
 若继续推进，下一步更自然的工作会是：逐篇检查站点内链接是否都切换到 `docs/` 目录下的相对路径；补几张示意图或封面图验证图片资源组织方式；再把仓库推到 GitHub，启用 Pages 并跑通首次自动部署。

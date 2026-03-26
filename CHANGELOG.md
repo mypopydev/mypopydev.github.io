@@ -17,3 +17,5 @@
 同日还完成了当前专题的站点迁移：`Agentic Engineering Patterns` 已收拢到 `docs/series/agentic-engineering-patterns/`，并新增站点首页、专题总览页、专题首页、独立文章栏目说明、站点结构约定、公式与图片约定、发布与预览说明，以及 KaTeX 脚本和附加样式。
 
 本地已通过 `mkdocs build --strict` 验证构建成功，因此当前仓库已经不是只有 Markdown 原稿，而是具备了直接推到 GitHub 后接入 Pages 的第一版静态站基础设施。后续如果继续推进，对外上线只需补齐仓库远端、开启 GitHub Pages，并根据需要继续细修导航、图片与文章内容。
+
+同日补充了一次上线排障结论：仓库中的 `mkdocs.yml` 与 `.github/workflows/deploy-pages.yml` 配置本身可用，且公开可见的 `deploy-pages` 工作流已经成功执行；但如果 GitHub 仓库 `Settings -> Pages` 仍使用 `Deploy from a branch`（尤其是 `main` + `/docs`），线上会显示 Jekyll 默认样式，而不是 MkDocs Material。因此，发布说明中已显式补充“必须切换为 GitHub Actions”以及上线后如何快速验收实际发布产物。

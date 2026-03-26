@@ -25,6 +25,12 @@ mkdocs build --strict
 
 当前工作流的触发条件是：推送到 `main` 分支，或者手动触发。也就是说，正常情况下你只要把改动 push 到 `main`，GitHub 就会自动安装依赖、构建 MkDocs 站点，并把 `site/` 目录发布到 Pages。
 
+如果这里误选成 `Deploy from a branch`，尤其是 `main` + `/docs`，GitHub Pages 就会直接把 `docs/` 目录下的 Markdown 当作源文件按 Jekyll 风格渲染。这样虽然页面也能打开，但你在线上看到的会是 GitHub Pages 默认样式，而不是本地 `mkdocs serve` 预览到的 MkDocs Material 主题。
+
+## 上线后如何快速验收
+
+最直接的检查方式有两种。第一，看页面外观：如果顶部导航、侧边栏、搜索框和 Material 风格都正常出现，基本说明发布链路对了。第二，看页面源码：如果 `meta generator` 里出现的是 `mkdocs` / `mkdocs-material`，说明线上已经是 MkDocs 构建产物；如果看到 `Jekyll v3.x` 和 `/assets/css/style.css` 这类默认资源，通常说明 Pages 仍在走分支发布。
+
 ## 目录与内容维护建议
 
 当前专题内容已经放在 `docs/series/agentic-engineering-patterns/`，后续不相关的新文章优先放在 `docs/articles/`。站点级说明和辅助文档放在 `docs/resources/`。共享图片放在 `docs/assets/images/`。只要继续遵守这个分层，后面站点越长越大也不容易乱。
