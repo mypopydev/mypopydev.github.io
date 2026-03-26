@@ -1,0 +1,17 @@
+:root {
+  --site-figure-radius: 12px;
+}
+
+.md-content img {
+  border-radius: var(--site-figure-radius);
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+
+.md-typeset figure {
+  margin: 1.25rem auto;
+}
