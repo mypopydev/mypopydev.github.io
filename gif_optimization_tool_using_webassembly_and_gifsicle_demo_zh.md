@@ -36,7 +36,7 @@ Gifsicle 是用 C 写的，默认界面是命令行工具。我想要一个 Web 
 
 [它最后做出来的是这个](https://tools.simonwillison.net/gif-optimizer)。原文这里还配了一段我用这个工具优化过的动画 GIF 演示。
 
-[译者注] 原文此处配有一段经该工具优化后的 GIF 演示图。
+![GIF 优化工具演示：拖入 GIF 后页面展示多种优化结果，我选择其中一项继续微调并下载](./docs/assets/images/agentic-engineering-patterns/gif-optimization/demo2-32-colors-lossy.gif)
 
 下面我们把这段 Prompt 一段一段拆开看。
 
@@ -70,7 +70,7 @@ HTML 文件上传本来就能完成文件选择，但如果要做一个更顺手
 
 原文这里展示了最终界面截图；那个界面之所以长成那样，也和 Claude 偷瞄了我现有的 [image-resize-quality](https://tools.simonwillison.net/image-resize-quality) 工具有关。
 
-[译者注] 原文此处配有工具界面截图。
+![GIF Optimizer 桌面界面截图：包含拖拽上传区、URL 输入框与页脚说明](./docs/assets/images/agentic-engineering-patterns/gif-optimization/gif-optimizer.jpg)
 
 我并没有要求它加上 GIF URL 输入框，而且我其实也不太喜欢这个设计，因为它只有在目标 GIF 的 URL 开了 CORS 头时才能工作。我大概会在后续更新里把它删掉。
 
@@ -88,7 +88,7 @@ HTML 文件上传本来就能完成文件选择，但如果要做一个更顺手
 
 原文这里展示的是最终工具的移动端截图。每张图片旁边都有一个 “Tweak these settings” 按钮；点下去之后，就会把下方那组手动设置项和滑杆更新成该预览当前使用的参数。
 
-[译者注] 原文此处配有移动端界面截图。
+![GIF Optimizer 移动端界面截图：展示结果面板、Download 按钮、Tweak these settings 按钮和手动设置滑杆](./docs/assets/images/agentic-engineering-patterns/gif-optimization/gif-optimizer-tweak.jpg)
 
 > `Run “uvx rodney --help” and use that tool to tray your work - use this GIF for testing https://static.simonwillison.net/static/2026/animated-word-cloud-demo.gif`
 

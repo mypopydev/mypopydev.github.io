@@ -36,7 +36,7 @@
 
 结果非常好：Claude Code for web 给我做了一个 Rust CLI 工具，能生成像下面这样的图片。
 
-[译者注] 原文此处配有一张词云示意图。
+![词云示意图：不同颜色和大小的词汇组成词云，较大的词位于中央](./docs/assets/images/agentic-engineering-patterns/interactive-explanations/wordcloud.png)
 
 但它到底是怎么工作的？
 
@@ -52,7 +52,7 @@ Claude 的报告里写的是，它使用了“**Archimedean spiral placement** w
 
 你可以[在这里直接玩这个结果](https://tools.simonwillison.net/animated-word-cloud)。原文这里还放了一段 GIF 动图演示。
 
-[译者注] 原文此处配有一段展示词云逐步生成过程的动画 GIF。
+![词云动画演示：单词逐个出现，放置框不断尝试位置，若与已有词重叠则继续寻找位置](./docs/assets/images/agentic-engineering-patterns/interactive-explanations/animated-word-cloud-demo.gif)
 
 这次用的是 Claude Opus 4.6。事实证明，它在构造“解释型动画”这件事上，审美还挺不错。
 
