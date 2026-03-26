@@ -18,7 +18,7 @@
 > 上一篇：[交互式解释](./interactive_explanations_demo_zh.md)
 > 下一篇：[我常用的 Prompt](./prompts_i_use_demo_zh.md)
 
-我喜欢在自己的网络文章里放一些动画 GIF 演示，通常是用 [LICEcap](https://www.cockos.com/licecap/) 录的。在《[交互式解释](https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/)》那一章里就有一个例子。
+我喜欢在自己的网络文章里放一些动画 GIF 演示，通常是用 [LICEcap](https://www.cockos.com/licecap/) 录的。在《[交互式解释](./interactive_explanations_demo_zh.md)》那一章里就有一个例子。
 
 这些 GIF 往往会很大。我试过一些用来优化 GIF 文件体积的工具，而我最喜欢的是 Eddie Kohler 写的 [Gifsicle](https://github.com/kohler/gifsicle)。它会通过识别各帧中没有变化的区域、只存储差异部分来压缩 GIF；还可以选择缩减 GIF 的颜色表，或者施加可见的有损压缩，以进一步减小体积。
 

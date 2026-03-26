@@ -22,7 +22,7 @@
 
 如果采用编码智能体，确实会明显拉低你产出的代码和功能质量，那你就应该正面解决这个问题：找出流程里到底哪些环节伤害了输出质量，然后把它们修掉。
 
-借助智能体交付更差的代码，是一种**选择**。我们同样也可以选择交付[更好的代码](https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#good-code)。
+借助智能体交付更差的代码，是一种**选择**。我们同样也可以选择交付[更好的代码](./writing_code_is_cheap_now_demo_zh.md)。
 
 ### 避免背上技术债务
 

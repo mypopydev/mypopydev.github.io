@@ -42,4 +42,4 @@
 2. 大多数测试执行框架都会让智能体大致知道一共有多少个测试。这可以作为项目规模和复杂度的一个替代指标，也是在暗示它：如果想进一步理解这个项目，最好直接去搜测试本身。
 3. 它会把智能体带进一种“测试思维”里。既然已经跑过测试，它后面很自然就会继续补上自己写的新测试。
 
-和 [“Use red/green TDD”](https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/) 类似，“First run the tests” 也是一个四词 Prompt，但它背后其实压缩了大量已经被模型内化的软件工程纪律。
+和 [“Use red/green TDD”](./red_green_tdd_demo_zh.md) 类似，“First run the tests” 也是一个四词 Prompt，但它背后其实压缩了大量已经被模型内化的软件工程纪律。

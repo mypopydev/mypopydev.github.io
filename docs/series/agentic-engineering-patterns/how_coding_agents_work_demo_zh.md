@@ -18,7 +18,7 @@
 > 上一篇：[反模式：有些事要避免](./anti_patterns_things_to_avoid_demo_zh.md)
 > 下一篇：[如何将 Git 用于编码智能体工作流](./using_git_with_coding_agents_demo_zh.md)
 
-和任何工具一样，理解[编码智能体](https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/)在底层是如何工作的，会帮助你更好地判断该怎样使用它们。
+和任何工具一样，理解[编码智能体](./what_is_agentic_engineering_demo_zh.md)在底层是如何工作的，会帮助你更好地判断该怎样使用它们。
 
 编码智能体本质上是一层围绕 LLM 的软件封装。它通过用户看不见的提示词，以及以可调用工具形式实现的额外能力，对 LLM 进行扩展。
 

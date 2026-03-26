@@ -42,7 +42,7 @@
 
 Claude 的报告里写的是，它使用了“**Archimedean spiral placement** with per-word random angular offset for natural-looking layouts”。这对我帮助并不大。
 
-于是我请求它对这个代码库做一份[线性讲解](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/)；那确实帮助我更细地理解了这份 Rust 代码——[讲解文档在这里](https://github.com/simonw/research/blob/main/rust-wordcloud/walkthrough.md)（[对应的 Prompt 在这里](https://github.com/simonw/research/commit/2cb8c62477173ef6a4c2e274be9f712734df6126)）。它帮我理解了 Rust 代码的结构，但我还是没有真正建立起对“Archimedean spiral placement”那部分工作机制的直觉。
+于是我请求它对这个代码库做一份[线性讲解](./linear_walkthroughs_demo_zh.md)；那确实帮助我更细地理解了这份 Rust 代码——[讲解文档在这里](https://github.com/simonw/research/blob/main/rust-wordcloud/walkthrough.md)（[对应的 Prompt 在这里](https://github.com/simonw/research/commit/2cb8c62477173ef6a4c2e274be9f712734df6126)）。它帮我理解了 Rust 代码的结构，但我还是没有真正建立起对“Archimedean spiral placement”那部分工作机制的直觉。
 
 所以我又要求它给一个**动画版解释**。我的做法是：把那份现成的 `walkthrough.md` 文档链接贴进一个 Claude Code 会话里，再附上下面这段内容：
 
