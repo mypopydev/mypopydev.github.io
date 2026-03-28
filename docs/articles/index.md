@@ -5,3 +5,9 @@
 一个简单的判断方法是：如果某篇文章需要和前后文一起读、需要专题页承接、需要专题内上一篇/下一篇导航，那它更适合放到 `series/`；如果它本身就是独立完整的内容，那就更适合放到 `articles/`。
 
 建议后续新增独立文章时，直接使用清晰的英文 slug 命名文件，例如 `articles/mkdocs-notes.md`、`articles/translation-workflow.md`。如果文章有专属配图，可以把图片放到 `assets/images/articles/<article-slug>/`。
+
+## 当前已纳入的独立文章
+
+### [反向传播：想法、数学原理、思想史与最值得读的 5 篇文献](./backpropagation-ideas-math-history-5-readings.md)
+
+这是一篇面向机器学习学习者与工程实践者的长文，系统梳理反向传播的核心直觉、链式法则与计算图、reverse-mode automatic differentiation、历史发展脉络，以及最值得读的 5 篇论文或文章。文中配有 7 张示意图，适合作为学习笔记、讲解材料或后续专题扩展的入口。

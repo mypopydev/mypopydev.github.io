@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470">
+  <rect width="1200" height="470" fill="#ffffff"/>
+  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 4  为什么反向模式在神经网络训练里特别高效</text>
+  <text x="600" y="74" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4b5563">目标场景通常是 f: R^n → R，参数很多，但只关心一个标量损失</text>
+
+  <rect x="90" y="120" rx="18" ry="18" width="300" height="250" fill="#f9fafb" stroke="#d1d5db" stroke-width="2"/>
+  <text x="240" y="162" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">数值差分</text>
+  <rect x="140" y="205" width="180" height="26" fill="#fca5a5"/>
+  <text x="240" y="194" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#991b1b">约 n + 1 次前向</text>
+  <text x="240" y="270" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#374151">优点：实现简单</text>
+  <text x="240" y="300" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#374151">缺点：慢，而且有截断误差</text>
+
+  <rect x="450" y="120" rx="18" ry="18" width="300" height="250" fill="#f9fafb" stroke="#d1d5db" stroke-width="2"/>
+  <text x="600" y="162" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">前向模式 AD</text>
+  <rect x="500" y="205" width="120" height="26" fill="#fdba74"/>
+  <text x="600" y="194" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#9a3412">约 n 次传播</text>
+  <text x="600" y="270" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#374151">适合输入维度小、输出维度大</text>
+  <text x="600" y="300" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#374151">神经网络训练通常不在这个区间</text>
+
+  <rect x="810" y="120" rx="18" ry="18" width="300" height="250" fill="#eefbf3" stroke="#16a34a" stroke-width="2"/>
+  <text x="960" y="162" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">反向模式 AD / BP</text>
+  <rect x="860" y="205" width="70" height="26" fill="#86efac"/>
+  <text x="960" y="194" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#166534">约 1 次前向 + 1 次反向</text>
+  <text x="960" y="270" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#374151">共享中间量，所有参数梯度一起出</text>
+  <text x="960" y="300" text-anchor="middle" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#374151">代价通常只是常数倍放大</text>
+
+  <line x1="200" y1="398" x2="1000" y2="398" stroke="#9ca3af" stroke-width="2"/>
+  <text x="600" y="438" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">结论：当参数数目 n 很大而损失是标量时，反向传播最符合计算结构</text>
+</svg>

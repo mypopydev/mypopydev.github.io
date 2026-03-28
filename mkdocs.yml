@@ -67,6 +67,7 @@ nav:
               - 我常用的 Prompt: series/agentic-engineering-patterns/prompts_i_use_demo_zh.md
   - 独立文章:
       - 栏目说明: articles/index.md
+      - 反向传播：想法、数学原理、思想史与最值得读的 5 篇文献: articles/backpropagation-ideas-math-history-5-readings.md
   - 资源:
       - 资源总览: resources/index.md
       - 站点结构约定: resources/site-structure.md

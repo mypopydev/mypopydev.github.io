@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowBlue9" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowRed9" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 9  标量导数到局部 Jacobian 与 VJP 的过渡</text>
+  <text x="600" y="74" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4b5563">链式法则没有改变，只是局部因子从标量导数换成了线性映射</text>
+
+  <line x1="600" y1="110" x2="600" y2="460" stroke="#d1d5db" stroke-width="2" stroke-dasharray="8 8"/>
+
+  <text x="300" y="124" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#1f2937">标量图：局部导数连乘</text>
+  <circle cx="130" cy="230" r="44" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="130" y="238" text-anchor="middle" font-size="24" font-family="Times New Roman, Arial" fill="#1e3a8a">x</text>
+  <rect x="250" y="188" rx="16" ry="16" width="110" height="84" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="305" y="222" text-anchor="middle" font-size="22" font-family="Times New Roman, Arial" fill="#3730a3">f</text>
+  <text x="305" y="252" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4338ca">y = f(x)</text>
+  <rect x="430" y="188" rx="16" ry="16" width="120" height="84" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="490" y="222" text-anchor="middle" font-size="24" font-family="Times New Roman, Arial" fill="#991b1b">L</text>
+  <text x="490" y="252" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#b91c1c">L = ℓ(y)</text>
+
+  <line x1="174" y1="230" x2="250" y2="230" stroke="#2563eb" stroke-width="4" marker-end="url(#arrowBlue9)"/>
+  <line x1="360" y1="230" x2="430" y2="230" stroke="#2563eb" stroke-width="4" marker-end="url(#arrowBlue9)"/>
+  <line x1="430" y1="330" x2="360" y2="330" stroke="#dc2626" stroke-width="4" marker-end="url(#arrowRed9)"/>
+  <line x1="250" y1="330" x2="174" y2="330" stroke="#dc2626" stroke-width="4" marker-end="url(#arrowRed9)"/>
+  <text x="395" y="316" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#dc2626">\bar y = ∂L / ∂y</text>
+  <text x="212" y="316" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#dc2626">\bar x = \bar y · f'(x)</text>
+
+  <rect x="80" y="378" rx="16" ry="16" width="450" height="84" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="305" y="410" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">标量情形中，每条边上的局部因子只是一个数。</text>
+  <text x="305" y="440" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#374151">反向传播就是把这些标量导数按链式法则依次连乘。</text>
+
+  <text x="900" y="124" text-anchor="middle" font-size="24" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#1f2937">向量 / 矩阵图：局部 Jacobian 的转置作用</text>
+  <rect x="670" y="186" rx="18" ry="18" width="150" height="88" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="745" y="220" text-anchor="middle" font-size="22" font-family="Times New Roman, Arial" fill="#1e3a8a">x ∈ ℝⁿ</text>
+  <text x="745" y="250" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#1d4ed8">输入方向 r</text>
+
+  <rect x="860" y="170" rx="18" ry="18" width="150" height="120" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="935" y="208" text-anchor="middle" font-size="22" font-family="Times New Roman, Arial" fill="#3730a3">y = f(x)</text>
+  <text x="935" y="240" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#4338ca">J_f(x)</text>
+  <text x="935" y="268" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4338ca">局部线性映射</text>
+
+  <rect x="1050" y="186" rx="18" ry="18" width="110" height="88" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="1105" y="220" text-anchor="middle" font-size="22" font-family="Times New Roman, Arial" fill="#166534">y ∈ ℝᵐ</text>
+  <text x="1105" y="250" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#166534">上游 \bar y</text>
+
+  <line x1="820" y1="230" x2="860" y2="230" stroke="#2563eb" stroke-width="4" marker-end="url(#arrowBlue9)"/>
+  <line x1="1010" y1="230" x2="1050" y2="230" stroke="#2563eb" stroke-width="4" marker-end="url(#arrowBlue9)"/>
+  <line x1="1050" y1="328" x2="1010" y2="328" stroke="#dc2626" stroke-width="4" marker-end="url(#arrowRed9)"/>
+  <line x1="860" y1="328" x2="820" y2="328" stroke="#dc2626" stroke-width="4" marker-end="url(#arrowRed9)"/>
+  <text x="1030" y="314" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#dc2626">VJP</text>
+  <text x="840" y="314" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#dc2626">J_f(x)^T \bar y</text>
+
+  <rect x="676" y="378" rx="16" ry="16" width="478" height="84" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="915" y="406" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">JVP：J_f(x) r，把输入侧方向往前推。</text>
+  <text x="915" y="436" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">VJP：J_f(x)^T \bar y，把输出侧敏感度往回拉。</text>
+</svg>
