@@ -9,7 +9,7 @@
     </marker>
   </defs>
 
-  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 9  标量导数到局部 Jacobian 与 VJP 的过渡</text>
+  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 9  从标量导数到局部 Jacobian 与 VJP</text>
   <text x="600" y="74" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4b5563">链式法则没有改变，只是局部因子从标量导数换成了线性映射</text>
 
   <line x1="600" y1="110" x2="600" y2="460" stroke="#d1d5db" stroke-width="2" stroke-dasharray="8 8"/>
@@ -57,6 +57,6 @@
   <text x="840" y="314" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#dc2626">J_f(x)^T \bar y</text>
 
   <rect x="676" y="378" rx="16" ry="16" width="478" height="84" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
-  <text x="915" y="406" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">JVP：J_f(x) r，把输入侧方向往前推。</text>
+  <text x="915" y="406" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">JVP：Jacobian-向量乘积，J_f(x) r，把输入侧方向往前推。</text>
   <text x="915" y="436" text-anchor="middle" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">VJP：J_f(x)^T \bar y，把输出侧敏感度往回拉。</text>
 </svg>

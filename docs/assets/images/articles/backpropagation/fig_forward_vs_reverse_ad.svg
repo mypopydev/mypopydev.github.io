@@ -9,12 +9,12 @@
     </marker>
   </defs>
 
-  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 7  前向模式 AD vs 反向模式 AD 的 Jacobian 方向图</text>
-  <text x="600" y="74" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4b5563">同一个 Jacobian，前向模式传播的是方向向量，反向模式传播的是协向量/敏感度</text>
+  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 7  前向模式 AD 与反向模式 AD 的 Jacobian 方向图</text>
+  <text x="600" y="74" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4b5563">同一个 Jacobian，前向模式传播的是方向向量，反向模式传播的是敏感度向量</text>
 
   <rect x="70" y="120" rx="18" ry="18" width="480" height="360" fill="#f9fafb" stroke="#d1d5db" stroke-width="2"/>
   <text x="310" y="160" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">前向模式 AD</text>
-  <text x="310" y="190" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#2563eb">Jacobian-vector product (JVP)</text>
+  <text x="310" y="190" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#2563eb">Jacobian-向量乘积（JVP）</text>
 
   <circle cx="170" cy="290" r="52" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
   <text x="170" y="282" text-anchor="middle" font-size="24" font-family="Times New Roman, Arial" fill="#1e3a8a">输入</text>
@@ -41,7 +41,7 @@
 
   <rect x="650" y="120" rx="18" ry="18" width="480" height="360" fill="#f9fafb" stroke="#d1d5db" stroke-width="2"/>
   <text x="890" y="160" text-anchor="middle" font-size="26" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">反向模式 AD</text>
-  <text x="890" y="190" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#dc2626">vector-Jacobian product (VJP)</text>
+  <text x="890" y="190" text-anchor="middle" font-size="18" font-family="Times New Roman, Arial" fill="#dc2626">向量-Jacobian 乘积（VJP）</text>
 
   <circle cx="750" cy="290" r="52" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
   <text x="750" y="282" text-anchor="middle" font-size="24" font-family="Times New Roman, Arial" fill="#1e3a8a">输入</text>
@@ -59,7 +59,7 @@
   <line x1="975" y1="290" x2="998" y2="290" stroke="#9ca3af" stroke-width="4" marker-end="url(#arrowBlue7)"/>
 
   <line x1="1100" y1="212" x2="980" y2="212" stroke="#dc2626" stroke-width="6" marker-end="url(#arrowRed7)"/>
-  <text x="1040" y="196" text-anchor="middle" font-size="20" font-family="Times New Roman, Arial" fill="#dc2626">种子协向量 uᵀ</text>
+  <text x="1040" y="196" text-anchor="middle" font-size="20" font-family="Times New Roman, Arial" fill="#dc2626">种子敏感度 uᵀ</text>
   <line x1="850" y1="212" x2="700" y2="212" stroke="#dc2626" stroke-width="6" marker-end="url(#arrowRed7)"/>
   <text x="775" y="196" text-anchor="middle" font-size="20" font-family="Times New Roman, Arial" fill="#dc2626">uᵀJ</text>
 
