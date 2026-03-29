@@ -8,6 +8,6 @@
 
 ## 当前已纳入的独立文章
 
-### [反向传播：想法、数学原理、思想史与最值得读的 5 篇文献](./backpropagation-ideas-math-history-5-readings.md)
+- [反向传播：想法、数学原理、思想史与最值得读的 5 篇文献](./backpropagation-ideas-math-history-5-readings.md)
 
-这是一篇面向机器学习学习者与工程实践者的长文，系统梳理反向传播的核心直觉、链式法则与计算图、reverse-mode automatic differentiation、历史发展脉络，以及最值得读的 5 篇论文或文章。文中配有 7 张示意图，适合作为学习笔记、讲解材料或后续专题扩展的入口。
+  这是一篇面向机器学习学习者与工程实践者的长文，系统梳理反向传播的核心直觉、链式法则与计算图、reverse-mode automatic differentiation、历史发展脉络，以及最值得读的 5 篇论文或文章。文中配有 7 张示意图，适合作为学习笔记、讲解材料或后续专题扩展的入口。
