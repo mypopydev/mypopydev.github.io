@@ -3,7 +3,7 @@
 ## Executive Summary
 反向传播的核心，是在单次前向—反向过程中高效计算梯度。它把神经网络表示为复合函数或计算图，使损失函数对全部参数的导数可以通过链式法则系统地递推出来。对现代机器学习而言，它的重要性主要体现在两个层面：一是它使多层可微模型的训练在计算上变得可行，二是它把参数学习、表示学习与数值优化统一到同一套可微框架中。
 
-从历史脉络看，反向传播并不是孤立出现的神经网络技巧，而是最优控制（optimal control）、伴随方法（adjoint method）和自动微分（automatic differentiation，简称 AD）逐步汇聚后的结果。Linnainmaa 奠定了反向模式自动微分（Reverse Mode Automatic Differentiation，下文简称反向模式 AD）的算法骨架，Werbos 较早把这一思路明确连接到神经网络学习，Rumelhart、Hinton 与 Williams 在 1986 年的论文则推动了它在 AI 社区中的广泛传播。今天的 PyTorch、TensorFlow、JAX 等框架，本质上都在执行这一思路的软件化版本。
+从历史发展看，反向传播并不是孤立出现的神经网络技巧，而是最优控制（optimal control）、伴随方法（adjoint method）和自动微分（automatic differentiation，简称 AD）逐步汇聚后的结果。Linnainmaa 奠定了反向模式自动微分（Reverse Mode Automatic Differentiation，下文简称反向模式 AD）的算法骨架，Werbos 较早把这一思路明确连接到神经网络学习，Rumelhart、Hinton 与 Williams 在 1986 年的论文则推动了它在 AI 社区中的广泛传播。今天的 PyTorch、TensorFlow、JAX 等框架，本质上都在执行这一思路的软件化版本。
 
 ## Background
 在神经网络训练流程中，反向传播与梯度下降经常并列出现，却承担着不同职责：前者负责高效计算当前损失对各参数的梯度，后者则负责利用这些梯度更新参数。具体而言，模型先根据输入得到输出与损失，再由反向传播求出梯度，最后由随机梯度下降（stochastic gradient descent，SGD）及其变体完成参数更新。表面上看，这只是训练中的一个技术步骤；但从方法论上看，它处理的是一个更一般的问题：当一个多层系统的最终输出出现偏差时，这个偏差应当如何分配给中间变量和底层参数。这正是经典的信用分配问题（credit assignment problem）。
