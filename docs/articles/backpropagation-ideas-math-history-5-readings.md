@@ -221,12 +221,12 @@ $$
 
 $$
 \begin{gathered}
-\bar L = 1 \\[6pt]
-\bar a = \frac{\partial L}{\partial a} \\[6pt]
-\bar s = \bar a \cdot \sigma'(s) \\[6pt]
+\bar L = 1 \\
+\bar a = \frac{\partial L}{\partial a} \\
+\bar s = \bar a \cdot \sigma'(s) \\
 \bar w_1 = \bar s \cdot x_1, \quad
 \bar w_2 = \bar s \cdot x_2, \quad
-\bar b = \bar s \\[6pt]
+\bar b = \bar s \\
 \bar x_1 = \bar s \cdot w_1, \quad
 \bar x_2 = \bar s \cdot w_2
 \end{gathered}
@@ -265,7 +265,7 @@ b^{(1)}=
 0.35 \\
 0.35
 \end{bmatrix}
-\\[6pt]
+\\
 W^{(2)}=
 \begin{bmatrix}
 0.40 & 0.45 \\
@@ -302,7 +302,7 @@ a^{(1)} = \sigma(z^{(1)}) \approx
 0.5933 \\
 0.5969
 \end{bmatrix}
-\\[6pt]
+\\
 z^{(2)} = W^{(2)}a^{(1)} + b^{(2)} \approx
 \begin{bmatrix}
 1.1059 \\
@@ -387,7 +387,7 @@ b^{(1)}_{\text{new}} \approx
 0.3456 \\
 0.3450
 \end{bmatrix}
-\\[6pt]
+\\
 W^{(2)}_{\text{new}} \approx
 \begin{bmatrix}
 0.3589 & 0.4087 \\

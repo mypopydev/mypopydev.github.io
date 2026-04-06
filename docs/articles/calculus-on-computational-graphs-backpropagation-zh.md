@@ -59,7 +59,7 @@ $e=c*d$
 
 $$
 \begin{gathered}
-\frac{\partial}{\partial a}(a+b)=\frac{\partial a}{\partial a}+\frac{\partial b}{\partial a}=1 \\[6pt]
+\frac{\partial}{\partial a}(a+b)=\frac{\partial a}{\partial a}+\frac{\partial b}{\partial a}=1 \\
 \frac{\partial}{\partial u}(uv)=u\frac{\partial v}{\partial u}+v\frac{\partial u}{\partial u}=v
 \end{gathered}
 $$
