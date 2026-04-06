@@ -9,9 +9,36 @@
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 0.5rem 0;
+  padding: 0.1rem 0;
 }
 
 .md-typeset figure {
   margin: 1.25rem auto;
+}
+
+.md-typeset h2 {
+  margin-top: 1.35em;
+  margin-bottom: 0.45em;
+}
+
+.md-typeset h3 {
+  margin-top: 1.1em;
+  margin-bottom: 0.35em;
+}
+
+.md-typeset p {
+  margin: 0.7em 0;
+}
+
+.md-typeset div.arithmatex {
+  margin: 0.15rem 0;
+}
+
+.md-typeset p:has(> img) {
+  margin: 0.55rem 0;
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  margin: 0.55em 0;
 }
