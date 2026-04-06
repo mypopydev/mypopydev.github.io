@@ -222,21 +222,17 @@ $$
 $$
 \bar L = 1
 $$
-
 $$
 \bar a = \frac{\partial L}{\partial a}
 $$
-
 $$
 \bar s = \bar a \cdot \sigma'(s)
 $$
-
 $$
 \bar w_1 = \bar s \cdot x_1, \quad
 \bar w_2 = \bar s \cdot x_2, \quad
 \bar b = \bar s
 $$
-
 $$
 \bar x_1 = \bar s \cdot w_1, \quad
 \bar x_2 = \bar s \cdot w_2
@@ -275,7 +271,6 @@ b^{(1)}=
 0.35
 \end{bmatrix}
 $$
-
 $$
 W^{(2)}=
 \begin{bmatrix}
@@ -312,7 +307,6 @@ a^{(1)} = \sigma(z^{(1)}) \approx
 0.5969
 \end{bmatrix}
 $$
-
 $$
 z^{(2)} = W^{(2)}a^{(1)} + b^{(2)} \approx
 \begin{bmatrix}
@@ -397,7 +391,6 @@ b^{(1)}_{\text{new}} \approx
 0.3450
 \end{bmatrix}
 $$
-
 $$
 W^{(2)}_{\text{new}} \approx
 \begin{bmatrix}

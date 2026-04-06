@@ -60,7 +60,6 @@ $e=c*d$
 $$
 \frac{\partial}{\partial a}(a+b)=\frac{\partial a}{\partial a}+\frac{\partial b}{\partial a}=1
 $$
-
 $$
 \frac{\partial}{\partial u}(uv)=u\frac{\partial v}{\partial u}+v\frac{\partial u}{\partial u}=v
 $$
