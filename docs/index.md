@@ -1,19 +1,28 @@
-# 技术专题与研究笔记
+# 欢迎
 
-这个站点骨架的目标，不是把整个仓库永远绑死在一个专题上，而是先把当前《Agentic Engineering Patterns》中文译文收拢成一个可持续维护的专题，同时给后续不相关的新文章、资源页、图片素材和数学公式留出长期空间。
+这是我的个人技术笔记站。这里记录我在 AI 工程和深度学习领域的学习、翻译与实践。
 
-当前站点默认采用三层结构：站点首页负责总导航，`series/` 负责承载成组专题，`articles/` 负责承载与专题无强绑定的独立文章，`resources/` 负责放站点约定、术语表、映射表和其他配套资料。
+---
 
-## 当前内容入口
+## 专题阅读
 
-- 如果你想从当前主内容开始读，请进入 [《Agentic Engineering Patterns》专题首页](./series/agentic-engineering-patterns/index.md)。
-- 如果你后续要新增与该专题无关的内容，请优先放到 [独立文章栏目](./articles/index.md)。
-- 如果你要了解目录约定、图片路径、公式渲染方式，请看 [资源区](./resources/index.md)。
+### 🤖 智能体工程
 
-## 这套骨架已经预留了什么
+Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，按六大主题组织——从核心原则到协作工作流、测试实践、代码理解和实战案例。
 
-这次骨架已经预留了四类能力：第一，专题和独立文章分层，避免未来内容互相污染；第二，`pymdownx.arithmatex` + KaTeX 的数学公式渲染链路；第三，统一的 `docs/assets/images/` 图片目录；第四，GitHub Actions 自动部署到 GitHub Pages 的工作流。
+[开始阅读 :octicons-arrow-right-24:](./series/agentic-engineering-patterns/index.md){ .md-button }
 
-## 下一步最自然的做法
+### 🧠 深度学习
 
-如果你准备正式上线，可以按这个顺序继续推进：先把 GitHub 仓库创建好，再在仓库的 Pages 设置里选择 `GitHub Actions` 作为发布源，然后本地执行 `pip install -r requirements-docs.txt` 和 `mkdocs serve` 预览站点，确认无误后再 push 到 `main`。
+反向传播的核心直觉、数学推导与思想史梳理，配有完整的计算图示意图和数值算例。
+
+- [反向传播：想法、数学原理、思想史与最值得读的 5 篇文献](./articles/backpropagation-ideas-math-history-5-readings.md)
+- [计算图上的微积分：反向传播](./articles/calculus-on-computational-graphs-backpropagation-zh.md)
+
+---
+
+## 关于这个站
+
+站点由 [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) 驱动，支持数学公式渲染（KaTeX）和代码高亮。推送到 `main` 分支后由 GitHub Actions 自动构建发布。
+
+如有勘误或建议，欢迎到 [GitHub 仓库](https://github.com/mypopydev/mypopydev.github.io) 提 Issue。

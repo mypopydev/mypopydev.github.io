@@ -1,10 +1,12 @@
-# 《Agentic Engineering Patterns》中文译文专题
+# 《Agentic Engineering Patterns》中文译文
 
-这个专题收录 Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文示范译文，以及与之配套的映射表、术语约定和更新记录。当前版本定位为公开交流与内部协作用的“示范译文专题”，不是作者官方中文版。
+> 原作者：[Simon Willison](https://simonwillison.net/) · 译文版本：v0.1 · 非官方翻译
 
-整套内容按原站 6 个大主题组织，阅读上既可以顺序通读，也可以按主题跳读。为了给未来不相关文章留出空间，这套译文已经从站点根层收拢到 `series/agentic-engineering-patterns/`，后续其“上一篇 / 下一篇”导航默认只在本专题内部生效。
+本专题收录 Simon Willison 这一系列的 15 篇中文示范译文。整套内容按原站六大主题组织，既可以顺序通读，也可以按主题跳读。
 
-## 六大主题导航
+---
+
+## 六大主题
 
 ### 1. 核心原则
 
@@ -39,6 +41,6 @@
 
 - [我常用的 Prompt](./prompts_i_use_demo_zh.md)
 
-## 配套资源
+---
 
-如果你要继续整理或对外发布这个专题，建议顺手查看资源区里的这些文件：术语表与风格指南模板、双语链接映射表、版本更新记录，以及站点结构和公式/图片约定说明。
+**术语约定**：Agentic Engineering 译为"智能体工程"，Coding Agent 译为"编码智能体"。完整术语表见 [术语表与翻译约定](../../resources/agentic_engineering_translation_glossary_style_guide_template.md)。

@@ -1,17 +1,38 @@
-site_name: 技术专题与研究笔记
-site_description: 面向长期维护的 Markdown 静态站骨架，支持专题、独立文章、LaTeX 公式与图片资源管理。
+site_name: Barry's Tech Notes
+site_url: https://mypopydev.github.io/
+site_description: AI 工程、深度学习与技术翻译的个人笔记站
+site_author: Barry Zhao
 docs_dir: docs
 site_dir: site
 theme:
   name: material
   language: zh
+  icon:
+    logo: material/code-braces
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
   features:
     - navigation.indexes
     - navigation.sections
     - navigation.top
+    - navigation.footer
     - search.highlight
     - search.suggest
     - content.code.copy
+    - toc.follow
 plugins:
   - search
 markdown_extensions:
@@ -29,6 +50,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
 extra_css:
@@ -38,49 +62,41 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
   - assets/javascripts/katex.js
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mypopydev
+      name: GitHub
+copyright: Copyright &copy; 2026 Barry Zhao
 nav:
   - 首页: index.md
-  - 专题:
-      - 专题总览: series/index.md
-      - Agentic Engineering Patterns:
-          - 专题首页: series/agentic-engineering-patterns/index.md
-          - 核心原则:
-              - 什么是智能体工程？: series/agentic-engineering-patterns/what_is_agentic_engineering_demo_zh.md
-              - 现在，写代码很便宜: series/agentic-engineering-patterns/writing_code_is_cheap_now_demo_zh.md
-              - 把你会做的事囤起来: series/agentic-engineering-patterns/hoard_things_you_know_how_to_do_demo_zh.md
-              - AI 应该帮助我们产出更好的代码: series/agentic-engineering-patterns/ai_should_help_us_produce_better_code_demo_zh.md
-              - 反模式：有些事要避免: series/agentic-engineering-patterns/anti_patterns_things_to_avoid_demo_zh.md
-          - 协作工作流:
-              - 编码智能体如何工作: series/agentic-engineering-patterns/how_coding_agents_work_demo_zh.md
-              - 如何将 Git 用于编码智能体工作流: series/agentic-engineering-patterns/using_git_with_coding_agents_demo_zh.md
-              - 子智能体: series/agentic-engineering-patterns/subagents_demo_zh.md
-          - 测试与质量保证:
-              - 红/绿 TDD: series/agentic-engineering-patterns/red_green_tdd_demo_zh.md
-              - 先跑测试: series/agentic-engineering-patterns/first_run_the_tests_demo_zh.md
-              - 让智能体做手动测试: series/agentic-engineering-patterns/agentic_manual_testing_demo_zh.md
-          - 代码理解:
-              - 线性讲解: series/agentic-engineering-patterns/linear_walkthroughs_demo_zh.md
-              - 交互式解释: series/agentic-engineering-patterns/interactive_explanations_demo_zh.md
-          - 实战案例:
-              - 用 WebAssembly 和 Gifsicle 构建 GIF 优化工具: series/agentic-engineering-patterns/gif_optimization_tool_using_webassembly_and_gifsicle_demo_zh.md
-          - 参考资源:
-              - 我常用的 Prompt: series/agentic-engineering-patterns/prompts_i_use_demo_zh.md
-  - 独立文章:
-      - 栏目说明: articles/index.md
+  - 智能体工程:
+      - 专题导读: series/agentic-engineering-patterns/index.md
+      - 核心原则:
+          - 什么是智能体工程？: series/agentic-engineering-patterns/what_is_agentic_engineering_demo_zh.md
+          - 现在，写代码很便宜: series/agentic-engineering-patterns/writing_code_is_cheap_now_demo_zh.md
+          - 把你会做的事囤起来: series/agentic-engineering-patterns/hoard_things_you_know_how_to_do_demo_zh.md
+          - AI 应该帮助我们产出更好的代码: series/agentic-engineering-patterns/ai_should_help_us_produce_better_code_demo_zh.md
+          - 反模式：有些事要避免: series/agentic-engineering-patterns/anti_patterns_things_to_avoid_demo_zh.md
+      - 协作工作流:
+          - 编码智能体如何工作: series/agentic-engineering-patterns/how_coding_agents_work_demo_zh.md
+          - 如何将 Git 用于编码智能体工作流: series/agentic-engineering-patterns/using_git_with_coding_agents_demo_zh.md
+          - 子智能体: series/agentic-engineering-patterns/subagents_demo_zh.md
+      - 测试与质量保证:
+          - 红/绿 TDD: series/agentic-engineering-patterns/red_green_tdd_demo_zh.md
+          - 先跑测试: series/agentic-engineering-patterns/first_run_the_tests_demo_zh.md
+          - 让智能体做手动测试: series/agentic-engineering-patterns/agentic_manual_testing_demo_zh.md
+      - 代码理解:
+          - 线性讲解: series/agentic-engineering-patterns/linear_walkthroughs_demo_zh.md
+          - 交互式解释: series/agentic-engineering-patterns/interactive_explanations_demo_zh.md
+      - 实战案例:
+          - 用 WebAssembly 和 Gifsicle 构建 GIF 优化工具: series/agentic-engineering-patterns/gif_optimization_tool_using_webassembly_and_gifsicle_demo_zh.md
+      - 参考资源:
+          - 我常用的 Prompt: series/agentic-engineering-patterns/prompts_i_use_demo_zh.md
+  - 深度学习:
       - 反向传播：想法、数学原理、思想史与最值得读的 5 篇文献: articles/backpropagation-ideas-math-history-5-readings.md
       - 计算图上的微积分：反向传播: articles/calculus-on-computational-graphs-backpropagation-zh.md
-  - 资源:
-      - 资源总览: resources/index.md
-      - 站点结构约定: resources/site-structure.md
-      - 公式与图片约定: resources/math-and-images.md
-      - 发布与预览说明: resources/deployment.md
-      - 术语表与风格指南模板: resources/agentic_engineering_translation_glossary_style_guide_template.md
-      - 双语链接映射表: resources/BILINGUAL_LINK_MAP.md
-      - 版本更新记录: resources/CHANGELOG.md
-      - 研究报告:
-          - 报告总览: resources/research-reports/index.md
-          - 6 大主题划分方案: resources/research-reports/research_report_agentic_engineering_patterns_6_themes.md
-          - 翻译可执行方案: resources/research-reports/research_report_agentic_engineering_patterns_translation_plan.md
-          - 站点化部署方案: resources/research-reports/research_report_github_static_site_for_translation_repo.md
-          - 静态站方案选型: resources/research-reports/research_report_static_site_math_images_choice.md
-          - Pages 样式排障报告: resources/research-reports/research_report_pages_jekyll_vs_github_actions_mkdocs_material.md
+  - 关于:
+      - 术语表与翻译约定: resources/agentic_engineering_translation_glossary_style_guide_template.md
+      - 双语链接映射: resources/BILINGUAL_LINK_MAP.md
+      - 更新记录: resources/CHANGELOG.md
