@@ -10,5 +10,6 @@
 - [术语表与风格指南模板](./agentic_engineering_translation_glossary_style_guide_template.md)
 - [双语链接映射表](./BILINGUAL_LINK_MAP.md)
 - [版本更新记录](./CHANGELOG.md)
+- [研究报告](./research-reports/index.md) — 项目推进过程中的选型分析与决策报告
 
 如果未来需要加专题索引生成规则、封面图规范、站点命名规则、链接检查流程，也建议继续放在这个目录，而不是散落在多个专题内部。

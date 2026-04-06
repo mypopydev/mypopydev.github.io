@@ -77,3 +77,10 @@ nav:
       - 术语表与风格指南模板: resources/agentic_engineering_translation_glossary_style_guide_template.md
       - 双语链接映射表: resources/BILINGUAL_LINK_MAP.md
       - 版本更新记录: resources/CHANGELOG.md
+      - 研究报告:
+          - 报告总览: resources/research-reports/index.md
+          - 6 大主题划分方案: resources/research-reports/research_report_agentic_engineering_patterns_6_themes.md
+          - 翻译可执行方案: resources/research-reports/research_report_agentic_engineering_patterns_translation_plan.md
+          - 站点化部署方案: resources/research-reports/research_report_github_static_site_for_translation_repo.md
+          - 静态站方案选型: resources/research-reports/research_report_static_site_math_images_choice.md
+          - Pages 样式排障报告: resources/research-reports/research_report_pages_jekyll_vs_github_actions_mkdocs_material.md
