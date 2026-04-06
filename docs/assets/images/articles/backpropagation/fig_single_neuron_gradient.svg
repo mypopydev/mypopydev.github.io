@@ -8,7 +8,7 @@
       <path d="M0,0 L10,3 L0,6 Z" fill="#dc2626"/>
     </marker>
   </defs>
-  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 5  单神经元梯度推导图</text>
+  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 9  单神经元梯度推导图</text>
   <text x="600" y="74" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4b5563">例子：L = loss(σ(w₁x₁ + w₂x₂ + b), y)</text>
 
   <circle cx="120" cy="170" r="38" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>

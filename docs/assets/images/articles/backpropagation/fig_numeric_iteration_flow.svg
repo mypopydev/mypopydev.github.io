@@ -24,7 +24,7 @@
     </style>
   </defs>
 
-  <text x="700" y="34" text-anchor="middle" font-size="28" class="cn-title">图 12  一次完整训练迭代的数值流向（2-2-2 网络）</text>
+  <text x="700" y="34" text-anchor="middle" font-size="28" class="cn-title">图 8  一次完整训练迭代的数值流向（2-2-2 网络）</text>
   <text x="700" y="62" text-anchor="middle" font-size="16" class="cn muted">蓝色表示前向算值，红色表示误差项与梯度回传，绿色表示一次梯度下降更新后的结果</text>
 
   <line x1="210" y1="92" x2="285" y2="92" stroke="#2563eb" stroke-width="4" marker-end="url(#arrowBlue12)"/>

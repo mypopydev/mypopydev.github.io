@@ -9,7 +9,7 @@
     </marker>
   </defs>
 
-  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 8  共享节点处的梯度汇聚</text>
+  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 4  共享节点处的梯度汇聚</text>
   <text x="600" y="74" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4b5563">例子：u = x · y，v = x · w，L = u + v</text>
 
   <circle cx="150" cy="120" r="38" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>

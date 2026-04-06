@@ -9,7 +9,7 @@
     </marker>
   </defs>
 
-  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 7  前向模式 AD 与反向模式 AD 的 Jacobian 方向图</text>
+  <text x="600" y="42" text-anchor="middle" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#111827">图 10  前向模式 AD 与反向模式 AD 的 Jacobian 方向图</text>
   <text x="600" y="74" text-anchor="middle" font-size="16" font-family="PingFang SC, Microsoft YaHei, Arial" fill="#4b5563">同一个 Jacobian，前向模式传播的是方向向量，反向模式传播的是敏感度向量</text>
 
   <rect x="70" y="120" rx="18" ry="18" width="480" height="360" fill="#f9fafb" stroke="#d1d5db" stroke-width="2"/>
