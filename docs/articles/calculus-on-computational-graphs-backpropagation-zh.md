@@ -58,10 +58,10 @@ $e=c*d$
 为了计算这个图里的偏导数，我们需要用到求和法则和乘积法则：
 
 $$
-\frac{\partial}{\partial a}(a+b)=\frac{\partial a}{\partial a}+\frac{\partial b}{\partial a}=1
-$$
-$$
+\begin{gathered}
+\frac{\partial}{\partial a}(a+b)=\frac{\partial a}{\partial a}+\frac{\partial b}{\partial a}=1 \\[6pt]
 \frac{\partial}{\partial u}(uv)=u\frac{\partial v}{\partial u}+v\frac{\partial u}{\partial u}=v
+\end{gathered}
 $$
 
 下面这张图给每条边都标出了对应的导数。
