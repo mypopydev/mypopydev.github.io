@@ -96,6 +96,8 @@ nav:
   - 深度学习:
       - 反向传播：想法、数学原理、思想史与最值得读的 5 篇文献: articles/backpropagation-ideas-math-history-5-readings.md
       - 计算图上的微积分：反向传播: articles/calculus-on-computational-graphs-backpropagation-zh.md
+  - 研究论文:
+      - TurboQuant — KV Cache 压缩算法: articles/research-papers/turboquant-kv-cache-compression-zh.md
   - 关于:
       - 术语表与翻译约定: resources/agentic_engineering_translation_glossary_style_guide_template.md
       - 双语链接映射: resources/BILINGUAL_LINK_MAP.md
