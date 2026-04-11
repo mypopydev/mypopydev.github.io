@@ -855,11 +855,197 @@ KV cache 压缩比           4.57×（3.5-bit）到 6.40×（2.5-bit）
 | TurboQuant | PolarQuant + QJL 组合 | 无偏估计器，无需训练（data-oblivious），接近理论极限 |
 | 基础设施影响 | 内存减少 → 并发增加 → GPU 需求降低 | 4.3× 并发提升，GPU 数量减半 |
 
+## 补充：PolarQuant 的完整数学细节
+
+本文正文采用"正交旋转 + 统一标量量化"的简化视角来讲解 PolarQuant 的核心直觉。本节补充 PolarQuant 论文中实际使用的递归极坐标分解算法、角度集中现象、Codebook 构建流程，以及与现有工业方案 NVFP4 的对比。
+
+参考来源：[I Spent 31 Hours on the Math Behind TurboQuant So You Don't Have To (Baseten)](https://www.baseten.co/blog/i-spent-31-hours-on-the-math-behind-turboquant-so-you-dont-have-to/)
+
+以下图片来自 Baseten 文章，用于辅助理解本节内容。
+
+### 与 NVFP4 的对比：为什么需要新方案
+
+![KV Cache 机制：新 token 的 K、V 向量追加到缓存中，随序列增长内存占用不断膨胀](../../assets/images/articles/research-papers/turboquant/kv-cache-illustration.png)
+
+![KV Cache 随 token 数增长的内存占用：token 1 和 token 2 在内存范围内，到 token n 时内存溢出](../../assets/images/articles/research-papers/turboquant/memory-scaling.png)
+
+NVIDIA 的 NVFP4 是当前工业界广泛使用的 4-bit 量化方案，采用**两层归一化**：
+
+```
+NVFP4 量化流程：
+══════════════════════════════════════════
+1. 全局扫描: 找到整个矩阵的全局最大值
+2. 块级最大值: 对每 16 个元素为一组，找组内最大值
+3. 归一化: 值 / 组内最大值，scale / 全局最大值
+4. 量化: 将归一化后的值映射到最近的 4-bit 桶
+5. 反量化: 硬件乘以逆 scale 因子还原
+
+问题:
+  - 每个 16 元素块需要存储一个 FP16 scale + 一个 zero-point
+  - 这些归一化常数是纯开销
+  - 单个异常值会破坏整个块的精度
+```
+
+PolarQuant 的核心优势：
+
+| 特性 | NVFP4 | PolarQuant |
+|------|-------|-----------|
+| 桶的分布 | 均匀间隔 | 根据已知分布加权 |
+| 归一化开销 | 每块存 scale + zero-point | **无开销** |
+| 校准需求 | 需要校准数据或在线扫描 | 解析预计算，**无需数据** |
+| Codebook 设计 | 依赖数据分布 | 仅依赖数学分布（data-oblivious） |
+
+![量化的核心问题：上方——宽范围、无聚集的数据映射到量化桶时精度丢失；下方——数据聚集在中心附近时，映射范围可被保留、精度得到维持](../../assets/images/articles/research-papers/turboquant/bucketing-problem.png)
+
+### 两个关键数学性质
+
+PolarQuant 的理论基础建立在多元正态分布的两个性质之上：
+
+**性质 1：随机矩阵预处理产生高斯输出**
+
+对任意固定向量 $x$，若 $S$ 是一个元素独立采样自 $\mathcal{N}(0, 1)$ 的随机矩阵，则：
+
+$$
+S \cdot x \sim \mathcal{N}(0,\ \|x\|^2 \cdot I_m)
+$$
+
+输出变为以零为中心、方差等于原始向量长度平方的多元高斯分布——**无论原始向量长什么样**。
+
+**性质 2：高维向量范数的集中性**
+
+当向量的每个坐标独立服从标准正态分布时，向量范数服从广义 Gamma 分布：
+
+$$
+f_R(r) = \frac{2}{2^{d/2} \cdot \Gamma(d/2)} \cdot r^{d-1} \cdot e^{-r^2/2}
+$$
+
+在高维度下（$d \gg 1$），范数紧密集中在 $\sqrt{d}$ 附近。这意味着预处理后，KV 向量的每个坐标**表现得如同来自同一个钟形曲线**，为后续的无数据量化奠定了基础。
+
+![旋转前后的向量分布对比：左侧——旋转前向量紧贴坐标轴、分布散乱（每行有一个主导坐标）；右侧——旋转后向量聚向对角线、角度集中（能量均匀分散到所有坐标）](../../assets/images/articles/research-papers/turboquant/polarquant-conditioning.jpeg)
+
+### 递归极坐标分解算法
+
+PolarQuant 的实际算法不是简单地做标量量化，而是将 $d$ 维向量**递归分解为极坐标表示**，然后对角度进行量化：
+
+![递归极坐标分解树状图：底层 8 个原始坐标 x₁...x₈ 配对转为 (r,θ)，逐层向上合并，最终产出 1 个半径 + 多层角度向量](../../assets/images/articles/research-papers/turboquant/polar-recursion.jpeg)
+
+```
+递归极坐标分解（d=128 为例，log₂(128)=7 层）：
+══════════════════════════════════════════
+输入: 预处理后的 d 维向量 y
+
+r = y.clone()
+angles = []
+
+for level in range(n_levels):  # 7 层（对于 d=128）
+    a = r[0::2]               # 偶数索引
+    b = r[1::2]               # 奇数索引
+
+    level_angles = atan2(b, a)
+
+    if level == 0:
+        level_angles = level_angles mod 2π  # 第 1 层：完整 [0, 2π)
+    # level >= 1: 角度自动落在 [0, π/2]（因为半径非负）
+
+    new_r = sqrt(a² + b²)     # 新的半径
+    angles.append(level_angles)
+    r = new_r                  # 半径作为下一层输入
+
+return angles, r  # angles: 各层角度; r: 最终剩余半径
+```
+
+逐层理解：
+
+- **第 1 层**：将 128 个原始坐标配成 64 对 $(x_{2j-1}, x_{2j})$，转为 64 个角度 + 64 个半径。原始坐标可为负，角度范围 $[0, 2\pi)$
+- **第 2 层**：将 64 个半径配成 32 对，得到 32 个角度 + 32 个半径。半径恒正，角度范围 $[0, \pi/2]$
+- **第 3 层**：32 → 16 个角度 + 16 个半径（每个半径概括了 4 维子空间）
+- **...**
+- **第 7 层**：2 → 1 个角度 + 1 个半径（每个半径概括了 64 维子空间）
+
+最终：64 + 32 + 16 + 8 + 4 + 2 + 1 = 127 个角度 + 1 个最终半径 = 128 个值（信息无损）。
+
+### 角度集中现象：为什么高层角度几乎不需要比特
+
+这是 PolarQuant 最精妙的洞察。第 $\ell$ 层（$\ell \geq 2$）角度的概率密度为：
+
+$$
+f_{\psi^{(\ell)}}(\psi) \propto \sin^{2^{\ell-1}-1}(2\psi)
+$$
+
+关键性质：
+
+- **期望值**：$E[\Theta] = \pi/4$（所有层相同）
+- **方差**：$\text{Var}(\Theta) = O(1/d)$（随维度增大而缩小）
+
+直觉理解：第 $\ell$ 层的角度是 $\arctan(r_1 / r_2)$，其中 $r_1$ 和 $r_2$ 是两个 $2^{\ell-1}$ 维子空间的范数。由性质 2，高维范数集中在 $\sqrt{d}$ 附近，所以两个范数的比值趋近 1，$\arctan(1) = \pi/4$。
+
+- 2D 范数变化很大 → 角度分布宽
+- 8D 范数几乎不变 → 角度紧密集中
+- 64D 范数（第 7 层）→ 角度几乎退化为常数 $\pi/4$，1-bit 即可量化
+
+### 分层量化策略与 Codebook 构建
+
+利用角度集中现象，不同层使用不同的比特数：
+
+```
+分层量化策略（d=128）：
+══════════════════════════════════════════
+层级     角度数   范围         比特/角度   总比特
+──────   ──────   ──────────   ─────────   ──────
+第 1 层  64       [0, 2π)      4 bits      256
+第 2 层  32       [0, π/2]     2 bits       64
+第 3 层  16       [0, π/2]     2 bits       32
+第 4 层   8       [0, π/2]     2 bits       16
+剩余半径  8       FP16         16 bits     128
+                                           ──────
+                                总计       496 bits
+
+对比 FP16: 128 × 16 = 2,048 bits
+压缩比: 2,048 / 496 = 4.13×
+```
+
+**Codebook 构建三步流程：**
+
+![Codebook 构建四步可视化：Step 1——从已知分布 sin²(2ψ) 出发；Step 2——在 CDF 分位数处初始化中心点；Step 3——Lloyd 算法在中点画边界、重算质心；Step 4——放大单个桶，概率加权平均将中心点拉向峰值](../../assets/images/articles/research-papers/turboquant/algorithm-part3-codebook.jpeg)
+
+1. **PDF 生成**：利用每层角度的解析分布（上面的 sin 幂公式），在角度范围内采样概率密度
+2. **CDF 分位数映射**：将 PDF 转为累积分布，对于 $n$ 个量化桶，找到累积概率为 $\frac{i+0.5}{n}$（$i = 0, 1, \ldots, n-1$）处对应的角度值作为初始中心点
+3. **Lloyd 算法迭代优化**：
+    - 在相邻中心点之间画边界（取中点）
+    - 对每个桶，计算概率加权的质心作为新的中心点
+    - 重复至收敛（移动量 $< 10^{-7}$）
+
+最终存储每个中心点的 $\cos$ 和 $\sin$ 值作为查找表，推理时直接查表重建。
+
+**关键优势**：整个 Codebook 构建过程只依赖数学分布，不需要任何数据——这就是 PolarQuant "data-oblivious" 的含义。
+
+![PolarQuant 重建质量：余弦相似度均值 0.9838、相对误差均值 0.1794、原始 vs 重建波形对比、内积保持散点图（紧贴对角线）](../../assets/images/articles/research-papers/turboquant/accuracy-comparison.jpeg)
+
+![比特预算柱状图：Level 1 角度 256 bits + Level 2 角度 64 bits + Level 3 角度 32 bits + Level 4 角度 16 bits + 剩余半径 FP16 128 bits = 496 bits，原始 2048 bits，压缩比 4.13×](../../assets/images/articles/research-papers/turboquant/compression-breakdown.jpeg)
+
+### Kernel 性能实测
+
+社区实现的自定义 CUDA kernel 的实测性能（相对于 cuBLAS matmul）：
+
+```
+Kernel 性能基准：
+══════════════════════════════════════════
+序列长度         相对 cuBLAS 性能
+──────────       ──────────────────
+< 8K             被 kernel launch 开销主导，无实质差异
+8K - 65K         cuBLAS 快约 50%
+65K - 512K       达到 cuBLAS 的 ~75%
+
+结论: 在长序列场景（>65K tokens）下竞争力较强，
+      短序列场景仍有优化空间。
+```
+
 ## References
 
 1. [Darshan Fofadiya — TurboQuant: KV Cache Compression（原文博客）](https://darshanfofadiya.com/research-papers/turboquant/)
 2. A. Zandieh, M. Daliri, M. Hadian, V. Mirrokni. [TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate](https://arxiv.org/abs/2504.19874). ICLR 2026.
 3. I. Han, P. Kacham, A. Karbasi, V. Mirrokni, A. Zandieh. [PolarQuant: Quantizing KV Caches with Polar Transformation](https://arxiv.org/abs/2502.02617). AISTATS 2026.
 4. A. Zandieh, M. Daliri, I. Han. [QJL: 1-Bit Quantized JL Transform for KV Cache Quantization with Zero Overhead](https://arxiv.org/abs/2406.03482). AAAI 2025.
-5. [Johnson-Lindenstrauss Lemma — Wikipedia](https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma)
-6. [Lloyd-Max Quantization — Wikipedia](https://en.wikipedia.org/wiki/Lloyd%27s_algorithm)
+5. [Baseten — I Spent 31 Hours on the Math Behind TurboQuant So You Don't Have To](https://www.baseten.co/blog/i-spent-31-hours-on-the-math-behind-turboquant-so-you-dont-have-to/)
+6. [Johnson-Lindenstrauss Lemma — Wikipedia](https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma)
+7. [Lloyd-Max Quantization — Wikipedia](https://en.wikipedia.org/wiki/Lloyd%27s_algorithm)
