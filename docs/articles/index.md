@@ -16,6 +16,10 @@
 
   这是一篇对 Christopher Olah 经典文章《Calculus on Computational Graphs: Backpropagation》的中文整理稿，重点从标量计算图出发解释链式法则、路径因式分解，以及为什么 reverse-mode automatic differentiation 能高效求出“一个输出对所有输入”的导数。文中配套收录了原文相关示意图，适合作为理解反向传播直觉与自动微分基础的入门材料。
 
+- [Transformer Math 101：训练计算量与显存需求速查](./transformer-math-101-zh.md)
+
+  这是一篇对 EleutherAI《Transformer Math 101》的中文翻译，集中整理了 Transformer 训练中的 FLOPs 估算、推理与训练显存公式、激活值重计算、ZeRO/FSDP，以及 3D 并行下的内存近似公式。文中保留了原文关键示意图与公式，适合作为做模型规模规划、显存预算和分布式训练前的速查材料。
+
 - [量化神经网络：你只需要这一篇指南](./quantized-neural-networks-the-only-guide-you-need-zh.md)
 
   这是一篇面向工程实践者的量化综述译文，系统梳理权重量化与激活值量化、均匀网格与对数量化、块级缩放、敏感层、PTQ 与 QAT、KV Cache 量化，以及硬件演进方向。正文以中文整理稿为主，并收录原文配图，适合作为后续阅读模型压缩与推理优化资料前的总览入口。
