@@ -96,6 +96,7 @@ nav:
   - 深度学习:
       - 反向传播：想法、数学原理、思想史与最值得读的 5 篇文献: articles/backpropagation-ideas-math-history-5-readings.md
       - 计算图上的微积分：反向传播: articles/calculus-on-computational-graphs-backpropagation-zh.md
+      - 量化神经网络：你只需要这一篇指南: articles/quantized-neural-networks-the-only-guide-you-need-zh.md
   - 研究论文:
       - TurboQuant — KV Cache 压缩算法: articles/research-papers/turboquant-kv-cache-compression-zh.md
   - 关于:
