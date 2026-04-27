@@ -10,7 +10,7 @@
 
 ## 译文说明
 
-本文为 EleutherAI Blog 文章《Transformer Math 101》的中文翻译版。原文 6 张配图已保存到 `docs/assets/images/articles/transformer-math-101/`。
+本文为 EleutherAI Blog 文章《Transformer Math 101》的中文翻译版。
 
 原文重点讨论训练成本，尤其是计算量与显存需求估算；推理延迟只在少数位置顺带提及。
 

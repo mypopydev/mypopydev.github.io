@@ -10,7 +10,7 @@
 
 ## 译文说明
 
-本文为 Mathias Lechner 文章《Quantized Neural Networks: The Only Guide You Need》的中文翻译版。原文配图已按顺序保存到 `docs/assets/images/articles/quantized-neural-networks-guide/`。
+本文为 Mathias Lechner 文章《Quantized Neural Networks: The Only Guide You Need》的中文翻译版。
 
 ## 引言
 

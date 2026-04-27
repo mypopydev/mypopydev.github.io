@@ -10,9 +10,9 @@
 
 ## 译文说明
 
-本文为 Maarten Grootendorst 文章《A Visual Guide to Quantization》的中文翻译版。原文 62 张配图已全部下载到 `docs/assets/images/articles/visual-guide-to-quantization/`。
+本文为 Maarten Grootendorst 文章《A Visual Guide to Quantization》的中文翻译版。
 
-为保证正文可读性，本文未收录原文中的订阅提示和重复出现的书籍推广文案；相关配图仍已一并保存。
+为保证正文可读性，本文未收录原文中的订阅提示和重复出现的书籍推广文案。
 
 ![量化主题封面图。](../assets/images/articles/visual-guide-to-quantization/visual-guide-01.png)
 

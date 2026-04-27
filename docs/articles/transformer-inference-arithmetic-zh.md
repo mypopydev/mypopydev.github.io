@@ -9,7 +9,7 @@
 
 ## 译文说明
 
-本文为 kipply 文章《Transformer Inference Arithmetic》的中文翻译版。原文 5 张配图已保存到 `docs/assets/images/articles/transformer-inference-arithmetic/`。
+本文为 kipply 文章《Transformer Inference Arithmetic》的中文翻译版。
 
 原文写于 2022 年，因此文中关于 A100 80GB 与云服务可用性的评论，反映的是当时的时间背景。
 
