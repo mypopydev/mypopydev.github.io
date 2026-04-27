@@ -62,7 +62,7 @@
 
 浮点量化（floating-point quantization），也可以从直觉上理解成对数量化（logarithmic quantization），则会在 0 附近布得更密，在极端值区域布得更稀。这更符合神经网络权重的真实分布。权重衰减（weight decay）和初始化（initialization）都会把权重往 0 附近推，使它们形成一个大致以 0 为中心的高斯分布（Gaussian distribution）。把更细的分辨率放在大多数值所在的位置，把更粗的分辨率留给尾部，是对有限比特更合理的利用。
 
-无论你选择哪种网格，均匀量化的公式都很直接。对称量化（symmetric quantization）的形式是：`q = round(x / s)`，重构时则是：`x_hat = s * q`，其中 `s` 是缩放因子（scale factor），`q` 是整数表示。非对称量化（asymmetric quantization）会再加入一个零点偏移（zero-point offset）：`q = round(x / s) + z`，`x_hat = s * (q - z)`。零点（zero-point）允许你移动整个量化网格，以覆盖非对称的数值范围；例如 ReLU 之后的激活值全是非负的。对称量化更简单，也更适合硬件加速；非对称量化则能更充分地利用整数范围。大多数权重量化使用对称量化，大多数激活值量化使用非对称量化。
+无论你选择哪种网格，均匀量化的公式都很直接。对称量化（symmetric quantization）的形式是：$q = \mathrm{round}(x / s)$，重构时则是：$\hat{x} = s \cdot q$，其中 $s$ 是缩放因子（scale factor），$q$ 是整数表示。非对称量化（asymmetric quantization）会再加入一个零点偏移（zero-point offset）：$q = \mathrm{round}(x / s) + z$，$\hat{x} = s \cdot (q - z)$。零点（zero-point）允许你移动整个量化网格，以覆盖非对称的数值范围；例如 ReLU 之后的激活值全是非负的。对称量化更简单，也更适合硬件加速；非对称量化则能更充分地利用整数范围。大多数权重量化使用对称量化，大多数激活值量化使用非对称量化。
 
 从历史上看，大多数量化研究都聚焦在定点量化上，因为当时的硬件只支持整数。Google 的 TPU v1，大约 2015 年，只支持 INT8 运算，完全没有浮点。即便是早期 NVIDIA GPU，也是在 V100 带来 FP16 tensor cores 之前，先有了 INT8 路径。如果你想运行一个量化网络，你就得用整数，因为硅就是这么设计的。
 
@@ -82,7 +82,7 @@
 
 ![图 3：块级缩放示意图，两个 64 元素块各自使用独立的 scale，离群值影响被限制在局部。](../assets/images/articles/quantized-neural-networks-guide/scale-granularity-spectrum.png)
 
-这种代价是真实存在的，但通常很小。一个由 32 个 4 比特数值组成的块，总共占 `32 × 4 = 128` 比特。再加上一个 16 比特的 FP16 缩放因子，等效存储就是 `(128 + 16) / 32 = 4.5` 比特每个值。这也就是为什么你会在模型卡里看到“4.5 比特”这种说法。公式很简单：`effective_bits = base_bits + scale_bits / block_size`。所以当有人说他有一个“4 比特模型”时，记得追问块大小（block size）。它的有效比特数可能其实是 4.5，甚至 5。
+这种代价是真实存在的，但通常很小。一个由 32 个 4 比特数值组成的块，总共占 $32 \times 4 = 128$ 比特。再加上一个 16 比特的 FP16 缩放因子，等效存储就是 $\left(128 + 16\right) / 32 = 4.5$ 比特每个值。这也就是为什么你会在模型卡里看到“4.5 比特”这种说法。公式很简单：$\mathrm{effective\_bits} = \mathrm{base\_bits} + \mathrm{scale\_bits} / \mathrm{block\_size}$。所以当有人说他有一个“4 比特模型”时，记得追问块大小（block size）。它的有效比特数可能其实是 4.5，甚至 5。
 
 ![图 4：引入 FP16 scale 因子后，有效比特宽度会随着 block size 改变。](../assets/images/articles/quantized-neural-networks-guide/block-wise-scaling-overhead.png)
 
@@ -118,7 +118,7 @@
 
 ![图 5：量化对应的阶梯函数，位宽越低，函数越粗糙；图中同时给出 STE 使用的恒等映射参考线。](../assets/images/articles/quantized-neural-networks-guide/staircase-function.png)
 
-直通估计器（Straight-Through Estimator, STE）是经典解法。在前向传播中，你照常做量化，也就是走“阶梯”；在反向传播中，你假装量化这一步不存在，让梯度像恒等函数 `y = x` 那样直接传过去。从数学上讲，这并不严格；但在实践里，它效果出奇地好。实现起来也只需要几行代码：把量化后的值从计算图（computation graph）里 `detach` 掉，再把未量化路径上的梯度加回来。Jacob 等（2018）展示了它如何在纯整数推理中发挥作用：每一层都插入一个“伪量化（fake quantization）”节点，在训练时模拟舍入，但允许梯度照常流过。
+直通估计器（Straight-Through Estimator, STE）是经典解法。在前向传播中，你照常做量化，也就是走“阶梯”；在反向传播中，你假装量化这一步不存在，让梯度像恒等函数 $y = x$ 那样直接传过去。从数学上讲，这并不严格；但在实践里，它效果出奇地好。实现起来也只需要几行代码：把量化后的值从计算图（computation graph）里 `detach` 掉，再把未量化路径上的梯度加回来。Jacob 等（2018）展示了它如何在纯整数推理中发挥作用：每一层都插入一个“伪量化（fake quantization）”节点，在训练时模拟舍入，但允许梯度照常流过。
 
 ![图 6：Jacob 等（2018）中的 fake quantization 流程示意，训练时用伪量化节点模拟 integer-arithmetic-only inference。](../assets/images/articles/quantized-neural-networks-guide/straight-through-estimator.png)
 
@@ -142,7 +142,7 @@ ARM 正在探索面向移动端超低比特推理的硬件查找表（lookup-tab
 
 W4A8 正在成为数据中心（datacenter）的下一个默认配置，这既来自硬件支持，也来自激活值量化方法本身的成熟。块级缩放曾经只是一个软件层的权宜之计，现在正逐渐变成硬件原语。
 
-在研究前沿，1 比特和 1.58 比特量化方案也正在获得关注，作为实验性的量化路线（experimental quants）。BitNet 及其三值变体，权重限制在 `{−1, 0, 1}`，表明：如果从头开始训练，带有“近似二值”权重的模型，可以在只消耗一小部分内存的情况下，达到和全精度基线相当的效果；而且它们天然适合定制硅（custom silicon），因为一次“乘法”几乎就退化成了符号翻转（sign flip）或者条件加法（conditional add）。随着专用 kernel 和硬件支持逐渐跟上，这类方法未来只会越来越多。
+在研究前沿，1 比特和 1.58 比特量化方案也正在获得关注，作为实验性的量化路线（experimental quants）。BitNet 及其三值变体，权重限制在 $\{-1, 0, 1\}$，表明：如果从头开始训练，带有“近似二值”权重的模型，可以在只消耗一小部分内存的情况下，达到和全精度基线相当的效果；而且它们天然适合定制硅（custom silicon），因为一次“乘法”几乎就退化成了符号翻转（sign flip）或者条件加法（conditional add）。随着专用 kernel 和硬件支持逐渐跟上，这类方法未来只会越来越多。
 
 五年前，任何低于 INT8 的东西都还需要定制 FPGA 或 ASIC 才能跑。今天，你已经可以通过 `llama.cpp` 在一台笔记本 CPU 上运行 4 比特模型了。
 
