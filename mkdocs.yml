@@ -97,6 +97,7 @@ nav:
       - 反向传播：想法、数学原理、思想史与最值得读的 5 篇文献: articles/backpropagation-ideas-math-history-5-readings.md
       - 计算图上的微积分：反向传播: articles/calculus-on-computational-graphs-backpropagation-zh.md
       - Transformer Math 101：训练计算量与显存需求速查: articles/transformer-math-101-zh.md
+      - Transformer 推理算术：用少量公式理解大语言模型推理性能: articles/transformer-inference-arithmetic-zh.md
       - 量化神经网络：你只需要这一篇指南: articles/quantized-neural-networks-the-only-guide-you-need-zh.md
       - 量化可视化指南：大语言模型压缩入门: articles/a-visual-guide-to-quantization-zh.md
   - 研究论文:

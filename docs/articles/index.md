@@ -20,6 +20,10 @@
 
   这是一篇对 EleutherAI《Transformer Math 101》的中文翻译，集中整理了 Transformer 训练中的 FLOPs 估算、推理与训练显存公式、激活值重计算、ZeRO/FSDP，以及 3D 并行下的内存近似公式。文中保留了原文关键示意图与公式，适合作为做模型规模规划、显存预算和分布式训练前的速查材料。
 
+- [Transformer 推理算术：用少量公式理解大语言模型推理性能](./transformer-inference-arithmetic-zh.md)
+
+  这是一篇聚焦 LLM 推理性能估算的中文译文，系统梳理 KV Cache、显存容量、张量并行通信、decode 延迟公式、batch size 权衡、中间激活值带宽成本，以及与公开 benchmark 的对照。它和《Transformer Math 101》偏训练侧的内容刚好互补，适合作为推理侧容量规划与延迟估算的入门速查。
+
 - [量化神经网络：你只需要这一篇指南](./quantized-neural-networks-the-only-guide-you-need-zh.md)
 
   这是一篇面向工程实践者的量化综述译文，系统梳理权重量化与激活值量化、均匀网格与对数量化、块级缩放、敏感层、PTQ 与 QAT、KV Cache 量化，以及硬件演进方向。正文以中文整理稿为主，并收录原文配图，适合作为后续阅读模型压缩与推理优化资料前的总览入口。
