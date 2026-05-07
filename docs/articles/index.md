@@ -24,6 +24,10 @@
 
   这是一篇聚焦 LLM 推理性能估算的中文译文，系统梳理 KV Cache、显存容量、张量并行通信、decode 延迟公式、batch size 权衡、中间激活值带宽成本，以及与公开 benchmark 的对照。它和《Transformer Math 101》偏训练侧的内容刚好互补，适合作为推理侧容量规划与延迟估算的入门速查。
 
+- [LLM 优化面试笔记：训练与推理](./llm-optimization-interview-notes-training-and-inference-zh.md)
+
+  这是一篇基于 X Article 整理的中文译文，从内存优化、计算优化、推理优化到训练并行策略，概览了 Flash Attention、KV Cache、量化、ZeRO、Pipeline Parallelism、Tensor Parallelism、MoE 等主题。内容偏高层总结，适合作为准备大模型系统设计面试或快速回顾优化版图的提纲。
+
 - [量化神经网络：你只需要这一篇指南](./quantized-neural-networks-the-only-guide-you-need-zh.md)
 
   这是一篇面向工程实践者的量化综述译文，系统梳理权重量化与激活值量化、均匀网格与对数量化、块级缩放、敏感层、PTQ 与 QAT、KV Cache 量化，以及硬件演进方向。正文以中文整理稿为主，并收录原文配图，适合作为后续阅读模型压缩与推理优化资料前的总览入口。
