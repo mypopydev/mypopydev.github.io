@@ -35,3 +35,7 @@
 - [量化可视化指南：大语言模型压缩入门](./a-visual-guide-to-quantization-zh.md)
 
   这是一篇围绕 LLM 量化基础概念的可视化入门译文，重点解释位宽、动态范围、对称与非对称量化、裁剪与校准、PTQ、QAT、GPTQ、GGUF，以及 BitNet/1.58 bit 路线。正文保留了原文的 60 余张示意图，适合作为量化领域的第一遍系统扫盲材料。
+
+- [什么是扩散模型？](./what-are-diffusion-models-zh.md)
+
+  这是一篇对 Lilian Weng《What are Diffusion Models?》的中文翻译，系统梳理前向/反向扩散、DDPM 损失、NCSN、classifier guidance、DDIM、progressive distillation、consistency models、latent diffusion、ControlNet 与 DiT 等主题。文中保留原文 19 张关键配图与主要公式，适合作为扩散模型发展脉络与方法总览的长篇入门资料。
