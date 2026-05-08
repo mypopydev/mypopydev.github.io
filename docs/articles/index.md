@@ -39,3 +39,7 @@
 - [什么是扩散模型？](./what-are-diffusion-models-zh.md)
 
   这是一篇对 Lilian Weng《What are Diffusion Models?》的中文翻译，系统梳理前向/反向扩散、DDPM 损失、NCSN、classifier guidance、DDIM、progressive distillation、consistency models、latent diffusion、ControlNet 与 DiT 等主题。文中保留原文 19 张关键配图与主要公式，适合作为扩散模型发展脉络与方法总览的长篇入门资料。
+
+- [Diffusion Transformer（DiT）模型：初学者指南](./diffusion-transformer-models-beginners-guide-zh.md)
+
+  这是一篇面向入门读者的 DiT 综述译文，重点解释扩散模型、U-Net、ViT、LDM 与 DiT 之间的关系，并结合 DiT-XL/2、Sora、Stable Diffusion 3、PixArt-α 等案例说明 Transformer 主干在生成模型中的应用。文中收录了原文 5 张关键配图与对应资料链接，适合作为从扩散模型过渡到 DiT 的第一篇阅读材料。
