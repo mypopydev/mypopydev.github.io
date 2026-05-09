@@ -14,14 +14,17 @@ Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，�
 
 ### 🧠 深度学习
 
-反向传播、自动微分、模型量化与推理优化等基础主题的学习笔记与译文整理，兼顾原理解释与工程实践。
+反向传播、自动微分、模型量化、扩散模型与推理优化等基础主题的学习笔记与译文整理，兼顾原理解释与工程实践。
 
 - [反向传播：想法、数学原理、思想史与最值得读的 5 篇文献](./articles/backpropagation-ideas-math-history-5-readings.md)
 - [计算图上的微积分：反向传播](./articles/calculus-on-computational-graphs-backpropagation-zh.md)
 - [Transformer Math 101：训练计算量与显存需求速查](./articles/transformer-math-101-zh.md)
 - [Transformer 推理算术：用少量公式理解大语言模型推理性能](./articles/transformer-inference-arithmetic-zh.md)
+- [LLM 优化面试笔记：训练与推理](./articles/llm-optimization-interview-notes-training-and-inference-zh.md)
 - [量化神经网络：你只需要这一篇指南](./articles/quantized-neural-networks-the-only-guide-you-need-zh.md)
 - [量化可视化指南：大语言模型压缩入门](./articles/a-visual-guide-to-quantization-zh.md)
+- [什么是扩散模型？](./articles/what-are-diffusion-models-zh.md)
+- [Diffusion Transformer（DiT）模型：初学者指南](./articles/diffusion-transformer-models-beginners-guide-zh.md)
 
 ### 📄 研究论文
 
