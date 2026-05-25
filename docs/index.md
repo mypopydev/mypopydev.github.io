@@ -32,6 +32,12 @@ Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，�
 
 - [TurboQuant — KV Cache 压缩算法](./articles/research-papers/turboquant-kv-cache-compression-zh.md)
 
+### 📜 数学考证
+
+近代数学术语汉译、书证考据与定名过程的研究笔记。
+
+- ["齐次"是怎么成为中文数学术语的？](./articles/homogeneous-chinese-translation-etymology-zh.md)
+
 ---
 
 ## 关于这个站

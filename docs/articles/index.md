@@ -43,3 +43,7 @@
 - [Diffusion Transformer（DiT）模型：初学者指南](./diffusion-transformer-models-beginners-guide-zh.md)
 
   这是一篇面向入门读者的 DiT 综述译文，重点解释扩散模型、U-Net、ViT、LDM 与 DiT 之间的关系，并结合 DiT-XL/2、Sora、Stable Diffusion 3、PixArt-α 等案例说明 Transformer 主干在生成模型中的应用。文中收录了原文 5 张关键配图与对应资料链接，适合作为从扩散模型过渡到 DiT 的第一篇阅读材料。
+
+- ["齐次"是怎么成为中文数学术语的？](./homogeneous-chinese-translation-etymology-zh.md)
+
+  一篇术语小考证：*homogeneous* 如何从晚清的"同类"走到民国的"齐次"，1930 年《代数学（下册）》书证、名词审查会时间线，以及"齐次/非齐次"为何比"同类"更贴数学结构。语气偏博客笔记，证据仍尽量可核实。

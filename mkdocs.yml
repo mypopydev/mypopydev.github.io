@@ -105,6 +105,8 @@ nav:
       - Diffusion Transformer（DiT）模型：初学者指南: articles/diffusion-transformer-models-beginners-guide-zh.md
   - 研究论文:
       - TurboQuant — KV Cache 压缩算法: articles/research-papers/turboquant-kv-cache-compression-zh.md
+  - 数学考证:
+      - '"齐次"是怎么成为中文数学术语的？': articles/homogeneous-chinese-translation-etymology-zh.md
   - 关于:
       - 术语表与翻译约定: resources/agentic_engineering_translation_glossary_style_guide_template.md
       - 双语链接映射: resources/BILINGUAL_LINK_MAP.md
