@@ -12,6 +12,8 @@ Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，�
 
 [开始阅读 :octicons-arrow-right-24:](./series/agentic-engineering-patterns/index.md){ .md-button }
 
+- [每个开发者都该知道的 30 个智能体工程核心概念](./articles/30-core-agentic-engineering-concepts-zh.md)
+
 ### 🧠 深度学习
 
 反向传播、自动微分、模型量化、扩散模型与推理优化等基础主题的学习笔记与译文整理，兼顾原理解释与工程实践。

@@ -72,6 +72,8 @@ nav:
   - 首页: index.md
   - 智能体工程:
       - 专题导读: series/agentic-engineering-patterns/index.md
+      - 综合概览:
+          - 每个开发者都该知道的 30 个智能体工程核心概念: articles/30-core-agentic-engineering-concepts-zh.md
       - 核心原则:
           - 什么是智能体工程？: series/agentic-engineering-patterns/what_is_agentic_engineering_demo_zh.md
           - 现在，写代码很便宜: series/agentic-engineering-patterns/writing_code_is_cheap_now_demo_zh.md

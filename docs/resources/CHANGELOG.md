@@ -1,5 +1,14 @@
 # 更新记录
 
+## 2026-07-04
+
+**新增「智能体工程 > 综合概览」**
+
+- 收录《30 Core Agentic Engineering Concepts Every Developer Should Know》中文译文，置于 `docs/articles/30-core-agentic-engineering-concepts-zh.md`
+- 导航新增「综合概览」子项，首页智能体工程区块新增入口
+- 术语表追加 Observability / Tracing / Logging / Metrics / Replay / Hook / Permission / Orchestration / Prompt Caching / Context Rot 共 10 个术语
+- 备注：第 26 节（可观测性）原文仅一段引导语；第 29 节（回放）依据 teamstation.dev 镜像补全（Medium 抓取缺失）
+
 ## 2026-05-25
 
 **新增「数学考证」栏目**
