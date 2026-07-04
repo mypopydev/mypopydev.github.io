@@ -1,21 +1,5 @@
 # 每个开发者都该知道的 30 个智能体工程核心概念
 
-原文标题：30 Core Agentic Engineering Concepts Every Developer Should Know
-原文链接：https://medium.com/@Deep-concept/5066b3117f69
-原文作者：Deep concept（Let's Code Future）
-访问日期：2026-07-04
-译文版本：v0.2
-译者：（待填）
-审校：（待填）
-
-## 译文说明
-
-本文为 Medium 文章《30 Core Agentic Engineering Concepts Every Developer Should Know》的中文翻译。术语使用遵循本项目统一术语表（见 `docs/resources/agentic_engineering_translation_glossary_style_guide_template.md`）。代码、命令、URL、文件名、产品名默认保留原文；Prompt 如为可执行输入，一般保留英文并补充中文解释。
-
-关于配图：原文每个小节配有示意配图，本译文已将其下载至 `docs/assets/images/articles/30-core-agentic-engineering-concepts/` 并置于对应小节。
-
-关于两处原文缺口：第 26 节（可观测性 / Observability）在原文中仅有一段引导语，细节由后续追踪、日志、回放、指标各节展开；第 29 节（回放 / Replay）在 Medium 原文抓取时缺失，本节依据镜像站 `teamstation.dev` 补全，已在节末以译者注标注。
-
 ## 正文
 
 大家好，

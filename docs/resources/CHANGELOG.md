@@ -11,6 +11,7 @@
   - §6 SkillsBench（11 领域 / 86 任务，27.7% vs 22.0%）、§7 Superpowers HARD-GATE、§17 Ralph loop、§20 Cloudflare Dynamic Workers、§25 Ruff/Bandit 等
 - 链接：按术语表 §6.4 补回 25 个原始 URL（含 Ralph loop）；跳过 Medium 付费绕行 `?sk=` 链接（决策：不插入正文）
 - 链接基准来源说明：Medium 抓取截断，权威原文基准采用作者 newsletter 重发版（newsletter.systemdesign.one）+ teamstation.dev 镜像交叉校验
+- 结构调整：移除译文头部元信息块（原文标题/链接/作者/日期/版本/译者/审校）与「译文说明」节；两处原文缺口说明已内联于正文 [译者注]
 
 ## 2026-07-04
 
