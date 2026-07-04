@@ -1,5 +1,17 @@
 # 更新记录
 
+## 2026-07-05
+
+**修订《30 个智能体工程核心概念》译文（v0.1 → v0.2）**
+
+- 第二轮句级准确性复核：补全 15 处遗漏（量化数据、工具名、示例句），无事实性误译
+  - §9 补回 GPT-5.5（98.1%/74.0%）、Claude Opus 4.7（59.2%→32.2%）及 arxiv 2602.11988 研究
+  - §10 补回延迟加载 token 对比（607 / 5,500 / 300）及 Exa 工具栈
+  - §12 补回 Exa 作为首选 AI 原生搜索引擎
+  - §6 SkillsBench（11 领域 / 86 任务，27.7% vs 22.0%）、§7 Superpowers HARD-GATE、§17 Ralph loop、§20 Cloudflare Dynamic Workers、§25 Ruff/Bandit 等
+- 链接：按术语表 §6.4 补回 25 个原始 URL（含 Ralph loop）；跳过 Medium 付费绕行 `?sk=` 链接（决策：不插入正文）
+- 链接基准来源说明：Medium 抓取截断，权威原文基准采用作者 newsletter 重发版（newsletter.systemdesign.one）+ teamstation.dev 镜像交叉校验
+
 ## 2026-07-04
 
 **新增「智能体工程 > 综合概览」**
