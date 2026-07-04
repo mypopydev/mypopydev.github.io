@@ -12,7 +12,7 @@
 
 本文为 Medium 文章《30 Core Agentic Engineering Concepts Every Developer Should Know》的中文翻译。术语使用遵循本项目统一术语表（见 `docs/resources/agentic_engineering_translation_glossary_style_guide_template.md`）。代码、命令、URL、文件名、产品名默认保留原文；Prompt 如为可执行输入，一般保留英文并补充中文解释。
 
-关于配图：原文每个小节都配有示意配图（托管于 Medium CDN），但本译文未取得可靠的图片 URL，故未逐一搬运，仅保留文字内容。如需补全配图，可后续按原文对应位置添加。
+关于配图：原文每个小节配有示意配图，本译文已将其下载至 `docs/assets/images/articles/30-core-agentic-engineering-concepts/` 并置于对应小节。
 
 关于两处原文缺口：第 26 节（可观测性 / Observability）在原文中仅有一段引导语，细节由后续追踪、日志、回放、指标各节展开；第 29 节（回放 / Replay）在 Medium 原文抓取时缺失，本节依据镜像站 `teamstation.dev` 补全，已在节末以译者注标注。
 
@@ -22,9 +22,13 @@
 
 如果你现在正在学 AI 智能体（agent），我太清楚那种困惑感了。每周都有新工具、新框架、新模型、新发布，每次都带着同一句承诺："这会改变一切。"
 
+![智能体工程概念导览。](../assets/images/articles/30-core-agentic-engineering-concepts/intro-1.png)
+
 老实说，追了一阵子之后，你反而开始困惑：到底该学什么？学工具？学框架？还是等下一个更好的出来？
 
 这就是今天智能体工程（Agentic Engineering）的问题所在。这个领域跑得飞快，但底层的核心想法，远没有它们周围那些工具变得那么快。所以真正该问的问题是：
+
+![每周新工具发布带来的困惑。](../assets/images/articles/30-core-agentic-engineering-concepts/intro-2.png)
 
 **当每周都有新工具发布时，你怎么跟得上智能体工程？**
 
@@ -43,6 +47,8 @@
 ## 💠 智能体 AI 的核心构件
 
 ### 1. 智能体（Agent）
+
+![智能体：在循环中运行、使用工具直到任务完成。](../assets/images/articles/30-core-agentic-engineering-concepts/01-agent.png)
 
 "智能体（agent）"这个词现在到处都是。每个新 AI 工具都想自称 agent，意思已经有点模糊了。
 
@@ -64,6 +70,8 @@
 
 ### 2. 执行模型（Execution Model）
 
+![执行模型：思考 → 行动 → 观察的循环。](../assets/images/articles/30-core-agentic-engineering-concepts/02-execution-model.png)
+
 智能体循环通常遵循一个简单模式。不是魔法，只是三步的重复循环：
 
 **思考 → 行动 → 观察（Think → Act → Observe）**
@@ -82,6 +90,8 @@
 **核心认知**：这个循环，就是智能体工程的心脏。
 
 ### 3. 智能体状态（Agent State）
+
+![智能体状态：上下文窗口之内与之外。](../assets/images/articles/30-core-agentic-engineering-concepts/03-agent-state.png)
 
 "状态（state）"在智能体工程里有两个意思：
 
@@ -113,17 +123,23 @@
 
 **模式一：规划者 / 执行者（Planner / Executor）**
 
+![规划者 / 执行者模式。](../assets/images/articles/30-core-agentic-engineering-concepts/04-patterns-planner.png)
+
 一个智能体做计划，另一个做执行。计划者想任务，执行者按计划行动。
 
 适合长任务——你不想让智能体没想清楚就直接跳进代码。
 
 **模式二：路由器 / 专家（Router / Specialist）**
 
+![路由器 / 专家模式。](../assets/images/articles/30-core-agentic-engineering-concepts/04-patterns-router.png)
+
 一个智能体当路由器，读入请求，决定哪个专家智能体来处理。每个专家为特定类型的工作设计——安全审查、调试、文档、测试、代码审查。
 
 好处：每个专家角色更窄、prompt 更清晰、工具集更小 → 行为更可预测，可能也更便宜。
 
 **模式三：Map-Reduce 并行**
+
+![Map-Reduce 并行模式。](../assets/images/articles/30-core-agentic-engineering-concepts/04-patterns-mapreduce.png)
 
 把一个大任务拆成多个小任务，多个智能体同时处理，另一个智能体合并结果。
 
@@ -136,6 +152,8 @@
 ## ⚙️ 配置层：智能体的控制面板
 
 ### 5. 智能体配置文件（Agent Config Files）
+
+![智能体配置文件示例。](../assets/images/articles/30-core-agentic-engineering-concepts/05-config-files.png)
 
 每个智能体都从指令开始。在它回答、用工具、碰你的代码之前，背后通常有一个 system prompt。但默认的 system prompt 不知道你的项目——不知道你的编码风格、包管理器、目录结构、团队规则。
 
@@ -160,6 +178,8 @@ Claude Code 用 `CLAUDE.md`，很多其他工具用 `AGENTS.md`。名字不同�
 
 ### 6. 可复用工作流文件（Reusable Workflow Files）
 
+![可复用工作流文件示例。](../assets/images/articles/30-core-agentic-engineering-concepts/06-workflow-files.png)
+
 配置文件始终活跃。可复用工作流文件不同——**只在智能体需要时才加载**。
 
 比如：一个工作流文件解释怎么写测试。另一个解释怎么审查 PR。另一个解释怎么迁移数据库。
@@ -182,6 +202,8 @@ Claude Code 用 `CLAUDE.md`，很多其他工具用 `AGENTS.md`。名字不同�
 
 ### 7. 工作流框架（Workflow Frameworks）
 
+![工作流框架示例。](../assets/images/articles/30-core-agentic-engineering-concepts/07-frameworks.png)
+
 没有清晰的流程，智能体可能随机工作——有时直接跳进代码、跳过测试、改完再解释为什么对（即使结果并不好）。
 
 工作流框架给智能体一个可重复的工作方式。它引导智能体走：理解问题 → 计划变更 → 最小有用更新 → 测试 → 审查 → 改进。
@@ -195,6 +217,8 @@ Claude Code 用 `CLAUDE.md`，很多其他工具用 `AGENTS.md`。名字不同�
 **核心价值**：把智能体从"快速猜测者"变成"更有纪律的编程助手"。
 
 ### 8. Prompt 缓存（Prompt Caching）
+
+![Prompt 缓存：稳定前缀命中缓存。](../assets/images/articles/30-core-agentic-engineering-concepts/08-prompt-caching.png)
 
 智能体经常重复相同信息——system prompt、配置文件、工作流文件、工具指令。这部分叫"稳定前缀（stable prefix）"。
 
@@ -210,6 +234,8 @@ Claude Code 用 `CLAUDE.md`，很多其他工具用 `AGENTS.md`。名字不同�
 
 ### 9. 上下文腐烂（Context Rot）
 
+![上下文腐烂：越多噪音，注意力越分散。](../assets/images/articles/30-core-agentic-engineering-concepts/09-context-rot.png)
+
 Context Rot 指上下文窗口变拥挤之后，模型变弱。Prompt 缓存能降成本，但不能移除 token——它们还在上下文里，模型还是要穿过它们，才能找到重要的东西。
 
 **核心问题**：注意力。模型必须把注意力分散到上下文中的一切。加得越多，重要的部分越要和噪音竞争。
@@ -223,6 +249,8 @@ Context Rot 指上下文窗口变拥挤之后，模型变弱。Prompt 缓存能�
 ## 能力层（Capability Layer）
 
 ### 10. 模型上下文协议（MCP）
+
+![模型上下文协议（MCP）连接智能体与外部工具。](../assets/images/articles/30-core-agentic-engineering-concepts/10-mcp.png)
 
 MCP 是连接智能体与外部工具和服务的一种方式标准。基本概念：工具以智能体已经理解的格式暴露自己，而不是为每个工具、每个智能体写定制胶水代码。
 
@@ -250,6 +278,8 @@ MCP 从 Anthropic 开始，现在正在 AI 工具生态里扩散。
 **简单理解**：Prompt 帮智能体思考更好。实时检索帮智能体知道此刻什么是真的。真正的工程工作，需要两者。
 
 ### 12. AI 原生网页搜索（AI-Native Web Search）
+
+![AI 原生网页搜索返回可用的结构化上下文。](../assets/images/articles/30-core-agentic-engineering-concepts/12-web-search.png)
 
 普通网页搜索为人类设计——页面、链接、广告、菜单、弹窗。智能体不需要完整的网页体验，它需要有用的部分。
 
@@ -282,6 +312,8 @@ AI 原生搜索返回更干净的结果：摘要、提取内容、高亮、结�
 
 ### 15. 知识搜索（Knowledge Search）
 
+![知识搜索：从会话外的文档中获取信息。](../assets/images/articles/30-core-agentic-engineering-concepts/15-knowledge-search.png)
+
 不是所有有用上下文都来自智能体会话。有些在会议记录、设计文档、产品规格、技术文档、旧决策里。
 
 **QMD**（Shopify CEO Tobi Lütke 做的）像你个人 / 团队知识库的设备端搜索引擎。通过 MCP server，智能体可以在会话中查询那个知识库。
@@ -295,6 +327,8 @@ AI 原生搜索返回更干净的结果：摘要、提取内容、高亮、结�
 ## 编排层（Orchestration Layer）
 
 ### 16. 子智能体（Subagents）
+
+![子智能体：聚焦任务、独立上下文、并行工作。](../assets/images/articles/30-core-agentic-engineering-concepts/16-subagents.png)
 
 子智能体（subagent）是为特定任务创建的小智能体。父智能体给它们任务、聚焦的 prompt、有限的工具集、全新的上下文窗口。子智能体完成后，只返回最终结果——不是完整对话、不是每个工具调用、不是中间混乱的部分。
 
@@ -326,6 +360,8 @@ Claude Code 通过 `/goal` 实现这个模式。你定义一个完成条件，�
 
 ### 18. 编排工具（Orchestration Tools）
 
+![编排工具：管理并行智能体的任务与隔离。](../assets/images/articles/30-core-agentic-engineering-concepts/18-orchestration.png)
+
 当多个智能体并行运行时，你需要上面一层来管理工作。启动智能体容易，协调它们才是难点。
 
 - **Conductor**：给 Claude Code 和 Codex 一个并行会话的统一 UI，每个智能体在隔离工作区工作。
@@ -336,6 +372,8 @@ Claude Code 通过 `/goal` 实现这个模式。你定义一个完成条件，�
 **核心认知**：一旦多个智能体一起工作，你需要一个系统来管理任务、隔离工作、追踪进度、安全合并结果。
 
 ### 19. 托管 / 云端智能体（Managed / Cloud-Hosted Agents）
+
+![托管 / 云端智能体：运行在供应商基础设施上的长会话。](../assets/images/articles/30-core-agentic-engineering-concepts/19-cloud-agents.png)
 
 托管智能体是运行在供应商基础设施上的长会话智能体。你定义智能体（模型、prompt、工具、MCP server、Skill），然后你的应用通过 API 发送用户事件、接收消息或工具更新。
 
@@ -350,6 +388,8 @@ Claude Code 通过 `/goal` 实现这个模式。你定义一个完成条件，�
 ## 护栏层（Guardrails Layer）
 
 ### 20. 沙箱（Sandboxing）
+
+![沙箱：限制智能体能访问什么。](../assets/images/articles/30-core-agentic-engineering-concepts/20-sandboxing.png)
 
 沙箱（sandbox）= 限制智能体能访问什么。控制它能读什么、写什么、网络连什么。
 
@@ -378,6 +418,8 @@ Claude Code 通过 `/goal` 实现这个模式。你定义一个完成条件，�
 
 ### 22. 钩子（Hooks）
 
+![钩子：在工具执行前做最后检查。](../assets/images/articles/30-core-agentic-engineering-concepts/22-hooks.png)
+
 Hook 是在智能体工作流特定点运行的小检查。让你在事情实际发生前，检查智能体准备做什么。
 
 **最重要的 Hook**：pre-tool hook。在智能体创建工具调用后、工具执行前运行。这是危险命令、文件编辑或 MCP 调用还能被阻止的最后时刻。
@@ -389,6 +431,8 @@ Hook 是在智能体工作流特定点运行的小检查。让你在事情实际
 **Hook 不替代沙箱**。沙箱限制坏事跑了之后的破坏。Hook 试图在坏事跑之前阻止它。两者一起用。
 
 ### 23. Prompt 注入防御（Prompt Injection Defense）
+
+![Prompt 注入防御：别盲目信任外部输入。](../assets/images/articles/30-core-agentic-engineering-concepts/23-prompt-injection.png)
 
 智能体通常信任它读到的东西。输入安全时这有用，但当输入包含隐藏或恶意指令时就危险了。
 
@@ -404,6 +448,8 @@ Hook 是在智能体工作流特定点运行的小检查。让你在事情实际
 
 ### 24. 结构化代码检查（Structural Code Linting）
 
+![结构化代码检查：深入 AST 捕获坏模式。](../assets/images/articles/30-core-agentic-engineering-concepts/24-structural-linting.png)
+
 普通 Linter 大多检查代码表面——格式、导入、命名、风格。结构化 Linting 更深，看代码的实际结构。
 
 它理解：这是一个函数、这些是参数、这是默认值、这是异常块。这个结构叫 AST（抽象语法树）。
@@ -415,6 +461,8 @@ Hook 是在智能体工作流特定点运行的小检查。让你在事情实际
 **简单理解**：结构化 Linting 捕获普通 Linter 可能漏掉的坏代码模式。智能体反复写同一个坏模式时，别手动纠正——把它变成规则，加到 pre-commit 和 CI 里。
 
 ### 25. 提交前门禁（Pre-Commit Gates）
+
+![提交前门禁：两层保护拦截坏代码。](../assets/images/articles/30-core-agentic-engineering-concepts/25-precommit-gates.png)
 
 Pre-commit gate 在代码成为 Git 历史的一部分之前，阻止坏代码。
 
@@ -442,6 +490,8 @@ Pre-commit gate 在代码成为 Git 历史的一部分之前，阻止坏代码�
 
 ### 27. 追踪（Tracing）
 
+![追踪：显示智能体运行的逐步路径。](../assets/images/articles/30-core-agentic-engineering-concepts/27-tracing.png)
+
 智能体完成任务后，第一个问题：**实际发生了什么？**
 
 Trace 是智能体运行的逐步记录。显示智能体从第一个请求到最终结果的路径。
@@ -453,6 +503,8 @@ Trace 是智能体运行的逐步记录。显示智能体从第一个请求到�
 **简单理解**：Tracing 显示智能体的路径，不只是最终答案。如果你能看到路径，你就能改进系统。
 
 ### 28. 日志（Logging）
+
+![日志：可观测性的基础层。](../assets/images/articles/30-core-agentic-engineering-concepts/28-logging.png)
 
 日志是可观测性的基础层。在你能追踪、回放或测量任何东西之前，你需要发生了什么事的原始记录。
 
