@@ -1,5 +1,15 @@
 # 更新记录
 
+## 2026-07-06
+
+**新增《智能体式代码审查（Agentic Code Review）》译文**
+
+- 收录 Addy Osmani 博文《Agentic Code Review》（2026-06-15）中文译文，置于 `docs/articles/agentic-code-review-zh.md`
+- 配图本地化至 `docs/assets/images/articles/agentic-code-review/code-review.jpg`
+- 导航：智能体工程 > 综合概览；首页智能体工程区块新增入口
+- 术语表追加 Agentic Code Review / blast radius / verification bottleneck / triage / heterogeneous reviewers 等
+- 保留原文 21 个外链（经与实时原文逐条 diff，全部精确匹配；站点外壳链接正确排除）；无配图远程依赖
+
 ## 2026-07-05
 
 **新增《循环工程（Loop Engineering）》译文**

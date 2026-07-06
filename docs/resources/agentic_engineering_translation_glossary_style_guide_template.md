@@ -91,6 +91,13 @@
 | Orchestration tax | 编排税 | — | 保留英文 | Addy coined，首现「编排税（orchestration tax）」 | Loop Engineering |
 | Maker / Checker | 制造者 / 审查者 | 写代码者 / 审查者 | 一般不保留 | 指写代码与审查代码的角色分离 | Loop Engineering |
 | Agent harness | 智能体 harness | — | 保留英文 harness | harness 不翻译 | Loop Engineering |
+| Agentic Code Review | 智能体式代码审查（Agentic Code Review） | — | 建议保留英文 | 本文主题，首现写法「智能体式代码审查（Agentic Code Review）」 | Agentic Code Review |
+| Blast radius | 影响半径（blast radius） | — | 保留英文 | Addy 用以衡量失败影响范围，首现中英并注 | Agentic Code Review |
+| Verification bottleneck | 验证瓶颈（verification bottleneck） | — | 保留英文 | 指验证/审查成为新瓶颈 | Agentic Code Review |
+| Triage | 分诊 | — | 一般不保留 | 医学借词，指按风险/优先级分流审查 | Agentic Code Review |
+| Heterogeneous reviewers | 异构审查者 | 保留英文 | 指用不同模型/工具并行审查 | Agentic Code Review |
+| First-pass read | 一遍初读 | 一般不保留 | 指 AI 给出的首轮通读 | Agentic Code Review |
+| Merge decision | 合并决策 | 一般不保留 | 指是否合并 PR 的最终决定 | Agentic Code Review |
 
 ## 五、文风总原则
 
