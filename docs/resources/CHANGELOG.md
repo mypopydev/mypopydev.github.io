@@ -10,6 +10,10 @@
 - 术语表追加 Agentic Code Review / blast radius / verification bottleneck / triage / heterogeneous reviewers 等
 - 保留原文 21 个外链（经与实时原文逐条 diff，全部精确匹配；站点外壳链接正确排除）；无配图远程依赖
 
+**调整导航结构（智能体工程板块）**
+
+- 将「综合概览」重命名为「独立译文」，集中放置三篇非系列单篇译文（30 概念、循环工程、智能体式代码审查），与 Simon Willison《Agentic Engineering Patterns》系列各主题子项明确区分「系列 vs 单篇」
+
 ## 2026-07-05
 
 **新增《循环工程（Loop Engineering）》译文**

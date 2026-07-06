@@ -72,7 +72,7 @@ nav:
   - 首页: index.md
   - 智能体工程:
       - 专题导读: series/agentic-engineering-patterns/index.md
-      - 综合概览:
+      - 独立译文:
           - 每个开发者都该知道的 30 个智能体工程核心概念: articles/30-core-agentic-engineering-concepts-zh.md
           - 循环工程（Loop Engineering）: articles/loop-engineering-zh.md
           - 智能体式代码审查（Agentic Code Review）: articles/agentic-code-review-zh.md
