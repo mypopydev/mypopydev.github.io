@@ -2,6 +2,13 @@
 
 ## 2026-07-05
 
+**新增《循环工程（Loop Engineering）》译文**
+
+- 收录 Addy Osmani 博文《Loop Engineering》（2026-06-07）中文译文，置于 `docs/articles/loop-engineering-zh.md`
+- 导航：智能体工程 > 综合概览（与 30 概念并列）；首页智能体工程区块新增入口
+- 术语表追加 Loop Engineering / Automations / cognitive surrender / comprehension debt / intent debt / orchestration tax / Maker-Checker 等 coined 术语
+- 保留原文 18 个外链（X 引用、Addy 博客、Codex 文档）；原文无配图
+
 **修订《30 个智能体工程核心概念》译文（v0.1 → v0.2）**
 
 - 第二轮句级准确性复核：补全 15 处遗漏（量化数据、工具名、示例句），无事实性误译

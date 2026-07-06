@@ -81,6 +81,16 @@
 | Orchestration | 编排 | — | 一般不保留 | 指多智能体协同的管理层 | 30 概念 |
 | Prompt Caching | Prompt 缓存 | — | 建议保留英文 | 首次写法「Prompt 缓存」 | 30 概念 |
 | Context Rot | 上下文腐烂 | 上下文劣化 | 一般不保留 | 指长上下文导致模型质量下降 | 30 概念 |
+| Loop Engineering | 循环工程（Loop Engineering） | — | 建议保留英文 | 本文主题，首现写法「循环工程（Loop Engineering）」 | Loop Engineering |
+| Automations | Automations（保留）/ 自动化 | — | 保留英文 | 指 Codex 的 Automations 特性，首现释义「自动化（Automations）」 | Loop Engineering |
+| Plugin / Connector | 插件 / 连接器 | — | 一般不保留 | 指 loop 接入真实工具的插件与连接器 | Loop Engineering |
+| Eval loop | 评测循环 | 评测闭环 | 一般不保留 | 指用评测驱动循环的闭环 | Loop Engineering |
+| Cognitive surrender | 认知投降 | — | 保留英文 | Addy coined，首现「认知投降（cognitive surrender）」 | Loop Engineering |
+| Comprehension debt | 理解债务 | — | 保留英文 | Addy coined，首现「理解债务（comprehension debt）」 | Loop Engineering |
+| Intent debt | 意图债务 | — | 保留英文 | Addy coined，首现「意图债务（intent debt）」 | Loop Engineering |
+| Orchestration tax | 编排税 | — | 保留英文 | Addy coined，首现「编排税（orchestration tax）」 | Loop Engineering |
+| Maker / Checker | 制造者 / 审查者 | 写代码者 / 审查者 | 一般不保留 | 指写代码与审查代码的角色分离 | Loop Engineering |
+| Agent harness | 智能体 harness | — | 保留英文 harness | harness 不翻译 | Loop Engineering |
 
 ## 五、文风总原则
 
