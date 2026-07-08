@@ -1,5 +1,14 @@
 # 更新记录
 
+## 2026-07-07
+
+**新增《循环入门（Getting started with loops）》译文**
+
+- 收录 Claude Code 团队（Delba de Oliveira & Michael Segner）博文《Getting started with loops》（2026-06-30）中文译文，置于 `docs/articles/getting-started-with-loops-zh.md`
+- 导航：智能体工程 > 独立译文（第 4 篇）；首页智能体工程区块新增入口
+- 术语表追加 turn-based / goal-based / time-based / proactive loop、stop condition、evaluator model、auto 模式、dynamic workflows、research preview 等循环类型术语
+- 保留原文外链（Claude Code 文档 skills / agents / goal / routines / workflows / code-review）与全部命令（`/goal`、`/loop`、`/schedule` 等）
+
 ## 2026-07-06
 
 **新增《智能体式代码审查（Agentic Code Review）》译文**

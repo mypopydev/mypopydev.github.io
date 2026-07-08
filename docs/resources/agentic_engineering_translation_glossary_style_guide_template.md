@@ -98,6 +98,15 @@
 | Heterogeneous reviewers | 异构审查者 | 保留英文 | 指用不同模型/工具并行审查 | Agentic Code Review |
 | First-pass read | 一遍初读 | 一般不保留 | 指 AI 给出的首轮通读 | Agentic Code Review |
 | Merge decision | 合并决策 | 一般不保留 | 指是否合并 PR 的最终决定 | Agentic Code Review |
+| turn-based loop | 基于轮次的循环（turn-based loop） | 一般不保留 | 指用户每轮 Prompt 驱动、Claude 判断完成即停的循环 | Getting started with loops |
+| goal-based loop | 基于目标的循环（goal-based loop） | 一般不保留 | 对应 `/goal`，以目标达成或达最大轮次为停止条件 | Getting started with loops |
+| time-based loop | 基于时间的循环（time-based loop） | 一般不保留 | 对应 `/loop`、`/schedule`，按时间间隔触发 | Getting started with loops |
+| proactive loop | 主动式循环（proactive loop） | 一般不保留 | 由事件/计划触发、无实时人工、长期运行的循环 | Getting started with loops |
+| stop condition | 停止条件 | 一般不保留 | 循环终止的判断标准；已有「可验证停止条件」先例 | Getting started with loops |
+| evaluator model | 评估模型（evaluator model） | 首现括注 | 在 `/goal` 每轮结束后判断目标是否达成的独立模型 | Getting started with loops |
+| auto mode | auto 模式 | 保留英文 auto | Claude Code 特性，运行时不暂停请求权限 | Getting started with loops |
+| dynamic workflows | 动态工作流（dynamic workflows） | 首现括注 | Claude Code 研究预览特性，编排多子智能体 | Getting started with loops |
+| research preview | 研究预览 | 一般不保留 | 标注特性成熟度，意为研究预览版 | Getting started with loops |
 
 ## 五、文风总原则
 

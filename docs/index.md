@@ -15,6 +15,7 @@ Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，�
 - [每个开发者都该知道的 30 个智能体工程核心概念](./articles/30-core-agentic-engineering-concepts-zh.md)
 - [循环工程（Loop Engineering）](./articles/loop-engineering-zh.md)
 - [智能体式代码审查（Agentic Code Review）](./articles/agentic-code-review-zh.md)
+- [循环入门（Getting started with loops）](./articles/getting-started-with-loops-zh.md)
 
 ### 🧠 深度学习
 
