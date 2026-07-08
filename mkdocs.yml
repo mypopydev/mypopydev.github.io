@@ -108,6 +108,8 @@ nav:
       - 量化可视化指南：大语言模型压缩入门: articles/a-visual-guide-to-quantization-zh.md
       - 什么是扩散模型？: articles/what-are-diffusion-models-zh.md
       - Diffusion Transformer（DiT）模型：初学者指南: articles/diffusion-transformer-models-beginners-guide-zh.md
+  - 浮点与芯片设计:
+      - 从零实现浮点运算：困难模式: articles/floating-point-from-scratch-hard-mode-zh.md
   - 研究论文:
       - TurboQuant — KV Cache 压缩算法: articles/research-papers/turboquant-kv-cache-compression-zh.md
   - 数学考证:

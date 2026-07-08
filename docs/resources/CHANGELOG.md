@@ -1,5 +1,17 @@
 # 更新记录
 
+## 2026-07-08
+
+**新增《从零实现浮点运算：困难模式（Floating point from scratch: Hard Mode）》译文**
+
+- 收录 Julia Desmazes 博文《Floating point from scratch: Hard Mode》（2026-04-03，约 9,355 词）中文译文，置于 `docs/articles/floating-point-from-scratch-hard-mode-zh.md`
+- 导航：新增顶层板块「浮点与芯片设计」；首页新增对应区块入口
+- 配图本地化：下载原文全部 18 张图至 `docs/assets/images/articles/floating-dragon/`（含 sky130 原理图/版图 SVG、各 floorplan/芯片渲染、placement.gif、waffles.webp 等）
+- 数学：保留原文 LaTeX 公式，交由本站 arithmatex 渲染（bfloat16 表示、ulp、误差公式等）
+- 代码：C / C++ / Verilog / x86 汇编 / 纯文本代码块原样保留
+- 术语：浮点领域术语在文末「术语对照」表中统一，未污染智能体工程术语表
+- 原文外链（约 31 条）与 mailto 全部保留
+
 ## 2026-07-07
 
 **新增《循环入门（Getting started with loops）》译文**

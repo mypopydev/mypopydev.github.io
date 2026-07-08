@@ -31,6 +31,12 @@ Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，�
 - [什么是扩散模型？](./articles/what-are-diffusion-models-zh.md)
 - [Diffusion Transformer（DiT）模型：初学者指南](./articles/diffusion-transformer-models-beginners-guide-zh.md)
 
+### 🔌 浮点与芯片设计
+
+从零实现浮点运算（bfloat16）、ASIC 硬件设计与流片的硬件向技术长文翻译。
+
+- [从零实现浮点运算：困难模式](./articles/floating-point-from-scratch-hard-mode-zh.md)
+
 ### 📄 研究论文
 
 大模型相关前沿研究论文的中文翻译与解读，覆盖推理优化、模型压缩等方向。
