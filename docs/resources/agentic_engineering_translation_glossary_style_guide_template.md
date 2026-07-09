@@ -107,6 +107,24 @@
 | auto mode | auto 模式 | 保留英文 auto | Claude Code 特性，运行时不暂停请求权限 | Getting started with loops |
 | dynamic workflows | 动态工作流（dynamic workflows） | 首现括注 | Claude Code 研究预览特性，编排多子智能体 | Getting started with loops |
 | research preview | 研究预览 | 一般不保留 | 标注特性成熟度，意为研究预览版 | Getting started with loops |
+| harness | 智能体 harness | — | 保留英文 harness | harness 不翻译；首现「智能体 harness（harness）」 | Harness Engineering |
+| recursive self-improvement (RSI) | 递归自我改进（RSI） | — | 建议保留缩写 | 首现「递归自我改进（RSI）」 | Harness Engineering |
+| context engineering | 上下文工程（Context Engineering） | — | 一般不保留 | 指构造结构化、精简上下文的一层 | Harness Engineering |
+| Agentic Context Engineering (ACE) | 智能体式上下文工程（ACE） | — | 保留缩写 | 把上下文当作可进化的 playbook | Harness Engineering |
+| Meta Context Engineering (MCE) | 元上下文工程（MCE） | — | 保留缩写 | 在“机制”与“内容”两层分别优化 | Harness Engineering |
+| Meta-Harness | 元 harness（Meta-Harness） | — | 保留英文 Meta- | “优化 harness 的 harness” | Harness Engineering |
+| persistent memory | 持久记忆 | 持久化记忆 | 一般不保留 | 以文件等形式长期保存的状态与产物 | Harness Engineering |
+| self-improving harness | 自我改进 harness | — | 保留英文 harness | 指能改写自身的 harness | Harness Engineering |
+| Self-Taught Optimizer (STOP) | 自学优化器（STOP） | — | 保留缩写 | 递归式脚手架改进的早期例子 | Harness Engineering |
+| reward hacking | 奖励作弊（reward hacking） | 奖励黑客 | 保留英文 | 优化器钻奖励信号空子 | Harness Engineering |
+| evolutionary search | 进化搜索 | 演化搜索 | 一般不保留 | 受自然选择启发的优化方法 | Harness Engineering |
+| verifier | 验证器 | — | 一般不保留 | 判定任务成败的模块/程序 | Harness Engineering |
+| held-in / held-out | 内部保留集 / 外部保留集 | — | 一般不保留 | 回归测试的训练内/泛化切分 | Harness Engineering |
+| AlphaEvolve | AlphaEvolve | — | 保留英文 | 编码智能体式进化搜索系统 | Harness Engineering |
+| AFlow | AFlow | — | 保留英文 | 把智能体工作流表示为图并做 MCTS 优化 | Harness Engineering |
+| ADAS | ADAS | — | 保留英文 | 把智能体设计本身作为优化问题 | Harness Engineering |
+| DGM (Darwin Gödel Machine) | 达尔文·哥德尔机（DGM） | — | 保留缩写 | 显式演化可编辑的 harness 代码库 | Harness Engineering |
+| SIA | SIA | — | 保留英文 | 联合 harness 改进与模型权重更新的尝试 | Harness Engineering |
 
 ## 五、文风总原则
 

@@ -16,6 +16,7 @@ Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，�
 - [循环工程（Loop Engineering）](./articles/loop-engineering-zh.md)
 - [智能体式代码审查（Agentic Code Review）](./articles/agentic-code-review-zh.md)
 - [循环入门（Getting started with loops）](./articles/getting-started-with-loops-zh.md)
+- [面向自我提升的 Harness 工程（Harness Engineering for Self-Improvement）](./articles/harness-engineering-zh.md)
 
 ### 🧠 深度学习
 

@@ -1,5 +1,17 @@
 # 更新记录
 
+## 2026-07-09
+
+**新增《面向自我提升的 Harness 工程（Harness Engineering for Self-Improvement）》译文**
+
+- 收录 Lilian Weng 博文《Harness Engineering for Self-Improvement》（2026-07-04，约 6,400 词）中文译文，置于 `docs/articles/harness-engineering-zh.md`
+- 导航：智能体工程 > 独立译文（第 5 篇）；首页智能体工程区块新增入口
+- 配图本地化：下载原文全部 17 张图至 `docs/assets/images/articles/harness-engineering/`（openai-agent-loop、coding-harness-loop、ace、mce、meta-harness 系列、ai-scientist、autodata、adas、aflow 系列、STOP 系列、self-harness、alphaevolve 系列、SIA 等）
+- 数学：ACE/MCE 双层优化、STOP 元效用与递归更新等 LaTeX 公式按原文重建并由 arithmatex 渲染
+- 代码：BibTeX 引用块、工具名（`glob`/`spawn_agent`/`# EVOLVE-BLOCK-START` 等）、模型代号（`Claude 3.5 Sonnet`、`GLM-5` 等）原样保留
+- 术语表追加 harness、RSI、上下文工程、ACE、MCE、元 harness、Self-Harness、STOP、奖励作弊、进化搜索、AlphaEvolve/AFlow/ADAS/DGM/SIA 等术语
+- 原文外链（含 arXiv、Nature、LessWrong 等约 70 条）与 35 条参考文献全部保留
+
 ## 2026-07-08
 
 **新增《从零实现浮点运算：困难模式（Floating point from scratch: Hard Mode）》译文**
