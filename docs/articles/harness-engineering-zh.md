@@ -94,10 +94,7 @@ ACE 能从展开（rollout）中学习洞见，这帮助我们朝自我管理记
 双层优化（bi-level optimization）的目标，是在训练数据上找到给定技能 $s$ 的最佳上下文 $c_s^*$，而外层循环则找到在验证集上表现最佳的技能 $s^*$：
 
 $$
-\begin{aligned}
-\text{Inner:}\;& c_s^* = \arg\max_{c_s}\; J_{\text{train}}(c_s; s) \\
-\text{Outer:}\;& s^* = \arg\max_{s \in \mathcal{S}}\; J_{\text{val}}(c_s^*)
-\end{aligned}
+\text{Inner: }c_s^*=\arg\max_{c_s}J_\text{train}(c_s;s)\quad \text{Outer: }s^*=\arg\max_{s\in\mathcal{S}}J_\text{val}(c_s^*)
 $$
 
 技能数据库记录着过往技能、上下文函数和评估指标的历史 $\mathcal{H}_{k-1} = \{(s_i, c_i, J_i^{\text{train}}, J_i^{\text{val}})\}_{i=1}^{k-1}$。一个元层面的智能体针对给定任务 $\tau$，对先前的技能执行智能体式[crossover（交叉）](https://en.wikipedia.org/wiki/Crossover_(evolutionary_algorithm))，从而创造新技能：$s_k = \text{crossover}(\tau, \mathcal{H}_{k-1})$。
@@ -111,7 +108,7 @@ $$
 MCE 不像 ACE 那样强制规定一套如何组织上下文的启发式规则。它用*自由形式的技能（free-form skills）*来存储任务最重要的知识，并让技能和“技能条件化的上下文”一起迭代地共同演化。在实现上，一个上下文函数 $c$ 被实例化为某个专用目录下的文件集合，既包含静态组件（`skill.md`），也包含动态组件（上下文与数据展开）。元层面与基础层面的优化都在具备标准工具集的智能体式编码环境中执行，
 
 $$
-\mathcal{T} = \{\text{Read}, \text{Write}, \text{Edit}, \text{Bash}, \text{Glob}, \text{Grep}, \text{TodoWrite}\}
+\mathcal{T}=\{\texttt{Read},\texttt{Write},\texttt{Edit},\texttt{Bash},\texttt{Glob},\texttt{Grep},\texttt{TodoWrite}\}
 $$
 
 **元 harness（Meta-Harness；[Lee et al. 2026](https://arxiv.org/abs/2603.28052)）** 又往深了一层：被优化的对象，是决定并优化“哪些信息应被存储、检索并呈现给模型”的那段*代码*。名字里的“Meta-”意味着，它是一个用来优化 harness 的 harness。
@@ -189,7 +186,7 @@ AFlow 在问答、代码、数学任务上的实验显示，它相比手工设�
 首先，把元效用（meta-utility）定义为给定改进器函数 $I$ 在一组下游任务 $\mathcal{D}$ 上的平均效用：
 
 $$
-\hat{u}(I) \triangleq \frac{1}{|\mathcal{D}|}\;\mathbb{E}_{(u,s)\sim \mathcal{D}}\big[\,u\big(I(u, s; M)\big)\,\big]
+\hat{u}(I) \triangleq \frac{1}{\vert\mathcal{D}\vert}\mathbb{E}_{(u,s)\sim \mathcal{D}}[u(I(u,s; M))]
 $$
 
 由于改进改进器函数本身也是一个优化问题，我们可以基于 $I_{t-1}$ 在元效用上的表现，通过一个自我改进更新递归地得到 $I_t$ 的新版本：
