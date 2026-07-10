@@ -40,7 +40,7 @@ $$(-1)^{S} \times 2^{E-b} \times (1 + T \cdot 2^{1-p})$$
 
 - $S$：符号位（sign bit）
 - $E$：带偏移的指数（biased exponent）
-- $T$：尾数的有效数部分（trailing significand field）
+- $T$：尾部有效数字段（trailing significand field）
 
 ![IEEE 754-2019 第 3 节的浮点布局](../assets/images/articles/floating-dragon/ieee_layout.png)
 

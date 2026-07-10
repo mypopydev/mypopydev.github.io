@@ -22,7 +22,7 @@
 
 例如，你让 Claude 创建一个"点赞"按钮。它会读取你的代码、做出修改、运行测试，然后交回一个它_认为_能用的结果。接着由你手动检查成果，再写下一条 Prompt。
 
-你可以通过把一个 `SKILL.md` 把你的手动步骤固化下来，从而改进验证环节，让 Claude 能够端到端地自查更多工作。其中应包含工具或连接器，让 Claude 能够_看见_、_度量_或与结果_交互_。检查越量化，Claude 自我验证就越容易。
+你可以通过编写 `SKILL.md` 将你的手动步骤固化下来，从而改进验证环节，让 Claude 能够端到端地自查更多工作。（关于如何选择 skills、hooks 和 subagents 来做这类自动化，可参阅我们的[驾驭 Claude Code](https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more) 指南。）其中应包含工具或连接器，让 Claude 能够_看见_、_度量_或与结果_交互_。检查越量化，Claude 自我验证就越容易。
 
 举例来说，你可以在 `SKILL.md` 中这样写：
 
