@@ -32,19 +32,18 @@ name: verify-frontend-change
 description: Verify any UI change end-to-end before declaring it done.
 ---
 
-# Verifying frontend changes
-Never report a UI change as complete based on a successful edit alone. Verify it the way a human reviewer would:
+# 验证前端改动
+任何 UI 改动都不应仅凭编辑成功就宣布完成。以人类审查者的方式进行验证：
 
-1. Start the dev server and open the edited page in the browser.
+1. 启动开发服务器，在浏览器中打开修改后的页面。
 
-2. Interact with the change directly. For a new control (button, input, toggle): click it, confirm the expected state change, and screenshot before/after.
+2. 直接与改动交互。对于新的控件（按钮、输入框、开关）：点击它，确认状态变化符合预期，并截取前后对比截图。
 
-3. Check the browser console: zero new errors or warnings.
+3. 检查浏览器控制台：应无新增错误或警告。
 
-4. Use the Chrome Devtools MCP, run a performance trace and audit Core Web Vitals.
+4. 使用 Chrome Devtools MCP，运行性能追踪（performance trace）并审计 Core Web Vitals。
 
-If any step fails, fix the issue and rerun from step 1 — do not hand back partially verified work.
-
+如果任何步骤失败，修复问题后从第 1 步重新运行——切勿将未完全验证的工作交回。
 ```
 
 ## 基于目标的循环（Goal-based loop，/goal）
