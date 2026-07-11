@@ -3,6 +3,8 @@
 > 原文：[10 Loop Engineering Design Patterns for AI Builders (2026)](https://datasciencedojo.com/blog/loop-engineering-design-patterns/)  
 > 作者：Data Science Dojo · 发布时间：2026 年 6 月 24 日
 
+![10 种循环工程设计模式全景](../assets/images/articles/loop-engineering-design-patterns/01-featured.jpeg)
+
 ---
 
 ## 核心要点
@@ -44,6 +46,8 @@
 
 这些模式按三个层级组织：每个构建者都应首先理解的基础循环（Foundational Patterns）、用于实际工作流的实践者模式（Practitioner Patterns），以及用于大规模运行系统的生产控制模式（Production Controls）。
 
+![10 种循环工程设计模式全览](../assets/images/articles/loop-engineering-design-patterns/02-overview.png)
+
 ---
 
 ### 基础模式（1-4）
@@ -57,6 +61,8 @@
 Agent 系统的基础模式。ReAct 代表**推理（Reason）和行动（Act）**。Agent 在五个阶段之间循环——**感知（Perceive）、推理（Reason）、规划（Plan）、行动（Act）、观察（Observe）**——每个阶段衔接下一个，直到任务完成或触发停止条件。
 
 每个主要的 AI 实验室（OpenAI、Anthropic、Google、Microsoft）都已收敛到相同的核心循环架构。它是本列表中其他所有内容的起点。
+
+![ReAct Loop - 循环工程模式](../assets/images/articles/loop-engineering-design-patterns/03-react-loop.png)
 
 #### 模式 2：反思循环（Reflection Loop）
 
@@ -97,6 +103,8 @@ Agent 在循环中调用外部 API 和工具，以访问其训练数据之外的
 #### 模式 5：Ralph 循环（Ralph Loop）
 
 > 来源：Dhanush Kumar
+
+![Ralph Loop - 智能体循环类型](../assets/images/articles/loop-engineering-design-patterns/04-ralph-loop.png)
 
 [Ralph 循环](https://github.com/snarktank/ralph) 让 Agent 在一个连续循环中运行，直到外部验证器确认成功。Agent 尝试执行任务，从编译器、代码检查工具（linter）或测试套件获取反馈，然后再次循环，直到所有检查通过。
 
@@ -167,6 +175,8 @@ Agent 不是持续运行的。它按照时间表或事件唤醒，检查定义�
 ---
 
 ## 如何选择正确的模式
+
+![应该使用哪个循环工程模式？](../assets/images/articles/loop-engineering-design-patterns/05-which-pattern.png)
 
 循环工程模式不是互斥的。大多数生产系统会组合使用多种模式。
 
