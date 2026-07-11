@@ -21,7 +21,7 @@
 
 ## 引言
 
-到目前为止，我已经写过三类生成模型：GAN、VAE 和 Flow-based models。它们在生成高质量样本方面都非常成功，但各自也有自己的局限。GAN 因为对抗式训练的性质，训练可能不稳定，生成结果的多样性也可能偏弱；VAE 依赖代理损失（surrogate loss）；Flow 模型则必须使用专门的可逆结构来构造变换。
+到目前为止，我已经写过三类生成模型：GAN、VAE 和 Flow-based models。它们在生成高质量样本方面都非常成功，但各自也有自己的局限。由于对抗式训练本身的特点，GAN 的训练可能不稳定，生成结果的多样性也可能偏弱；VAE 依赖代理损失（surrogate loss）；Flow 模型则必须使用专门的可逆结构来构造变换。
 
 扩散模型（diffusion models）受到非平衡热力学（non-equilibrium thermodynamics）的启发。它们定义了一条扩散步骤组成的马尔可夫链，先逐步向数据中加入随机噪声，再学习如何反转这一过程，从噪声中构造出目标数据样本。与 VAE 或 Flow 模型不同，扩散模型采用一套固定程序进行学习，而且其潜变量具有与原始数据相同的高维度。
 
@@ -627,7 +627,7 @@ $$
 
 ![借助分类器引导，在 DDPM 与 DDIM 中进行条件生成的算法。](../assets/images/articles/what-are-diffusion-models/conditioned-DDPM.png)
 
-此外，Dhariwal 与 Nichol（2021）还对 U-Net 架构做了一些修改，并展示出扩散模型在图像合成上优于 GAN 的结果。这些改动包括：更大的模型深度与宽度、更多 attention heads、多分辨率 attention、用于上/下采样的 BigGAN residual blocks、按 $1/\sqrt{2}$ 缩放 residual connection，以及 adaptive group normalization（AdaGN）。
+此外，Dhariwal 与 Nichol（2021）还对 U-Net 架构做了一些修改，并展示出扩散模型在图像合成上优于 GAN 的结果。这些改动包括：更大的模型深度与宽度、更多注意力头、多分辨率注意力、用于上/下采样的 BigGAN 残差块、按 $1/\sqrt{2}$ 缩放残差连接，以及自适应组归一化（AdaGN）。
 
 ### Classifier-Free Guidance
 

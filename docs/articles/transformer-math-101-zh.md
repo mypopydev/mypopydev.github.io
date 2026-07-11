@@ -16,7 +16,7 @@
 
 ## 引言
 
-关于 Transformer 语言模型，有不少基础而重要的信息其实都能用很简单的公式算出来。不幸的是，这些公式在 NLP 社区里并没有被广泛整理和传播。本文的目的，就是把这些公式，以及它们从哪里来、为什么重要的相关背景，一并收集起来。
+关于 Transformer 语言模型，有不少基础而重要的信息其实都能用很简单的公式算出来。不幸的是，这些公式在 NLP 社区里并没有被广泛整理和传播。本文的目的，就是把这些公式，以及它们的来源、为什么重要，和相关背景一并收集起来。
 
 **注意：** 本文主要关注训练成本，而训练成本里最核心的瓶颈通常是显存（VRAM）。如果你想看对应的“推理成本”讨论，尤其是以延迟为中心的推导，可以参考 Kipply 写的那篇[很好的文章](https://kipp.ly/blog/transformer-inference-arithmetic/)。
 
@@ -59,7 +59,7 @@ $$
 
 这里的“最优”只在一个非常具体的意义上成立：如果在你的资源模型里，使用 1000 块 GPU 训练 1 小时，与使用 1 块 GPU 训练 1000 小时的成本完全相同，那么当你的目标是“在尽量降低 GPU 小时成本的同时获得尽可能好的性能”时，就应该使用上面的关系式。
 
-**我们不建议把一个 LLM 训练到低于 200B token。** 虽然对很多模型来说，这在 Chinchilla 意义下是“最优”的，但训练出来的模型通常仍然比较差。对于几乎所有实际应用，更合理的做法是：先确定你的 use case 能接受多高的推理成本，再在这个推理成本约束下，训练尽可能大的模型，并尽可能用更多 token 去训练它。
+**我们不建议把一个 LLM 训练到低于 200B token。** 虽然对很多模型来说，这在 Chinchilla 最优条件下是"最优"的，但训练出来的模型通常仍然比较差。对于几乎所有实际应用，更合理的做法是：先确定你的 use case 能接受多高的推理成本，再在这个推理成本约束下，训练尽可能大的模型，并尽可能用更多 token 去训练它。
 
 ### 计算成本的工程结论
 
@@ -258,7 +258,7 @@ $$
 
 ### 分片优化器 + 3D 并行
 
-当 ZeRO 与 tensor parallelism 和/或 pipeline parallelism 结合时，得到的并行策略会形成下面这样的 mesh：
+当 ZeRO 与 tensor parallelism 或 pipeline parallelism 结合（或两者同时使用）时，得到的并行策略会形成下面这样的 mesh：
 
 ![ZeRO 与 3D 并行组合后的 mesh 结构。](../assets/images/articles/transformer-math-101/transformer-math-06-3d-parallelism.png)
 
@@ -268,7 +268,7 @@ $$
 \text{DP Degree} = \frac{\text{No. GPUs}}{(\text{Pipe-Parallel-Size}) \times (\text{Tensor-Parallel-Size})}
 $$
 
-Pipeline parallelism 和 tensor parallelism 与 ZeRO 的各个 stage 都是兼容的。不过，当 pipeline parallelism 和 ZeRO-2/3 的梯度分片一起使用时，要维持高效率会非常困难。原因是：ZeRO-2 会把梯度分片，而 pipeline parallelism 又需要累积梯度。理论上，可以通过精心设计 pipeline schedule，并把通信与计算重叠起来维持效率，但这件事困难到 [DeepSpeed 当前直接禁止这样做](https://github.com/microsoft/DeepSpeed/blob/v0.10.1/deepspeed/runtime/pipe/engine.py#L71)。
+Pipeline parallelism 和 tensor parallelism 与 ZeRO 的各个 stage 都是兼容的。不过，当 pipeline parallelism 和 ZeRO-2/3 的梯度分片一起使用时，要维持高效率会非常困难。原因是：ZeRO-2 会把梯度分片，而 pipeline parallelism 又需要累积梯度。理论上，可以通过精心设计 pipeline schedule，并把通信与计算重叠起来维持效率，但其难度之大，导致 [DeepSpeed 当前直接禁止这样做](https://github.com/microsoft/DeepSpeed/blob/v0.10.1/deepspeed/runtime/pipe/engine.py#L71)。
 
 另一方面，tensor parallelism 与 ZeRO 的各个 stage 是互补的，因为在每个 rank 上：
 

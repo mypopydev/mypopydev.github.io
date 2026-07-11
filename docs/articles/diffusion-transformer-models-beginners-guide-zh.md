@@ -25,7 +25,7 @@ U-Net 的一个关键特征，是把下采样路径中的特征图，与上采�
 
 ### 视觉 Transformer
 
-视觉 Transformer（Vision Transformer, ViT）是计算机视觉中的一类较新方法。它把最初面向自然语言处理任务设计的 Transformer，迁移到了图像分类任务上。与传统 CNN 按层级方式处理图像不同，ViT 把图像视为一串 patch 序列，并建模这些 patch 之间的全局依赖关系。
+视觉 Transformer（Vision Transformer, ViT）是计算机视觉中的一类较新方法。它将原本为自然语言处理任务设计的 Transformer 应用于图像分类任务上。与传统 CNN 按层级方式处理图像不同，ViT 把图像视为一串 patch 序列，并建模这些 patch 之间的全局依赖关系。
 
 这种机制使 ViT 能够捕捉长距离、像素级别的交互。ViT 的一个重要优势在于可扩展性（scalability）：它可以在大规模数据集上训练，也能够从更大的输入图像分辨率中获益。如果你想补充背景，可以参考 Encord 的 [Introduction to Vision Transformers (ViT)](https://encord.com/blog/vision-transformers/)。
 
@@ -55,7 +55,7 @@ Transformer 最初是为自然语言处理任务设计的，但后来也在视�
 
 “潜在 patch”这一概念的出现，源于让 Transformer 能够在高分辨率图像上计算可行的需求。直接把 Transformer 作用在原始高分辨率像素上，计算成本会非常高，因为自注意力的复杂度会随着元素数量二次增长。
 
-为了解决这个问题，图像会被切分为许多小 patch，然后 Transformer 作用在这些 patch 上。这样可以显著减少元素数量，从而降低计算复杂度。与此同时，Transformer 仍然能够在 patch 内部建模局部特征，也能在 patch 之间建模全局上下文。
+为了解决这个问题，图像会切分为许多小 patch，然后 Transformer 作用在这些 patch 上。这样可以显著减少元素数量，从而降低计算复杂度。与此同时，Transformer 仍然能够在 patch 内部建模局部特征，也能在 patch 之间建模全局上下文。
 
 ### Diffusion Transformer（DiT）与 Vision Transformer（ViT）的区别
 

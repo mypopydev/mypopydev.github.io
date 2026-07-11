@@ -1055,7 +1055,7 @@ int main(){
 > - \[IEEE-754-2008\] binary32 - IEEE 32 位。
 > - \[IEEE-754-2008\] binary64 - IEEE 64 位。
 > - \[IEEE-754-2008\] binary128 - IEEE 128 位。
-> - bfloat16，即截断了 16 位精度的 binary32；见 \[bfloat16\]。 <–
+> - bfloat16，即 binary32 截断至 16 位精度；见 \[bfloat16\]。 <–
 >
 > P1467R9 - Extended floating-point types and standard names
 >

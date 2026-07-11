@@ -232,7 +232,7 @@ $$
 \text{comms} = \frac{4 \cdot n_{\text{layers}} \cdot d_{\text{model}} \cdot B \cdot b}{A_c}
 $$
 
-其中 $A_f$ 是加速器的 FLOPs 吞吐，$A_c$ 是通信带宽。$2 \cdot P \cdot B$ 这个形式来自一个直觉：整个 decode step 本质上是在让这一批 token 依次和全部参数做矩阵乘法。前面已经说过，矩阵向量乘法对 $A \in \mathbb{R}^{m \times n}$ 与 $b \in \mathbb{R}^n$ 的成本是 $2mn$。
+其中 $A_f$ 是加速器的 FLOPs 吞吐，$A_c$ 是通信带宽。$2 \cdot P \cdot B$ 这个形式来自一个直觉：整个解码步骤本质上是在让这一批 token 依次和全部参数做矩阵乘法。前面已经说过，矩阵向量乘法对 $A \in \mathbb{R}^{m \times n}$ 与 $b \in \mathbb{R}^n$ 的成本是 $2mn$。
 
 通信项则来自模型并行小节里的结论：每一层里有 4 次通信，作者还把 $\frac{N - 1}{N}$ 近似成了 $1$。每次通信的内容是一个 $d_{\text{model}}$ 大小的向量，对 batch size 为 $B$ 的情形要整体一起发，所以再乘上 $B$ 与每个元素 2 字节的开销，最后除以通信带宽。
 
@@ -333,7 +333,7 @@ $$
 - statistical normalizations，也就是 softmax 和 layernorm；
 - element-wise operators，也就是本文到现在几乎完全忽略的那一类，比如 bias、dropout 和 activation。
 
-那么，这些 matmul 之外的东西应该怎么估算延迟？问题在于，硬件公布的 FLOPs 吞吐通常只针对乘加运算，所以就算你真能把 softmax、layernorm 的 FLOPs 数出来，也不能直接拿它们塞进前面的公式里。更贴切的做法是：把它们看成“主要付显存读写成本”的操作。这也正是前面一直暗示但还没展开的那部分延迟来源。
+那么，这些矩阵乘法之外的东西应该怎么估算延迟？问题在于，硬件公布的 FLOPs 吞吐通常只针对乘加运算，所以就算你真能把 softmax、layernorm 的 FLOPs 数出来，也不能直接拿它们塞进前面的公式里。更贴切的做法是：把它们看成“主要付显存读写成本”的操作。这也正是前面一直暗示但还没展开的那部分延迟来源。
 
 作者在这里故意“打破一下第一性原理的角色设定”，直接援引了 [Data Movement Is All You Need](https://arxiv.org/pdf/2007.00072.pdf) 里的 Table A.1。里面能看到一个有点让人不安的结果：softmax 的延迟居然比 `qkv` 的计算还稍微高一点，而 `qkv` 明明只是完整前向里大约三分之一的线性层成本。
 

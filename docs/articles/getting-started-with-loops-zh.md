@@ -131,7 +131,7 @@ If any step fails, fix the issue and rerun from step 1 — do not hand back part
 
 总结一下：
 
-| 循环类型 | 你交出的环节 | 适用场景 | 使用方式 |
+| 循环类型 | 你放手的环节 | 适用场景 | 使用方式 |
 | --- | --- | --- | --- |
 | 基于轮次（Turn-based） | 检查（The check） | 你正在探索或做决策 | 自定义验证 Skill |
 | 基于目标（Goal-based） | 停止条件（The stop condition） | 你清楚"完成"长什么样 | `/goal` |

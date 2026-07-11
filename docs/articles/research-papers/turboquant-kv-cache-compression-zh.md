@@ -11,7 +11,7 @@
 
 说明：本文为非官方中文整理版，面向学习与研究使用。若用于公开发布，建议保留完整出处，并进一步确认转载与翻译许可。
 
-## Executive Summary
+## 摘要
 
 TurboQuant 是 Amir Zandieh、Majid Daliri、Majid Hadian、Vahab Mirrokni（Google Research）在一系列论文中提出的 KV Cache 压缩方法（AAAI 2025 / AISTATS 2026 / ICLR 2026），将两个核心技术——PolarQuant（随机预处理 + 极坐标变换）和 QJL（量化 Johnson-Lindenstrauss 变换）——组合在一起，在保持精度的同时实现 4.57 到 6.40 倍的压缩比。
 
@@ -523,7 +523,7 @@ QJL（Quantized Johnson-Lindenstrauss）的核心贡献是：用 JL 变换加符
 用一个 2 维的简化例子来展示量化偏差如何反转注意力排名：
 
 ```
-追踪示例：量化如何偏倒注意力分数
+追踪示例：量化如何颠倒注意力分数
 ══════════════════════════════════════════
 Q  = [0.70, 0.30]   （查询向量）
 K1 = [-0.10, 0.80]  （键 1——应该获得更高注意力）

@@ -272,7 +272,7 @@ Context Parallelism 关注的是如何把序列长度这一维拆到多张 GPU �
 - `Top-1 routing`：例如 Switch Transformer，每个 token 只发给分数最高的那个专家。
 - `Top-k routing`：例如 GShard、GLaM，每个 token 发给分数最高的 `k` 个专家，再组合这些专家的输出。
 
-负载均衡挑战：在实践中，expert parallelism 的一个大问题是负载不均。某些专家以及所在 GPU 可能接收过多 token，而其他专家则空闲。这种失衡会在训练和推理中形成新的瓶颈。
+负载均衡挑战：在实践中，专家并行的一个大问题是负载不均。某些专家以及所在 GPU 可能接收过多 token，而其他专家则空闲。这种失衡会在训练和推理中形成新的瓶颈。
 
 - `Device Balance Loss`：在训练目标中加入一个正则项，鼓励 token 在设备间更均匀地分布。
 - `Communication Balance Loss`：增加额外损失项，平衡通信模式。
