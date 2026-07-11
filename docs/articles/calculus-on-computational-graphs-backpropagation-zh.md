@@ -5,13 +5,13 @@
 
 说明：本文为非官方中文整理版，面向学习与研究使用。若用于公开发布，建议保留完整出处，并进一步确认转载与翻译许可。
 
-## Executive Summary
+## 执行摘要
 
 反向传播是让现代深度学习训练在计算上真正可行的关键算法。它的本质并不神秘：它是一种在计算图上高效计算导数的方法，更一般地说，它属于反向模式自动微分。与朴素地枚举所有路径相比，反向传播通过对路径求和进行因式分解，只需沿图中的每条边访问一次，就能把“一个输出对所有输入”的导数高效算出来。
 
 这篇文章的价值在于，它不从神经网络的公式堆砌切入，而是先从一个极小的标量计算图出发，让读者真正看清楚链式法则是如何在图中流动的。只要理解了这层直觉，后面的神经网络反向传播、自动微分框架和梯度计算，本质上都只是同一件事的不同规模版本。
 
-## Background
+## 背景
 
 在很多教材里，反向传播常常被直接写成一套层与层之间的矩阵递推公式，于是它容易显得像某种专门为神经网络发明的技巧。Christopher Olah 这篇文章的可贵之处在于，它把问题还原成一个更一般的视角：如果一个函数可以表示成一张计算图，那么导数就可以理解为影响如何沿图传播，而反向传播就是对这种影响进行高效汇总的一种方法。
 
@@ -158,7 +158,7 @@ $$
 
 这就是后见之明的好处。一旦你把问题框定清楚，最困难的工作往往已经完成了。
 
-## Conclusion
+## 结语
 
 导数比你想象得便宜。这是我希望你从这篇文章里带走的最核心的一点。事实上，它们便宜得有点反直觉，以至于我们这些傻乎乎的人类不得不一遍又一遍地重新发现这个事实。在深度学习里，理解这一点非常重要；在其他很多领域里，知道这一点也同样极其有用，甚至在这些领域尚未形成共识时更是如此。
 
@@ -172,7 +172,7 @@ $$
 
 推荐阅读：https://neuralnetworksanddeeplearning.com/chap2.html
 
-## Acknowledgments
+## 致谢
 
 感谢 Greg Corrado、Jon Shlens、Samy Bengio 和 Anelia Angelova 花时间为这篇文章做校对。
 
@@ -185,7 +185,7 @@ $$
 - [可视化 MNIST：一次关于降维的探索](https://colah.github.io/posts/2014-10-Visualizing-MNIST/)
 - [卷积网络：一种模块化视角](https://colah.github.io/posts/2014-07-Conv-Nets-Modular/)
 
-## References
+## 参考文献
 
 1. [Christopher Olah - Calculus on Computational Graphs: Backpropagation](https://colah.github.io/posts/2015-08-Backprop/)
 2. [Michael Nielsen - How the Backpropagation Algorithm Works](https://neuralnetworksanddeeplearning.com/chap2.html)

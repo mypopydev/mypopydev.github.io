@@ -1040,7 +1040,7 @@ Kernel 性能基准：
       短序列场景仍有优化空间。
 ```
 
-## References
+## 参考文献
 
 1. [Darshan Fofadiya — TurboQuant: KV Cache Compression（原文博客）](https://darshanfofadiya.com/research-papers/turboquant/)
 2. A. Zandieh, M. Daliri, M. Hadian, V. Mirrokni. [TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate](https://arxiv.org/abs/2504.19874). ICLR 2026.
