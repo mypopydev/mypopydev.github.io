@@ -58,3 +58,6 @@
 
   这是一篇对 Data Science Dojo《Agentic Loops Explained: From ReAct to Loop Engineering (2026 Guide)》的中文翻译，系统梳理从 AutoGPT（2023）到 ReAct、OODA、Ralph 循环、/goal 命令四代智能体循环的演变。全文涵盖循环内部机制、记忆类型、六种失败模式、护栏体系、循环选型决策表与常见问题解答。
 
+- [Ralph Wiggum 当"软件工程师"（Ralph Loop 技术）](./ralph-wiggum-zh.md)
+
+  这是一篇对 Geoffrey Huntley《Ralph Wiggum as a "software engineer"》的中文翻译。作者是 Ralph 循环（Bash `while` 循环驱动智能体）的发明者，本文是该技术的原始阐述——从核心定义、游乐场比喻，到单体架构、子智能体调度、反压机制、测试驱动，再到完整 CURSED 语言构建的 Prompt 实战。全文保留原文口语化、幽默的叙事风格。
