@@ -1,8 +1,5 @@
-> **原文标题**：Agentic Code Review  
-> **原文作者**：[Addy Osmani](https://addyosmani.com/)  
-> **原文链接**：https://addyosmani.com/blog/agentic-code-review/  
-> **原文日期**：2026-06-15  
-> **译文版本**：v0.1
+> 原文：[Agentic Code Review](https://addyosmani.com/blog/agentic-code-review/)  
+> 作者：[Addy Osmani](https://addyosmani.com/) · 发布时间：2026-06-15
 
 # 智能体式代码审查（Agentic Code Review）
 
