@@ -46,4 +46,11 @@
 
 - ["齐次"是怎么成为中文数学术语的？](./homogeneous-chinese-translation-etymology-zh.md)
 
-  一篇术语小考证：*homogeneous* 如何从晚清的"同类"走到民国的"齐次"，1930 年《代数学（下册）》书证、名词审查会时间线，以及"齐次/非齐次"为何比"同类"更贴数学结构。语气偏博客笔记，证据仍尽量可核实。
+  - [循环工程设计模式（10 Loop Engineering Design Patterns）](./loop-engineering-design-patterns-zh.md)
+
+  这是一篇对 Data Science Dojo《10 Loop Engineering Design Patterns for AI Builders (2026)》的中文翻译，系统梳理从基础 ReAct 循环到生产加固模式的十种 Agent 循环设计模式。全文按三个层级组织——基础模式（1-4）、实践者模式（5-7）、生产加固模式（8-10），并附模式选型指南与常见问题解答。
+
+- [如何与 AI 协作并实现复利增长（Working with AI）](./working-with-ai-zh.md)
+
+  这是一篇对 Eugene Yan《How to Work and Compound with AI》的中文翻译，系统阐述与 AI 高效协作的五大原则：提供良好上下文、将品味编码为配置、让验证变得简单、委托更大任务、形成闭环。文章以 Claude Code 为主要实践场景，涵盖 CLAUDE.md 配置、技能系统、验证阶梯、并行会话、会话转录挖掘等实操方法论。
+
