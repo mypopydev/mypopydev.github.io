@@ -19,6 +19,7 @@ Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，�
 - [面向自我提升的 Harness 工程（Harness Engineering for Self-Improvement）](./articles/harness-engineering-zh.md)
 - [循环工程设计模式（10 Loop Engineering Design Patterns）](./articles/loop-engineering-design-patterns-zh.md)
 - [如何与 AI 协作并实现复利增长（Working with AI）](./articles/working-with-ai-zh.md)
+- [智能体循环详解：从 ReAct 到循环工程（Agentic Loops Explained）](./articles/agentic-loops-explained-zh.md)
 
 ### 🧠 深度学习
 

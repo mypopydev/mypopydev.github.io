@@ -80,6 +80,7 @@ nav:
           - 面向自我提升的 Harness 工程: articles/harness-engineering-zh.md
           - 循环工程设计模式（10 Loop Engineering Design Patterns）: articles/loop-engineering-design-patterns-zh.md
           - 如何与 AI 协作并实现复利增长（Working with AI）: articles/working-with-ai-zh.md
+          - 智能体循环详解：从 ReAct 到循环工程（Agentic Loops Explained）: articles/agentic-loops-explained-zh.md
       - 核心原则:
           - 什么是智能体工程？: series/agentic-engineering-patterns/what_is_agentic_engineering_demo_zh.md
           - 现在，写代码很便宜: series/agentic-engineering-patterns/writing_code_is_cheap_now_demo_zh.md

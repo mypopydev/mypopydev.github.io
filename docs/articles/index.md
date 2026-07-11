@@ -54,3 +54,7 @@
 
   这是一篇对 Eugene Yan《How to Work and Compound with AI》的中文翻译，系统阐述与 AI 高效协作的五大原则：提供良好上下文、将品味编码为配置、让验证变得简单、委托更大任务、形成闭环。文章以 Claude Code 为主要实践场景，涵盖 CLAUDE.md 配置、技能系统、验证阶梯、并行会话、会话转录挖掘等实操方法论。
 
+- [智能体循环详解：从 ReAct 到循环工程（Agentic Loops Explained）](./agentic-loops-explained-zh.md)
+
+  这是一篇对 Data Science Dojo《Agentic Loops Explained: From ReAct to Loop Engineering (2026 Guide)》的中文翻译，系统梳理从 AutoGPT（2023）到 ReAct、OODA、Ralph 循环、/goal 命令四代智能体循环的演变。全文涵盖循环内部机制、记忆类型、六种失败模式、护栏体系、循环选型决策表与常见问题解答。
+
