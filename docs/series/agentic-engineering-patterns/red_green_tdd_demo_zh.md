@@ -1,10 +1,8 @@
 # 红/绿 TDD
 
-原文标题：Red/green TDD
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-02-23
+> 原文：[Red/green TDD](https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/)  
+> 作者：Simon Willison · 发布时间：2026-02-23
+
 原文最后修改：2026-02-28
 译文版本：v0.1
 

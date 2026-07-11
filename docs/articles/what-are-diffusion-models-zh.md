@@ -1,11 +1,8 @@
 # 什么是扩散模型？
 
-原文标题：What are Diffusion Models?  
-原文作者：Lilian Weng  
-原文链接：https://lilianweng.github.io/posts/2021-07-11-diffusion-models/  
-访问日期：2026-05-07  
-原文发布日期：2021-07-11  
-原文最后更新：2024-04-13  
+> 原文：[What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)  
+> 作者：Lilian Weng · 发布时间：2021-07-11 · 最后更新：2024-04-13
+
 译文版本：v0.1
 
 ## 译文说明

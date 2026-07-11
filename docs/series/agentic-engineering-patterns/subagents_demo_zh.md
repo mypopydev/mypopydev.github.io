@@ -1,10 +1,8 @@
 # 子智能体
 
-原文标题：Subagents
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/subagents/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-03-17
+> 原文：[Subagents](https://simonwillison.net/guides/agentic-engineering-patterns/subagents/)  
+> 作者：Simon Willison · 发布时间：2026-03-17
+
 原文最后修改：2026-03-17
 译文版本：v0.1
 

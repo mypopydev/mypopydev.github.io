@@ -1,11 +1,8 @@
 # Transformer Math 101：训练计算量与显存需求速查
 
-原文标题：Transformer Math 101  
-原文作者：Quentin Anthony、Stella Biderman、Hailey Schoelkopf  
-原文链接：https://blog.eleuther.ai/transformer-math/  
-访问日期：2026-04-26  
-原文发布日期：2023-04-18  
-原文最后更新：2024-10-08  
+> 原文：[Transformer Math 101](https://blog.eleuther.ai/transformer-math/)  
+> 作者：Quentin Anthony、Stella Biderman、Hailey Schoelkopf · 发布时间：2023-04-18 · 最后更新：2024-10-08
+
 译文版本：v0.1
 
 ## 译文说明

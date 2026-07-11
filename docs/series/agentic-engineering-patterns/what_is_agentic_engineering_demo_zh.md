@@ -1,10 +1,8 @@
 # 什么是智能体工程？
 
-原文标题：What is agentic engineering?
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-03-15
+> 原文：[What is agentic engineering?](https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/)  
+> 作者：Simon Willison · 发布时间：2026-03-15
+
 原文最后修改：2026-03-16
 译文版本：v0.1
 

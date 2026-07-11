@@ -1,10 +1,8 @@
 # 先跑测试
 
-原文标题：First run the tests
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-02-24
+> 原文：[First run the tests](https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/)  
+> 作者：Simon Willison · 发布时间：2026-02-24
+
 原文最后修改：2026-02-28
 译文版本：v0.1
 

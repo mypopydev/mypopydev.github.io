@@ -1,10 +1,8 @@
 # 线性讲解
 
-原文标题：Linear walkthroughs
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-02-25
+> 原文：[Linear walkthroughs](https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/)  
+> 作者：Simon Willison · 发布时间：2026-02-25
+
 原文最后修改：2026-03-04
 译文版本：v0.1
 

@@ -1,8 +1,8 @@
 # TurboQuant — KV Cache 压缩算法
 
-原文标题：TurboQuant
-原文作者：Darshan Fofadiya
-原文链接：https://darshanfofadiya.com/research-papers/turboquant/
+> 原文：[TurboQuant](https://darshanfofadiya.com/research-papers/turboquant/)  
+> 作者：Darshan Fofadiya  
+
 论文来源：
 
 - A. Zandieh, M. Daliri, M. Hadian, V. Mirrokni. *TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate*. ICLR 2026. [arxiv.org/abs/2504.19874](https://arxiv.org/abs/2504.19874)

@@ -1,8 +1,8 @@
 # 计算图上的微积分：反向传播
 
-原文标题：Calculus on Computational Graphs: Backpropagation  
-原文作者：Christopher Olah  
-原文链接：https://colah.github.io/posts/2015-08-Backprop/  
+> 原文：[Calculus on Computational Graphs: Backpropagation](https://colah.github.io/posts/2015-08-Backprop/)  
+> 作者：Christopher Olah  
+
 说明：本文为非官方中文整理版，面向学习与研究使用。若用于公开发布，建议保留完整出处，并进一步确认转载与翻译许可。
 
 ## Executive Summary

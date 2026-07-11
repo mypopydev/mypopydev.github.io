@@ -1,10 +1,8 @@
 # Transformer 推理算术：用少量公式理解大语言模型推理性能
 
-原文标题：Transformer Inference Arithmetic  
-原文作者：kipply  
-原文链接：https://kipp.ly/p/transformer-inference-arithmetic  
-访问日期：2026-04-27  
-原文发布日期：2022-03-30  
+> 原文：[Transformer Inference Arithmetic](https://kipp.ly/p/transformer-inference-arithmetic)  
+> 作者：kipply · 发布时间：2022-03-30
+
 译文版本：v0.1
 
 ## 译文说明

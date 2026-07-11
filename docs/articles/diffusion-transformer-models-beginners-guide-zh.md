@@ -1,10 +1,8 @@
 # Diffusion Transformer（DiT）模型：初学者指南
 
-原文标题：Diffusion Transformer (DiT) Models: A Beginner's Guide  
-原文作者：Akruti Acharya  
-原文链接：https://encord.com/blog/diffusion-models-with-transformers/  
-访问日期：2026-05-08  
-原文发布日期：2024-03-18  
+> 原文：[Diffusion Transformer (DiT) Models: A Beginner's Guide](https://encord.com/blog/diffusion-models-with-transformers/)  
+> 作者：Akruti Acharya · 发布时间：2024-03-18
+
 译文版本：v0.1
 
 ## 引言

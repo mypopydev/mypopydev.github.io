@@ -1,11 +1,8 @@
 # 量化神经网络：你只需要这一篇指南
 
-原文标题：Quantized Neural Networks: The Only Guide You Need  
-原文副标题：Yesterday's, Today's, and Tomorrow's quantization methods for ML models  
-原文作者：Mathias Lechner  
-原文链接：https://mlechner.substack.com/p/quantized-neural-networks-the-only  
-访问日期：2026-04-26  
-原文发布日期：2026-04-17  
+> 原文：[Quantized Neural Networks: The Only Guide You Need](https://mlechner.substack.com/p/quantized-neural-networks-the-only)  
+> 作者：Mathias Lechner · 发布时间：2026-04-17
+
 译文版本：v0.1
 
 ## 译文说明

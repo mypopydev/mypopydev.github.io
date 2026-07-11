@@ -1,10 +1,8 @@
 # 让智能体做手动测试
 
-原文标题：Agentic manual testing
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-03-06
+> 原文：[Agentic manual testing](https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/)  
+> 作者：Simon Willison · 发布时间：2026-03-06
+
 原文最后修改：2026-03-06
 译文版本：v0.1
 

@@ -1,11 +1,8 @@
 # 量化可视化指南：大语言模型压缩入门
 
-原文标题：A Visual Guide to Quantization  
-原文副标题：Demystifying the Compression of Large Language Models  
-原文作者：Maarten Grootendorst  
-原文链接：https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization  
-访问日期：2026-04-26  
-原文发布日期：2024-07-22  
+> 原文：[A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)  
+> 作者：Maarten Grootendorst · 发布时间：2024-07-22
+
 译文版本：v0.1
 
 ## 译文说明

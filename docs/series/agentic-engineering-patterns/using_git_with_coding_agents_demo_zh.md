@@ -1,9 +1,8 @@
 # 如何将 Git 用于编码智能体工作流
 
-原文标题：Using Git with coding agents
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/
-原文作者：Simon Willison
-访问日期：2026-03-25
+> 原文：[Using Git with coding agents](https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/)  
+> 作者：Simon Willison · 发布时间：2026-03-25
+
 原文发布日期：2026-03-21
 原文最后修改：2026-03-23
 译文版本：v0.1

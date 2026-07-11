@@ -1,10 +1,8 @@
 # 反模式：有些事要避免
 
-原文标题：Anti-patterns: things to avoid
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-03-04
+> 原文：[Anti-patterns: things to avoid](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/)  
+> 作者：Simon Willison · 发布时间：2026-03-04
+
 原文最后修改：2026-03-04
 译文版本：v0.1
 

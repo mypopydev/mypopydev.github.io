@@ -1,10 +1,8 @@
 # 编码智能体如何工作
 
-原文标题：How coding agents work
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-03-16
+> 原文：[How coding agents work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/)  
+> 作者：Simon Willison · 发布时间：2026-03-16
+
 原文最后修改：2026-03-16
 译文版本：v0.1
 

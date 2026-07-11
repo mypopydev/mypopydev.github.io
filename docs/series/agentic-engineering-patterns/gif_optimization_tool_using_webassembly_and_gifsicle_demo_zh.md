@@ -1,10 +1,8 @@
 # 用 WebAssembly 和 Gifsicle 构建 GIF 优化工具
 
-原文标题：GIF optimization tool using WebAssembly and Gifsicle
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/gif-optimization/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-03-02
+> 原文：[GIF optimization tool using WebAssembly and Gifsicle](https://simonwillison.net/guides/agentic-engineering-patterns/gif-optimization/)  
+> 作者：Simon Willison · 发布时间：2026-03-02
+
 原文最后修改：2026-03-02
 译文版本：v0.1
 

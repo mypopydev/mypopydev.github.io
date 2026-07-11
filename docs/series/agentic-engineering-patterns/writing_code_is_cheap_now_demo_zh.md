@@ -1,10 +1,8 @@
 # 现在，写代码很便宜
 
-原文标题：Writing code is cheap now
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-02-23
+> 原文：[Writing code is cheap now](https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/)  
+> 作者：Simon Willison · 发布时间：2026-02-23
+
 原文最后修改：2026-02-24
 译文版本：v0.1
 

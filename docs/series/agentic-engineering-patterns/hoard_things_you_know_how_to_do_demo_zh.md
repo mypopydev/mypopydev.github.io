@@ -1,10 +1,8 @@
 # 把你会做的事囤起来
 
-原文标题：Hoard things you know how to do
-原文链接：https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/
-原文作者：Simon Willison
-访问日期：2026-03-25
-原文发布日期：2026-02-26
+> 原文：[Hoard things you know how to do](https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/)  
+> 作者：Simon Willison · 发布时间：2026-02-26
+
 原文最后修改：2026-03-16
 译文版本：v0.1
 

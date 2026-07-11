@@ -1,10 +1,8 @@
 # LLM 优化面试笔记：训练与推理
 
-原文标题：LLM Optimization Interview Notes: Training and Inference  
-原文作者：Gauri Gupta  
-原文链接：https://x.com/gauri__gupta/status/2051882947758993815  
-访问日期：2026-05-07  
-原文发布日期：2026-05-06  
+> 原文：[LLM Optimization Interview Notes: Training and Inference](https://x.com/gauri__gupta/status/2051882947758993815)  
+> 作者：Gauri Gupta · 发布时间：2026-05-06
+
 译文版本：v0.1
 
 ## 译文说明
