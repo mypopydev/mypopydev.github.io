@@ -44,7 +44,7 @@
 
 ## 10 种循环工程设计模式
 
-这些模式按三个层级组织：每个构建者都应首先理解的基础循环（Foundational Patterns）、用于实际工作流的实践者模式（Practitioner Patterns），以及用于大规模运行系统的生产控制模式（Production Controls）。
+这些模式按三个层级组织：每个构建者都应首先理解的基础模式（Foundational Patterns）、用于实际工作流的实践者模式（Practitioner Patterns），以及用于大规模运行系统的生产控制模式（Production Controls）。
 
 ![10 种循环工程设计模式全览](../assets/images/articles/loop-engineering-design-patterns/02-overview.png)
 
