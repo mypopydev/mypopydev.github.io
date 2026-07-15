@@ -103,6 +103,8 @@ nav:
           - 用 WebAssembly 和 Gifsicle 构建 GIF 优化工具: series/agentic-engineering-patterns/gif_optimization_tool_using_webassembly_and_gifsicle_demo_zh.md
       - 参考资源:
           - 我常用的 Prompt: series/agentic-engineering-patterns/prompts_i_use_demo_zh.md
+  - 训练系统与集群:
+      - TPU 与 GPU 集群内部：集合通信剖析: articles/collective-operations-zh.md
   - 深度学习:
       - 反向传播：想法、数学原理、思想史与最值得读的 5 篇文献: articles/backpropagation-ideas-math-history-5-readings.md
       - 计算图上的微积分：反向传播: articles/calculus-on-computational-graphs-backpropagation-zh.md
