@@ -125,6 +125,37 @@
 | ADAS | ADAS | — | 保留英文 | 把智能体设计本身作为优化问题 | Harness Engineering |
 | DGM (Darwin Gödel Machine) | 达尔文·哥德尔机（DGM） | — | 保留缩写 | 显式演化可编辑的 harness 代码库 | Harness Engineering |
 | SIA | SIA | — | 保留英文 | 联合 harness 改进与模型权重更新的尝试 | Harness Engineering |
+| collective operation | 集合通信（collective operation） | — | 首现括注 | 分布式训练中 GPU/TPU 协同的通信原语 | 集合通信剖析 |
+| All-Gather | 全收集（All-Gather） | — | 首现括注 | N 个分片聚合为完整张量 | 集合通信剖析 |
+| Reduce-Scatter | 归约散布（Reduce-Scatter） | — | 首现括注 | 先归约再散布分片，All-Gather 的对偶 | 集合通信剖析 |
+| All-Reduce | 全归约（All-Reduce） | — | 首现括注 | Reduce-Scatter + All-Gather 组合 | 集合通信剖析 |
+| All-to-All | 全互换（All-to-All） | — | 首现括注 | 分布式转置/令牌路由 | 集合通信剖析 |
+| ring / ring algorithm | 环 / 环形算法（ring） | — | 首现括注 | 集合通信常用实现，N-1 步完成 | 集合通信剖析 |
+| tree / tree algorithm | 树 / 树形算法（tree） | — | 首现括注 | log₂ N 步完成，延迟友好 | 集合通信剖析 |
+| torus | 环面（torus） | — | 首现括注 | 含环绕连接的网格拓扑 | 集合通信剖析 |
+| mesh | 网格（mesh） | — | 首现括注 | 无环绕的网格拓扑 | 集合通信剖析 |
+| wraparound | 环绕（wraparound） | — | 一般不保留 | 环面边界回绕特性 | 集合通信剖析 |
+| superpod | 超级 Pod（superpod） | — | 首现括注 | 最大 ICI 连接域（"超节点"） | 集合通信剖析 |
+| slice | 切片（slice） | — | 首现括注 | TPU 的 ICI 岛 | 集合通信剖析 |
+| ICI | ICI | 芯片间互联 | 保留 | inter-chip interconnect，TPU 芯片间互联 | 集合通信剖析 |
+| DCN | DCN | 数据中心网络 | 保留 | data center networking，跨 Pod 通信 | 集合通信剖析 |
+| NVLink / NVSwitch | NVLink / NVSwitch | — | 保留 | NVIDIA 高带宽互联技术 | 集合通信剖析 |
+| SHARP | SHARP | — | 保留 | 网内归约/聚合计算单元 | 集合通信剖析 |
+| fat tree | 胖树（fat tree） | — | 首现括注 | 层次化交换机拓扑，越往根越胖 | 集合通信剖析 |
+| Scalable Unit (SU) | 可扩展单元（Scalable Unit，SU） | — | 保留缩写 | DGX 集群的 32 节点分组 | 集合通信剖析 |
+| bisection bandwidth | 二分带宽（bisection bandwidth） | — | 首现括注 | 对半切分后的集群间可用带宽 | 集合通信剖析 |
+| oversubscription | 超额订阅（oversubscription） | — | 首现括注 | 下游注入超上游承载的比例 | 集合通信剖析 |
+| hierarchical collectives | 分层集合通信（hierarchical collectives） | — | 首现括注 | 跨多级拓扑（节点/SU/Spine）的通信算法 | 集合通信剖析 |
+| recursive doubling / halving | 递归倍增 / 递归折半 | — | 一般不保留 | 树形 All-Gather / Reduce-Scatter 的核心技巧 | 集合通信剖析 |
+| in-network reduction | 网内归约（in-network reduction） | — | 首现括注 | 由交换机直接完成归约操作 | 集合通信剖析 |
+| leaf switch / spine switch | 叶子交换机 / 脊交换机 | — | 一般不保留 | 胖树的两级交换层 | 集合通信剖析 |
+| scale-up / scale-out | 纵向扩展 / 横向扩展 | — | 首现括注 | NVLink 域内 vs InfiniBand 跨节点 | 集合通信剖析 |
+| injection bandwidth | 注入带宽 | — | 一般不保留 | 节点向网络注入数据的带宽 | 集合通信剖析 |
+| throughput-bound / latency-bound | 吞吐受限 / 延迟受限 | — | 一般不保留 | 判断通信瓶颈在带宽还是延迟 | 集合通信剖析 |
+| nearest-neighbor | 近邻（nearest-neighbor） | — | 一般不保留 | TPU 环面的物理相邻芯片 | 集合通信剖析 |
+| data / tensor / expert parallelism | 数据并行 / 张量并行 / 专家并行 | — | 一般不保留 | 分布式并行策略 | 集合通信剖析 |
+| FSDP | FSDP | — | 保留 | Fully Sharded Data Parallelism | 集合通信剖析 |
+| MoE | MoE | 混合专家 | 保留 | Mixture of Experts | 集合通信剖析 |
 
 ## 五、文风总原则
 
@@ -234,7 +265,6 @@
 原文标题：
 原文链接：
 原文作者：Simon Willison
-访问日期：YYYY-MM-DD
 译文版本：v0.1
 译者：
 审校：
