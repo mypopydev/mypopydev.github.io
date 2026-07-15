@@ -1,4 +1,4 @@
-# TPU 与 GPU 集群内部：集合通信剖析
+# TPU 与 GPU 集群内部：集合通信剖析（Inside TPU and GPU Clusters: The Anatomy of Collective Communication）
 
 > 原文：[Inside TPU and GPU Clusters: The Anatomy of Collective Communication](https://www.aleksagordic.com/blog/collective-operations)  
 > 作者：Aleksa Gordić · 发布时间：2026-07-14
@@ -477,7 +477,7 @@ SHARP 理论上可以使 All-Reduce 接近 2 倍加速！在节点内 GPU 数量
 
 对于大消息，All-Gather 或 Reduce-Scatter 的一个良好一阶近似因此是（其中 $D$ 是以字节为单位的张量大小）：
 
-$$T_{\text{total}} \approx D / \text{BW}_{\text{node}} = D / 4 \times 10^{11}$$
+$$T_{\text{total}} \approx D / \text{BW}_{\text{node}} = D / (4 \times 10^{11})$$
 
 一个稍微更精确的模型还考虑了节点内阶段。在分层集合通信（hierarchical collectives）中，我们通常既有通过 IB 的横向扩展流量，也有通过 NVLink/NVSwitch 的本地流量，而这些阶段通常可以流水线化。因此总时间更接近两项中较慢的那个：
 
