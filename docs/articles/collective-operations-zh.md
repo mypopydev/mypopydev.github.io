@@ -35,13 +35,13 @@
 
 本文共分七个部分：
 
-1.  [TPU 集群拓扑](#cpt1)：超级 Pod、切片、DCN、PCIe、ICI
-2.  [All-Gather 内部](#cpt2)：一维/二维环与链
-3.  [Reduce-Scatter（以及 All-Reduce）](#cpt3)：All-Gather 的对偶
-4.  [All-to-All](#cpt4)：分片转置
-5.  [NVIDIA GPU 集群拓扑](#cpt5)：节点、可扩展单元、胖树
-6.  [GPU 节点内集合通信](#cpt6)：环、树与 SHARP
-7.  [GPU 跨节点集合通信](#cpt7)：基于 InfiniBand 的分层算法
+1.  TPU 集群拓扑：超级 Pod、切片、DCN、PCIe、ICI
+2.  All-Gather 内部：一维/二维环与链
+3.  Reduce-Scatter（以及 All-Reduce）：All-Gather 的对偶
+4.  All-to-All：分片转置
+5.  NVIDIA GPU 集群拓扑：节点、可扩展单元、胖树
+6.  GPU 节点内集合通信：环、树与 SHARP
+7.  GPU 跨节点集合通信：基于 InfiniBand 的分层算法
 
 ## TPU 集群拓扑
 
@@ -57,7 +57,7 @@ TPU 集群与 GPU 集群之间的关键区别在于**近邻（nearest-neighbor�
 图 1：TPU 连接类型。
 
 !!! tip "Boardfly 拓扑"
-    值得一提的是，谷歌的[新一代推理 TPU 芯片](https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive)[[1]](#ref-1) `8i` 并未采用 2D/3D 环面，而是使用了 boardfly——一种分层高基数拓扑。本文中我将忽略它。
+    值得一提的是，谷歌的[新一代推理 TPU 芯片](https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive)[1] `8i` 并未采用 2D/3D 环面，而是使用了 boardfly——一种分层高基数拓扑。本文中我将忽略它。
 
 以下是一种建立 4 近邻 2D 环面直觉的方式。2D 环面可以表示为一个具有环绕/周期边界的网格（mesh）：向左移出边界会从右边回到网格（反之亦然），向上移出边界会从下方回到网格（反之亦然）。请记住 TPU 环面是一个离散网格，可以想象它覆盖在这个甜甜圈上。该图示仅用于直觉辅助：
 
@@ -74,7 +74,7 @@ TPU 集群与 GPU 集群之间的关键区别在于**近邻（nearest-neighbor�
 这个图看起来有点乱，但原理很简单——每个芯片沿 ±x、±y 和 ±z 方向都有相邻芯片，并且边界在三个维度上都发生环绕。
 
 !!! tip "交互式可视化工具"
-    这里有一个我用来生成上图的实用[可视化小工具](https://tpu-visualizer.uc.r.appspot.com/)[[2]](#ref-2)，你可以用它来交互探索这些更复杂的拓扑结构。
+    这里有一个我用来生成上图的实用[可视化小工具](https://tpu-visualizer.uc.r.appspot.com/)[2]，你可以用它来交互探索这些更复杂的拓扑结构。
 
 本文将以 `v5e` 作为贯穿示例，因为 2D 连接更容易可视化。
 
@@ -140,7 +140,7 @@ TPU 芯片通过 **ICI**（芯片间互联，inter-chip interconnect）与其近
 现在我们已经对拓扑和带宽层级有了概念，来看几个具体的例子，了解数据如何在实际的 TPU 切片中流动。
 
 !!! tip "书籍推荐"
-    本博客中的一些例子，以及写作本文的更广泛动机，都受到了优秀的 Scaling Book [[3]](#ref-3) 的启发，我强烈推荐。
+    本博客中的一些例子，以及写作本文的更广泛动机，都受到了优秀的 Scaling Book [3] 的启发，我强烈推荐。
 
 假设我们从 GCP 请求一个 4×4 的 `v5e` 切片。由于两条轴都小于 16，我们得不到任何环绕链路。因此这个切片不是环面，而是一个普通的 2D 网格，某些芯片之间的路径比有环绕链路时要长。
 
@@ -416,7 +416,7 @@ NVIDIA GPU 交换机（包括 NVSwitch 和 IB 交换机）有一个重要的优�
 因此，不同于花费 SM 周期和 HBM 带宽在一个主要受内存带宽限制的 All-Reduce 上，网络在传输过程中执行归约，让 GPU 腾出来进行有用的计算。
 
 !!! tip "SHARP 的 FLOP/s"
-    作为参考，NVLink 4 NVSwitch（搭载于 H100 节点中）SHARP 具有 400 GFLOP/s 的 FP32 归约吞吐量 [[4]](#ref-4)。
+    作为参考，NVLink 4 NVSwitch（搭载于 H100 节点中）SHARP 具有 400 GFLOP/s 的 FP32 归约吞吐量 [4]。
 
 SHARP 理论上可以使 All-Reduce 接近 2 倍加速！在节点内 GPU 数量 $N$ 很大的极限情况下，提升接近 2 倍；对于 8 GPU 节点，理想的提升接近 1.75 倍。
 
@@ -427,9 +427,9 @@ SHARP 理论上可以使 All-Reduce 接近 2 倍加速！在节点内 GPU 数量
 图 27：SHARP——网内归约计算单元。
 
 !!! tip "理论与实践的差距"
-    经验上，GPU 上的 All-Reduce 可能需要非常大的消息才能接近峰值带宽。在 8×H100 节点上[较早的 NCCL 测量](https://jax-ml.github.io/scaling-book/gpus/#intra-node-collectives)[[5]](#ref-5) 中，即使消息大小达到数个 GB 级别，性能仍在攀升，而当消息大小降到约 100 MB 以下时，带宽明显下降。这是与 TPU 的一个实际差异，后者往往在更小的消息大小（约 10 MB）下就能达到近峰值集合带宽。
+    经验上，GPU 上的 All-Reduce 可能需要非常大的消息才能接近峰值带宽。在 8×H100 节点上[较早的 NCCL 测量](https://jax-ml.github.io/scaling-book/gpus/#intra-node-collectives)[5] 中，即使消息大小达到数个 GB 级别，性能仍在攀升，而当消息大小降到约 100 MB 以下时，带宽明显下降。这是与 TPU 的一个实际差异，后者往往在更小的消息大小（约 10 MB）下就能达到近峰值集合带宽。
 
-即使 SHARP 已为 All-Reduce 启用，我们仍应考虑开销：归约 + 组播（multicast）的流水线在实际中不会完美重叠。实践中 SHARP 带来的加速**仅约 30%** [[5]](#ref-5)[[6]](#ref-6)！请务必在你具体的集群配置上运行微基准测试。
+即使 SHARP 已为 All-Reduce 启用，我们仍应考虑开销：归约 + 组播（multicast）的流水线在实际中不会完美重叠。实践中 SHARP 带来的加速**仅约 30%** [5][6]！请务必在你具体的集群配置上运行微基准测试。
 
 !!! tip "SHARP 补充背景"
     NVLink SHARP 并不局限于归约，它还通过硬件组播加速 All-Gather 阶段。一块内存区域可注册为一组 GPU 的组播目标。之后，对组播地址的一次普通 CUDA 存储操作会被 NVSwitch 架构复制到组内的每个 GPU——kernel 本身不需要特殊的组播指令。
