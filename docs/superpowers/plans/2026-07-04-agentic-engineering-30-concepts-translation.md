@@ -88,7 +88,6 @@ Expected: 列出所有 miro 图片链接（预计 20+ 张）。
 原文标题：30 Core Agentic Engineering Concepts Every Developer Should Know
 原文链接：https://medium.com/@Deep-concept/5066b3117f69
 原文作者：Deep concept（Let’s Code Future）
-访问日期：2026-07-04
 译文版本：v0.1
 译者：（填写）
 审校：（填写）
