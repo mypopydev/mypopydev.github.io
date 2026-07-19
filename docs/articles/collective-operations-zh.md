@@ -1,5 +1,8 @@
 # TPU 与 GPU 集群内部：集合通信剖析（Inside TPU and GPU Clusters: The Anatomy of Collective Communication）
 
+> 深入解析 All-Gather、Reduce-Scatter、All-Reduce、All-to-All 在 TPU 与 GPU 集群中的实现。
+> A deep dive into All-Gather, Reduce-Scatter, All-Reduce, and All-to-All across TPU and GPU clusters.
+
 > 原文：[Inside TPU and GPU Clusters: The Anatomy of Collective Communication](https://www.aleksagordic.com/blog/collective-operations)  
 > 作者：Aleksa Gordić · 发布时间：2026-07-14
 
