@@ -156,6 +156,14 @@
 | data / tensor / expert parallelism | 数据并行 / 张量并行 / 专家并行 | — | 一般不保留 | 分布式并行策略 | 集合通信剖析 |
 | FSDP | FSDP | — | 保留 | Fully Sharded Data Parallelism | 集合通信剖析 |
 | MoE | MoE | 混合专家 | 保留 | Mixture of Experts | 集合通信剖析 |
+| general method | 通用方法（general method） | — | 首现括注 | 不针对特定领域做假设，仅依赖算力与数据的通用学习/搜索算法 | 苦涩的教训 |
+| Moore's law | 摩尔定律（Moore's law） | — | 首现括注 | 单位算力成本持续指数级下降的经验规律 | 苦涩的教训 |
+| brute force search | 暴力搜索（brute force search） | — | 首现括注 | 穷举式大规模搜索，不依赖人类领域知识 | 苦涩的教训 |
+| deep search | 深度搜索 | — | 一般不保留 | 大规模、深层的博弈树搜索 | 苦涩的教训 |
+| self play | 自我对弈（self play） | — | 首现括注 | 智能体与自身对弈以学习策略和评估函数 | 苦涩的教训 |
+| value function | 价值函数（value function） | — | 首现括注 | 评估状态或动作长期累积回报的函数 | 苦涩的教训 |
+| Hidden Markov Model (HMM) | 隐马尔可夫模型（Hidden Markov Model，HMM） | — | 保留缩写 | 基于统计的序列建模方法 | 苦涩的教训 |
+| meta-method | 元方法（meta-method） | — | 首现括注 | 能发现并捕获任意复杂性的通用算法框架 | 苦涩的教训 |
 
 ## 五、文风总原则
 

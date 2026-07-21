@@ -106,6 +106,7 @@ nav:
   - 训练系统与集群:
       - TPU 与 GPU 集群内部：集合通信剖析: articles/collective-operations-zh.md
   - 深度学习:
+      - 苦涩的教训（The Bitter Lesson）: articles/bitter-lesson-zh.md
       - 反向传播：想法、数学原理、思想史与最值得读的 5 篇文献: articles/backpropagation-ideas-math-history-5-readings.md
       - 计算图上的微积分：反向传播: articles/calculus-on-computational-graphs-backpropagation-zh.md
       - Transformer Math 101：训练计算量与显存需求速查: articles/transformer-math-101-zh.md
