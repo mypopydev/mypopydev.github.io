@@ -24,7 +24,7 @@ OpenAI 的 [Ryan Lopopolo](https://x.com/_lopopolo) [二月在文章里写过这
 
 ![OpenAI 的 Ryan Lopopolo 谈 harness 工程](../assets/images/articles/why-software-factories-fail/ryan-lop-shadow.png){: width="50%" }
 
-这些人确实都聪明得离谱，我非常尊重他们。但最刻薄的说法，是把这又当成了一个往"灌水大炮"里继续注资的借口。
+这些人确实都聪明得离谱，我非常尊重他们。但最刻薄的说法，是把这又当成了一个往"垃圾大炮"里继续注资的借口。
 
 ### 进展嘛……就那样
 
@@ -430,7 +430,7 @@ OpenAI 团队[在十一月的一场演讲](https://www.youtube.com/watch?v=wVl6Z
 
 ### 系统架构
 
-产品评审定下来后，我们做系统架构。这倒不算新鲜，连氛围编程的人也开始 swear by 它了。
+产品评审定下来后，我们做系统架构。这倒不算新鲜，连氛围编程的人也开始推崇它了。
 
 > **如果你想在评审时省时间，就挑那个本来会评审 PR 的人，在写代码之前和他一起过一遍产品/技术规格**
 
