@@ -112,7 +112,7 @@ _感谢 [@addyosmani](https://x.com/addyosmani)、[@CyrusNewDay](https://x.com/C
 - **加上监控**——有一整个行业专门负责在出问题时凌晨三点呼叫工程师
 - **用户抱怨**——提需求、发现 bug、提交功能请求 → 回到团队，加进跟踪系统
 
-而在那之前，我们甚至还没碰到 AI，这张图里就已经有好几个循环了。
+如此往复。而在那之前，我们甚至还没碰到 AI，这张图里就已经有好几个循环了。
 
 ### 前置对齐 {#前置对齐}
 
@@ -131,7 +131,7 @@ _感谢 [@addyosmani](https://x.com/addyosmani)、[@CyrusNewDay](https://x.com/C
 
 ### 智能体式软件工厂
 
-现在每家公司——
+现在每家公司乃至他们的老妈——
 
 - [Ramp](https://infoq.com/news/2026/01/ramp-coding-agent-platform/)
 - [Stripe](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents)
@@ -564,7 +564,7 @@ resolveTarget(items: Item[], cursor: Cursor) -> ItemId | null
 
 ### 30 分钟规划，省下数小时审查
 
-于是我们有一些步骤，我认为如果要维持接近人类的质量、而不必事后在一堆垃圾代码里刨着清理，人类就必须待在回路里。
+于是我们有一些步骤，我认为如果要维持接近人类的质量、而不必事后在一堆垃圾代码里刨着清理，人类就必须待在回路里（也就是说，你其实是想快）。
 
 1. 产品设计（Product Design）
 2. 系统架构（System Architecture）
