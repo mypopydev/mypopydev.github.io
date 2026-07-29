@@ -1,5 +1,15 @@
 # 更新记录
 
+### 2026-07-29
+- 新增译文：软件工厂为何失败（Why Software Factories Fail，HumanLayer / Dex，2026）
+- 收录 HumanLayer 文章《Why Software Factories Fail》中文译文，置于 `docs/articles/why-software-factories-fail-zh.md`
+- 导航：智能体工程 > 独立译文（新增一篇）；首页智能体工程区块新增入口
+- 配图本地化：下载原文全部 29 张图至 `docs/assets/images/articles/why-software-factories-fail/`（含 loop-engineering、ryan-lop、faros-code-review/incidents-and-bugs、software-factory 系列、software-factory-lights-off 系列、better-dimensions、claude-code-revenue、swe-agent-tools、bench-task、bad-code 1/2、sota-backprop、sota-changes、frontier-code、lights-on-agentic-1、product-review 系列、dillon_tweet 等）
+- 配置：mkdocs.yml 启用 `footnotes` 扩展，以渲染原文 [^1]…[^6] 脚注
+- 视频（4 个 GitHub user-attachments 演示 + 多个 YouTube）保留原始外链；YouTube 缩略图保留外链
+- 术语表追加 software factory / lights-off software factory / vertical slices / tracer bullets / front-loading alignment / shotgun surgery / brownfield / maintainability / RLVR 等术语
+- 原文外链（约 60+ 条，含 OpenAI、StrongDM、Faros AI、FT、arXiv、Wikipedia、X 等）全部保留
+
 ### 2026-07-21
 - 新增译文：苦涩的教训（Rich Sutton, 2019-03-13）
 - 术语表追加 8 项 AI/强化学习术语

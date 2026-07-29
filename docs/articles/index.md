@@ -61,3 +61,7 @@
 - [Ralph Wiggum 当"软件工程师"（Ralph Loop 技术）](./ralph-wiggum-zh.md)
 
   这是一篇对 Geoffrey Huntley《Ralph Wiggum as a "software engineer"》的中文翻译。作者是 Ralph 循环（Bash `while` 循环驱动智能体）的发明者，本文是该技术的原始阐述——从核心定义、游乐场比喻，到单体架构、子智能体调度、反压机制、测试驱动，再到完整 CURSED 语言构建的 Prompt 实战。全文保留原文口语化、幽默的叙事风格。
+
+- [软件工厂为何失败（Why Software Factories Fail）](./why-software-factories-fail-zh.md)
+
+  这是一篇对 HumanLayer（Dex）文章《Why Software Factories Fail》的中文翻译，系统论证：光靠 harness 工程与循环至上无法解决模型训练层面的可维护性缺陷，"熄灯软件工厂"在实践中会失败。文章回顾软件工厂从 1968 年至今的演进，剖析为什么模型能在基准上拿满分却随时间拉低代码库质量（糟糕的设计在 RL 中没有代价、可维护性没有快速预言机），并给出"把灯重新打开"的四阶段方法论——产品评审、系统架构、程序设计、垂直切片。全文保留原文约 29 张配图（已本地化）、脚注与全部外链。

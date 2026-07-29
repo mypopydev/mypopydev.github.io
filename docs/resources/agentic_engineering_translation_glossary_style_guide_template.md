@@ -90,6 +90,18 @@
 | Intent debt | 意图债务 | — | 保留英文 | Addy coined，首现「意图债务（intent debt）」 | Loop Engineering |
 | Orchestration tax | 编排税 | — | 保留英文 | Addy coined，首现「编排税（orchestration tax）」 | Loop Engineering |
 | Maker / Checker | 制造者 / 审查者 | 写代码者 / 审查者 | 一般不保留 | 指写代码与审查代码的角色分离 | Loop Engineering |
+| software factory | 软件工厂 | — | 一般不保留 | 指规模化、流水线式生产软件的组织形态 | Why Software Factories Fail |
+| lights-off software factory | 熄灯软件工厂 | 无人值守软件工厂 | 保留英文 lights-off | 指人类不再读/写代码、全自动交付的工厂，首现「熄灯软件工厂（lights-off software factory）」 | Why Software Factories Fail |
+| front-loading alignment | 前置对齐 | — | 一般不保留 | 指把规划/架构对齐前置到写代码之前，以降低返工与评审成本 | Why Software Factories Fail |
+| vertical slices | 垂直切片 | — | 一般不保留 | 指端到端打通一小条功能（对比按技术栈顺序的"水平计划"） | Why Software Factories Fail |
+| tracer bullets | 示踪子弹（tracer bullets） | — | 建议保留英文 | 同 vertical slices，源自 Shape Up 的 tracer bullet 概念 | Why Software Factories Fail |
+| shotgun surgery | 霰弹式修改 | — | 一般不保留 | Martin Fowler 代码异味，改动一处需在多处同步修改 | Why Software Factories Fail |
+| brownfield | 棕地（brownfield） | — | 保留英文 | 指接手并长期维护已有代码库（对比绿地 greenfield） | Why Software Factories Fail |
+| maintainability | 可维护性 | — | 一般不保留 | 指代码库随时间被安全改动的能力 | Why Software Factories Fail |
+| RLVR | RLVR | 可验证奖励强化学习 | 保留英文 | Reinforcement Learning with Verifiable Rewards，首现「可验证奖励强化学习（RLVR）」 | Why Software Factories Fail |
+| loopsmaxxing | 循环至上（loopsmaxxing） | — | 保留英文 | 指盲目堆循环/循环工程以追求速度的倾向 | Why Software Factories Fail |
+| token-maxxing | 狂堆 Token（token-maxxing） | — | 保留英文 | 指盲目堆 Token 以追求效果的倾向 | Why Software Factories Fail |
+| slop | 垃圾（slop） | 废话、灌水 | 建议保留英文 | 指低质量 AI 生成代码/内容，首现「垃圾（slop）」 | Why Software Factories Fail |
 | Agent harness | 智能体 harness | — | 保留英文 harness | harness 不翻译 | Loop Engineering |
 | Agentic Code Review | 智能体式代码审查（Agentic Code Review） | — | 建议保留英文 | 本文主题，首现写法「智能体式代码审查（Agentic Code Review）」 | Agentic Code Review |
 | Blast radius | 影响半径（blast radius） | — | 保留英文 | Addy 用以衡量失败影响范围，首现中英并注 | Agentic Code Review |
