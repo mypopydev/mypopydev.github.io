@@ -24,7 +24,7 @@ OpenAI 的 [Ryan Lopopolo](https://x.com/_lopopolo) [二月在文章里写过这
 
 ![OpenAI 的 Ryan Lopopolo 谈 harness 工程](../assets/images/articles/why-software-factories-fail/ryan-lop-shadow.png){: width="50%" }
 
-这些人确实都聪明得离谱，我非常尊重他们。但最刻薄的说法，是把这又当成了一个往"垃圾大炮"里继续注资的借口。
+这些人确实都聪明得离谱，我非常尊重他们。但最刻薄的说法，是把这又当成了一个往"垃圾大炮"里继续灌 VC 钱的借口。
 
 ### 进展嘛……就那样
 
@@ -97,7 +97,7 @@ _感谢 [@addyosmani](https://x.com/addyosmani)、[@CyrusNewDay](https://x.com/C
 
 我这辈子都在构建和研究软件工厂，但我最近才了解到：这个词最早能追溯到 [1968 年的一场 NATO 会议](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF)——也正是那场会议给了我们"软件工程"这个词。
 
-自那以后我觉得最有趣的另一点，是美国国防部写过一份 31 页的 pdf，讲 DoD 需要开始更好地使用 jenkins 之类的东西。
+自那以后我觉得最有趣的另一点，是美国国防部写过一份 [31 页的 pdf](https://dodcio.defense.gov/Portals/0/Documents/Library/DevSecOpsReferenceDesign.pdf)，讲 DoD 需要开始更好地使用 jenkins 之类的东西。
 
 ### 2022 年的软件工厂
 
@@ -111,6 +111,8 @@ _感谢 [@addyosmani](https://x.com/addyosmani)、[@CyrusNewDay](https://x.com/C
 - **发布到生产环境**——然后它和用户产生接触
 - **加上监控**——有一整个行业专门负责在出问题时凌晨三点呼叫工程师
 - **用户抱怨**——提需求、发现 bug、提交功能请求 → 回到团队，加进跟踪系统
+
+[▶ 观看演示视频](https://github.com/user-attachments/assets/7bf8f42d-f13b-40c3-a8a2-7dca509f2d38)
 
 如此往复。而在那之前，我们甚至还没碰到 AI，这张图里就已经有好几个循环了。
 
