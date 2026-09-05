@@ -69,3 +69,7 @@
 - [构建 AI 智能体实用指南（A practical guide to building agents）](./a-practical-guide-to-building-agents-zh.md)
 
   这是一篇对 OpenAI 官方指南《A practical guide to building agents》（2025）的完整中文翻译，系统介绍从模型、工具、指令三大基础组件，到单智能体系统、管理器模式与去中心化模式两种多智能体编排方案，再到护栏分类（相关性 / 安全性 / PII / 内容审核 / 工具安全措施 / 基于规则的防护 / 输出验证）的设计与落地方法。文章以 OpenAI Agents SDK 为主示例，包含 5 段可直接运行的 Python 代码（天气智能体、搜索+保存智能体、`Runner.run`、管理器模式与去中心化模式）、1 段用 o1/o3-mini 自动生成指令的示例 Prompt，以及 4 张已本地化的关键示意图（单智能体系统、管理器模式、去中心化模式、护栏分层防御）。所有 SDK 方法名、装饰器、异常类（如 `Runner.run()`、`@input_guardrail`、`GuardrailTripwireTriggered`、`function_tool`、`as_tool` 等）保留原文，便于读者直接对照官方文档复用。
+
+- [NumPy `einsum` 基础指南（A basic introduction to NumPy's einsum）](./basic-guide-to-einsum-zh.md)
+
+  这是一篇对 ajcr《A basic introduction to NumPy's einsum》的中文全文翻译，从爱因斯坦求和约定、轴标记和矩阵乘法出发，解释 `einsum` 的乘法、求和与轴排列规则，并整理了一维/二维数组操作对照表、省略号语法，以及数据类型提升、轴排列和 BLAS 性能方面的注意事项。文中保留全部 NumPy 代码、原始链接和两张示意图。

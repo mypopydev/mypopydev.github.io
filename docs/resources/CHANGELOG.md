@@ -1,6 +1,12 @@
 # 更新记录
 
 ### 2026-09-05
+- 新增译文：NumPy `einsum` 基础指南（A basic introduction to NumPy's einsum，ajcr，2015-05-02）
+- 收录 ajcr 文章《A basic introduction to NumPy's einsum》中文全文翻译，置于 `docs/articles/basic-guide-to-einsum-zh.md`
+- 导航：深度学习（新增一篇）
+- 配图本地化：下载原文两张矩阵乘法示意图至 `docs/assets/images/articles/basic-guide-to-einsum/`
+- 代码、表格、原始链接和省略号语法示例均保留；译文覆盖原文全部章节
+
 - 新增译文：构建 AI 智能体实用指南（A practical guide to building agents，OpenAI，2025）
 - 收录 OpenAI 官方指南《A practical guide to building agents》中文译文，置于 `docs/articles/a-practical-guide-to-building-agents-zh.md`
 - 原文 PDF：`https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf`（34 页，2025-04-11 版）；网页版：`https://openai.com/business/guides-and-resources/a-practical-guide-to-building-agents/`。译文以 PDF 为权威原文（网页版省略了 `Runner.run()` 等 SDK 方法名，PDF 完整给出）
