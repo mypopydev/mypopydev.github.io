@@ -4,3 +4,9 @@ site/
 __pycache__/
 *.pyc
 .DS_Store
+.playwright-cli/
+.superpowers/sdd/progress.md
+docs/superpowers/plans/2026-07-05-30-concepts-accuracy-link-audit.md
+docs/superpowers/plans/2026-07-05-loop-engineering-translation.md
+docs/superpowers/plans/2026-07-06-agentic-code-review-translation.md
+docs/superpowers/plans/2026-07-07-getting-started-with-loops-translation.md
