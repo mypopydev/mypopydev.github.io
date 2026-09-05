@@ -1,6 +1,11 @@
 # 更新记录
 
 ### 2026-09-05
+- 新增译文：理解 NumPy 的 `einsum`（Understanding Numpy's einsum，Eli Bendersky，2025-03-22）
+- 收录 Eli Bendersky 文章《Understanding Numpy's einsum》中文全文翻译，置于 `docs/articles/understanding-numpys-einsum-zh.md`
+- 导航：深度学习（新增一篇）
+- 保留完整 Python 代码、LaTeX 公式、脚注和原始链接；原文未包含图片
+
 - 新增译文：NumPy `einsum` 基础指南（A basic introduction to NumPy's einsum，ajcr，2015-05-02）
 - 收录 ajcr 文章《A basic introduction to NumPy's einsum》中文全文翻译，置于 `docs/articles/basic-guide-to-einsum-zh.md`
 - 导航：深度学习（新增一篇）

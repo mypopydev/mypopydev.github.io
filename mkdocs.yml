@@ -118,6 +118,7 @@ nav:
       - 量化神经网络：你只需要这一篇指南: articles/quantized-neural-networks-the-only-guide-you-need-zh.md
       - 量化可视化指南：大语言模型压缩入门: articles/a-visual-guide-to-quantization-zh.md
       - NumPy einsum 基础指南（A basic introduction to NumPy's einsum）: articles/basic-guide-to-einsum-zh.md
+      - 理解 NumPy 的 einsum（Understanding Numpy's einsum）: articles/understanding-numpys-einsum-zh.md
       - 什么是扩散模型？: articles/what-are-diffusion-models-zh.md
       - Diffusion Transformer（DiT）模型：初学者指南: articles/diffusion-transformer-models-beginners-guide-zh.md
   - 浮点与芯片设计:

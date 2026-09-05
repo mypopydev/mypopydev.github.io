@@ -73,3 +73,7 @@
 - [NumPy `einsum` 基础指南（A basic introduction to NumPy's einsum）](./basic-guide-to-einsum-zh.md)
 
   这是一篇对 ajcr《A basic introduction to NumPy's einsum》的中文全文翻译，从爱因斯坦求和约定、轴标记和矩阵乘法出发，解释 `einsum` 的乘法、求和与轴排列规则，并整理了一维/二维数组操作对照表、省略号语法，以及数据类型提升、轴排列和 BLAS 性能方面的注意事项。文中保留全部 NumPy 代码、原始链接和两张示意图。
+
+- [理解 NumPy 的 `einsum`（Understanding Numpy's einsum）](./understanding-numpys-einsum-zh.md)
+
+  这是一篇对 Eli Bendersky《Understanding Numpy's einsum》的中文全文翻译，围绕显式模式下的矩阵乘法、批量矩阵乘法、多维张量维度排列、多维约简、输入转置和多输入运算展开，并进一步给出一个教学式 `einsum` 转换实现，解释爱因斯坦记号与隐式模式。文中保留完整 Python 代码、LaTeX 公式、脚注和原始链接。
