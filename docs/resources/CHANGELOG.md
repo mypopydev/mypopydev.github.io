@@ -1,5 +1,17 @@
 # 更新记录
 
+### 2026-09-05
+- 新增译文：构建 AI 智能体实用指南（A practical guide to building agents，OpenAI，2025）
+- 收录 OpenAI 官方指南《A practical guide to building agents》中文译文，置于 `docs/articles/a-practical-guide-to-building-agents-zh.md`
+- 原文 PDF：`https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf`（34 页，2025-04-11 版）；网页版：`https://openai.com/business/guides-and-resources/a-practical-guide-to-building-agents/`。译文以 PDF 为权威原文（网页版省略了 `Runner.run()` 等 SDK 方法名，PDF 完整给出）
+- 导航：智能体工程 > 独立译文（新增一篇，紧接《软件工厂为何失败》之后）
+- 配图本地化：从 PDF 矢量图裁切 4 张关键示意图至 `docs/assets/images/articles/a-practical-guide-to-building-agents/`（single-agent-systems、manager-pattern、decentralized-pattern、guardrails-layered-defense），与 `why-software-factories-fail` 风格一致——保留英文标签
+- 代码：5 段 Agents SDK Python 代码块原样保留（weather_agent、search_agent + save_results、`Runner.run` 调用、管理器模式、去中心化模式）；1 段用于自动生成指令的示例 Prompt 原样保留并附中文释义
+- 完整性复核（第二轮）：依据 PDF 补回「为人工介入留出空间」一节中网页版缺失的 3 段正文（人工介入作为安全屏障的价值、客服/编码两种交接方式、两类触发条件的引导句），网页版仅有 2 个要点
+- 译者注 2 处：① 原文正文写 `Runner.run()`、示例代码却调用 `Agents.run(...)`，属原文自身不一致，均按原样保留；② `math_homework_tripwire` 示例与上方 `churn_detection_tripwire` 代码并非同一护栏，属原文行文安排
+- 术语使用：智能体（agent）、工具（tool）、护栏（guardrail）、交接（handoff）、人在回路（human-in-the-loop）等统一中文；Agents SDK、Runner.run、WebSearchTool、function_tool、`@input_guardrail`、`GuardrailTripwireTriggered`、tripwire、as_tool 等保留英文；与既有项目术语表协调一致
+- 原文外链：保留 Agents SDK 文档（https://openai.github.io/openai-agents-python/）与模型选择指南（https://platform.openai.com/docs/guides/model-selection）两条原始 URI；并在文末「延伸阅读」补充 GitHub 仓库与原文 PDF 下载地址
+
 ### 2026-07-29
 - 新增译文：软件工厂为何失败（Why Software Factories Fail，HumanLayer / Dex，2026）
 - 收录 HumanLayer 文章《Why Software Factories Fail》中文译文，置于 `docs/articles/why-software-factories-fail-zh.md`

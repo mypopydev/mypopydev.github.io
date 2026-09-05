@@ -65,3 +65,7 @@
 - [软件工厂为何失败（Why Software Factories Fail）](./why-software-factories-fail-zh.md)
 
   这是一篇对 HumanLayer（Dex）文章《Why Software Factories Fail》的中文翻译，系统论证：光靠 harness 工程与循环至上无法解决模型训练层面的可维护性缺陷，"熄灯软件工厂"在实践中会失败。文章回顾软件工厂从 1968 年至今的演进，剖析为什么模型能在基准上拿满分却随时间拉低代码库质量（糟糕的设计在 RL 中没有代价、可维护性没有快速预言机），并给出"把灯重新打开"的四阶段方法论——产品评审、系统架构、程序设计、垂直切片。全文保留原文约 29 张配图（已本地化）、脚注与全部外链。
+
+- [构建 AI 智能体实用指南（A practical guide to building agents）](./a-practical-guide-to-building-agents-zh.md)
+
+  这是一篇对 OpenAI 官方指南《A practical guide to building agents》（2025）的完整中文翻译，系统介绍从模型、工具、指令三大基础组件，到单智能体系统、管理器模式与去中心化模式两种多智能体编排方案，再到护栏分类（相关性 / 安全性 / PII / 内容审核 / 工具安全措施 / 基于规则的防护 / 输出验证）的设计与落地方法。文章以 OpenAI Agents SDK 为主示例，包含 5 段可直接运行的 Python 代码（天气智能体、搜索+保存智能体、`Runner.run`、管理器模式与去中心化模式）、1 段用 o1/o3-mini 自动生成指令的示例 Prompt，以及 4 张已本地化的关键示意图（单智能体系统、管理器模式、去中心化模式、护栏分层防御）。所有 SDK 方法名、装饰器、异常类（如 `Runner.run()`、`@input_guardrail`、`GuardrailTripwireTriggered`、`function_tool`、`as_tool` 等）保留原文，便于读者直接对照官方文档复用。
