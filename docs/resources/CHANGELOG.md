@@ -1,6 +1,7 @@
 # 更新记录
 
 ### 2026-09-05
+- 补充《理解 NumPy 的 `einsum`》：翻译 MathWorld《Einstein Summation》的三条约定规则，并说明其与 NumPy `einsum` 维度标签的关系
 - 新增译文：理解 NumPy 的 `einsum`（Understanding Numpy's einsum，Eli Bendersky，2025-03-22）
 - 收录 Eli Bendersky 文章《Understanding Numpy's einsum》中文全文翻译，置于 `docs/articles/understanding-numpys-einsum-zh.md`
 - 导航：深度学习（新增一篇）
