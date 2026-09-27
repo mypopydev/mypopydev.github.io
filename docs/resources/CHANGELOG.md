@@ -1,5 +1,12 @@
 # 更新记录
 
+### 2026-09-27
+- 新增全书中译：《向量：一个关于空间、时间与数学变换的惊奇故事》（*Vector: A Surprising Story of Space, Time, and Mathematical Transformation*，Robyn Arianrhod，UNSW Press / NewSouth Publishing，2024）
+- 收录 23 篇译稿（译本说明、名家推荐、作者简介、献词、序言、第 1–13 章、结语、时间线、致谢、注释 353 条、索引 639 条），置于 `docs/books/vector-zh/`；汉字 26.3 万字
+- 导航：新增「向量（中译本）」板块；配图 57 张置于 `docs/assets/images/vector/`
+- 公式用 KaTeX 渲染（`$…$` / `$$…$$`），脚注、知识框、原版页码（页边灰字）均已本地化；图按「章.序号」编号且正文引用可跳转
+- 另有 PDF 版（A4，330 页）可下载；落地页含原书版权与非商业声明
+
 ### 2026-09-05
 - 补充《理解 NumPy 的 `einsum`》：翻译 MathWorld《Einstein Summation》的三条约定规则，并说明其与 NumPy `einsum` 维度标签的关系
 - 新增译文：理解 NumPy 的 `einsum`（Understanding Numpy's einsum，Eli Bendersky，2025-03-22）

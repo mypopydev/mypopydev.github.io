@@ -127,6 +127,31 @@ nav:
       - TurboQuant — KV Cache 压缩算法: articles/research-papers/turboquant-kv-cache-compression-zh.md
   - 数学考证:
       - '"齐次"是怎么成为中文数学术语的？': articles/homogeneous-chinese-translation-etymology-zh.md
+  - 向量（中译本）:
+      - 开始阅读: books/vector-zh/index.md
+      - 译本说明: books/vector-zh/00-about-this-translation.md
+      - 名家推荐: books/vector-zh/01-praise.md
+      - 作者简介: books/vector-zh/02-about-the-author.md
+      - 献词: books/vector-zh/03-dedication.md
+      - 序言: books/vector-zh/04-prologue.md
+      - 第 1 章　代数的解放: books/vector-zh/05-ch01-liberation-of-algebra.md
+      - 第 2 章　微积分的登场: books/vector-zh/06-ch02-arrival-of-calculus.md
+      - 第 3 章　向量的构想: books/vector-zh/07-ch03-ideas-for-vectors.md
+      - 第 4 章　理解空间（与存储）: books/vector-zh/08-ch04-space-and-storage.md
+      - 第 5 章　出人意料的新角色与缓慢的接受: books/vector-zh/09-ch05-new-player-slow-reception.md
+      - 第 6 章　泰特与麦克斯韦: books/vector-zh/10-ch06-tait-and-maxwell.md
+      - 第 7 章　从四元数到向量: books/vector-zh/11-ch07-quaternions-to-vectors.md
+      - 第 8 章　向量分析终成正果: books/vector-zh/12-ch08-vector-analysis.md
+      - 第 9 章　从空间到时空: books/vector-zh/13-ch09-space-to-spacetime.md
+      - 第 10 章　弯曲的空间与不变的距离: books/vector-zh/14-ch10-curving-spaces.md
+      - 第 11 章　张量的发明: books/vector-zh/15-ch11-inventing-tensors.md
+      - 第 12 章　万物汇聚: books/vector-zh/16-ch12-everything-comes-together.md
+      - 第 13 章　后来发生了什么: books/vector-zh/17-ch13-what-happened-next.md
+      - 结语: books/vector-zh/18-epilogue.md
+      - 时间线: books/vector-zh/19-timeline.md
+      - 致谢: books/vector-zh/20-acknowledgments.md
+      - 注释（353 条）: books/vector-zh/21-notes.md
+      - 索引（639 条）: books/vector-zh/22-index.md
   - 关于:
       - 术语表与翻译约定: resources/agentic_engineering_translation_glossary_style_guide_template.md
       - 双语链接映射: resources/BILINGUAL_LINK_MAP.md

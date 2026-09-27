@@ -42,3 +42,55 @@
 .md-typeset ol {
   margin: 0.55em 0;
 }
+
+/* ===== 《向量》中文译本 ===== */
+
+/* 知识框（原书 box），观感贴近 Material 的 admonition */
+.md-typeset .infobox {
+  margin: 1.1rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 6px;
+  background: var(--md-code-bg-color);
+  font-size: 0.92rem;
+}
+
+/* 居中公式段（原书用 <i>/<sub>/<sup> 排的行间公式） */
+.md-typeset .displayeq {
+  margin: 0.9rem 0;
+  text-align: center;
+}
+
+/* 英文原版页码：正文里的小号灰字上标 */
+.md-typeset .origpage {
+  font-size: 0.62em;
+  color: var(--md-default-fg-color--lighter);
+  vertical-align: super;
+  line-height: 0;
+  margin: 0 0.15em;
+  white-space: nowrap;
+}
+
+/* 章节分隔符 • • • */
+.md-typeset p.secbreak {
+  margin: 1.4rem 0;
+  text-align: center;
+  letter-spacing: 0.6em;
+  color: var(--md-default-fg-color--lighter);
+}
+
+/* 图注居中并加大与图的间距 */
+.md-typeset figure p.figcap {
+  margin: 0.5rem auto 0;
+  max-width: 90%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* 书的落地页封面 */
+.md-typeset img.book-cover {
+  max-width: 220px;
+  border-radius: 4px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
