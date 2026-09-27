@@ -9,7 +9,7 @@
 闵可夫斯基的时空，以及爱因斯坦借张量写下的广义相对论——这本书讲向量与张量穿越五千年的故事。
 
 - **中文译稿**：23 篇，汉字 26.3 万字
-- **PDF 版**：[下载 vector-cn.pdf](https://github.com/mypopydev/vector/blob/main/dist/vector-cn.pdf)
+- **PDF 版**：[下载 vector-cn.pdf（A4，330 页，8.4 MB）](../../assets/pdf/vector-cn.pdf)
 - 页边/行内的灰色小字是**英文原版页码**，供按索引与注释回查原书
 
 ## 目录
