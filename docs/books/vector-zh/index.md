@@ -36,7 +36,7 @@
 20. [时间线](19-timeline.md)
 21. [致谢](20-acknowledgments.md)
 22. [注释（353 条）](21-notes.md)
-23. [索引（639 条）](22-index.md)
+23. [索引（636 条）](22-index.md)
 
 ---
 

@@ -522,7 +522,7 @@ $$u^{\mu}_{;\lambda}=u^{\mu}_{,\lambda}+\Gamma^{\mu}_{\sigma\lambda}u^{\sigma}.$
 
 [^ch11n14]: “原则上，一台 300 量子比特的量子计算机在一瞬间所能完成的计算，比可见宇宙中的原子还多”：Charles Q. Choi, “How Many Qubits Are Needed for Quantum Supremacy?” *IEEE News*, May 21, 2020；<https://spectrum.ieee.org/qubit-supremacy#:~:text=Superposition%20lets%20one%20qubit%20perform,eight%20calculations%3B%20and%20so%20on>。
 
-[^ch11n15]: *Enrico Betti*：*n*-D 中的斯托克斯定理：Victor Katz, “The History of Differential Forms from Clairaut to Poincaré,” *Historia Mathematica* 8 (1981): 161–88, esp. 175。*贝蒂当兵、为期刊投稿*：Goodstein, *Einstein’s Italian Mathematicians*, 7。*贝蒂与里奇的论文*：Goodstein, *Einstein’s Italian Mathematicians*, 148。
+[^ch11n15]: *Enrico Betti*：*n* 维中的斯托克斯定理：Victor Katz, “The History of Differential Forms from Clairaut to Poincaré,” *Historia Mathematica* 8 (1981): 161–88, esp. 175。*贝蒂当兵、为期刊投稿*：Goodstein, *Einstein’s Italian Mathematicians*, 7。*贝蒂与里奇的论文*：Goodstein, *Einstein’s Italian Mathematicians*, 148。
 
 [^ch11n16]: 里奇的信，转引自 Goodstein, *Einstein’s Italian Mathematicians*, 9–10。
 
@@ -538,7 +538,7 @@ $$u^{\mu}_{;\lambda}=u^{\mu}_{,\lambda}+\Gamma^{\mu}_{\sigma\lambda}u^{\sigma}.$
 
 [^ch11n21]: 不过请注意，这里我们谈的是单一参照系中的向量——与上面的旋转例子不同，这种求和与参照系之间的变换无关。
 
-[^ch11n22]: *证明 n-D 中标量积在坐标变换下的不变性*：用变换方程中矩阵系数的微分形式最容易看清。例如，2-D 旋转变换方程的第一个是 *x′* = *x* cosθ + *y* sin θ。用偏导数，这个方程的微分形式是
+[^ch11n22]: *证明 *n* 维中标量积在坐标变换下的不变性*：用变换方程中矩阵系数的微分形式最容易看清。例如，二维旋转变换方程的第一个是 *x′* = *x* cosθ + *y* sin θ。用偏导数，这个方程的微分形式是
     $dx'=\frac{\partial x'}{\partial x}dx+\frac{\partial x'}{\partial y}dy,$
     你可以看出 $\frac{\partial x'}{\partial x}=\cos\theta$，其余导数依此类推——所以这些导数正是我在叙述中标为 $A_{\sigma}^{\mu'}$ 的那些分量。对于列向量与行向量的数量（内）积，你会有（最后一项用链式法则得到）：
     $u^{\mu'}v_{\mu'}=A_{\sigma}^{\mu'}A_{\mu'}^{\lambda}u^{\sigma}v_{\lambda}\equiv\frac{\partial x^{\mu'}}{\partial x^{\sigma}}\frac{\partial x^{\lambda}}{\partial x^{\mu'}}u^{\sigma}v_{\lambda}=\frac{\partial x^{\lambda}}{\partial x^{\sigma}}u^{\sigma}v_{\lambda}.$

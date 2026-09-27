@@ -413,7 +413,7 @@ $\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}+\left(z_{2}-z_{
 21. H. Minkowski, “Space and Time,” 1908，英译见 H. A. Lorentz et al., *Principle of Relativity*, 75–91。涨红了脸：Reid, *Hilbert*, 92。关于 1907 年的演讲：Walter, “Breaking in the 4-vectors,” 219。
 22. *关于闵可夫斯基之死*：Reid, *Hilbert*, 115。
 23. *克莱因与尤斯图斯*：Crowe, *History of Vectors*, 92。
-24. *不变的时空间隔／常量 c*：速度等于距离／时间，所以在 3-D 空间中，光速可以用关于距离的毕达哥拉斯定理来定义：
+24. *不变的时空间隔／常量 c*：速度等于距离／时间，所以在三维空间中，光速可以用关于距离的毕达哥拉斯定理来定义：
 *c*<sup>2</sup> = (*x*<sup>2</sup> + *y*<sup>2</sup> + *z*<sup>2</sup>)/*t*<sup>2</sup>；
 这个方程的另一种写法当然是
 *x*<sup>2</sup> + *y*<sup>2</sup> + *z*<sup>2</sup> − (*ct*)<sup>2</sup> = 0。
@@ -434,7 +434,7 @@ $\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}+\left(z_{2}-z_{
 *ds*<sup>2</sup> = −*dx*<sup>2</sup> − *dy*<sup>2</sup> − *dz*<sup>2</sup> + *c*<sup>2</sup>*t*<sup>2</sup>，或 *ds*<sup>2</sup> = *c*<sup>2</sup>*t*<sup>2</sup> − *dx*<sup>2</sup> − *dy*<sup>2</sup> − *dz*<sup>2</sup>；
 符号的选取称为“号差”，就我们的目的而言，关键在于时间微分的符号与空间的各项相反。
 6. *高斯论证概要*：这里的页码（以及别处）指高斯 1828 年论文的英译本，*General Investigations of Curved Surfaces of 1827 and 1825*, by Karl Friedrich Gauss, translated by James Morehead and Adam Hiltebeitel, Project Gutenberg, 2011（from the 1902 edition, Princeton: Princeton University Library）；<https://www.gutenberg.org/files/36856/36856-pdf.pdf>。
-我说过，对他的 2-D 曲面，高斯把三个 *x, y, z* 坐标变换为两个他称之为 *p*、*q* 的新变量的函数——所以你可以把坐标变换写成（我将其取为线性的）
+我说过，对他的二维曲面，高斯把三个 *x, y, z* 坐标变换为两个他称之为 *p*、*q* 的新变量的函数——所以你可以把坐标变换写成（我将其取为线性的）
 *x* = *f*(*p, q*), *y* = *g*(*p, q*), *z* = *h*(*p, q*)。
 于是链式法则给出
 $dx=\frac{\partial f}{\partial p}dp+\frac{\partial f}{\partial p}dq=adp+a'dq$ 用高斯的记号（p. 7）。
@@ -454,7 +454,7 @@ $dx=\frac{\partial f}{\partial p}dp+\frac{\partial f}{\partial p}dq=adp+a'dq$ �
 $\frac{dr}{dp}=v,\frac{dr}{dq}=v'.)$
 两个向量标量积的几何定义是 ***a.b*** = |***a***||***b***| cosθ，而正如我们在第 9 章看到的，$|\boldsymbol{a}|=\sqrt{\boldsymbol{a}\cdot\boldsymbol{a}}$。所以这两个切向量之间的夹角是
 $\cos\theta=\frac{v\cdot v'}{(\sqrt{v\cdot v)(v\cdot v'})}=\frac{F}{\sqrt{EG}}.$
-后来的数学家将其推广到任意的度规和维数，度规的系数写作 *g<sub>ij</sub>*：对于这里的 2-D 情形，我们有
+后来的数学家将其推广到任意的度规和维数，度规的系数写作 *g<sub>ij</sub>*：对于这里的二维情形，我们有
 $\cos\theta=\frac{g_{12}}{\sqrt{g_{11}g_{22}}}.$
 为了求曲面的曲率，把这些公式应用于边由坐标线围成的三角形，如<a href="#fig-10-4">图 10.4</a>，然后如我在叙述中所解释的，由内角和给出曲率的性质。
 顺便说一句，如果你熟悉二重积分，那么我在叙述中提到的面积积分里的表达式 $\sqrt{EG-F^{2}}$ 就是雅可比行列式。它是度规系数矩阵的行列式，用广义相对论中的一般度规来写就是 $\sqrt{-g}$。
@@ -493,7 +493,7 @@ $\cos\theta=\frac{g_{12}}{\sqrt{g_{11}g_{22}}}.$
 12. *NLP（含大语言模型）的益处与问题*：本书付印之时，情形想必已变了许多，AI 发展就是这么快；不过这里给出一些较新的参考。关于益处的另一个例子，见 Samantha Spengler, “For Some Autistic People, ChatGPT Is a Lifeline,” *Wired*, May 30, 2023；<https://www.wired.com/story/for-some-autistic-people-chatgpt-is-a-lifeline/#>。关于问题，除了训练数据被盗用之外，人们已就 ChatGPT 某些输出的不可靠写过很多——所以尽管益处明显，它在教育中的角色仍无定论：见，例如，Hayden Horner, “ChatGPT: Brilliance or a Bother for Education,” Engineering Institute of Technology 新闻网站, March 13, 2023, <https://www.eit.edu.au/chatgpt-brilliance-or-a-bother-for-education/>。同样地，在远程医疗（以及其他许多领域）中，有利也有弊：见，例如，Som Biswas, “Role of ChatGPT in Public Health,” *Annals of Biomedical Engineering*（March 2023），线上发表于 <https://www.researchgate.net/profile/Som-Biswas-2/publication/369269117>。复杂的 AI 带来明显的社会问题，从助长监控到制造深度伪造和假新闻。我在第 4 章的注释里提过偏见问题，另见，例如，Grace Browne, “AI Is Steeped in Big Tech’s ‘Digital Colonialism,’” *Wired UK*（May 25, 2023）；<https://www.wired.co.uk/article/abeba-birhane-ai-datasets>。围绕相似主题，另见 *MIT Technology Review* 的系列文章 “AI Colonialism”，<https://www.technologyreview.com/supertopic/ai-colonialism-supertopic/>，其中也包含受压迫民族以积极方式使用 AI 进行反击的例子。此外还有环境问题，例如 Maanvi Singh, “As the AI Industry Booms, What Toll Will It Take on the Environment?,” *The Guardian*（June 9, 2003）。关于科学与技术的知情公共讨论，比以往任何时候都更为关键！
 13. 当然，NLP 和大语言模型的内容远不止张量积。就我的叙述（以及关于 NLP 的更多内容）而言，我特别受惠于 Qiuyuan Huang, Paul Smolensky, Xiaodong He, Li Deng, Dapeng Wu, “Tensor Product Generation Networks for Deep NLP Modeling,” *Proceedings of NAACL-HLT 2018*（New Orleans）: 1263–73；Lipeng Ahang et al., “A Generalized Language Model in Tensor Space,” 33rd Annual Conference of the AAAI (2019)；以及 Matthew Kramer, “Word Embeddings,” Medium.com, August 31, 2021。
 14. “原则上，一台 300 量子比特的量子计算机在一瞬间所能完成的计算，比可见宇宙中的原子还多”：Charles Q. Choi, “How Many Qubits Are Needed for Quantum Supremacy?” *IEEE News*, May 21, 2020；<https://spectrum.ieee.org/qubit-supremacy#:~:text=Superposition%20lets%20one%20qubit%20perform,eight%20calculations%3B%20and%20so%20on>。
-15. *Enrico Betti*：*n*-D 中的斯托克斯定理：Victor Katz, “The History of Differential Forms from Clairaut to Poincaré,” *Historia Mathematica* 8 (1981): 161–88, esp. 175。*贝蒂当兵、为期刊投稿*：Goodstein, *Einstein’s Italian Mathematicians*, 7。*贝蒂与里奇的论文*：Goodstein, *Einstein’s Italian Mathematicians*, 148。
+15. *Enrico Betti*：*n* 维中的斯托克斯定理：Victor Katz, “The History of Differential Forms from Clairaut to Poincaré,” *Historia Mathematica* 8 (1981): 161–88, esp. 175。*贝蒂当兵、为期刊投稿*：Goodstein, *Einstein’s Italian Mathematicians*, 7。*贝蒂与里奇的论文*：Goodstein, *Einstein’s Italian Mathematicians*, 148。
 16. 里奇的信，转引自 Goodstein, *Einstein’s Italian Mathematicians*, 9–10。
 17. *里奇为晋升的长期奋斗*：Goodstein, *Einstein’s Italian Mathematicians*, 35–43, 59–61。
 18. G. Ricci and T. Levi-Civita, “Méthodes de calcul différential absolu et leurs applications,” *Mathematische Annalen* 54 (1900): 125–201；关于学习新技能所需付出的努力与回报，见 128（我的译文）。
@@ -504,7 +504,7 @@ $T^{\mu'v'}\equiv a^{\mu'}b^{v'}=\left(A_{\sigma}^{\mu'}a^{\sigma}\right)\left(A
 
 20. *昂鲁效应*：1976 年，加拿大物理学家威廉·昂鲁（William Unruh）借助量子理论发现，广义相对论预言温度并不完全像我在<a href="#fig-11-1">图 11.1</a> 中所说的那样是与坐标无关的标量。相反，加速运动的观测者所测得的时空温度，会与静止观测者测得的略有不同。这种“昂鲁效应”尚未被探测到——要测出一度的温度变化，你得接近光速旅行才行。但在 2022 年，由 James Quach 领导的阿德莱德大学团队发明了一种“量子温度计”，也许很快就能证明昂鲁、以及广义相对论是对的。
 21. 不过请注意，这里我们谈的是单一参照系中的向量——与上面的旋转例子不同，这种求和与参照系之间的变换无关。
-22. *证明 n-D 中标量积在坐标变换下的不变性*：用变换方程中矩阵系数的微分形式最容易看清。例如，2-D 旋转变换方程的第一个是 *x′* = *x* cosθ + *y* sin θ。用偏导数，这个方程的微分形式是
+22. *证明 *n* 维中标量积在坐标变换下的不变性*：用变换方程中矩阵系数的微分形式最容易看清。例如，二维旋转变换方程的第一个是 *x′* = *x* cosθ + *y* sin θ。用偏导数，这个方程的微分形式是
 $dx'=\frac{\partial x'}{\partial x}dx+\frac{\partial x'}{\partial y}dy,$
 你可以看出 $\frac{\partial x'}{\partial x}=\cos\theta$，其余导数依此类推——所以这些导数正是我在叙述中标为 $A_{\sigma}^{\mu'}$ 的那些分量。对于列向量与行向量的数量（内）积，你会有（最后一项用链式法则得到）：
 $u^{\mu'}v_{\mu'}=A_{\sigma}^{\mu'}A_{\mu'}^{\lambda}u^{\sigma}v_{\lambda}\equiv\frac{\partial x^{\mu'}}{\partial x^{\sigma}}\frac{\partial x^{\lambda}}{\partial x^{\mu'}}u^{\sigma}v_{\lambda}=\frac{\partial x^{\lambda}}{\partial x^{\sigma}}u^{\sigma}v_{\lambda}.$

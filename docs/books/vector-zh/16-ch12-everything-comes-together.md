@@ -83,7 +83,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <img src="../../assets/images/vector/p310.jpg" style="width:50%">
 
-图 12.2　阿尔伯特·爱因斯坦，1912 年。苏黎世联邦理工学院图书馆（ETH-Bibliothek Zürich），图像档案／摄影：Jan. F. Langhans／Portr_05936。公有领域。
+图 12.2　阿尔伯特·爱因斯坦，1912 年。苏黎世联邦理工学院图书馆（ETH-Bibliothek Zürich），图片档案／摄影：Jan. F. Langhans／Portr_05936。公有领域。
 {: .figcap }
 
 </figure>
@@ -187,7 +187,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 <div class="infobox" markdown="1">
 
 
-只是为了向你表明，这一对美妙的方程并不是张量优雅性的最后定论：用后来微分几何的语言，麦克斯韦方程组还可以写得更简洁：
+只是为了向你表明，这一对美妙的方程并不是张量优雅性的最后定论，用后来微分几何的语言，麦克斯韦方程组还可以写得更简洁：
 
 <div class="displayeq" markdown="1">
 
