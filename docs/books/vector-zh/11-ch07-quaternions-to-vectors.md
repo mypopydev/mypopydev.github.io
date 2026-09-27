@@ -2,7 +2,7 @@
 
 # 第 7 章　从四元数到向量的缓慢旅程
 
-泰特（Peter Guthrie Tait）深深着迷于四元数（quaternion）——更确切地说，是一个四元数的向量部分——让他得以把物理方程写得紧凑得多这件事，尤其是当他应用哈密顿（William Rowan Hamilton）的算子 ∇（“纳布拉”，nabla）的时候。此前的所有人——从牛顿到麦克斯韦（James Clerk Maxwell）——都只为力或速度这类向量性的量的每一个分量分别写出方程。哈密顿本人专注的是数学而非物理，因此泰特为他的四元数找到的这些新用途让他欣喜不已——泰特还专程从贝尔法斯特南下都柏林，好让他和哈密顿能够当面交谈。他们还互通了几十封信，其中包括哈密顿那封欢快的信，信中希望有朝一日他和泰特会因为他们付出的努力而被感谢。哈密顿确实得到了承认，却没有因为他在这段故事里所扮演的角色而真正被感谢——但是当他在 1865 年去世时，也就是在麦克斯韦发表他那开创性的电磁场理论仅仅几个月之后，三十四岁的泰特已经准备好接替他继续前行。
+泰特（Peter Guthrie Tait）深深着迷于四元数（quaternion）——更确切地说，是一个四元数的向量部分——让他得以把物理方程写得紧凑得多这件事，尤其是当他应用哈密顿（William Rowan Hamilton）的算子 ∇（“纳布拉”，nabla）的时候。此前的所有人——从牛顿到麦克斯韦（James Clerk Maxwell）——都只为力或速度这类向量性的量的每一个分量分别写出方程。哈密顿本人专注的是数学而非物理，因此泰特为他的四元数找到的这些新用途让他欣喜不已——泰特还专程从贝尔法斯特南下都柏林，好让他和哈密顿能够当面交谈。他们还互通了几十封信，其中包括哈密顿那封欢快的信，信中希望有朝一日他和泰特会因为他们付出的努力而被感谢。哈密顿确实得到了承认，却没有因为他在这段故事里的角色而真正被感谢——但是当他在 1865 年去世时，也就是在麦克斯韦发表他那开创性的电磁场理论仅仅几个月之后，三十四岁的泰特已经准备好接替他继续前行。
 
 <span class="origpage" title="英文原版第 147 页">147</span>
 
@@ -274,7 +274,7 @@
 
 [^ch07n2]: *泰特的书房与清单*：Cargill Gilston Knott, *The Life and Scientific Work of P. G. Tait* (London: Cambridge University Press, 1911), 33, 43。
 
-[^ch07n3]: *论“麦克斯韦妖”这一绰号的由来*：该方程出现在泰特 *Sketch of Thermodynamics* (Edinburgh: Edmonston and Douglas, 1868) 的第 162 节。另见 M. J. Klein, "Maxwell, His Demon, and the Second Law of Thermodynamics," in *Maxwell's Demon: Entropy, Information, Computing*, ed. Harvey Leff and Andrew Rex (Princeton, NJ: Princeton University Press, 1990), 85–86。Klein 的文章写于 1970 年；麦克斯韦的“妖”是一个有助于澄清热力学本质的思想实验。
+[^ch07n3]: *论麦克斯韦绰号的由来*：该方程出现在泰特 *Sketch of Thermodynamics* (Edinburgh: Edmonston and Douglas, 1868) 的第 162 节。另见 M. J. Klein, "Maxwell, His Demon, and the Second Law of Thermodynamics," in *Maxwell's Demon: Entropy, Information, Computing*, ed. Harvey Leff and Andrew Rex (Princeton, NJ: Princeton University Press, 1990), 85–86。Klein 的文章写于 1970 年；麦克斯韦的“妖”是一个有助于澄清热力学本质的思想实验。
 
 [^ch07n4]: *麦克斯韦的评论*：*Scientific Papers of James Clerk Maxwell*, ed. W. D. Niven (Cambridge: Cambridge University Press, 1890), 326–27。*麦克斯韦致泰特*，1871 年 12 月 21 日，Knott, *Life of Tait*, 150。
 

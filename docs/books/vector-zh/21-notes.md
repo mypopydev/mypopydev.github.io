@@ -303,7 +303,7 @@ $\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}=4\pi\rho$...(5)
 2. *泰特的书房与清单*：Cargill Gilston Knott, *The Life and Scientific Work of P. G. Tait* (London: Cambridge University Press, 1911), 33, 43。
 <span class="origpage" title="英文原版第 372 页">372</span>
 
-3. *论“麦克斯韦妖”这一绰号的由来*：该方程出现在泰特 *Sketch of Thermodynamics* (Edinburgh: Edmonston and Douglas, 1868) 的第 162 节。另见 M. J. Klein, "Maxwell, His Demon, and the Second Law of Thermodynamics," in *Maxwell's Demon: Entropy, Information, Computing*, ed. Harvey Leff and Andrew Rex (Princeton, NJ: Princeton University Press, 1990), 85–86。Klein 的文章写于 1970 年；麦克斯韦的“妖”是一个有助于澄清热力学本质的思想实验。
+3. *论麦克斯韦绰号的由来*：该方程出现在泰特 *Sketch of Thermodynamics* (Edinburgh: Edmonston and Douglas, 1868) 的第 162 节。另见 M. J. Klein, "Maxwell, His Demon, and the Second Law of Thermodynamics," in *Maxwell's Demon: Entropy, Information, Computing*, ed. Harvey Leff and Andrew Rex (Princeton, NJ: Princeton University Press, 1990), 85–86。Klein 的文章写于 1970 年；麦克斯韦的“妖”是一个有助于澄清热力学本质的思想实验。
 4. *麦克斯韦的评论*：*Scientific Papers of James Clerk Maxwell*, ed. W. D. Niven (Cambridge: Cambridge University Press, 1890), 326–27。*麦克斯韦致泰特*，1871 年 12 月 21 日，Knott, *Life of Tait*, 150。
 5. *麦克斯韦致泰特*（着重标记为我所加），1870 年 11 月 14 日，见 Michael J. Crowe, *A History of Vector Analysis* (Notre Dame, IN: University of Notre Dame Press, 1967), 132；麦克斯韦致坎贝尔，1872 年 10 月 19 日，见 Lewis Campbell and William Garnett, *The Life of James Clerk Maxwell* (London: Macmillan, 1882), 186。麦克斯韦的“分类”论文发表于 *Proceedings of the London Mathematical Society*（1871 年 3 月 9 日）: 224–33。
 6. *麦克斯韦致泰特*谈向量微积分的命名：1870 年 11 月 7 日，转引自 Knott, *Life of Tait*, 167。
@@ -349,7 +349,7 @@ $\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}=4\pi\rho$...(5)
 7. *亥维赛从向量中消去虚数*：*Electromagnetic Theory*, 1:137, 142, 149。*他的诙谐*：*Electromagnetic Theory*, 1:135。
 8. 亥维赛在英国科学促进会（BAAS）上缺席：*Engineering* 46 (1888): 352；转引自 Hunt, “Oliver Heaviside,” 52–53。
 9. *锅嫌壶黑*：Heaviside, *Electromagnetic Theory*, 1:203；*谋杀势*：致 FitzGerald 的信，转引自 Rautio, “Twenty-three Years,” 1004。
-10. *亥维赛的形式还不完全是“现代”形式*：在多数本科教材里，麦克斯韦方程组是用 ***E*** 和 ***B*** 写出的，但在亥维赛那里被单独挑出来的却是 ***E*** 和 ***H***。麦克斯韦区分了磁感应（即磁场）***B***——它是一个*通量*——与磁*力 **H***。当磁场完全由磁力感生时，就有 ***B*** = μ***H***，其中 μ 是磁导率系数。亥维赛用的正是这个定义，所以看他的方程时，从 ***H*** 换成 ***B*** 是很直接的。他还采用了麦克斯韦关于电位移 ***D*** 的定义，即用力 ***E*** 来表示的一个通量：***D*** = *c**E***/4π。
+10. *亥维赛的形式还不完全是“现代”形式*：在多数本科教材里，麦克斯韦方程组是用 ***E*** 和 ***B*** 写出的，但在亥维赛那里被单独挑出来的却是 ***E*** 和 ***H***。麦克斯韦区分了磁感应（即磁场）***B***——它是一个*通量*——与磁*力 **H***。当磁场完全由磁力感生时，就有 ***B*** = μ***H***，其中 μ 是磁导率系数。亥维赛用的正是这个定义，所以看他的方程时，从 ***H*** 换成 ***B*** 是很直接的。他还采用了麦克斯韦关于电位移 ***D*** 的定义，即用“力” ***E*** 表示的一个通量：***D*** = *c**E***/4π。
 今天有些作者仍用 ***H***，不过用 ***B*** 能让亥维赛的方程更加对称。也有些作者追随麦克斯韦和亥维赛，在散度方程里用 ***D*** 而不是 ***E***，但正如我说过的，它与 ***E*** 在数值上成正比。
 <span class="origpage" title="英文原版第 376 页">376</span>
 
