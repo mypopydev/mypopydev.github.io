@@ -94,3 +94,9 @@
   border-radius: 4px;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
 }
+
+/* 推荐语署名行：按中文惯例右对齐（对应 cn-book 的 ::: {.attribution}） */
+.md-typeset div.attribution {
+  text-align: right;
+  margin-top: -0.3rem;
+}
