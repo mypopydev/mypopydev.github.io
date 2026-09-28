@@ -133,7 +133,7 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
 
 <img src="../../assets/images/vector/fig13_1.jpg" style="width:60%">
 
-图 13.2　把一个从点 *A* 出发时是竖直的向量作平行移动（parallel transport），在平坦空间中毫无问题——但在曲面上，这个概念必须被仔细定义。我在相关的知识框里对此多解释了一点。
+图 13.2　<a href="#fig-13-1">图 13.1</a>　把一个从点 *A* 出发时是竖直的向量作平行移动（parallel transport），在平坦空间中毫无问题——但在曲面上，这个概念必须被仔细定义。我在相关的知识框里对此多解释了一点。
 {: .figcap }
 
 </figure>
