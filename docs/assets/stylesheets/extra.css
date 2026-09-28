@@ -28,6 +28,21 @@
 
 .md-typeset p {
   margin: 0.7em 0;
+  /* 与 PDF 版一致：正文每段首行缩进两格 */
+  text-indent: 2em;
+}
+
+/* 附属文本不缩进：图注、章节分隔符、纯图片段、引文（含韵文，缩进会破坏断行）、
+   署名（右对齐）、知识框、公式块、原版页码标记 */
+.md-typeset p.figcap,
+.md-typeset p.secbreak,
+.md-typeset p:has(> img),
+.md-typeset p:has(> span.origpage:only-child),
+.md-typeset blockquote p,
+.md-typeset div.attribution p,
+.md-typeset div.infobox p,
+.md-typeset div.displayeq p {
+  text-indent: 0;
 }
 
 .md-typeset div.arithmatex {

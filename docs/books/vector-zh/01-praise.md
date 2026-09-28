@@ -17,7 +17,7 @@
 <div class="attribution" markdown="1">
 
 
-***――《书商》（*The Bookseller*）***
+***――《书商》（The Bookseller）***
 
 
 </div>
