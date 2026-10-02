@@ -125,6 +125,8 @@ nav:
       - 从零实现浮点运算：困难模式: articles/floating-point-from-scratch-hard-mode-zh.md
   - 研究论文:
       - TurboQuant — KV Cache 压缩算法: articles/research-papers/turboquant-kv-cache-compression-zh.md
+  - 智能时代（Intelligence Age）:
+      - 永恒的互补（The eternal complement）: articles/the-eternal-complement-zh.md
   - 数学与 AI:
       - "AI 时代，纯数学研究的未来是什么？": articles/pure-math-research-in-the-age-of-ai-zh.md
   - 数学考证:
