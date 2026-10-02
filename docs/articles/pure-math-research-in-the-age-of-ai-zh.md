@@ -3,7 +3,7 @@
 > 原文：[What's the Future for Pure Math Research in the Age of AI?](https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/)  
 > 作者：Stephen Wolfram · 发布时间：2026-09-28
 
-译文版本：v0.1
+译文版本：v0.2
 
 ## 译文说明
 
