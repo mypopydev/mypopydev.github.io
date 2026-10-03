@@ -1,8 +1,8 @@
 # 《Floating point from scratch: Hard Mode》中文翻译 Implementation Plan
 
-**Goal:** 将 Julia Desmazes 的技术长文《Floating point from scratch: Hard Mode》（2026-04-03，约 9,355 词）译为中文，纳入本 MkDocs 站点。本文属硬件浮点 / bfloat16 / ASIC 流片领域，与智能体工程无关。需处理 LaTeX 数学、C/C++/Verilog/汇编代码块、约 18 张配图、术语一致性。遵循项目「保留原始 URL / 代码命令不翻」总原则，并通过 `mkdocs build --strict`。
+**Goal:** 将 Julia Desmazes 的技术长文《Floating point from scratch: Hard Mode》（2026-04-03，约 9,355 词）译为中文，纳入本 MkDocs 站点。本文属硬件浮点 / bfloat16 / ASIC 流片领域，与智能体工程无关。需处理 LaTeX 数学、C/C++/Verilog/汇编代码块、约 18 张配图、术语一致性。遵循项目“保留原始 URL / 代码命令不翻”总原则，并通过 `mkdocs build --strict`。
 
-**Architecture:** 单篇译文。译文存 `docs/articles/floating-point-from-scratch-hard-mode-zh.md`；标题《从零实现浮点运算：困难模式》；图片本地化至 `docs/assets/images/articles/floating-dragon/`；新建顶层导航板块「浮点与芯片设计」；术语在文末「术语对照」统一（不污染智能体工程术语表）；`mkdocs build --strict` 通过 0 警告。
+**Architecture:** 单篇译文。译文存 `docs/articles/floating-point-from-scratch-hard-mode-zh.md`；标题《从零实现浮点运算：困难模式》；图片本地化至 `docs/assets/images/articles/floating-dragon/`；新建顶层导航板块“浮点与芯片设计”；术语在文末“术语对照”统一（不污染智能体工程术语表）；`mkdocs build --strict` 通过 0 警告。
 
 **Tech Stack:** MkDocs Material、`pymdownx.arithmatex`（generic: true，支持 `$…$`/`$$…$$`）、KaTeX 渲染、WebFetch（取原文）、curl（下载配图）、Git。
 
@@ -21,7 +21,7 @@
 
 ## 决策点（已与用户确认，采用推荐默认）
 
-1. 导航位置：**新建顶层板块「浮点与芯片设计」**（与智能体工程 / 深度学习并列）。
+1. 导航位置：**新建顶层板块“浮点与芯片设计”**（与智能体工程 / 深度学习并列）。
 2. 标题：**《从零实现浮点运算：困难模式》**。
 3. 配图：**本地化**（下载至 `docs/assets/images/articles/floating-dragon/`），与 agentic-code-review 译文一致。
 4. 交付粒度：**单文件整篇**。
@@ -34,13 +34,13 @@
 
 - [x] 写入 `docs/articles/floating-point-from-scratch-hard-mode-zh.md`（H1 直入，不写元信息块）。
 - [x] 逐节翻译；数学包 `$…$`/`$$…$$`；代码块原样；图片本地路径；外链保留原文。
-- [x] 文末加「术语对照」表（浮点领域术语，不污染智能体工程术语表）。
+- [x] 文末加“术语对照”表（浮点领域术语，不污染智能体工程术语表）。
 - [x] 移除原文标题后的自引用锚点 `[\#](#...)`（MkDocs 自带锚点，避免断链警告）。
 
 ## Task 3: 导航接入与首页
 
-- [x] `mkdocs.yml` 新增顶层「浮点与芯片设计」板块并加条目。
-- [x] `docs/index.md` 新增「浮点与芯片设计」区块入口。
+- [x] `mkdocs.yml` 新增顶层“浮点与芯片设计”板块并加条目。
+- [x] `docs/index.md` 新增“浮点与芯片设计”区块入口。
 
 ## Task 4: 严格构建
 

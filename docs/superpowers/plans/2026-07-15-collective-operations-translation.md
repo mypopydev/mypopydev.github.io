@@ -2,15 +2,15 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** 将 Aleksa Gordić 博文《Inside TPU and GPU Clusters: The Anatomy of Collective Communication》（2026-07-14）翻译为中文，纳入 MkDocs 站点「训练系统与集群」新栏目。
+**Goal:** 将 Aleksa Gordić 博文《Inside TPU and GPU Clusters: The Anatomy of Collective Communication》（2026-07-14）翻译为中文，纳入 MkDocs 站点“训练系统与集群”新栏目。
 
-**Architecture:** 单篇译文 `docs/articles/collective-operations-zh.md`，34 张配图落地本地 `docs/assets/images/articles/collective-operations/`，术语追加项目术语表，导航接入 `mkdocs.yml`「训练系统与集群」新栏目 + CHANGELOG 更新。KaTeX 公式渲染、Material admonition 调换 💡 调用注释、参考文献编号列表保留原文 URL。
+**Architecture:** 单篇译文 `docs/articles/collective-operations-zh.md`，34 张配图落地本地 `docs/assets/images/articles/collective-operations/`，术语追加项目术语表，导航接入 `mkdocs.yml`“训练系统与集群”新栏目 + CHANGELOG 更新。KaTeX 公式渲染、Material admonition 调换 💡 调用注释、参考文献编号列表保留原文 URL。
 
 **Tech Stack:** MkDocs Material（KaTeX/arithmatex、admonition、emoji）、curl（下载图片）、WebFetch（二次精确抓取原文关键段落）、Git。
 
 ## Global Constraints
 
-- 导航新增顶层栏目「训练系统与集群」，位于「智能体工程」与「深度学习」之间。
+- 导航新增顶层栏目“训练系统与集群”，位于“智能体工程”与“深度学习”之间。
 - 图片全部下载到本地 `docs/assets/images/articles/collective-operations/`，不得外链。
 - 数学公式使用 KaTeX（`$...$` 行内 / `$$...$$` 独立），keep code-span dimensions as code.
 - 保留所有原始 URL，锚文本可中文化（§6.4）。
@@ -71,7 +71,7 @@ git commit -m "feat(assets): download 34 figures for collective-operations trans
 ### Task 2: 术语表追加
 
 **Files:**
-- Modify: `docs/resources/agentic_engineering_translation_glossary_style_guide_template.md`（「可追加术语表」尾部）
+- Modify: `docs/resources/agentic_engineering_translation_glossary_style_guide_template.md`（“可追加术语表”尾部）
 
 在 `## 四、可追加术语表模板` 表格末尾追加以下行：
 
@@ -312,14 +312,14 @@ git commit -m "feat(translation): add header and TPU topology section of collect
 
 - [ ] **Step 1: mkdocs.yml 新增栏目**
 
-在 `nav:` 下、「智能体工程」与「深度学习」之间插入：
+在 `nav:` 下、“智能体工程”与“深度学习”之间插入：
 
 ```yaml
   - 训练系统与集群:
       - TPU 与 GPU 集群内部：集合通信剖析: articles/collective-operations-zh.md
 ```
 
-修改位置：`mkdocs.yml` 中 nav 区的「智能体工程」段后（约第 105 行）、「深度学习」段前（约第 106 行）。
+修改位置：`mkdocs.yml` 中 nav 区的“智能体工程”段后（约第 105 行）、“深度学习”段前（约第 106 行）。
 
 - [ ] **Step 2: CHANGELOG 追加条目**
 
@@ -328,7 +328,7 @@ git commit -m "feat(translation): add header and TPU topology section of collect
 ```markdown
 ### 2026-07-15
 - 新增译文：TPU 与 GPU 集群内部：集合通信剖析（Aleksa Gordić, 2026-07-14）
-- 导航新增「训练系统与集群」栏目
+- 导航新增“训练系统与集群”栏目
 - 术语表追加 32 项集合通信/硬件术语
 - 保留原文所有外链；配图落地本地化
 ```
@@ -337,7 +337,7 @@ git commit -m "feat(translation): add header and TPU topology section of collect
 
 ```bash
 git add mkdocs.yml docs/resources/CHANGELOG.md
-git commit -m "chore(nav): register collective-operations translation in「训练系统与集群」section
+git commit -m "chore(nav): register collective-operations translation in“训练系统与集群”section
 
 - Add new top-level nav section between 智能体工程 and 深度学习
 - Update CHANGELOG with new entry"
@@ -375,7 +375,7 @@ git commit -m "feat(translation): 新增《TPU 与 GPU 集群内部：集合通�
 - Aleksa Gordić 原文翻译，涵盖 TPU/GPU 拓扑、四大集合操作、环/树算法、SHARP 与分层通信
 - 34 张配图落地本地化；公式用 KaTeX 渲染；💡 调用注释转 Material admonition
 - 术语表追加 32 项硬件/分布式术语
-- 导航接入「训练系统与集群」新栏目"
+- 导航接入“训练系统与集群”新栏目"
 ```
 
 - [ ] **Step 2: 推送确认**

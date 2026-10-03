@@ -4,7 +4,7 @@
 
 ## 一、目标与范围
 
-将 Aleksa Gordić 2026-07-14 发表的博文《Inside TPU and GPU Clusters: The Anatomy of Collective Communication》翻译为中文，纳入本站 MkDocs Material 站点，作为「训练系统与集群」新栏目的开篇译文。
+将 Aleksa Gordić 2026-07-14 发表的博文《Inside TPU and GPU Clusters: The Anatomy of Collective Communication》翻译为中文，纳入本站 MkDocs Material 站点，作为“训练系统与集群”新栏目的开篇译文。
 
 **完整范围**：引言、7 大节、尾声（Epilogue）、致谢（Acknowledgements）、参考文献（References）全部翻译。文末 subscribe CTA 译为一句话说明（原文无明确链接，不强加）。
 
@@ -41,7 +41,7 @@
 ```
 docs/articles/collective-operations-zh.md                   ← 译文正文（新建）
 docs/assets/images/articles/collective-operations/*.png|jpg ← 34 张配图（脚本下载，新建目录）
-mkdocs.yml                                                  ← 新增「训练系统与集群」栏目 + 条目（修改）
+mkdocs.yml                                                  ← 新增“训练系统与集群”栏目 + 条目（修改）
 docs/resources/agentic_engineering_translation_glossary_style_guide_template.md ← 追加本文术语（修改）
 docs/resources/CHANGELOG.md                                  ← 追加条目（修改）
 ```
@@ -108,7 +108,7 @@ docs/resources/CHANGELOG.md                                  ← 追加条目（
 ### 5.6 图注
 每张图使用 `![中文图注](...)` 并指向本地路径，如 `![TPU 连接类型。](../assets/images/articles/collective-operations/tpu_classes.png)`。确保图序与原文一致（需执行时建映射表）。
 
-## 六、关键术语表（执行时写入项目术语表「可追加术语表」）
+## 六、关键术语表（执行时写入项目术语表“可追加术语表”）
 
 | 英文 | 推荐译法 | 保留英文 | 使用说明 |
 |---|---|---|---|
@@ -188,6 +188,6 @@ done
 
 已与用户确认：
 - **配图**：下载到本地（`docs/assets/images/articles/collective-operations/`）
-- **导航**：新建「训练系统与集群」顶层栏目
+- **导航**：新建“训练系统与集群”顶层栏目
 - **结构**：单文件译文（`docs/articles/collective-operations-zh.md`），与本站全部现有译文一致
 - **范围**：全量翻译（含尾声、致谢、参考文献）

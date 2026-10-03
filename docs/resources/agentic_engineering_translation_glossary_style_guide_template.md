@@ -71,7 +71,7 @@
 
 | 英文原词 | 推荐译法 | 可接受替代 | 是否保留英文 | 使用说明 | 所在页面 |
 |---|---|---|---|---|---|
-| Observability | 可观测性 | — | 视语境 | 首次写法「可观测性（Observability）」 | 30 概念 |
+| Observability | 可观测性 | — | 视语境 | 首次写法“可观测性（Observability）” | 30 概念 |
 | Tracing | 追踪 | 调用追踪 | 一般不保留 | 指智能体运行路径的逐步记录 | 30 概念 |
 | Logging | 日志 | — | 一般不保留 | 指运行原始记录，可观测性基础层 | 30 概念 |
 | Metrics | 指标 | 度量 | 一般不保留 | 指延迟 / 成本 / 次数等代理与结果信号 | 30 概念 |
@@ -79,31 +79,31 @@
 | Hook | 钩子 | — | 一般不保留 | 指工作流特定点运行的小检查（pre-tool hook 等） | 30 概念 |
 | Permission | 权限 | — | 一般不保留 | 指工具调用授权规则 | 30 概念 |
 | Orchestration | 编排 | — | 一般不保留 | 指多智能体协同的管理层 | 30 概念 |
-| Prompt Caching | Prompt 缓存 | — | 建议保留英文 | 首次写法「Prompt 缓存」 | 30 概念 |
+| Prompt Caching | Prompt 缓存 | — | 建议保留英文 | 首次写法“Prompt 缓存” | 30 概念 |
 | Context Rot | 上下文腐烂 | 上下文劣化 | 一般不保留 | 指长上下文导致模型质量下降 | 30 概念 |
-| Loop Engineering | 循环工程（Loop Engineering） | — | 建议保留英文 | 本文主题，首现写法「循环工程（Loop Engineering）」 | Loop Engineering |
-| Automations | Automations（保留）/ 自动化 | — | 保留英文 | 指 Codex 的 Automations 特性，首现释义「自动化（Automations）」 | Loop Engineering |
+| Loop Engineering | 循环工程（Loop Engineering） | — | 建议保留英文 | 本文主题，首现写法“循环工程（Loop Engineering）” | Loop Engineering |
+| Automations | Automations（保留）/ 自动化 | — | 保留英文 | 指 Codex 的 Automations 特性，首现释义“自动化（Automations）” | Loop Engineering |
 | Plugin / Connector | 插件 / 连接器 | — | 一般不保留 | 指 loop 接入真实工具的插件与连接器 | Loop Engineering |
 | Eval loop | 评测循环 | 评测闭环 | 一般不保留 | 指用评测驱动循环的闭环 | Loop Engineering |
-| Cognitive surrender | 认知投降 | — | 保留英文 | Addy coined，首现「认知投降（cognitive surrender）」 | Loop Engineering |
-| Comprehension debt | 理解债务 | — | 保留英文 | Addy coined，首现「理解债务（comprehension debt）」 | Loop Engineering |
-| Intent debt | 意图债务 | — | 保留英文 | Addy coined，首现「意图债务（intent debt）」 | Loop Engineering |
-| Orchestration tax | 编排税 | — | 保留英文 | Addy coined，首现「编排税（orchestration tax）」 | Loop Engineering |
+| Cognitive surrender | 认知投降 | — | 保留英文 | Addy coined，首现“认知投降（cognitive surrender）” | Loop Engineering |
+| Comprehension debt | 理解债务 | — | 保留英文 | Addy coined，首现“理解债务（comprehension debt）” | Loop Engineering |
+| Intent debt | 意图债务 | — | 保留英文 | Addy coined，首现“意图债务（intent debt）” | Loop Engineering |
+| Orchestration tax | 编排税 | — | 保留英文 | Addy coined，首现“编排税（orchestration tax）” | Loop Engineering |
 | Maker / Checker | 制造者 / 审查者 | 写代码者 / 审查者 | 一般不保留 | 指写代码与审查代码的角色分离 | Loop Engineering |
 | software factory | 软件工厂 | — | 一般不保留 | 指规模化、流水线式生产软件的组织形态 | Why Software Factories Fail |
-| lights-off software factory | 熄灯软件工厂 | 无人值守软件工厂 | 保留英文 lights-off | 指人类不再读/写代码、全自动交付的工厂，首现「熄灯软件工厂（lights-off software factory）」 | Why Software Factories Fail |
+| lights-off software factory | 熄灯软件工厂 | 无人值守软件工厂 | 保留英文 lights-off | 指人类不再读/写代码、全自动交付的工厂，首现“熄灯软件工厂（lights-off software factory）” | Why Software Factories Fail |
 | front-loading alignment | 前置对齐 | — | 一般不保留 | 指把规划/架构对齐前置到写代码之前，以降低返工与评审成本 | Why Software Factories Fail |
 | vertical slices | 垂直切片 | — | 一般不保留 | 指端到端打通一小条功能（对比按技术栈顺序的"水平计划"） | Why Software Factories Fail |
 | tracer bullets | 示踪子弹（tracer bullets） | — | 建议保留英文 | 同 vertical slices，源自 Shape Up 的 tracer bullet 概念 | Why Software Factories Fail |
 | shotgun surgery | 霰弹式修改 | — | 一般不保留 | Martin Fowler 代码异味，改动一处需在多处同步修改 | Why Software Factories Fail |
 | brownfield | 棕地（brownfield） | — | 保留英文 | 指接手并长期维护已有代码库（对比绿地 greenfield） | Why Software Factories Fail |
 | maintainability | 可维护性 | — | 一般不保留 | 指代码库随时间被安全改动的能力 | Why Software Factories Fail |
-| RLVR | RLVR | 可验证奖励强化学习 | 保留英文 | Reinforcement Learning with Verifiable Rewards，首现「可验证奖励强化学习（RLVR）」 | Why Software Factories Fail |
+| RLVR | RLVR | 可验证奖励强化学习 | 保留英文 | Reinforcement Learning with Verifiable Rewards，首现“可验证奖励强化学习（RLVR）” | Why Software Factories Fail |
 | loopsmaxxing | 循环至上（loopsmaxxing） | — | 保留英文 | 指盲目堆循环/循环工程以追求速度的倾向 | Why Software Factories Fail |
 | token-maxxing | 狂堆 Token（token-maxxing） | — | 保留英文 | 指盲目堆 Token 以追求效果的倾向 | Why Software Factories Fail |
-| slop | 垃圾（slop） | 废话、灌水 | 建议保留英文 | 指低质量 AI 生成代码/内容，首现「垃圾（slop）」 | Why Software Factories Fail |
+| slop | 垃圾（slop） | 废话、灌水 | 建议保留英文 | 指低质量 AI 生成代码/内容，首现“垃圾（slop）” | Why Software Factories Fail |
 | Agent harness | 智能体 harness | — | 保留英文 harness | harness 不翻译 | Loop Engineering |
-| Agentic Code Review | 智能体式代码审查（Agentic Code Review） | — | 建议保留英文 | 本文主题，首现写法「智能体式代码审查（Agentic Code Review）」 | Agentic Code Review |
+| Agentic Code Review | 智能体式代码审查（Agentic Code Review） | — | 建议保留英文 | 本文主题，首现写法“智能体式代码审查（Agentic Code Review）” | Agentic Code Review |
 | Blast radius | 影响半径（blast radius） | — | 保留英文 | Addy 用以衡量失败影响范围，首现中英并注 | Agentic Code Review |
 | Verification bottleneck | 验证瓶颈（verification bottleneck） | — | 保留英文 | 指验证/审查成为新瓶颈 | Agentic Code Review |
 | Triage | 分诊 | — | 一般不保留 | 医学借词，指按风险/优先级分流审查 | Agentic Code Review |
@@ -114,13 +114,13 @@
 | goal-based loop | 基于目标的循环（goal-based loop） | 一般不保留 | 对应 `/goal`，以目标达成或达最大轮次为停止条件 | Getting started with loops |
 | time-based loop | 基于时间的循环（time-based loop） | 一般不保留 | 对应 `/loop`、`/schedule`，按时间间隔触发 | Getting started with loops |
 | proactive loop | 主动式循环（proactive loop） | 一般不保留 | 由事件/计划触发、无实时人工、长期运行的循环 | Getting started with loops |
-| stop condition | 停止条件 | 一般不保留 | 循环终止的判断标准；已有「可验证停止条件」先例 | Getting started with loops |
+| stop condition | 停止条件 | 一般不保留 | 循环终止的判断标准；已有“可验证停止条件”先例 | Getting started with loops |
 | evaluator model | 评估模型（evaluator model） | 首现括注 | 在 `/goal` 每轮结束后判断目标是否达成的独立模型 | Getting started with loops |
 | auto mode | auto 模式 | 保留英文 auto | Claude Code 特性，运行时不暂停请求权限 | Getting started with loops |
 | dynamic workflows | 动态工作流（dynamic workflows） | 首现括注 | Claude Code 研究预览特性，编排多子智能体 | Getting started with loops |
 | research preview | 研究预览 | 一般不保留 | 标注特性成熟度，意为研究预览版 | Getting started with loops |
-| harness | 智能体 harness | — | 保留英文 harness | harness 不翻译；首现「智能体 harness（harness）」 | Harness Engineering |
-| recursive self-improvement (RSI) | 递归自我改进（RSI） | — | 建议保留缩写 | 首现「递归自我改进（RSI）」 | Harness Engineering |
+| harness | 智能体 harness | — | 保留英文 harness | harness 不翻译；首现“智能体 harness（harness）” | Harness Engineering |
+| recursive self-improvement (RSI) | 递归自我改进（RSI） | — | 建议保留缩写 | 首现“递归自我改进（RSI）” | Harness Engineering |
 | context engineering | 上下文工程（Context Engineering） | — | 一般不保留 | 指构造结构化、精简上下文的一层 | Harness Engineering |
 | Agentic Context Engineering (ACE) | 智能体式上下文工程（ACE） | — | 保留缩写 | 把上下文当作可进化的 playbook | Harness Engineering |
 | Meta Context Engineering (MCE) | 元上下文工程（MCE） | — | 保留缩写 | 在“机制”与“内容”两层分别优化 | Harness Engineering |
@@ -259,6 +259,13 @@
 - 列表项应尽量平行，避免同一层级里有的极短、有的极长。
 - 表格优先用于术语、对比、步骤差异，不要为排版而强行造表。
 - 加粗只用来标记关键信息，不要整段加粗。
+
+### 6.8 引号
+
+- 禁止使用直角引号 `「」` 和 `『』`。
+- 中文语境统一使用中文弯引号：`“ ”`；需要嵌套时内层用 `‘ ’`。
+- 纯英文片段（引用英文原文、命令输出、许可声明等）用 ASCII 直双引号：`" "`。
+- 同一篇译文内不要混用两种引号体系。
 
 ## 七、译者注规则
 

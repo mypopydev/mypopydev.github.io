@@ -3,8 +3,8 @@
 ### 2026-09-27
 - 新增全书中译：《向量：一个关于空间、时间与数学变换的惊奇故事》（*Vector: A Surprising Story of Space, Time, and Mathematical Transformation*，Robyn Arianrhod，UNSW Press / NewSouth Publishing，2024）
 - 收录 23 篇译稿（译本说明、名家推荐、作者简介、献词、序言、第 1–13 章、结语、时间线、致谢、注释 353 条、索引 639 条），置于 `docs/books/vector-zh/`；汉字 26.3 万字
-- 导航：新增「向量（中译本）」板块；配图 57 张置于 `docs/assets/images/vector/`
-- 公式用 KaTeX 渲染（`$…$` / `$$…$$`），脚注、知识框、原版页码（页边灰字）均已本地化；图按「章.序号」编号且正文引用可跳转
+- 导航：新增“向量（中译本）”板块；配图 57 张置于 `docs/assets/images/vector/`
+- 公式用 KaTeX 渲染（`$…$` / `$$…$$`），脚注、知识框、原版页码（页边灰字）均已本地化；图按“章.序号”编号且正文引用可跳转
 - 另有 PDF 版（A4，330 页）可下载；落地页含原书版权与非商业声明
 
 ### 2026-09-05
@@ -26,10 +26,10 @@
 - 导航：智能体工程 > 独立译文（新增一篇，紧接《软件工厂为何失败》之后）
 - 配图本地化：从 PDF 矢量图裁切 4 张关键示意图至 `docs/assets/images/articles/a-practical-guide-to-building-agents/`（single-agent-systems、manager-pattern、decentralized-pattern、guardrails-layered-defense），与 `why-software-factories-fail` 风格一致——保留英文标签
 - 代码：5 段 Agents SDK Python 代码块原样保留（weather_agent、search_agent + save_results、`Runner.run` 调用、管理器模式、去中心化模式）；1 段用于自动生成指令的示例 Prompt 原样保留并附中文释义
-- 完整性复核（第二轮）：依据 PDF 补回「为人工介入留出空间」一节中网页版缺失的 3 段正文（人工介入作为安全屏障的价值、客服/编码两种交接方式、两类触发条件的引导句），网页版仅有 2 个要点
+- 完整性复核（第二轮）：依据 PDF 补回“为人工介入留出空间”一节中网页版缺失的 3 段正文（人工介入作为安全屏障的价值、客服/编码两种交接方式、两类触发条件的引导句），网页版仅有 2 个要点
 - 译者注 2 处：① 原文正文写 `Runner.run()`、示例代码却调用 `Agents.run(...)`，属原文自身不一致，均按原样保留；② `math_homework_tripwire` 示例与上方 `churn_detection_tripwire` 代码并非同一护栏，属原文行文安排
 - 术语使用：智能体（agent）、工具（tool）、护栏（guardrail）、交接（handoff）、人在回路（human-in-the-loop）等统一中文；Agents SDK、Runner.run、WebSearchTool、function_tool、`@input_guardrail`、`GuardrailTripwireTriggered`、tripwire、as_tool 等保留英文；与既有项目术语表协调一致
-- 原文外链：保留 Agents SDK 文档（https://openai.github.io/openai-agents-python/）与模型选择指南（https://platform.openai.com/docs/guides/model-selection）两条原始 URI；并在文末「延伸阅读」补充 GitHub 仓库与原文 PDF 下载地址
+- 原文外链：保留 Agents SDK 文档（https://openai.github.io/openai-agents-python/）与模型选择指南（https://platform.openai.com/docs/guides/model-selection）两条原始 URI；并在文末“延伸阅读”补充 GitHub 仓库与原文 PDF 下载地址
 
 ### 2026-07-29
 - 新增译文：软件工厂为何失败（Why Software Factories Fail，HumanLayer / Dex，2026）
@@ -48,7 +48,7 @@
 
 ### 2026-07-15
 - 新增译文：TPU 与 GPU 集群内部：集合通信剖析（Aleksa Gordić, 2026-07-14）
-- 导航新增「训练系统与集群」栏目
+- 导航新增“训练系统与集群”栏目
 - 术语表追加 32 项集合通信/硬件术语
 - 保留原文所有外链；配图落地本地化
 - 译文纳入 MkDocs 站点严格构建
@@ -70,11 +70,11 @@
 **新增《从零实现浮点运算：困难模式（Floating point from scratch: Hard Mode）》译文**
 
 - 收录 Julia Desmazes 博文《Floating point from scratch: Hard Mode》（2026-04-03，约 9,355 词）中文译文，置于 `docs/articles/floating-point-from-scratch-hard-mode-zh.md`
-- 导航：新增顶层板块「浮点与芯片设计」；首页新增对应区块入口
+- 导航：新增顶层板块“浮点与芯片设计”；首页新增对应区块入口
 - 配图本地化：下载原文全部 18 张图至 `docs/assets/images/articles/floating-dragon/`（含 sky130 原理图/版图 SVG、各 floorplan/芯片渲染、placement.gif、waffles.webp 等）
 - 数学：保留原文 LaTeX 公式，交由本站 arithmatex 渲染（bfloat16 表示、ulp、误差公式等）
 - 代码：C / C++ / Verilog / x86 汇编 / 纯文本代码块原样保留
-- 术语：浮点领域术语在文末「术语对照」表中统一，未污染智能体工程术语表
+- 术语：浮点领域术语在文末“术语对照”表中统一，未污染智能体工程术语表
 - 原文外链（约 31 条）与 mailto 全部保留
 
 ## 2026-07-07
@@ -98,7 +98,7 @@
 
 **调整导航结构（智能体工程板块）**
 
-- 将「综合概览」重命名为「独立译文」，集中放置三篇非系列单篇译文（30 概念、循环工程、智能体式代码审查），与 Simon Willison《Agentic Engineering Patterns》系列各主题子项明确区分「系列 vs 单篇」
+- 将“综合概览”重命名为“独立译文”，集中放置三篇非系列单篇译文（30 概念、循环工程、智能体式代码审查），与 Simon Willison《Agentic Engineering Patterns》系列各主题子项明确区分“系列 vs 单篇”
 
 ## 2026-07-05
 
@@ -118,23 +118,23 @@
   - §6 SkillsBench（11 领域 / 86 任务，27.7% vs 22.0%）、§7 Superpowers HARD-GATE、§17 Ralph loop、§20 Cloudflare Dynamic Workers、§25 Ruff/Bandit 等
 - 链接：按术语表 §6.4 补回 25 个原始 URL（含 Ralph loop）；跳过 Medium 付费绕行 `?sk=` 链接（决策：不插入正文）
 - 链接基准来源说明：Medium 抓取截断，权威原文基准采用作者 newsletter 重发版（newsletter.systemdesign.one）+ teamstation.dev 镜像交叉校验
-- 结构调整：移除译文头部元信息块（原文标题/链接/作者/日期/版本/译者/审校）与「译文说明」节；两处原文缺口说明已内联于正文 [译者注]
+- 结构调整：移除译文头部元信息块（原文标题/链接/作者/日期/版本/译者/审校）与“译文说明”节；两处原文缺口说明已内联于正文 [译者注]
 
 ## 2026-07-04
 
-**新增「智能体工程 > 综合概览」**
+**新增“智能体工程 > 综合概览”**
 
 - 收录《30 Core Agentic Engineering Concepts Every Developer Should Know》中文译文，置于 `docs/articles/30-core-agentic-engineering-concepts-zh.md`
-- 导航新增「综合概览」子项，首页智能体工程区块新增入口
+- 导航新增“综合概览”子项，首页智能体工程区块新增入口
 - 术语表追加 Observability / Tracing / Logging / Metrics / Replay / Hook / Permission / Orchestration / Prompt Caching / Context Rot 共 10 个术语
 - 备注：第 26 节（可观测性）原文仅一段引导语；第 29 节（回放）依据 teamstation.dev 镜像补全（Medium 抓取缺失）
 
 ## 2026-05-25
 
-**新增「数学考证」栏目**
+**新增“数学考证”栏目**
 
 - 收录《"齐次"一词在中文数学术语中的形成》一文，置于 `docs/articles/homogeneous-chinese-translation-etymology-zh.md`
-- 导航与首页增加「数学考证」入口
+- 导航与首页增加“数学考证”入口
 
 ## 2026-04-06
 

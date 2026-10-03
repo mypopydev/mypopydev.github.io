@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** 将 Medium 文章《30 Core Agentic Engineering Concepts Every Developer Should Know》译为中文，按本项目翻译规范接入 MkDocs 站点，并放置在「智能体工程 > 综合概览」导航下。
+**Goal:** 将 Medium 文章《30 Core Agentic Engineering Concepts Every Developer Should Know》译为中文，按本项目翻译规范接入 MkDocs 站点，并放置在“智能体工程 > 综合概览”导航下。
 
 **Architecture:** 单篇 Markdown 译文（含页头元信息 + 译文说明）+ 本地图片资源 + 导航/术语表/更新日志三处元数据同步。翻译以英文原文为准，遵循 `docs/resources/agentic_engineering_translation_glossary_style_guide_template.md`。
 
@@ -21,9 +21,9 @@
 
 - Create: `docs/articles/30-core-agentic-engineering-concepts-zh.md` — 译文正文
 - Create: `docs/assets/images/articles/30-core-agentic-engineering-concepts/*.png` — 下载的原文配图（本地化）
-- Modify: `mkdocs.yml` — 在「智能体工程」下新增「综合概览」子项
+- Modify: `mkdocs.yml` — 在“智能体工程”下新增“综合概览”子项
 - Modify: `docs/index.md` — 首页新增一条指向该文的链接（与现有列表风格一致）
-- Modify: `docs/resources/agentic_engineering_translation_glossary_style_guide_template.md` — 在「可追加术语表」补 10 个新术语
+- Modify: `docs/resources/agentic_engineering_translation_glossary_style_guide_template.md` — 在“可追加术语表”补 10 个新术语
 - Modify: `docs/resources/CHANGELOG.md` — 追加本次新增记录
 - Modify(可选): `docs/resources/BILINGUAL_LINK_MAP.md` — 底部追加一条非 SW 系列映射（若维护者希望集中追踪）
 
@@ -60,8 +60,8 @@ Replay means taking a previous agent run and walking it again ...
 - [ ] **Step 2: 复核 #26 是否仍有遗漏正文**
 
 Run: 重新对 Medium 原文做一次定向抓取，提示词聚焦 `## 26.` 与 `## Observability` 之后的段落。
-Expected: 若 #26 仅有上述引导句，则按「极短小节」处理；若发现更多段落，补入工作稿。
-Fallback: 若始终只能取到引导句，按现状翻译并在「译者注」中说明该节原文极简。
+Expected: 若 #26 仅有上述引导句，则按“极短小节”处理；若发现更多段落，补入工作稿。
+Fallback: 若始终只能取到引导句，按现状翻译并在“译者注”中说明该节原文极简。
 
 - [ ] **Step 3: 提取全部图片 URL**
 
@@ -148,14 +148,14 @@ Expected: 列出所有 miro 图片链接（预计 20+ 张）。
 翻译规则（摘自术语表/文风指南）：
 - 术语统一：`智能体`、`子智能体`、`编码智能体`、`沙箱`、`钩子`、`可观测性`、`追踪`、`日志`、`指标`、`回放`、`编排`、`MCP`、`Prompt`、`Token`、`Context Window` 等按术语表处理，首次出现括注英文。
 - 代码块、命令、URL、文件名、产品名（Claude Code、GitHub、Figma、draw.io、Remotion、Context7、DeepWiki、Exa、Conductor、Tirith 等）保留原文。
-- 短句优先、主动句优先，不硬搬英文长句；长段落按「定义/原因/例外/示例」拆段。
+- 短句优先、主动句优先，不硬搬英文长句；长段落按“定义/原因/例外/示例”拆段。
 - 列表平行、加粗仅标关键。
 - 第 26 节若仅引导句，译为中文后以 `[译者注] 原文此节仅一段引导语，细节由后续追踪/日志/回放/指标展开。` 标注。
 - 第 29 节（Replay）译文末加 `[译者注] 本节依据 teamstation.dev 镜像补全，原文在 Medium 抓取时缺失。`
 
 - [ ] **Step 2: 通读自检（对照风格指南第九章清单）**
 
-- [ ] 术语全篇统一，无「代理工程/编程智能体」混用
+- [ ] 术语全篇统一，无“代理工程/编程智能体”混用
 - [ ] 代码/命令/URL/文件名未被中文化
 - [ ] 中文自然、长句已拆、标题清楚
 - [ ] 记录原文链接与访问日期、译文版本
@@ -202,11 +202,11 @@ Expected: 所有图片引用要么指向本地 `assets/...`，要么保留 `miro
 **Files:**
 - Modify: `docs/resources/agentic_engineering_translation_glossary_style_guide_template.md`
 
-- [ ] **Step 1: 在「四、可追加术语表模板」的表格中追加以下行**
+- [ ] **Step 1: 在“四、可追加术语表模板”的表格中追加以下行**
 
 | 英文原词 | 推荐译法 | 可接受替代 | 是否保留英文 | 使用说明 | 所在页面 |
 |---|---|---|---|---|---|
-| Observability | 可观测性 | — | 视语境 | 首次写法「可观测性（Observability）」 | 30 概念 |
+| Observability | 可观测性 | — | 视语境 | 首次写法“可观测性（Observability）” | 30 概念 |
 | Tracing | 追踪 | 调用追踪 | 一般不保留 | 指 agent 运行路径记录 | 30 概念 |
 | Logging | 日志 | — | 一般不保留 | 指运行原始记录 | 30 概念 |
 | Metrics | 指标 | 度量 | 一般不保留 | 指延迟/成本/次数等信号 | 30 概念 |
@@ -214,7 +214,7 @@ Expected: 所有图片引用要么指向本地 `assets/...`，要么保留 `miro
 | Hook | 钩子 | — | 一般不保留 | 指工作流特定点的检查点 | 30 概念 |
 | Permission | 权限 | — | 一般不保留 | 指工具调用授权规则 | 30 概念 |
 | Orchestration | 编排 | — | 一般不保留 | 指多 agent 协同管理 | 30 概念 |
-| Prompt Caching | Prompt 缓存 | — | 建议保留英文 | 首次写法「Prompt 缓存」 | 30 概念 |
+| Prompt Caching | Prompt 缓存 | — | 建议保留英文 | 首次写法“Prompt 缓存” | 30 概念 |
 | Context Rot | 上下文腐烂 | 上下文劣化 | 一般不保留 | 指长上下文导致质量下降 | 30 概念 |
 
 ---
@@ -224,7 +224,7 @@ Expected: 所有图片引用要么指向本地 `assets/...`，要么保留 `miro
 **Files:**
 - Modify: `mkdocs.yml:73-95`
 
-- [ ] **Step 1: 在「智能体工程」下新增「综合概览」子项（置于专题导读之后）**
+- [ ] **Step 1: 在“智能体工程”下新增“综合概览”子项（置于专题导读之后）**
 
 找到：
 ```yaml
@@ -251,7 +251,7 @@ Expected: 输出 `mkdocs.yml OK`
 **Files:**
 - Modify: `docs/index.md`
 
-- [ ] **Step 1: 在「智能体工程」专题块内新增一条链接**
+- [ ] **Step 1: 在“智能体工程”专题块内新增一条链接**
 
 在 `docs/index.md` 的 `### 🤖 智能体工程` 区块中，于现有列表后追加：
 
@@ -259,7 +259,7 @@ Expected: 输出 `mkdocs.yml OK`
 - [每个开发者都该知道的 30 个智能体工程核心概念](./articles/30-core-agentic-engineering-concepts-zh.md)
 ```
 
-（与现有 `- [反向传播：…](./articles/...)` 风格保持一致，放在「智能体工程」相关入口附近。）
+（与现有 `- [反向传播：…](./articles/...)` 风格保持一致，放在“智能体工程”相关入口附近。）
 
 ---
 
@@ -274,10 +274,10 @@ Expected: 输出 `mkdocs.yml OK`
 ```md
 ## 2026-07-04
 
-**新增「智能体工程 > 综合概览」**
+**新增“智能体工程 > 综合概览”**
 
 - 收录《30 Core Agentic Engineering Concepts Every Developer Should Know》中文译文，置于 `docs/articles/30-core-agentic-engineering-concepts-zh.md`
-- 导航新增「综合概览」子项，首页新增入口
+- 导航新增“综合概览”子项，首页新增入口
 - 术语表追加 Observability / Tracing / Logging / Metrics / Replay / Hook / Permission / Orchestration 等 10 个术语
 - 备注：第 26 节（可观测性）与第 29 节（回放）部分内容依据 teamstation.dev 镜像补全
 ```
