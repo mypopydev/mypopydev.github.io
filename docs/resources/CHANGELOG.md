@@ -1,5 +1,15 @@
 # 更新记录
 
+### 2026-10-05
+- 新增译文：引导式解码在 vLLM 与 SGLang 上的性能（Guided Decoding Performance on vLLM and SGLang，Eunik Park / SqueezeBits，2025-09-16）
+- 收录 SqueezeBits Tech Blog 文章《Guided Decoding Performance on vLLM and SGLang》中文全文翻译，置于 `docs/articles/guided-decoding-performance-vllm-sglang-zh.md`
+- 导航：深度学习（新增一篇，紧随《Transformer 推理算术》）
+- 配图本地化：下载原文全部 8 张图（Figure 1–7 与 Table 1）至 `docs/assets/images/articles/guided-decoding-performance/`，源站返回 webp，统一转为 PNG
+- 表 1（JSONSchemaBench 语法创建结果）原为图片，另按原图转写为 Markdown 表格附于文中；原图数据集名印作 `JsomSchemaStore`（疑为 `JsonSchemaStore` 缺字）按原样保留，并在译者注中说明
+- 完整保真：保留全部量化数据（72% / 100%、90–94% / 96% / 98.2%、2.21%、0.12%、61.1%、20–25 个百分点、并发 1→512、10 秒超时、1,000 条请求、Qwen3-8B/32B TP2、H100 80GB HBM3、Xeon 8480+、480 GiB、vLLM `v0.10.0`、SGLang `0.5.0rc0`、xgrammar `0.1.21`、llguidance `0.7.30` 等）
+- 译者注：记录原文"数据集"一节末尾的孤立字样 "Grammar Compilation Robustness"（疑为排版残留，未予保留）与 `"h"overing`/`withzero`/`lowerTPOT` 等原文粘连拼写（按语义修正）
+- 术语首现附英文：引导式解码（guided decoding / structured output / constrained decoding）、语法后端（grammar backend）、token 掩码（token mask）、DFA、前缀树（trie）、预计算、预填充（prefill）、TPOT、输出退化（degeneration）
+
 ### 2026-09-27
 - 新增全书中译：《向量：一个关于空间、时间与数学变换的惊奇故事》（*Vector: A Surprising Story of Space, Time, and Mathematical Transformation*，Robyn Arianrhod，UNSW Press / NewSouth Publishing，2024）
 - 收录 23 篇译稿（译本说明、名家推荐、作者简介、献词、序言、第 1–13 章、结语、时间线、致谢、注释 353 条、索引 639 条），置于 `docs/books/vector-zh/`；汉字 26.3 万字
