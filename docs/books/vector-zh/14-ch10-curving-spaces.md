@@ -12,7 +12,7 @@
 
 <figure id="fig-10-1" markdown="1">
 
-<img src="../../assets/images/vector/p246.jpg" style="width:50%">
+<img src="../../../assets/images/vector/p246.jpg" style="width:50%">
 
 图 10.1　马塞尔·格罗斯曼，1909 年。苏黎世联邦理工学院图书馆（ETH-Bibliothek Zürich），图片档案／摄影者不详／Portr_01239。公有领域。
 {: .figcap }
@@ -59,7 +59,7 @@ $$\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}+\left(z_{2}-z_
 
 <figure id="fig-10-2" markdown="1">
 
-<img src="../../assets/images/vector/fig10_1.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig10_1.jpg" style="width:50%">
 
 图 10.2　<a href="#fig-10-1">图 10.1</a>　当一条曲线上、或者一个曲面上的两点靠得非常近时，它们之间的距离 *AB* 近似等于直线距离 *AB′*。例如在计算机图形学中，曲线就可以由一段段极小的切线段拼接而成。
 {: .figcap }
@@ -78,9 +78,7 @@ $$ds=\sqrt{\left(dx\right)^{2}+\left(dy\right)^{2}+\left(dz\right)^{2}}$$,
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *dx*<sup>2</sup> + *dy*<sup>2</sup> + *dz*<sup>2</sup>.
-
 
 </div>
 
@@ -90,9 +88,7 @@ $$ds=\sqrt{\left(dx\right)^{2}+\left(dy\right)^{2}+\left(dz\right)^{2}}$$,
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *dx*<sup>2</sup> + *dy*<sup>2</sup> + *dz*<sup>2</sup> − *c*<sup>2</sup> *dt*<sup>2</sup>。）
-
 
 </div>
 
@@ -106,7 +102,7 @@ $$ds=\sqrt{\left(dx\right)^{2}+\left(dy\right)^{2}+\left(dz\right)^{2}}$$,
 
 <figure id="fig-10-3" markdown="1">
 
-<img src="../../assets/images/vector/fig10_2.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig10_2.jpg" style="width:50%">
 
 图 10.3　<a href="#fig-10-2">图 10.2</a>　两点之间相隔无穷小距离时，它们之间的弯曲距离几乎就等于在三维空间中量出的、仿佛曲面并不存在时的直线距离。
 {: .figcap }
@@ -115,9 +111,7 @@ $$ds=\sqrt{\left(dx\right)^{2}+\left(dy\right)^{2}+\left(dz\right)^{2}}$$,
 
 <div class="displayeq" markdown="1">
 
-
 *dx*<sup>2</sup> + *dy*<sup>2</sup> + *dz*<sup>2</sup> = *Edp*<sup>2</sup> + 2*Fdpdq* + *Gdq*<sup>2</sup>,
-
 
 </div>
 
@@ -133,7 +127,7 @@ $$\frac{\alpha+\beta+\gamma-\pi}{\text{Area} \text{of} \text{triangle}}=\frac{1}
 
 <span class="origpage" title="英文原版第 225 页">225</span>
 
-其中三角形的三个角用 α、β、γ 弧度表示，π 弧度等于 180°，*r* 是球面的半径，而 $\frac{1}{r^{2}}$ 就是它的“高斯”曲率，即内蕴曲率。因为哈里奥特没有发表他的结果，阿尔贝·吉拉尔（Albert Girard）在几十年后重新发现并发表了它——不过高斯的版本更为精深，而且并不只局限于球面。更何况，高斯证明了这个公式里的面积与角度二者都可以单靠度规求出来。这乍看之下相当令人惊叹。事实上，高斯激动之至，把这一发现称为他的 *theorema egregium*——他的“绝妙定理”。
+其中三角形的三个角用 α、β、γ 弧度表示，π 弧度等于 180°，*r* 是球面的半径，而 $\frac{1}{r^{2}}$ 就是它的高斯曲率（Gaussian curvature），即内蕴曲率。因为哈里奥特没有发表他的结果，阿尔贝·吉拉尔（Albert Girard）在几十年后重新发现并发表了它——不过高斯的版本更为精深，而且并不只局限于球面。更何况，高斯证明了这个公式里的面积与角度二者都可以单靠度规求出来。这乍看之下相当令人惊叹。事实上，高斯激动之至，把这一发现称为他的 *theorema egregium*——他的“绝妙定理”。
 
 那么就让我把这个非凡的结果再多拆解一点。我们已经看到，度规会告诉你一条线的长度——比如我们在第 9 章看到的向量的模，或者<a href="#fig-2-3">图 2.3</a> 中那个圆的周长。而早在很久以前，阿基米德（Archimedes）就算出过球面的面积（4π*r*<sup>2</sup>），甚至还说明了怎样求球面上那些圆柱形部分的面积。但高斯证明了，*任何*弯曲曲面的面积其实都可以从度规系数 *E, F, G* 出发、通过对表达式 $\sqrt{EG-F^{2}}$ 求面积分得到。由于既没有微积分、也没有度规这个概念，当哈里奥特推导球面上一个三角形的曲面面积时——他是已知第一个做到这件事的人，而且他需要它来证明上面的内蕴曲率公式——他不得不动用好几页纸的巧妙几何论证。
 
@@ -143,7 +137,7 @@ $$\frac{\alpha+\beta+\gamma-\pi}{\text{Area} \text{of} \text{triangle}}=\frac{1}
 
 <figure id="fig-10-4" markdown="1">
 
-<img src="../../assets/images/vector/fig10_3.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig10_3.jpg" style="width:80%">
 
 图 10.4　<a href="#fig-10-3">图 10.3</a>　在一张平纸上，三角形中的角 α、β、γ 之和为 180°（即 π 弧度）；但在球面上，它们的和大于 π；而在马鞍面上，它们的和小于 π。
 {: .figcap }
@@ -152,7 +146,7 @@ $$\frac{\alpha+\beta+\gamma-\pi}{\text{Area} \text{of} \text{triangle}}=\frac{1}
 
 <figure id="fig-10-5" markdown="1">
 
-<img src="../../assets/images/vector/fig10_4.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig10_4.jpg" style="width:50%">
 
 图 10.5　<a href="#fig-10-4">图 10.4</a>　一个由三条大圆坐标线围成的球面三角形。两条这样的线之间的夹角，就是它们切向量之间的夹角，如箭头所示。在球面上，三个角都是直角。
 {: .figcap }
@@ -215,9 +209,7 @@ $$ds^{2}=dx_{1}^{2}+dx_{2}^{2}+\dots+dx_{n}^{2}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *Edp*<sup>2</sup> + 2*Fdpdq* + *Gdq*<sup>2</sup>.
-
 
 </div>
 
@@ -241,9 +233,7 @@ $$ds^{2}=dx_{1}^{2}+dx_{2}^{2}+\dots+dx_{n}^{2}.$$
 
 <div class="displayeq" markdown="1">
 
-
 Σα<sub>ι,ι′</sub> *dx*<sub>ι</sub>*dx*<sub>ι′</sub> = Σβ<sub>ι,ι′</sub> *ds*<sub>ι</sub>*ds*<sub>ι′</sub>.
-
 
 </div>
 
@@ -255,9 +245,7 @@ $$ds^{2}=dx_{1}^{2}+dx_{2}^{2}+\dots+dx_{n}^{2}.$$
 
 <div class="displayeq" markdown="1">
 
-
 α<sub>1,1</sub>*dx*<sub>1</sub>*dx*<sub>1</sub> + α<sub>1,2</sub>*dx*<sub>1</sub>*dx*<sub>2</sub> + α<sub>1,3</sub>*dx*<sub>1</sub>*dx*<sub>3</sub> + α<sub>2,1</sub>*dx*<sub>2</sub>*dx*<sub>1</sub> + … + α<sub>3,3</sub>*dx*<sub>3</sub>*dx*<sub>3</sub>.
-
 
 </div>
 
@@ -269,9 +257,7 @@ $$ds^{2}=dx_{1}^{2}+dx_{2}^{2}+\dots+dx_{n}^{2}.$$
 
 <div class="displayeq" markdown="1">
 
-
 α<sub>11</sub> = α<sub>22</sub> = α<sub>33</sub> = 1,
-
 
 </div>
 
@@ -317,16 +303,13 @@ $$ds^{2}=dx_{1}^{2}+dx_{2}^{2}+\dots+dx_{n}^{2}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *dx*<sup>2</sup> + *dy*<sup>2</sup> + *dz*<sup>2</sup> − *c*<sup>2</sup> *dt*<sup>2</sup>,
-
 
 </div>
 
 因为那样一来它们的导数就会是零，黎曼张量因而也会是零，于是时空就会是平直的。[^ch10n16]
 
 然而，要解决第一个问题，爱因斯坦与格罗斯曼将需要一套严密的理论，把我一直在讨论的所有这些张量性的想法都囊括进去——这些想法是许多数学家在几十年间凭直觉一点点摸索出来的，从柯西、埃尔温·克里斯托费尔，到麦克斯韦、黎曼，还有更多人。那么，是时候去见见格雷戈里奥·里奇了！
-
 
 [^ch10n1]: *爱因斯坦的博士*：Banesh Hoffmann, *Einstein*（Frogmore: Paladin, 1975）, 55。*格罗斯曼看出爱因斯坦的伟大*：见我的 *Young Einstein* 及其中的文献。
 
@@ -337,14 +320,14 @@ $$ds^{2}=dx_{1}^{2}+dx_{2}^{2}+\dots+dx_{n}^{2}.$$
 [^ch10n4]: *高斯、测量与最小二乘*：Martin Vermeer and Antti Rasilia, *Map of the World: An Introduction to Mathematical Geodesy*（Milton Park, UK: Taylor and Francis, 2019）, 181；Frank Reid, “The Mathematician on the Bank Note: Carl Friedrich Gauss,” *Parabola* 36, no. 2 (2000)。高斯虽于 1825 年退出野外作业，但一直指导这项测量直到 1844 年完成。
 
 [^ch10n5]: 实际上，闵可夫斯基和爱因斯坦写下这个度规时正负号是反过来的：
-    *ds*<sup>2</sup> = −*dx*<sup>2</sup> − *dy*<sup>2</sup> − *dz*<sup>2</sup> + *c*<sup>2</sup>*t*<sup>2</sup>，或 *ds*<sup>2</sup> = *c*<sup>2</sup>*t*<sup>2</sup> − *dx*<sup>2</sup> − *dy*<sup>2</sup> − *dz*<sup>2</sup>；
+    *ds*<sup>2</sup> = −*dx*<sup>2</sup> − *dy*<sup>2</sup> − *dz*<sup>2</sup> + *c*<sup>2</sup>*dt*<sup>2</sup>，或 *ds*<sup>2</sup> = *c*<sup>2</sup>*dt*<sup>2</sup> − *dx*<sup>2</sup> − *dy*<sup>2</sup> − *dz*<sup>2</sup>；
     符号的选取称为“号差”，就我们的目的而言，关键在于时间微分的符号与空间的各项相反。
 
 [^ch10n6]: *高斯论证概要*：这里的页码（以及别处）指高斯 1828 年论文的英译本，*General Investigations of Curved Surfaces of 1827 and 1825*, by Karl Friedrich Gauss, translated by James Morehead and Adam Hiltebeitel, Project Gutenberg, 2011（from the 1902 edition, Princeton: Princeton University Library）；<https://www.gutenberg.org/files/36856/36856-pdf.pdf>。
     我说过，对他的二维曲面，高斯把三个 *x, y, z* 坐标变换为两个他称之为 *p*、*q* 的新变量的函数——所以你可以把坐标变换写成（我将其取为线性的）
     *x* = *f*(*p, q*), *y* = *g*(*p, q*), *z* = *h*(*p, q*)。
     于是链式法则给出
-    $dx=\frac{\partial f}{\partial p}dp+\frac{\partial f}{\partial p}dq=adp+a'dq$ 用高斯的记号（p. 7）。
+    $dx=\frac{\partial f}{\partial p}dp+\frac{\partial f}{\partial q}dq=adp+a'dq$ 用高斯的记号（p. 7）。
     （遗憾的是，高斯和黎曼一样，用的是撇号而不是不同的字母。）
     同样地，*dy* = *bdp* + *b′dq, dz* = *cdp* + *c′dq*。把这些式子平方相加，你得到（参见高斯 pp. 18, 20）：
     *dx*<sup>2</sup> + *dy*<sup>2</sup> + *dz*<sup>2</sup> = (*a*<sup>2</sup> + *b*<sup>2</sup> + *c*<sup>2</sup>)*dp*<sup>2</sup> + 2(*aa′* + *bb′* + *cc′*)*dpdq* + (*a′*<sup>2</sup> + *b′*<sup>2</sup> + *c′*<sup>2</sup>)*dq*<sup>2</sup> = *Edp*<sup>2</sup> + 2*Fdpdq* + *Gdq*<sup>2</sup>，
@@ -358,7 +341,7 @@ $$ds^{2}=dx_{1}^{2}+dx_{2}^{2}+\dots+dx_{n}^{2}.$$
     *切向量*是通过把它对这两个坐标求导得到的，正如我们对普通函数求导以求其切线的斜率一样：
     $\frac{dr}{dp}=v,\frac{dr}{dq}=v'.)$
     两个向量标量积的几何定义是 ***a.b*** = |***a***||***b***| cosθ，而正如我们在第 9 章看到的，$|\boldsymbol{a}|=\sqrt{\boldsymbol{a}\cdot\boldsymbol{a}}$。所以这两个切向量之间的夹角是
-    $\cos\theta=\frac{v\cdot v'}{(\sqrt{v\cdot v)(v\cdot v'})}=\frac{F}{\sqrt{EG}}.$
+    $\cos\theta=\frac{v\cdot v'}{\sqrt{(v\cdot v)(v'\cdot v')}}=\frac{F}{\sqrt{EG}}.$
     后来的数学家将其推广到任意的度规和维数，度规的系数写作 *g<sub>ij</sub>*：对于这里的二维情形，我们有
     $\cos\theta=\frac{g_{12}}{\sqrt{g_{11}g_{22}}}.$
     为了求曲面的曲率，把这些公式应用于边由坐标线围成的三角形，如<a href="#fig-10-4">图 10.4</a>，然后如我在叙述中所解释的，由内角和给出曲率的性质。

@@ -30,7 +30,7 @@
 
 <figure id="fig-12-1" markdown="1">
 
-<img src="../../assets/images/vector/fig12_1.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig12_1.jpg" style="width:80%">
 
 图 12.1　<a href="#fig-12-1">图 12.1</a>　等效原理。图中显示三个参照系：（a）一个“惯性”系，比如一艘无引力（自由漂浮）的宇宙飞船，或者一个自由下落的人或电梯；（b）一艘以 32ft/sec/sec（即 9.8m/sec/sec）向上加速的宇宙飞船或电梯；（c）地球上这里的一个房间。在（b）中，当宇宙飞船或电梯向上加速时，它的地板向上推你，你会感觉与在地球上（参照系（c））一样重——地球也正是在向上推我们，以回应我们 32ft/sec/sec 即 9.8m/sec/sec 的向下引力加速度。（这些数值取自地球表面海平面处的引力加速度；当然，在更高的海拔上，加速度会按牛顿的平方反比定律减小。）在惯性系（a）中，在没有力的情况下，抛射体一旦被抛出就会以恒定的速率沿直线运动。这就是牛顿第一定律——惯性定律，“惯性系”一词正由此而来。在（c）中，抛射体走一条向下的抛物线路径，正如哈里奥特和伽利略所表明的那样——而在（b）中发生的情形相同，因为（b）与（c）是等效的。（随着宇宙飞船向上加速，地板迎着抛射体升上来，所以外部的观测者会看到抛射体越来越靠近地板。换句话说，它的路径看上去是弯的。）类似地，一道从火箭或电梯的一侧射向另一侧的光线，在参照系（a）中是直的，但在（b）中地板会升上去迎接它，于是对外部观测者来说它看上去是弯的。既然（b）与（c）等效，爱因斯坦便推导出：引力会使光线弯曲。
 {: .figcap }
@@ -47,7 +47,11 @@
 
 1911 年，爱因斯坦开始更深入地探索他的想法。他需要能够把自己直觉性的思想实验转化成可检验的方程；而既然引力可以减慢光的表观速度，他想知道，这个可变的光速是否可能代表他新理论中的“引力势（gravitational potential）”。我在第 6 章提到过，约瑟夫-路易·拉格朗日（Joseph-Louis Lagrange）曾用一个标量的“势”*V* 来表述牛顿的引力平方反比定律。从牛顿定律出发很容易得到它，你可以在这个尾注中看到，[^ch12n7] 也可以从高斯通量定律得到（类比于第 6 章中麦克斯韦对 ∇ ∙ ***E*** = 4πρ 的推导）。无论用哪种方式，牛顿的引力定律都可以写成
 
+<div class="displayeq" markdown="1">
+
 $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\frac{\partial^{2}V}{\partial z^{2}}\equiv\nabla^{2}V=4\pi G\rho$$
+
+</div>
 
 <span class="origpage" title="英文原版第 280 页">280</span>
 
@@ -57,9 +61,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *dx*<sup>2</sup> + *dy*<sup>2</sup> + *dz*<sup>2</sup> − (*c*(*x, y, z*))<sup>2</sup>*dt*<sup>2</sup>,
-
 
 </div>
 
@@ -69,7 +71,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <span class="origpage" title="英文原版第 281 页">281</span>
 
-爱因斯坦静态理论中的度规“几乎”是闵可夫斯基度规，而亚伯拉罕的理论则是完全闵可夫斯基式的——起初爱因斯坦被它迷住了。（此前已经有其他人尝试把引力纳入狭义相对论，其中包括庞加莱和闵可夫斯基。）正如爱因斯坦告诉他的老朋友米凯莱·贝索（Michele Besso）的那样——贝索同样是瑞士联邦工艺学校的毕业生，也是他长期以来的、富有洞见的共鸣板——“起初（有 14 天之久），我也被［亚伯拉罕］那些公式的美与简洁完全唬住了。”但随后爱因斯坦发现了“推理中的一些严重错误……这就是只做形式上［数学上］的运算、而不做物理思考所招致的后果！”[^ch12n9]
+爱因斯坦静态理论中的度规“几乎”是闵可夫斯基度规，而亚伯拉罕的理论则是完全闵可夫斯基式的——起初爱因斯坦被它迷住了。（此前已经有其他人尝试把引力纳入狭义相对论，其中包括庞加莱和闵可夫斯基。）正如爱因斯坦告诉他的老朋友米凯莱·贝索（Michele Besso）的那样——贝索同样是瑞士联邦工艺学校的毕业生，也是他长期以来富有洞见的思想交流伙伴——“起初（有 14 天之久），我也被［亚伯拉罕］那些公式的美与简洁完全唬住了。”但随后爱因斯坦发现了“推理中的一些严重错误……这就是只做形式上［数学上］的运算、而不做物理思考所招致的后果！”[^ch12n9]
 
 一连几个月，他和亚伯拉罕在《物理学纪事》（*Annalen der Physik*）的版面上互相交锋，堪称二十年前《自然》（*Nature*）上那场向量之战的迷你版。亚伯拉罕刻薄的舌头让他与物理学界的大多数人疏远了，但说话直率的爱因斯坦对亚伯拉罕口无遮拦的脾性抱有同情，而且亚伯拉罕的批评确实帮助爱因斯坦把自己的想法磨砺得更锋利。1912 年 7 月，就在他离开布拉格前往苏黎世和 ETH 之前不久，爱因斯坦发表了一篇论文，讲述他在寻找新的引力方程时应用等效原理的种种尝试，并补充说：“我想请我的所有同行都来试一试这个重要的问题！”而亚伯拉罕则语带讥讽地回应道：“爱因斯坦乞求人们把明日相对论的功劳记在他账上，并向他的同行们呼吁，好让他们为之担保。”到这一步，爱因斯坦放弃了这场论战——但他并没有放弃自己为一种新的相对论性引力理论而战的斗争；而且，必须说，他也没有放弃对亚伯拉罕作为物理学家的那种能力的敬重。[^ch12n10]
 
@@ -81,7 +83,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <figure id="fig-12-2" markdown="1">
 
-<img src="../../assets/images/vector/p310.jpg" style="width:50%">
+<img src="../../../assets/images/vector/p310.jpg" style="width:50%">
 
 图 12.2　阿尔伯特·爱因斯坦，1912 年。苏黎世联邦理工学院图书馆（ETH-Bibliothek Zürich），图片档案／摄影：Jan. F. Langhans／Portr_05936。公有领域。
 {: .figcap }
@@ -100,9 +102,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *g*<sub>μν</sub>*dx*<sup>μ</sup>*dx*<sup>ν</sup>,
-
 
 </div>
 
@@ -134,9 +134,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <div class="displayeq" markdown="1">
 
-
 *g*<sub>11</sub>, *g*<sub>12</sub>, *g*<sub>13</sub>, *g*<sub>14</sub>, *g*<sub>22</sub>, *g*<sub>23</sub>, *g*<sub>24</sub>, *g*<sub>33</sub>, *g*<sub>34</sub>, *g*<sub>44</sub>.
-
 
 </div>
 
@@ -160,9 +158,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <div class="displayeq" markdown="1">
 
-
 *F*<sup>14</sup> = −*E<sup>x</sup>, F* <sup>24</sup> = −*E <sup>y</sup>, F* <sup>34</sup> = −*E<sup>z</sup>, F*<sup>12</sup> = *B<sup>z</sup>, F* <sup>31</sup> = *B <sup>y</sup>, F* <sup>23</sup> = *B<sup>x</sup>*;
-
 
 </div>
 
@@ -172,9 +168,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <div class="displayeq" markdown="1">
 
-
 *F*<sup>μν</sup><sub>,ν</sub> = 4π*j*<sup>μ</sup> *F*<sub>μν,λ</sub> + *F*<sub>νλ,μ</sub> + *F*<sub>λμ,ν</sub> = 0.
-
 
 </div>
 
@@ -186,21 +180,17 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <div class="infobox" markdown="1">
 
-
 只是为了向你表明，这一对美妙的方程并不是张量优雅性的最后定论，用后来微分几何的语言，麦克斯韦方程组还可以写得更简洁：
 
 <div class="displayeq" markdown="1">
 
-
-***d*******F*** = 4π****J, dF*** = 0.
-
+***d***∗***F*** = 4π∗***J***, ***dF*** = 0.
 
 </div>
 
 这里的记号又从指标形式摆回到了亥维赛那种表示整体向量的粗体记号，于是 ***F*** 就是以 *F*<sup>μν</sup> 为分量的那个张量。***d*** 是梯度算子，类比于上面那些指标形式方程中表示偏导数的逗号。（星号表示该张量的“对偶（dual）”。）
 
 不过，正如向量的情形一样，要做计算，你仍然需要分量形式！
-
 
 </div>
 
@@ -220,7 +210,7 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 <span class="origpage" title="英文原版第 291 页">291</span>
 
-这是因为他们同时在耍许多只不同的球，而这些球最终都必须融进最终的方程里。首先，这些方程必须在微弱的场——比如地球上这里这种——中退化为牛顿极限（Newtonian limit）；并且必须在一个事件的“局部”邻域中退化为狭义相对论，在那里时空是“局部平坦”的。我们在<a href="#fig-10-1">图 10.1</a> 中见过“局部平坦性（local flatness）”这个想法；这个局部区域能有多大随情形而异，你可以在下一个尾注中看到。这些方程还必须产生出已知物理定律——比如能量守恒与动量守恒——的对应物，但这被证明格外困难——即便到了今天，引力能量的概念依然问题重重。[^ch12n21] 不过这里的要点是：想要找到一种令人满意的相对论性引力理论，是一件多么复杂的事啊！
+这是因为他们同时抛接着许多不同的球，而这些球最终都必须汇入方程。首先，这些方程必须在微弱的场——比如地球上这里这种——中退化为牛顿极限（Newtonian limit）；并且必须在一个事件的“局部”邻域中退化为狭义相对论，在那里时空是“局部平坦”的。我们在<a href="#fig-10-1">图 10.1</a> 中见过“局部平坦性（local flatness）”这个想法；这个局部区域能有多大随情形而异，你可以在下一个尾注中看到。这些方程还必须产生出已知物理定律——比如能量守恒与动量守恒——的对应物，但这被证明格外困难——即便到了今天，引力能量的概念依然问题重重。[^ch12n21] 不过这里的要点是：想要找到一种令人满意的相对论性引力理论，是一件多么复杂的事啊！
 
 尽管如此，1913 年，爱因斯坦和格罗斯曼发表了今天被称为《纲要》（*Entwurf*）理论的东西——*Entwurf* 是德语“纲要”的意思，而他们那篇论文标题的英译是“广义相对论与引力理论纲要”（“Outline of a Generalized Theory of Relativity and of a Theory of Gravitation”）。它包含了广义相对论的基本框架，是一项了不起的成就，是数月紧张工作的顶点。想法是爱因斯坦的，论文的物理部分由他撰写；格罗斯曼拥有数学专长，数学部分由他撰写。
 
@@ -286,7 +276,11 @@ $$\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\fra
 
 前面不久我们看到，索末菲追随闵可夫斯基，创造出了单个张量 *T*<sub>μν</sub>，它包含了关于一个电磁场所携带的能量与动量的全部本质信息。结果发现，*T*<sub>μν</sub> 的散度具有一种非常特殊的性质。时空中的“散度”是类比于我们在<a href="#fig-7-1">图 7.1</a> 中见过的普通向量微积分运算来定义的：在那里，向量 $V=X\boldsymbol{i}+Y\boldsymbol{j}+Z\boldsymbol{k}$ 的散度是 $\frac{\partial X}{\partial x}+\frac{\partial Y}{\partial y}+\frac{\partial Z}{\partial z}$。它是一个标量，因此是不变的——对任何坐标都成立。所以，如果我们采用里奇的记号 *x* ≡ *x*<sup>1</sup>、*X* ≡ *V*<sup>1</sup> 等等——再加上表示偏导数的逗号记号、哈密顿的纳布拉算子，以及爱因斯坦求和约定（重复的上下指标表示求和）——那么普通的向量微积分散度就可以这样来表示：
 
+<div class="displayeq" markdown="1">
+
 $$\nabla\cdot V=V^{1}_{,1}+V^{^{2}}_{,2}+V^{3}_{,3}\equiv V^{\nu}_{,\nu}.$$
+
+</div>
 
 <span class="origpage" title="英文原版第 299 页">299</span>
 
@@ -294,9 +288,7 @@ $$\nabla\cdot V=V^{1}_{,1}+V^{^{2}}_{,2}+V^{3}_{,3}\equiv V^{\nu}_{,\nu}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *T*<sup>μν</sup><sub>,ν</sub> = 0.
-
 
 </div>
 
@@ -312,12 +304,15 @@ $$\nabla\cdot V=V^{1}_{,1}+V^{^{2}}_{,2}+V^{3}_{,3}\equiv V^{\nu}_{,\nu}.$$
 
 <div class="infobox" markdown="1">
 
-
 **把爱因斯坦书写守恒方程的记号翻译成现代形式**
 
 在他 1916 年的综述《广义相对论的基础》（*The Foundation of the Theory of General Relativity*）中，爱因斯坦在他的方程 (57a) 里把能量–动量守恒方程写成了一个等价的形式：
 
+<div class="displayeq" markdown="1">
+
 $$\frac{\delta T_{\sigma}^{\boldsymbol{\alpha}}}{\delta x_{a}}=-\Gamma_{\alpha\sigma}^{\boldsymbol{\beta}}T_{\beta}^{\boldsymbol{\alpha}}.$$
+
+</div>
 
 他用 α 而不是我的 ν 来表示那些求和，但那是任意的选择；他用 σ、而我用 μ 来标记 *T* 也同样是任意的：正如我在第 11 章提到的，任意的向量与张量分量上的那些标记本身就是任意的，就像我们自古以来用 *x* 表示代数中的未知数一样。不过，我们下面会看到，爱因斯坦在他最终的方程中使用的是 *T*<sub>μν</sub>，这正是我选用 μ 和 ν 作标记的原因。
 
@@ -327,18 +322,19 @@ $$\frac{\delta T_{\sigma}^{\boldsymbol{\alpha}}}{\delta x_{a}}=-\Gamma_{\alpha\s
 
 <div class="displayeq" markdown="1">
 
-
 *T*<sup>α</sup><sub>σ;α</sub> = 0.
-
 
 </div>
 
 再借用第 11 章的最后一课：你可以在这里用度规张量来上升和下降指标——*g* <sup>σγ</sup>*T*<sup>α</sup><sub>σ;α</sub> = *T*<sup>αγ</sup><sub>;α</sub> ——而这个张量在它的指标上是对称的，所以爱因斯坦所写的，就完全等价于现代的表示法：
 
+<div class="displayeq" markdown="1">
+
 $$T^{\alpha\gamma}_{;\alpha}=T^{\gamma\alpha}_{;\alpha}=0\equiv T^{\mu v}_{;v}=0,$$
 
-其中的等价符号 ≡ 来自对指标的重新标记。
+</div>
 
+其中的等价符号 ≡ 来自对指标的重新标记。
 
 </div>
 
@@ -346,11 +342,19 @@ $$T^{\alpha\gamma}_{;\alpha}=T^{\gamma\alpha}_{;\alpha}=0\equiv T^{\mu v}_{;v}=0
 
 终于，到 1915 年 11 月 25 日，爱因斯坦发现了正确的引力场方程，他把它写成这样的形式
 
+<div class="displayeq" markdown="1">
+
 $$R_{\mu v}=k\left(T_{\mu v}-\frac{1}{2}g_{\mu v}T\right),$$
+
+</div>
 
 其中 $T=T_{\mu}^{\mu}$，它是一个标量——因为上下指标相同，意味着各分量被求和，正如我们在第 11 章看到的那样给出了一个标量——而且通常选取单位使得 *k* = 8π。[^ch12n41] 今天，爱因斯坦方程常被写成与之等价[^ch12n42] 的形式：
 
+<div class="displayeq" markdown="1">
+
 $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=kT_{_{\mu v}}.$$
+
+</div>
 
 这正是希尔伯特在他 11 月 20 日那篇通讯的发表版本中所使用的形式。[^ch12n43]
 
@@ -374,8 +378,7 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=kT_{_{\mu v}}.$$
 
 爱因斯坦的成功也悄然让里奇不朽——至少在数学物理学界是这样。像欧金尼奥·贝尔特拉米（Beltrami）这样的批评者曾抱怨说，与既有的方法相比，张量分析并没有实际的好处，但爱因斯坦和格罗斯曼改变了一切。正如里奇的挚友列维-奇维塔所说，张量在广义相对论中的本质作用“对里奇而言也成了‘那公正的荣耀分配者’”，而他的“伟大贡献”终于得到了正式的承认。[^ch12n47]
 
-
-[^ch12n1]: G. Ricci and T. Levi-Civita, “Méthodes de calcul différential absolu et leurs applications,” *Mathematische Annalen* 54 (1900): 125–201。
+[^ch12n1]: G. Ricci and T. Levi-Civita, “Méthodes de calcul différentiel absolu et leurs applications,” *Mathematische Annalen* 54 (1900): 125–201。
 
 [^ch12n2]: R. H. Dicke（“The Eötvös Experiment,” *Scientific American* 205, no. 6（December 1961）: 84–95）提出，爱因斯坦早期思考引力时是否知道厄特沃什（Eötvös）的结果并不清楚，但如果实验表明伽利略定律是错的，爱因斯坦肯定会听说。关于 2022 年的检验：Pierre Touboul et al., “MICROSCOPE Mission: Final Results of the Test of the Equivalence Principle,” *Physical Review Letters* 129 (2022): 121102.1–121102.8。
 
@@ -387,7 +390,7 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=kT_{_{\mu v}}.$$
 
 [^ch12n6]: *爱因斯坦在布拉格的职位*：Banesh Hoffmann, *Einstein*（Frogmore: Paladin, 1975）, 94。1882 年，在捷克民族主义与民族纠纷之后，布拉格大学（即查理大学）分裂为捷克部分和德国部分：<https://cuni.cz/UKEN-298.html>。
 
-[^ch12n7]: *牛顿引力的势形式，由牛顿定律导出* $F=ma=\frac{GmM}{r^{2}}\Rightarrow a=\frac{GM}{r^{2}}$。在笛卡儿坐标中，把引力加速度 *a* 的分量记作 *X, Y, Z*，并注意向量 ***a*** 与两个质量之间的距离 *r* 同方向。把一个质量 *m* 放在原点，那么 ***r*** 就是第二个质量 *M* 的位置向量，*M* 位于点 (*x, y, z*)。***a*** 的水平分量由 $\boldsymbol{a}\cdot\boldsymbol{i}=a\cos\theta=\frac{ax}{r}=\frac{GMx}{r^{3}},$ 给出，其余分量同理。对这些分量求导（用 $r=\sqrt{x^{2}+y^{2}+z^{2}}$ 和链式法则）并相加，得到 $\frac{\partial V}{\partial x}+\frac{\partial Y}{\partial y}+\frac{\partial Z}{\partial z}=0.$ 由于加速度与（保守）力成正比，我们可以用一个势 $V:X=\frac{\partial V}{\partial x},Y=\frac{\partial V}{\partial y},Z=\frac{\partial V}{\partial z},$ 来写出它的分量，于是上式变成拉普拉斯方程 $\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\frac{\partial^{2}V}{\partial z^{2}}=0.$ 如果存在密度为 ρ 的连续物质分布，那么成立的则是泊松方程，右端为 4π*G*ρ。
+[^ch12n7]: *牛顿引力的势形式，由牛顿定律导出* $F=ma=\frac{GmM}{r^{2}}\Rightarrow a=\frac{GM}{r^{2}}$。在笛卡儿坐标中，把引力加速度 *a* 的分量记作 *X, Y, Z*，并注意向量 ***a*** 与两个质量之间的距离 *r* 同方向。把一个质量 *m* 放在原点，那么 ***r*** 就是第二个质量 *M* 的位置向量，*M* 位于点 (*x, y, z*)。***a*** 的水平分量由 $\boldsymbol{a}\cdot\boldsymbol{i}=a\cos\theta=\frac{ax}{r}=\frac{GMx}{r^{3}},$ 给出，其余分量同理。对这些分量求导（用 $r=\sqrt{x^{2}+y^{2}+z^{2}}$ 和链式法则）并相加，得到 $\frac{\partial X}{\partial x}+\frac{\partial Y}{\partial y}+\frac{\partial Z}{\partial z}=0.$ 由于加速度与（保守）力成正比，我们可以用一个势 $V:X=\frac{\partial V}{\partial x},Y=\frac{\partial V}{\partial y},Z=\frac{\partial V}{\partial z},$ 来写出它的分量，于是上式变成拉普拉斯方程 $\frac{\partial^{2}V}{\partial x^{2}}+\frac{\partial^{2}V}{\partial y^{2}}+\frac{\partial^{2}V}{\partial z^{2}}=0.$ 如果存在密度为 ρ 的连续物质分布，那么成立的则是泊松方程，右端为 4π*G*ρ。
 
 [^ch12n8]: *电荷与质量密度的注意事项*：在电磁学中，需要区分电荷密度与点电荷。就引力而言，无论是牛顿的还是爱因斯坦的，区别在于物质的平均分布（遍布太阳系，或在星云、星系中）与点源（如单颗恒星或行星）。（牛顿证明了球体作用起来如同其全部质量集中在一点，即球心。）这意味着方程在一点上是奇异的——也就是说，它们在那里失效——但在这个点源之外它们没问题，在那里它们被称为“真空方程”。对于密度为 ρ 的物质平均分布，它们同样没问题。更多内容见 Peter Gabriel Bergmann, *Introduction to the Theory of Relativity*（New York: Dover, 1976）, 175–77。
 
@@ -430,7 +433,7 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=kT_{_{\mu v}}.$$
 
 [^ch12n25]: 斯特恩转引自 Hanoch Gutfreund, “Otto Stern—with Einstein in Prague and in Zürich,” Springer Link, June 20, 2021, open access, <https://link.springer.com/chapter/10.1007/978-3-030-63963-1_6?error=cookies_not_supported&code=bb7fb68a-a41c-4c71-ace0-33a64d5f7756>。
 
-[^ch12n26]: *米列娃的伤心信*：转引自 Roger Highfield and Paul Carter, *The Private Lives of Albert Einstein*（London: Faber and Faber, 1993）, 128。爱因斯坦对米列娃尖刻的要求，在 1914 年 7 月的信件中有令人痛心的罗列，例如 document 22, *Collected Papers of Albert Einstein*, vol. 8, <https://einstein> papers.press.princeton.edu/vol8-trans/60。
+[^ch12n26]: *米列娃的伤心信*：转引自 Roger Highfield and Paul Carter, *The Private Lives of Albert Einstein*（London: Faber and Faber, 1993）, 128。爱因斯坦对米列娃尖刻的要求，在 1914 年 7 月的信件中有令人痛心的罗列，例如 document 22, *Collected Papers of Albert Einstein*, vol. 8, <https://einsteinpapers.press.princeton.edu/vol8-trans/60>。
 
 [^ch12n27]: *告文明世界书*：Constance Reid, *Hilbert*（Berlin: Springer-Verlag, 1970）, 137–38。
 
@@ -466,7 +469,7 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=kT_{_{\mu v}}.$$
 
 [^ch12n43]: 爱因斯坦早先的方程 *R*μν = *kT*μν 与这两个最终形式之间的差别，关键在于标量 *T* 或希尔伯特等价的标量 *R*。（这些标量称为“迹”。）究竟是爱因斯坦还是希尔伯特先认识到这一点，正是“优先权之争”的核心，因为它在希尔伯特 11 月 20 日的拉格朗日表述中只是隐含的。由于爱因斯坦与希尔伯特交换过论文，他们肯定相互影响过，但很可能各自独立地迈出了这最后一步，因为他们走的是不同的路。今天，希尔伯特的方法被广泛使用，与拉格朗日量相关的所谓爱因斯坦–希尔伯特作用量就是为了纪念他。
 
-[^ch12n44]: *近期对爱因斯坦理论的检验*：见，例如，Pierre Touboul et al., “MICROSCOPE Mission: Final Results of the Test of the Equivalence Principle,” *Physical Review Letters* 129, no. 21102（September 14, 2022）；Ignazio Ciufolini et al., “An Improved Test of the General Relativistic Effect of Frame-Dragging Using the LARES and LAGEOS Satellites,” *European Physical Journal C* 79, article no. 872 (2019)；Gemma Conroy, “Albert Einstein Was Right (Again): Astronomers Have Detected Light from Behind a Supermassive Black Hole,” ABC News, July 29, 2021, <https://www.abc.net.au/news/science/2021-07-29/albert-einstein-astronomers-detect-light-behind-black-hole/100333436>；Geraint Lewis, “Astronomers See Ancient Galaxies Flickering in Slow Motion Due to Expanding Space”（检验爱因斯坦关于时间变慢的预言）, *The Conversation*, July 4, 2023；Jet Propulsion Laboratory blog（August 24, 2022）, “NASA Scientists Help Probe Dark Energy by Testing Gravity”——他们发现爱因斯坦的方程依然站得住。（波恩大学的 Pavel Kroupa 不以为然，见 “Dark Matter Doesn’t Exist,” *IAE News*, July 12, 2022。但一项新研究用广义相对论对引力透镜的预言来绘制暗物质图：Robert Lea, “New Dark Matter Map Created with ‘Cosmic Fossil’ Shows Einstein Was Right (Again),” *Space* [April 18, 2023]。）*关于黑洞的进动*：Brandon Specktor, “One of the Most Extreme Black Hole Collisions in the Universe Just Proved Einstein Right,” *LiveScience*, October 13, 2022。*关于参考系拖曳*：见，例如，Charles Q. Choi, “Spacetime Is Swirling around a Dead Star, Proving Einstein Right Again,” *Space.com*, January 31, 2020。还有很多很多！
+[^ch12n44]: *近期对爱因斯坦理论的检验*：见，例如，Pierre Touboul et al., “MICROSCOPE Mission: Final Results of the Test of the Equivalence Principle,” *Physical Review Letters* 129, no. 12, article no. 121102（September 14, 2022）；Ignazio Ciufolini et al., “An Improved Test of the General Relativistic Effect of Frame-Dragging Using the LARES and LAGEOS Satellites,” *European Physical Journal C* 79, article no. 872 (2019)；Gemma Conroy, “Albert Einstein Was Right (Again): Astronomers Have Detected Light from Behind a Supermassive Black Hole,” ABC News, July 29, 2021, <https://www.abc.net.au/news/science/2021-07-29/albert-einstein-astronomers-detect-light-behind-black-hole/100333436>；Geraint Lewis, “Astronomers See Ancient Galaxies Flickering in Slow Motion Due to Expanding Space”（检验爱因斯坦关于时间变慢的预言）, *The Conversation*, July 4, 2023；Jet Propulsion Laboratory blog（August 24, 2022）, “NASA Scientists Help Probe Dark Energy by Testing Gravity”——他们发现爱因斯坦的方程依然站得住。（波恩大学的 Pavel Kroupa 不以为然，见 “Dark Matter Doesn’t Exist,” *IAE News*, July 12, 2022。但一项新研究用广义相对论对引力透镜的预言来绘制暗物质图：Robert Lea, “New Dark Matter Map Created with ‘Cosmic Fossil’ Shows Einstein Was Right (Again),” *Space* [April 18, 2023]。）*关于黑洞的进动*：Brandon Specktor, “One of the Most Extreme Black Hole Collisions in the Universe Just Proved Einstein Right,” *LiveScience*, October 13, 2022。*关于参考系拖曳*：见，例如，Charles Q. Choi, “Spacetime Is Swirling around a Dead Star, Proving Einstein Right Again,” *Space.com*, January 31, 2020。还有很多很多！
     关于日食考察（以及光在黑洞附近弯曲）的通俗概述，见我的文章 “A ‘Revolution in Science’ 100 Years Later,” *Cosmos Magazine* 83 (2019): 29–35。注意，早先用牛顿理论预言光线弯曲的是 Johann Soldner，他得到的结果只有广义相对论的一半。还要注意，1980 年曾出现对考察队领队有偏见的指控，但这些指控已被推翻，1919 年的结果得到了确认。
     关于引力磁性的简短概述，见我的文章 “The Amazing Concept of Gravito-electromagnetism,” *Cosmos Magazine* 84（September 2019）: 61–63。删节版见 <https://cosmosmagazine.com/science/introducing-the-amazing-concept-of-gravito-electromagnetism/>。
     我自己的研究针对的是正文中提到的第二个类比。见，例如，C. B. G. McIntosh, R. Arianrhod, S. T. Wade, and C. Hoenselaers, “Electric and Magnetic Weyl Tensors: Classification and Analysis,” *Classical and Quantum Gravity* 11 (1994): 1555–64；以及 R. Arianrhod, A. W-C. Lun, C. B. G. McIntosh, and Z. Perjés, “Magnetic Curvatures,” *Classical and Quantum Gravity* 11 (1994): 2331–35。在某些应用中，特别是暗能量，会在方程中加上爱因斯坦的引力常数。

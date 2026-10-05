@@ -8,7 +8,7 @@
 
 <span class="origpage" title="英文原版第 189 页">189</span>
 
-1893 年，奇泽姆取得了相当于一等学位的资格。在接下来的几十年里，要求正式授予女性学位的动议数次被否决——包括 1897 年那一次，当时一些男本科生因为保住了自己的特权而得意忘形，在城里疯狂地庆祝闹事，造成的破坏按今天的币值相当于十万美元以上。凯莱一定深感厌恶，因为他在整个十九世纪八十年代都担任纽纳姆学院理事会的主席，而且他也在格顿教过课。1928 年，弗吉尼亚·伍尔夫（Virginia Woolf）会在这两所学院发表她那著名的“一间自己的房间”的演讲。[^ch09n2]
+1893 年，奇泽姆达到了相当于一等学位的水平。在接下来的几十年里，要求正式授予女性学位的动议数次被否决——包括 1897 年那一次，当时一些男本科生因为保住了自己的特权而得意忘形，在城里疯狂地庆祝闹事，造成的破坏按今天的币值相当于十万美元以上。凯莱一定深感厌恶，因为他在整个十九世纪八十年代都担任纽纳姆学院理事会的主席，而且他也在格顿教过课。1928 年，弗吉尼亚·伍尔夫（Virginia Woolf）会在这两所学院发表她那著名的“一间自己的房间”的演讲。[^ch09n2]
 
 就在那场疯狂的学生骚乱之前的几年里，向量之战正在上演；正如我们所看到的，物理学家支持现代向量分析的论证正在占上风。然而在幕后，凯莱与彼得·格思里·泰特（Peter Guthrie Tait）一直在从数学的角度不声不响地争论这个问题。早在 1888 年，凯莱就曾对泰特感叹：“我们是无法调和的，而且将一直如此。”但在 1894 年夏天——当时凯莱七十三岁，泰特比他小十岁——这两位英国数学界的元老公开亮出了他们作为数学家对向量之争的看法。而且，在泰特的建议下，他们是一起做的：两人各自在爱丁堡皇家学会（Royal Society of Edinburgh）宣读了一篇论文。[^ch09n3]
 
@@ -22,7 +22,7 @@
 
 <figure id="fig-9-1" markdown="1">
 
-<img src="../../assets/images/vector/fig9_1.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig9_1.jpg" style="width:50%">
 
 图 9.1　<a href="#fig-9-1">图 9.1</a>　向量 ***a*** 在通常的 *x*-*y* 参照系中具有分量（*a*<sub>1</sub>, *a*<sub>2</sub>），而在旋转后的 *x′*-*y′* 参照系中具有（*a*<sub>1′</sub>, *a*<sub>2′</sub>）。它是同一个向量，却有两种不同的坐标表示。正如你从图中的几何所看到的，向量的长度在两个参照系中是相同的。用数学的语言说，它在旋转下是不变的。对第二个向量 ***b*** 也同样成立。所以标量积与向量积在旋转下也是不变的，你利用这些积的几何定义就可以看出：***a*** ∙ ***b*** = *ab* cos Φ，其中 *a* 和 *b* 是两个向量的长度，Φ 是它们之间的夹角；因为向量本身没有改变，它们之间的夹角就不受坐标改变的影响。类似地，***a*** × ***b*** 的模（长度）是 *ab* sin Φ，方向垂直于这两个向量所在的平面，而这个平面——在这里的图示中就是纸面——当你以这种方式旋转坐标轴时并不改变。当坐标轴像这样被改变时，“坐标变换方程”是：*x′* = *x* cos θ + *y* sin θ，*y′* = −*x* sin θ + *y* cos θ。我们在<a href="#fig-4-2">图 4.2</a> 中看到过这种做法的一个例子（在那里我们旋转的是机械臂，而不是坐标轴）。但关键的并不是细节，而是这样一个事实：当你改变你的坐标参照系时，两组坐标是由特定的方程联系起来的。这是张量这一想法的关键。
 {: .figcap }
@@ -37,7 +37,7 @@
 
 例如，2022 年，DeepMind 人工智能团队的“AlphaFold”神经网络成功预测了几乎所有已知蛋白质的结构——两亿个之多，它们是多年来通过对各种物种进行基因测序而识别出来的。蛋白质是折叠成三维形状的氨基酸链——而决定其功能的正是形状。所以，科学家想要理解的正是形状，以便创造新型药物、用于农业或污染治理的新酶，或者借由 SARS-CoV-2 病毒的相关蛋白质来检测新的值得关切的变异株，如此等等——只不过，这些氨基酸链可能的折叠方式实在太多，以致长期以来无法弄清它们实际的结构。AlphaFold 算法利用每种蛋白质氨基酸的线性（一维）序列，以及关于相关蛋白质已知结构的训练数据，来预测折叠蛋白质中所有关键原子的三维坐标。[^ch09n4] 当算法从一层节点推进到下一层时，它会从这些输入数据中“学到”更多关于蛋白质可能形状的信息，所以程序员必须确保关键属性——比如原子之间的距离——在信息被转换到下一个节点的坐标参照系时保持不变。
 
-与其他分子建模一样，也与计算机视觉应用一样，这个蛋白质算法还必须学会在形状被旋转的情况下仍能识别出正确的形状——这意味着三维形状的数学表示必须在旋转下是不变的。不变性这个概念在许多神经网络及其他技术应用中都很重要，从卫星图像与生物医学显微图像，一直到让詹姆斯·韦布空间望远镜（James Webb Space Telescope）保持在位。
+与其他分子建模一样，也与计算机视觉应用一样，这个蛋白质算法还必须学会在形状被旋转的情况下仍能识别出正确的形状——这意味着三维形状的数学表示必须在旋转下是不变的。不变性这个概念在许多神经网络及其他技术应用中都很重要，从卫星图像与生物医学显微图像，一直到让詹姆斯·韦布空间望远镜（James Webb Space Telescope）保持位置稳定。
 
 凯莱，以及其他研究不变性数学的先驱，会被这些精妙的现代应用惊得目瞪口呆。另一方面，他们知道，各种各样的事物都可以是不变的。例如，在第 4 章我们看到，如果你把一本书水平旋转 90°，再把它竖直翻转 180°，那么当你以相反的顺序做这两个操作时，它会具有不同的朝向；而如果你以这种方式旋转一个没有任何特征的盒子或球，它每一次看起来都是一样的。那是因为盒子和球是对称的。类似地，一片雪花通常有六个尖或角，它对称得十分优美——所以当你把它旋转 60° 的整数倍时，它看起来完全一样。（吹毛求疵地说，自然界中并非所有雪花都是*完美*对称的——但你可以明白这个意思。）换句话说，它在这些旋转下是不变的——在绕其对称轴作 180° 的旋转、或者反射之下，也是不变的。
 
@@ -49,7 +49,7 @@
 
 <figure id="fig-9-2" markdown="1">
 
-<img src="../../assets/images/vector/fig9_2.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig9_2.jpg" style="width:80%">
 
 图 9.2　<a href="#fig-9-2">图 9.2</a>　雪花的对称性。图版 18，选自威尔逊·A. 本特利（Wilson A. Bentley）的《1901—1902 年冬季雪晶研究，附前几个冬季所采集的补充数据》（“Studies among the Snow Crystals during the Winter of 1901–2, with Additional Data Collected during Previous Winters”），载 *Monthly Weather Review* 30，第 13 期（1903 年）：607–16，<https://doi.org/10.1175/1520-0493-30.13.607>。
 {: .figcap }
@@ -66,7 +66,7 @@
 
 <figure id="fig-9-3" markdown="1">
 
-<img src="../../assets/images/vector/p223.jpg" style="width:60%">
+<img src="../../../assets/images/vector/p223.jpg" style="width:60%">
 
 图 9.3　彼得·格思里·泰特在他的书房里演示电的物理学；图片由爱丁堡的詹姆斯·克拉克·麦克斯韦基金会（James Clerk Maxwell Foundation）慨然提供。
 {: .figcap }
@@ -91,7 +91,7 @@
 
 ## 记住米列娃·马里奇
 
-关于这段悲剧性的故事，已经有很多著述：理想主义的青年学生爱因斯坦与米列娃·马里奇（Mileva Marić）坠入爱河，秘密地生下（并放弃了）一个非婚生的孩子，不顾父母的反对结了婚，最后分道扬镳，被爱因斯坦日益增长的名望与工作负担撕扯开来——而马里奇因为一再考试失利，失去了自信和她的学术梦想，并且越来越多地承担起另外两个孩子的全部日常照料。我不打算进一步详述这出伤感的戏剧——只想说一句：它比他们两个人更大。爱因斯坦在这段关系破裂期间的行为出了名地恶劣，但那破裂的种子，早在他们还是学生时就已埋下，也关系到他们两人都深陷其中的那种父权文化。这包括我相信存在性别歧视的那些考官，他们两次让马里奇不及格：她是班上唯一的女生，最后一次应试时心怀恐惧又身怀有孕，然而她早年的学业成绩一直很优异。
+关于这段悲剧性的故事，已经有很多著述：理想主义的青年学生爱因斯坦与米列娃·马里奇（Mileva Marić）坠入爱河，秘密地生下（并放弃了）一个非婚生的孩子，不顾父母的反对结了婚，最后分道扬镳，被爱因斯坦日益增长的名望与工作负担撕扯开来——而马里奇因为一再考试失利，失去了自信和她的学术梦想，并且越来越多地承担起另外两个孩子的全部日常照料。我不打算进一步详述这出伤感的戏剧——只想说一句：这件事牵涉的远不止他们两人。爱因斯坦在这段关系破裂期间的行为出了名地恶劣，但那破裂的种子，早在他们还是学生时就已埋下，也关系到他们两人都深陷其中的那种父权文化。这其中包括我认为考官两次判马里奇不及格时所表现出的性别歧视：她是班上唯一的女生，最后一次应试时心怀恐惧又身怀有孕，然而她早年的学业成绩一直很优异。
 
 至于那种流行的说法，认为马里奇“替爱因斯坦做数学”，或者合著了他 1905 年的相对论论文——据我所知，并没有确凿的证据支持它——而且她本人也从未这样声称过。当爱因斯坦与那些一再拒绝给他学术职位的“老市侩们”抗争时，她当然是最早相信他的人之一；而她在“理工”所受的广泛教育，至少使他有了一个称职而重要的商讨对象（sounding board，字面“共鸣板”）。但他们之间留存下来的书信表明，她并不具备爱因斯坦那种强烈的、创造性的科学好奇心。尽管如此，我还是忍不住想：如果他们今天上大学，在我们这个更开放的社会里，避孕手段又唾手可得，她本会拿到她的文凭和她所计划的那博士学位，并在科学中留下自己的印记——而他们之间的事情，也许会走向非常不同的结局。[^ch09n10]
 
@@ -99,7 +99,7 @@
 
 <figure id="fig-9-4" markdown="1">
 
-<img src="../../assets/images/vector/p226.jpg" style="width:80%">
+<img src="../../../assets/images/vector/p226.jpg" style="width:80%">
 
 图 9.4　米列娃·马里奇-爱因斯坦与阿尔伯特·爱因斯坦在布拉格，1912 年。苏黎世联邦理工学院图书馆（ETH-Bibliothek Zürich），图片档案。摄影：Jan F. Langhans/Portr_03106。公有领域。
 {: .figcap }
@@ -112,7 +112,7 @@
 
 <span class="origpage" title="英文原版第 199 页">199</span>
 
-1887 年那个实验背后的想法是：如果以太存在，那么当地球穿过它运动时，就会有“以太风”——就像你在无风的日子里骑自行车时感到脸上拂过一阵微风。而正如你在河里顺流游泳比逆流或横渡更快一样，迈克耳孙和他的合作者爱德华·莫雷（Edward Morley）预期光速在顺流方向上最快——也就是“顺”着以太风的方向。麦克斯韦曾提议利用木星卫星的掩食计时，当这颗巨大的行星从地球轨道上两个几乎相对的位置被观测到时。那时地球在一个位置上朝木星运动，在另一个位置上背离它运动，于是来自木星系统的光速就会被测量到既“顺”着也“逆”着以太风。[^ch09n11] 但迈克耳孙和莫雷用的是干涉图样——正是托马斯·杨（Thomas Young）最初用来表明光的波动本性的那类图样。具体地说，他们发出一束顺流的光和另一束横流的光——也就是分别平行于和垂直于地球运动的方向；光速上的任何差异都会造成两束光之间的相位差，它会显现在干涉图样中。但研究者没有发现这样的差异。这意味着以太风对光速没有任何可辨别的影响。（此后实验一直在继续，想看看用更好的设备能否找到微小的速度差异——一些物理学家谈到存在一种“量子以太”的可能性。但旧的机械式以太观念已经出局了。）
+1887 年那个实验背后的想法是：如果以太存在，那么当地球穿过它运动时，就会有“以太风”——就像你在无风的日子里骑自行车时感到脸上拂过一阵微风。而正如你在河里顺流游泳比逆流或横渡更快一样，迈克耳孙和他的合作者爱德华·莫雷（Edward Morley）预期光速在顺流方向上最快——也就是“顺”着以太风的方向。麦克斯韦曾提议，在地球上观测到这颗巨大的行星位于其自身轨道上几乎相对的两个位置时，利用木星卫星的掩食来计时。那时地球在一个位置上朝木星运动，在另一个位置上背离它运动，于是来自木星系统的光速就会被测量到既“顺”着也“逆”着以太风。[^ch09n11] 但迈克耳孙和莫雷用的是干涉图样——正是托马斯·杨（Thomas Young）最初用来表明光的波动本性的那类图样。具体地说，他们发出一束顺流的光和另一束横流的光——也就是分别平行于和垂直于地球运动的方向；光速上的任何差异都会造成两束光之间的相位差，它会显现在干涉图样中。但研究者没有发现这样的差异。这意味着以太风对光速没有任何可辨别的影响。（此后实验一直在继续，想看看用更好的设备能否找到微小的速度差异——一些物理学家谈到存在一种“量子以太”的可能性。但旧的机械式以太观念已经出局了。）
 
 到 1895 年，乔治·菲茨杰拉德（George FitzGerald）与亨德里克·洛伦兹（Hendrik Lorentz）都各自独立而巧妙地“解释”了迈克耳孙与莫雷的结果：他们提出，物体——包括量度用的尺子——在平行于以太风方向运动时，会*在物理上收缩*。这样一种物理上的“长度收缩（length contraction）”会缩小对光顺流速度的*量度*，从而掩盖它“实际上”更快的那个假想事实。
 
@@ -132,7 +132,7 @@
 
 <figure id="fig-9-5" markdown="1">
 
-<img src="../../assets/images/vector/fig9_3.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig9_3.jpg" style="width:80%">
 
 图 9.5　<a href="#fig-9-3">图 9.3</a>　两个参照系 *S* 与 *S′* 以这样的方式相对运动：*S′* 相对于 *S* 以恒定速度 *v* 向右运动。所以，我们不妨把 *S* 当作站在人行道上的你，把 *S′* 当作开车经过的某个人。如果两根轴起初是重合的——如果在时刻 *t* = 0 你与那辆车彼此齐平——那么经过一段时间 *t* 之后，*S′* 参照系（那辆车）就会向右移动 *vt* 个单位。在这种情形下相对运动是水平方向的，所以对于任意一点 P，它的 *y* 与 *y′* 坐标（在三维中还有 *z* 与 *z′* 坐标）是相同的；然而在时间 *t* 这段里，*S′* 已经移近了 *P*，所以*在那一时刻*所做的一次量度会给出：*P* 的水平坐标在 *S* 参照系中量得为 *x*，而在相对于运动的 *S′* 参照系量得为 *x′*（= *x* − *vt*）。这是牛顿式／伽利略式的观点，其中时间对两位观测者都以同样的速率流逝。即便如此，你也可以看出，距离的量度在不同而又相对运动的参照系中必然不同，因此速度也必须以不同的方式被量度。你可以在相关的（而且完全可选的！）知识框里看到这一点在数学上的后果，既有牛顿式的观点，也有爱因斯坦式的观点。
 {: .figcap }
@@ -140,7 +140,6 @@
 </figure>
 
 <div class="infobox" markdown="1">
-
 
 **坐标变换与不变性**
 
@@ -152,9 +151,7 @@
 
 <div class="displayeq" markdown="1">
 
-
 *x′* = *x* − *vt, y′* = *y, z′* = *z, t′* = *t*. (1)
-
 
 </div>
 
@@ -166,11 +163,19 @@
 
 麦克斯韦方程组在坐标变换 (1) 之下并不保持它们的形式。相反，*洛伦兹变换*才适合于电磁学定律。（在这种情况下，各个分量、乃至于电场向量与磁场向量本身都不是不变的：例如，如果一个电荷在某个参照系中静止，一个相对运动的观测者会看到磁场，而处于该电荷所在参照系中的观测者则看不到。但是把这些向量联系起来的麦克斯韦方程*确实*在每个参照系中具有相同的形式。）这些变换表明，不仅空间量度是相对的，时间量度也是相对的——所以你再也不能假定 *t′* = *t*。图中那个设置下的洛伦兹变换是：
 
+<div class="displayeq" markdown="1">
+
 $$x'=\beta\left(x-vt\right),y'=y,z',\boldsymbol{t'}=\beta\left(\boldsymbol{t}-\frac{vx}{c^{2}}\right),$$ (2)
+
+</div>
 
 其中 *c* 是光速（测量单位常被选取得使 *c* = 1），并且
 
+<div class="displayeq" markdown="1">
+
 $$\beta=1/\sqrt{1-v^{2}/c^{2}}.$$ (3)
+
+</div>
 
 这组方程表示 *x* 方向上的一个所谓推进变换（boost）（*S′* 相对于 *S* 的），但完整的洛伦兹变换可以描述任意方向上的推进变换，也可以描述旋转。还要注意，如果 *c* 是无穷大——正如超距作用中所蕴含的那样——那么式 (2) 就只是式 (1)。
 
@@ -178,9 +183,7 @@ $$\beta=1/\sqrt{1-v^{2}/c^{2}}.$$ (3)
 
 <div class="displayeq" markdown="1">
 
-
 *x<sub>b</sub>′* − *x<sub>a</sub>′* = β(*x<sub>b</sub>* − *x<sub>a</sub>*)
-
 
 </div>
 
@@ -190,7 +193,11 @@ $$\beta=1/\sqrt{1-v^{2}/c^{2}}.$$ (3)
 
 然而，正如爱因斯坦认识到的，你也可以把<a href="#fig-9-3">图 9.3</a> 理解为是说 *S* 在相对于 *S′* 运动——所以它在向左运动，而它的速度是 −*v*。于是，从这个观点看，洛伦兹变换是：
 
+<div class="displayeq" markdown="1">
+
 $$x=\beta\left(x'+vt'\right),y=y',z=z',\boldsymbol{t}=\beta\left(\boldsymbol{t'}+\frac{vx'}{c^{2}}\right).$$ (4)
+
+</div>
 
 而这一次，收缩的是在 *S* 的参照系中所量到的长度。
 
@@ -199,7 +206,6 @@ $$x=\beta\left(x'+vt'\right),y=y',z=z',\boldsymbol{t}=\beta\left(\boldsymbol{t'}
 群是研究对称性（比如不变性）的重要工具。在这种情况下，群的“元素”就是坐标变换；如果它们全都服从一组简单的规则，它们就构成一个群，我会用洛伦兹变换来说明（尽管在这个故事里我们并不需要这些细节）。
 
 洛伦兹变换 (2) 有一个“逆”变换 (4)，也有一个“单位”元（即一个被该变换保持不变的元素——在这里，就是 *v* = 0 时的那个变换），这一事实是知道它们构成一个数学“群（group）”的关键。封闭性（群中所有可能的变换都是同一类型的这一想法）与结合性（associativity；群“乘积”——在这里即两个变换的复合——的结合性）是另外两个关键特征。
-
 
 </div>
 
@@ -227,7 +233,7 @@ $$x=\beta\left(x'+vt'\right),y=y',z=z',\boldsymbol{t}=\beta\left(\boldsymbol{t'}
 
 至于辛顿，他还没有把心智完全丢给那些精灵，因为他也专注于尝试把四维几何对象可视化，比如“超立方体（hypercube）”。你可以把立方体想成一个“超正方形”：一串二维的正方形构成一个三维形状——也就是一个立方体——那么超立方体就是四维空间中立方体的一种排布。1954 年，萨尔瓦多·达利（Salvador Dali）在他那幅受难画作《*Corpus Hypercubus*》（《十字超立方体》）中著名地动用了这个想法，画中的十字架由立方体构成——但早在七十年之前，辛顿就启发了中学校长埃德温·艾勃特（Edwin Abbott）写出他 1884 年那部传奇的《平面国：一个多维的传奇故事》（*Flatland: A Romance of Many Dimensions*）。辛顿还启发了他妻子的妹妹艾丽西亚·布尔·斯托特（Alicia Boole Stott），布尔最小的女儿。斯托特在四维几何中发现了若干令人脑筋打结的结果，其中包括她为想象中的一个由六*百*个四面体构成的四维结构的各种截面所制作的一批实物模型；这些四面体合在一起，可以被看作一个二十面体的四维类比物的三维表面。这样一种视觉化的几何想象力，真是让人叹为观止。[^ch09n16]
 
-然后，在 1895 年——正是洛伦兹找到洛伦兹变换以解释迈克耳孙-莫雷实验的同一年——H. G. 威尔斯（H. G. Wells）出版了他著名的小说《时间机器》（*The Time Machine*），在其中他声称*时间*就是第四维。然而，尽管威尔斯的想象力辉煌夺目，单靠文字并不足以让这个想法扎下根来——让它变成真的。揭示这样一个四维构造的数学性质，要靠洛伦兹、庞加莱和爱因斯坦；而让它变“真”，则要靠爱因斯坦提出可检验的预言来检验他的理论。（其中一条预言完全出乎意料地引导他推出了 *E* = *mc*<sup>2</sup>。）所以，今天人们听到“第四维”这几个字时，想到的往往是爱因斯坦，而不是威尔斯——而爱因斯坦是用数学的语言做到了这一点。
+然后，在 1895 年——正是洛伦兹找到洛伦兹变换以解释迈克耳孙-莫雷实验的同一年——H. G. 威尔斯（H. G. Wells）出版了他著名的小说《时间机器》（*The Time Machine*），在其中他声称*时间*就是第四维。然而，尽管威尔斯的想象力辉煌夺目，单靠文字并不足以让这个想法扎下根来——让它变成真的。揭示这样一个四维构造的数学性质，要靠洛伦兹、庞加莱和爱因斯坦；而让它变“真”，则要靠爱因斯坦提出可用于检验理论的预言。（其中一条预言完全出乎意料地引导他推出了 *E* = *mc*<sup>2</sup>。）所以，今天人们听到“第四维”这几个字时，想到的往往是爱因斯坦，而不是威尔斯——而爱因斯坦是用数学的语言做到了这一点。
 
 就*向量*语言而言，庞加莱完全用分量工作，但洛伦兹也使用整体向量记号与向量微积分。爱因斯坦在他的狭义相对论论文中，像庞加莱一样，把所有的方程都用分量写出来；尽管他的坐标（*t, x, y, z*）同时表示时间与空间，他还没有谈论时空。
 
@@ -241,9 +247,7 @@ $$x=\beta\left(x'+vt'\right),y=y',z=z',\boldsymbol{t}=\beta\left(\boldsymbol{t'}
 
 <div class="displayeq" markdown="1">
 
-
 *x*<sup>2</sup> + *y*<sup>2</sup> + *z*<sup>2</sup> − (*ct*)<sup>2</sup>
-
 
 </div>
 
@@ -251,13 +255,17 @@ $$x=\beta\left(x'+vt'\right),y=y',z=z',\boldsymbol{t}=\beta\left(\boldsymbol{t'}
 
 它之所以不同寻常，是因为——正如庞加莱所指出的——物理学家习惯的是所有项都相加的那种二次表达式。例如，一个位置向量的长度是经由毕达哥拉斯定理从它的分量求出的（正如你把<a href="#fig-0-2">图 0.2</a> 推广到三维、并把分量简单地用坐标表示时所看到的）：
 
+<div class="displayeq" markdown="1">
+
 $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sqrt{x^{2}+y^{2}+z^{2}}.$$
+
+</div>
 
 <span class="origpage" title="英文原版第 209 页">209</span>
 
 <figure id="fig-9-6" markdown="1">
 
-<img src="../../assets/images/vector/p237.jpg" style="width:60%">
+<img src="../../../assets/images/vector/p237.jpg" style="width:60%">
 
 图 9.6　赫尔曼·闵可夫斯基，约 1896 年（当时爱因斯坦是他的学生）。苏黎世联邦理工学院图书馆（ETH-Bibliothek Zürich），图片档案／摄影者不详／Portr_02711。公有领域。
 {: .figcap }
@@ -266,7 +274,11 @@ $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sq
 
 这是用于在平直的三维欧几里得空间中量度长度与距离的公式，它在诸如<a href="#fig-9-1">图 9.1</a> 中那些旋转之类的坐标变换下是不变的。闵可夫斯基认识到，狭义相对论中与此类似的概念是下面这个表达式：
 
+<div class="displayeq" markdown="1">
+
 $$\sqrt{x^{2}+y^{2}+z^{2}-\left(ct\right)^{2}},$$
+
+</div>
 
 庞加莱与爱因斯坦已经证明，它在洛伦兹变换下是不变的。这个表达式看起来颇像欧几里得的距离公式，但它并不是普通空间中距离的度量。毋宁说，它是闵可夫斯基所称“时空（space-time）”中的“距离”。换句话说，它是时空中“事件”之间的间隔，而不是空间中点之间的距离。你可以在尾注里看到它在物理上意味着什么，但在这里，我关注的是它与欧几里得距离公式在数学上的类比。[^ch09n20]
 
@@ -280,27 +292,27 @@ $$\sqrt{x^{2}+y^{2}+z^{2}-\left(ct\right)^{2}},$$
 
 在普通的向量分析中——它发生在<a href="#fig-9-1">图 9.1</a> 之类图示所用的那种平直欧几里得空间中——一个向量的长度也可以写成它与自身的标量积：
 
+<div class="displayeq" markdown="1">
+
 $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sqrt{\boldsymbol{a}\cdot\boldsymbol{a}}=\sqrt{x^{2}+y^{2}+z^{2}}.$$
+
+</div>
 
 在（平直的）时空中，闵可夫斯基用类比的方式、借助间隔度规定义了标量积：如果一个四维向量 ***a*** 具有分量（*x, y, z, t*），那么标量积是
 
 <div class="displayeq" markdown="1">
 
-
 ***a*** ∙ ***a*** = *x*<sup>2</sup> + *y*<sup>2</sup> + *z*<sup>2</sup> − (*ct*)<sup>2</sup>.
-
 
 </div>
 
 <span class="origpage" title="英文原版第 211 页">211</span>
 
-更一般地，并且使用现代记号（同时选取使 *c* = 1 的单位），三维向量的标量（或点）积是
+更一般地，并且使用现代记号（同时选取使 *c* = 1 的单位），三维向量的标量积（或点积）是
 
 <div class="displayeq" markdown="1">
 
-
 ***a*** ∙ ***b*** = *a*<sub>1</sub>*b*<sub>1</sub> + *a*<sub>2</sub>*b*<sub>2</sub> + *a*<sub>3</sub>*b*<sub>3</sub>,
-
 
 </div>
 
@@ -330,7 +342,7 @@ $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sq
 
 张量在当时是一个新概念，它那引人入胜的起源我们很快就会探索——但为了先尝尝味道，下面是索末菲对它们的解释。用向量，你探索的是*线*（或箭头）的几何；例如，在三维中，垂直的线由向量方程 ***a*** ∙ ***b*** = 0 刻画，而平行的线由 ***a*** × ***b*** = 0 刻画（你可以从<a href="#fig-9-1">图 9.1</a> 图注中给出的点积与叉积的几何定义看出这一点）。但有时候你还需要描述*平面*，而平面还有一个额外的特征：空间中的*取向（orientation）*。它由该平面“法线”的方向来定义，而法线用一个垂直于（即法向于）该平面的单位向量来表示。不过，为了更清楚地了解平面与张量有什么关系，我们可以回到一个出人意料的源头：麦克斯韦 1873 年的《*Treatise*》（《电磁通论》）。
 
-想象一个浸没在水中的盒子——也许是船体的一个理想化版本。它在水的压力下保持自己的形状，靠的是作用在每个面上的力的平衡。各种各样的刚体，从桥梁、飞机到微小的晶体，都在平衡这些“应力（stress）”力。（“应力”是单位面积上的力。）也有很多情形下这些力可能并不平衡——当然是在可变形或弹性的材料中——但工程师还需要考虑潜在的额外应力冲击，比如桥上的繁忙交通，或者拍打船身的大浪。还有一些情形，你想要移动或转动这个物体，所以你又需要力的净*不平衡*。麦克斯韦的朋友汤姆森是研究这些情形的数学先驱之一，他在 1856 年一篇关于弹性的论文中分析过它们。更早的时候，柯西在 1828 年就发表了关于平衡物体中应力的奠基性论文。[^ch09n25] 然而，麦克斯韦想要分析的是浸没在电磁场中的一个被磁化物体上的力。通过对那个浸没盒子的类比，他考虑的是作用在被磁化物体一个小立方体每个面上的力。（换句话说，他考虑的是一个可以在整个物体上积分的“体积元”。）汤姆森与柯西用过类似的方法。但麦克斯韦做了一件特别的事，不仅把这些分析推广到了电磁学，还用一个带*两个指标*的符号来表示应力。
+想象一个浸没在水中的盒子——也许是船体的一个理想化版本。它在水的压力下保持自己的形状，靠的是作用在每个面上的力的平衡。各种各样的刚体，从桥梁、飞机到微小的晶体，都在平衡这些“应力（stress）”。（“应力”是单位面积上的力。）也有很多情形下这些力可能并不平衡——当然是在可变形或弹性的材料中——但工程师还需要考虑可能带来的额外应力影响，比如桥上的繁忙交通，或者拍打船身的大浪。还有一些情形，你想要移动或转动这个物体，所以你又需要力的净*不平衡*。麦克斯韦的朋友汤姆森是研究这些情形的数学先驱之一，他在 1856 年一篇关于弹性的论文中分析过它们。更早的时候，柯西在 1828 年就发表了关于平衡物体中应力的奠基性论文。[^ch09n25] 然而，麦克斯韦想要分析的是浸没在电磁场中的一个被磁化物体上的力。通过对那个浸没盒子的类比，他考虑的是作用在被磁化物体一个小立方体每个面上的力。（换句话说，他考虑的是一个可以在整个物体上积分的“体积元”。）汤姆森与柯西用过类似的方法。但麦克斯韦做了一件特别的事，不仅把这些分析推广到了电磁学，还用一个带*两个指标*的符号来表示应力。
 
 <span class="origpage" title="英文原版第 214 页">214</span>
 
@@ -338,7 +350,7 @@ $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sq
 
 <figure id="fig-9-7" markdown="1">
 
-<img src="../../assets/images/vector/fig9_4.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig9_4.jpg" style="width:80%">
 
 图 9.7　<a href="#fig-9-4">图 9.4</a>　作用在立方体各个面上的基本应力分量。麦克斯韦指出，如果 *P<sub>hk</sub>* = *P<sub>kh</sub>*，这些应力就不会产生转动（他感兴趣的是由磁性产生的转动——正如他的旋度方程所表达的）。确实，这幅图提示：如果比方说 *P<sub>yx</sub>* > *P<sub>xy</sub>*，那么右面就会被向前拉，立方体就会开始转动。
 {: .figcap }
@@ -347,11 +359,11 @@ $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sq
 
 <span class="origpage" title="英文原版第 215 页">215</span>
 
-麦克斯韦在这里所做的，是为一个单一量的分量给出了一个简明的定义；他只是把这个量称作“应力”，但它现在被称为“应力张量（stress tensor）”——正如分量（*a*<sub>1</sub>, *a*<sub>2</sub>, *a*<sub>3</sub>）构成一个单一的向量 ***a*** 那样。这件事引人入胜的地方在于：张量当时还没有被发明出来——至少，还没有作为与向量并列的数学对象被发明出来。然而柯西和汤姆森也曾接近过这个想法，尽管他们没有麦克斯韦那种简明而通用的记号。
+麦克斯韦在这里所做的，是简明地定义了单一量的各个分量；他只是把这个量称作“应力”，但它现在被称为“应力张量（stress tensor）”——正如分量（*a*<sub>1</sub>, *a*<sub>2</sub>, *a*<sub>3</sub>）构成一个单一的向量 ***a*** 那样。这件事引人入胜的地方在于：张量当时还没有被发明出来——至少，还没有作为与向量并列的数学对象被发明出来。然而柯西和汤姆森也曾接近过这个想法，尽管他们没有麦克斯韦那种简明而通用的记号。
 
 <figure id="fig-9-8" markdown="1">
 
-<img src="../../assets/images/vector/fig9_5.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig9_5.jpg" style="width:50%">
 
 图 9.8　<a href="#fig-9-5">图 9.5</a>　你需要两个向量才能构成一个应力张量。第一个是给出应力所作用之表面方向的向量 ***n***——我给它标了一个 *x*，以表示这里法线的相关分量平行于 *x* 轴。第二个是给出力的强度与方向的向量：标签 *y* 表示作用在这个面上的力的相关分量是沿平行于 *y* 轴的方向。
 {: .figcap }
@@ -365,7 +377,6 @@ $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sq
 <span class="origpage" title="英文原版第 216 页">216</span>
 
 这些优美的方程我们后面会看到。不过首先，我们需要更深入地挖掘张量的演化。特别是，我们会弄清它们如何编码并推广不变性这个想法——以及爱因斯坦为什么需要它们来完成他的杰作。但我们也要往回走一点，去看看非欧几何与我们的故事有什么关系。因为通往张量的道路是漫长的——而且，正如我们在向量上也看到的那样，它是由来自许多出人意料方向的创造性洞见铺成的。
-
 
 [^ch09n1]: *Grace Chisholm 谈凯莱*：I. Grattan-Guinness, “A Mathematical Union: William Henry and Grace Chisholm Young,” *Annals of Science* 29, no. 2（August 1972）: 117–18。
 
@@ -387,7 +398,7 @@ $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sq
 
 [^ch09n10]: 在上一则尾注提到的 1901 年 3 月 27 日的那封信里（<https://einsteinpapers.press.princeton.edu/vol1-trans/182>），爱因斯坦期盼着“我们俩共同把相对运动的研究带到胜利的结局”的那一天。一些学者引此为爱因斯坦与马里奇合作研究相对论的证据，不过语境以及“胜利的结局”这些字眼也提示，这可能只是他们结婚计划的一个比喻（婚事因亲属反对、米列娃为毕业所做的挣扎，以及爱因斯坦没有工作而一再拖延）。据我所查，在现存写给马里奇的信中，爱因斯坦此前（以及此后）提到相对论，仅有的几次是：1899 年 9 月 10 日的信（*Collected Papers of Albert Einstein*, vol. 1, document 54），他在信中告诉米列娃，自己有了一个想法，关于相对于以太的相对运动如何影响光速，并补充说“这个就说到这儿吧！”（因为她在准备考试）：<https://einsteinpapers.press.princeton.edu/vol1-trans/155>；以及 1899 年 9 月 28 日的第 57 号文件，其中没有出现“我们的”理论这样的说法；1901 年 12 月 17 日的第 128 号文件同样如此。从她的信和爱因斯坦写给她的信来看，她显然从未就此发表过任何评论——她关注的反而是与考试相关的题目。要是我们知道他们在一起、不需要写信时都发生了些什么就好了！爱因斯坦早年确实怀抱着两人共度科学生涯的梦想——在本卷 1900 年 8 月 14 日的第 72 号文件中，他告诉她，不在她身边时他便缺乏自信，也感受不到工作的乐趣。马里奇这一时期的信件存世极少：留存下来的那些聚焦的都是她结婚、通过文凭考试、开始读博士的梦想（而她的文凭论文写的是热与能量，不是相对论）。至于她“替爱因斯坦做数学”，他们 1900 年的考试成绩显示，爱因斯坦数学优秀而她不及格：vol. 1, document 67, <https://einsteinpapers.press.princeton.edu/vol1-trans/163>。考试成绩当然不能说明一切，但这确实终结了所谓爱因斯坦数学无能的说法。在我看来，要更公正地对待马里奇这位女性科学先驱，应当去审视毁掉她前程的偏见，而不是去宣称那些没有明确证据的事情。关于这段关系以及狭义相对论的更多信息，见我的电子短篇 *Young Einstein and the Story of E = mc*<sup>2</sup>（Sydney: Ligature, 2014）及其中的文献。关于“米列娃·马里奇是共同作者”这一说法的证据，有一份很简短的最新综述：Ann Finkbeiner, “The Debated Legacy of Einstein’s First Wife,” *Nature* 567 (2019): 28–29。
 
-[^ch09n11]: *麦克斯韦的想法* 表述于他为第 9 版《*Encyclopaedia Britannica*》（1878）所写的“Ether”词条，8:568–72，并在 1879 年 3 月 19 日致 David Peck Todd 的信（他去世前几个月）中有更详细的说明。托德认识到它的重要性，把它寄给斯托克斯，后者转交皇家学会，学会将它发表于会刊：“‘On a possible method of detecting the motion of the solar system through the luminiferous ether’ by the late Professor J. Clerk Maxwell,” *Proceedings of the Royal Society*, January 22, 1880, 108–10。*迈克耳孙研究过这封信*，因为他曾在托德的办公室工作。另见 Robert Shankland, “Michelson and His Interferometer,” *Physics Today* 27, no. 4（1974）: 37, DOI: 10.1063/1.3128534；Shankland 文中附有迈克耳孙干涉仪的照片。*不过，在他们报告结果的论文中*，迈克耳孙与莫雷把卫星法列为鉴于其否定结果而可能进行的未来实验，却没有引用麦克斯韦；想必他们不知道他的信已经发表：Albert A. Michelson and Edward W. Morley, “On the Relative Motion of the Earth and the Luminiferous Ether,” *American Journal of Science*, ser. 3, 34, no. 203（November 1887）: 345。
+[^ch09n11]: *麦克斯韦的想法* 表述于他为第 9 版《*Encyclopaedia Britannica*》（1878）所写的“Ether”词条，8:568–72，并在 1879 年 3 月 19 日致 David Peck Todd 的信（他去世前几个月）中有更详细的说明。托德认识到它的重要性，把它寄给斯托克斯，后者转交皇家学会，学会将它发表于会刊：“‘On a possible method of detecting the motion of the solar system through the luminiferous ether’ by the late Professor J. Clerk Maxwell,” *Proceedings of the Royal Society*, January 22, 1880, 108–10。*迈克耳孙研究过这封信*，因为他曾在托德的办公室工作。另见 Robert Shankland, “Michelson and His Interferometer,” *Physics Today* 27, no. 4（1974）: 37, DOI: 10.1063/1.3128534；Shankland 文中附有迈克耳孙干涉仪的照片。*不过，在他们报告结果的论文中*，迈克耳孙与莫雷把卫星法列为鉴于其阴性结果而可能进行的未来实验，却没有引用麦克斯韦；想必他们不知道他的信已经发表：Albert A. Michelson and Edward W. Morley, “On the Relative Motion of the Earth and the Luminiferous Ether,” *American Journal of Science*, ser. 3, 34, no. 203（November 1887）: 345。
 
 [^ch09n12]: *洛伦兹电子论*：麦克斯韦假定电荷是连续分布的——因此他的方程里有电荷密度项 ρ 和电流密度 ***J***；洛伦兹证明，这些密度是电荷（点）分布的近似或平均，麦克斯韦方程在这些点上奇异，但在其他各处成立。*爱因斯坦论洛伦兹*：Albert Einstein, *Ideas and Opinions*（1954; New York: Three Rivers Press, 1982）, 73–76，以及 Banesh Hoffman（with the collaboration of Helen Dukas）, *Einstein*（Frogmore: Paladin, 1975）, 98。
 
@@ -399,7 +410,7 @@ $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sq
 
 [^ch09n16]: 关于这些四维探索及其背景（包括布尔一家，以及超正方形类比）的精彩叙述，见 Nicholas Mee, *Celestial Tapestry: The Warp and Weft of Art and Mathematics*（Oxford: Oxford University Press, 2020）。
 
-[^ch09n17]: 关于（双）四元数在狭义相对论中的现代分析，见 Joachim Lambek, “In Praise of Quaternions,” *Comptes Rendues Mathematical Reports*, Academy of Sciences, Canada, 35, no. 4（2013）: 121–36；<https://www.math.mcgill.ca/barr/lambek/pdffiles/Quater2013.pdf>。哈密顿本人讨论过双四元数（其系数为复数）。
+[^ch09n17]: 关于（双）四元数在狭义相对论中的现代分析，见 Joachim Lambek, “In Praise of Quaternions,” *Comptes rendus mathématiques（Mathematical Reports）*, Academy of Sciences, Canada, 35, no. 4（2013）: 121–36；<https://www.math.mcgill.ca/barr/lambek/pdffiles/Quater2013.pdf>。哈密顿本人讨论过双四元数（其系数为复数）。
 
 [^ch09n18]: *“懒狗”*：转引自 Michael White and John Gribbin, *Einstein: A Life in Science*（London: Simon and Schuster, 1993）, 39。*闵可夫斯基论四元数*：Scott Walter, “Breaking in the 4-vectors: The Four-dimensional Movement in Gravitation, 1905–1910,” in *The Genesis of General Relativity*, ed. Jürgen Renn（Dordrecht: Springer, 2007）, 3:212。
 
@@ -424,8 +435,8 @@ $$a=x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}\Rightarrow\left|a\right|=\sq
     *x*<sup>2</sup> + *y*<sup>2</sup> + *z*<sup>2</sup> − (*ct*)<sup>2</sup> = *x′*<sup>2</sup> + *y′*<sup>2</sup> + *z′*<sup>2</sup> − (*ct′*)<sup>2</sup>。
     这也就意味着 *x′* <sup>2</sup> + *y′* <sup>2</sup> + *z′* <sup>2</sup> − (*ct′*)<sup>2</sup> = 0 同样成立，于是在 (*x′, y′, z′, t′*) 系中光速也必定是 *c*。
 
-[^ch09n25]: William Thomson, “Elements of a Mathematical Theory of Elasticity,” *Philosophical Transactions of the Royal Society of London* 146（1856）: 481–98；Augustin Cauchy, “Sur les equations qui experiment les conditions d’équilibre ou les lois du movement intérieur d’un corps solide, élastique ou nonélastique,” *Exercises de Mathématiques* 3（1828）: 160–87。
+[^ch09n25]: William Thomson, “Elements of a Mathematical Theory of Elasticity,” *Philosophical Transactions of the Royal Society of London* 146（1856）: 481–98；Augustin Cauchy, “Sur les équations qui expriment les conditions d’équilibre ou les lois du mouvement intérieur d’un corps solide, élastique ou non élastique,” *Exercices de Mathématiques* 3（1828）: 160–87。
 
 [^ch09n26]: Maxwell, *Treatise on Electricity and Magnetism*（Oxford: Clarendon Press, 1873）, 2:278–81。
 
-[^ch09n27]: 闵可夫斯基把这些特殊的双指标量称为“第二类向量”（vectors of the second kind），索末菲称之为“六向量”（six-vectors）。今天它们被径直称为张量——在这里是反对称的二阶（second-rank 或 second-order）张量，其中“秩”（rank）或“阶”（order）指其分量上指标的数目。（如果这些张量是定义在整个空间上、而不是在一点上的，那么严格说来它们是张量场。）
+[^ch09n27]: 闵可夫斯基把这些特殊的双指标量称为“第二类向量”（vectors of the second kind），索末菲称之为“六向量”（six-vectors）。今天它们被径直称为张量——在这里是反对称的二秩（second-rank）或二阶（second-order）张量，其中“秩”（rank）或“阶”（order）指其分量上指标的数目。（如果这些张量是定义在整个空间上、而不是在一点上的，那么严格说来它们是张量场。）

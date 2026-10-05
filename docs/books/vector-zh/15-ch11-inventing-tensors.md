@@ -1,12 +1,12 @@
 <span class="origpage" title="英文原版第 240 页">240</span>
 
-# 第 11 章　张量的发明
+# 第 11 章　张量的发明——以及它们为何重要
 
 1861 年，格雷戈里奥·里奇（Gregorio Ricci）八岁，一连串旷日持久的政治与军事谋划终于以意大利王国的宣告成立而告终。这意味着，意大利那些彼此割裂的邦国、公国与王国，大多数终于正式地——即便不总是心甘情愿地——统一在了一起。但主导里奇童年的却是宗教。他的父亲是一位贵族地主、商人兼工程师，也是一位虔诚的罗马天主教徒；他表达自己的信仰，靠的不只是给教会的大笔捐赠，还有给饥饿的人饭吃。而他的母亲会带着四个孩子一起上街，去寻访穷人——尤其是穷苦的妇女。她似乎担当着一种劝导者的角色，倾听她们诉说苦处，并给予安慰。小里奇对母亲倾听每一个辛酸故事时那种一次次停下来、等下去的场面满腹牢骚，然而她在那情形中的尊严给他留下了持久的印象；而他本人也终身是一位虔诚的天主教徒。[^ch11n1]
 
 <span class="origpage" title="英文原版第 241 页">241</span>
 
-顺便说一句，里奇家族的姓氏是里奇·库尔巴斯特罗（Ricci Curbastro），但在他那篇关于张量微积分的里程碑式论文上，他署名“里奇”，所以今天人们就用这个名字称呼他。（我该提一句，类似地，詹姆斯·克拉克·麦克斯韦家的姓氏是克拉克·麦克斯韦，但他的朋友们称他为麦克斯韦。）小里奇是个勤奋的学生，用他一位老师的话说，有着异乎寻常的“穿透性心智”和“活泼的巧思”。[^ch11n2] 接着，1869 年，他开始在罗马的教皇大学学习数学——但 1870 年夏天，因为又一场战争，他不得不回到家中。法国人原本与教皇的军队结盟；而当普鲁士人取胜之后，意大利的新国王抓住机会攻占了罗马，把它并入了新生的意大利王国。
+顺便说一句，里奇家族的姓氏是里奇·库尔巴斯特罗（Ricci Curbastro），但在他那篇关于张量微积分（tensor calculus）的里程碑式论文上，他署名“里奇”，所以今天人们就用这个名字称呼他。（我该提一句，类似地，詹姆斯·克拉克·麦克斯韦家的姓氏是克拉克·麦克斯韦，但他的朋友们称他为麦克斯韦。）小里奇是个勤奋的学生，用他一位老师的话说，有着异乎寻常的“穿透性心智”和“活泼的巧思”。[^ch11n2] 接着，1869 年，他开始在罗马的教皇大学学习数学——但 1870 年夏天，因为又一场战争，他不得不回到家中。法国人原本与教皇的军队结盟；而当普鲁士人取胜之后，意大利的新国王抓住机会攻占了罗马，把它并入了新生的意大利王国。
 
 如今罗马成了这个新国家的世俗首都，原先的教皇大学校舍也被国家接收，里奇于是把目光投向了历史悠久的博洛尼亚大学，那里离他位于意大利东北部的家乡卢戈-迪罗马涅（Lugo di Romagno）要近得多。为了取得入学资格，他不得不额外补一些功课——整整两年的量，可见那场政治动荡让他付出了多大代价。尽管如此，他是支持统一的；而且，他告诉一位朋友，在博洛尼亚还意味着“我可以更专注、也更热忱地关注我们的同胞——那些缔造了统一的意大利的人——[在卢戈]将要推行的政治改革”。[^ch11n3]
 
@@ -52,7 +52,7 @@
 
 <figure id="fig-11-1" markdown="1">
 
-<img src="../../assets/images/vector/fig11_1.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig11_1.jpg" style="width:80%">
 
 图 11.1　<a href="#fig-11-1">图 11.1</a>　张量（或外）积把参与相乘的那些张量的信息合并起来。普通的数用诸如 *a* 这样的符号来表示。如果它们表示的是不依赖于坐标的量——比如温度——那么它们就是标量，而既然标量在坐标变换下不变，它们就是张量。我们会看到向量也是张量，而我们此前也已经看到，它们的分量用一个指标来标记，这个指标代表测量该分量所沿的那条轴。列向量 ***u*** 与行向量 ***v*** 的张量积可以表示成一个矩阵。你可能熟悉用符号 *a<sub>ij</sub>* 表示矩阵第 *i* 行第 *j* 列的元素，所以这里 *a<sub>ij</sub>* = *u<sub>i</sub>v<sub>j</sub>*。我会在正文的二维例子中详细说明这一点。同样地，你可以构造出更多的张量积。例如，单指标向量 ***u*** 与矩阵 *A* 的张量积，其分量带有 3 个指标，你在正文中也能看到。类似地，如果矩阵 *A* 与 *B* 各自都由向量的外积构成，那么它们的张量积的分量就是 *c<sub>ijkl</sub>* ≡ *u<sub>i</sub>v<sub>j</sub>w<sub>k</sub>s<sub>l</sub>*，如此等等。这并不是构造新张量的唯一方式，但请注意，随着张量的“秩（rank）”增大，你能表示的信息就更多。这个“秩”也叫张量的“阶（order）”，因为里奇提出这个想法时就是这么称呼它的。它与从一个坐标系变换到另一个坐标系所需要的变换矩阵的个数有关，但本质上它对应于指标的个数，每一个指标代表着一种不同类型的信息。（如果你熟悉矩阵代数，请注意：对于被视为张量的矩阵而言，这里“秩”的用法与线性代数中的用法不同。）关于这一点，我们后面还会看到更多。（图内标注为英文：*Scalar*＝标量，*u is a single number*＝*u* 是一个数；*Rank 0*–*Rank 5*＝秩 0 至秩 5。）
 {: .figcap }
@@ -79,11 +79,19 @@
 
 既然张量积这么重要，我就把由<a href="#fig-11-1">图 11.1</a> 中那样的列向量 ***u*** 与行向量 ***v*** 的张量积生成一个矩阵这一想法详细说明一下。为简单起见，这里我把向量取成二维的：
 
+<div class="displayeq" markdown="1">
+
 $$\left(\begin{matrix} u_{1} \\ u_{2} \end{matrix}\right)\left(v_{1}v_{2}\right)=\left(\begin{matrix} u_{1}v_{1} & u_{1}v_{2} \\ u_{2}v_{1} & u_{2}v_{2} \end{matrix}\right).$$
+
+</div>
 
 这是把两个向量的信息合并起来的一种巧妙方式，而且在这个情形下它也遵循普通矩阵乘法的规则。但当你试图用 ***u*** 去乘一个 2 × 2 的矩阵时，你就能看出矩阵乘法与张量积的区别：普通的矩阵规则根本不允许你拿一个 2 × 1 的矩阵去乘一个 2 × 2 的矩阵，但张量积允许：
 
+<div class="displayeq" markdown="1">
+
 $$\left(\begin{matrix} u_{1} \\ u_{2} \end{matrix}\right)\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right)=\left(\begin{matrix} u_{1}\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right) \\ u_{2}\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right) \end{matrix}\right)=\left(\begin{matrix} u_{1}a_{11} & u_{1}a_{12} \\ u_{1}a_{21} & u_{1}a_{22} \\ u_{2}a_{11} & u_{2}a_{12} \\ u_{2}a_{21} & u_{2}a_{22} \end{matrix}\right)$$.
+
+</div>
 
 <span class="origpage" title="英文原版第 250 页">250</span>
 
@@ -91,15 +99,27 @@ $$\left(\begin{matrix} u_{1} \\ u_{2} \end{matrix}\right)\left(\begin{matrix} a_
 
 为了简单起见，假设词表中包含三个词，“cats、love、mice”，并且每个词被指派一个从 1 到 3 的位置编号。因此这些词的向量表示的维数就是三，所以如果“cats”在第一位、“love”在第二位、“mice”在第三位，那么这些词就会被表示为向量 (1,0,0)、(0,1,0)、(0,0,1)，我分别把它们记作 ***C, L, M***。要造出句子“Cats love mice（猫爱老鼠）”，只要把这些向量加起来：***C*** + ***L*** + ***M*** = (1,1,1)。但这与“Mice love cats（老鼠爱猫）”的向量表示并没有区别，而这显然是不对的。所以，正是在这里，张量积可以派上用场。取第二组向量，代表这些词将要扮演的角色的关键语法指令：主语、宾语、动词，比如说记作 ***S, O, V***，并分别表示为 (1,0,0)、(0,1,0) 和 (0,0,1)。“cats”（表示为列向量）与“subject”（行向量）的张量积，就可以按我们前面刚看到的列向量与行向量的方式来表示：
 
+<div class="displayeq" markdown="1">
+
 $$\left(\begin{matrix} 1 \\ 0 \\ 0 \end{matrix}\right)\left(\begin{matrix} 1 & 0 & 0 \end{matrix}\right)=\left(\begin{matrix} 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{matrix}\right),$$
+
+</div>
 
 “mice”与“object”、以及“like”与“verb”的张量积也类似。现在你就可以构造出一个没有歧义的句子，
 
+<div class="displayeq" markdown="1">
+
 $$C\otimes S+L\otimes V+M\otimes O=\left(\begin{matrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{matrix}\right),$$
+
+</div>
 
 其中 ⊗ 是张量积的符号。这与“Mice love cats”不同：
 
+<div class="displayeq" markdown="1">
+
 $$M\otimes S+L\otimes V+C\otimes O=\left(\begin{matrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{matrix}\right).$$
+
+</div>
 
 <span class="origpage" title="英文原版第 251 页">251</span>
 
@@ -109,17 +129,29 @@ $$M\otimes S+L\otimes V+C\otimes O=\left(\begin{matrix} 0 & 1 & 0 \\ 0 & 0 & 1 \
 
 我们在序言中看到，电子的自旋可以是“上”，用向量 (1, 0) 表示；也可以是“下”，用 (0, 1) 表示；所以这两种可能性的“叠加（superposition）”——一种两种结果都有可能发生的中间状态——是 (α, β)，其中 α 是处于“上”态的“权重”或者说概率幅（probability amplitude），β 是处于“下”态的概率幅。（“概率幅”只是说 |α<sup>2</sup>| + |β<sup>2</sup>| = 1。为了让概率成立，α 和 β 是复数。）我们也看到，自旋可以被用来表示量子计算中的 0 和 1，比如说自旋“上”态代表二进制数字 0，“下”态代表 1。为了方便，我把这些“上”态和“下”态写成了行向量，但在量子力学中，态向量是写成列向量的，它们常被称为“右矢（ket）”。在第 4 章里，我讲过单位向量 ***i, j, k*** 是构造一个向量 ***v*** 的“基”——类似地，一个电子、或者说一个量子比特（qubit）的自旋态 ψ 的基可以选成这样，使得 $\left(\begin{matrix} 1 \\ 0 \end{matrix}\right)$ 代表自旋“上”态，而 $\left(\begin{matrix} 0 \\ 1 \end{matrix}\right)$ 代表自旋“下”态。用那种以量子先驱保罗·狄拉克（Paul Dirac）命名、被称为“狄拉克记号（Dirac notation）”的记法，这些基向量记作右矢 |0〉 和 |1〉。所以，一个量子比特的态向量用分量形式表示为
 
+<div class="displayeq" markdown="1">
+
 $$|\psi\rangle\alpha|0\rangle+\beta|1\rangle.$$
+
+</div>
 
 这意味着，在被实际观测之前，这个量子比特处于 |0〉 与 |1〉 这两个态之间的叠加态，α 和 β 分别代表它处于各个态的可能性大小。当量子比特被*组合*起来时——当然，要造出可用的量子计算机，它们就非被组合不可——张量积就登场了。不过咱们慢慢来，只取两个量子比特，并把它们的状态表示为
 
+<div class="displayeq" markdown="1">
+
 $$|\psi_{1}\rangle\left(\begin{matrix} \alpha \\ \beta \end{matrix}\right),|\psi_{2}\rangle=\left(\begin{matrix} \gamma \\ \delta \end{matrix}\right).$$
+
+</div>
 
 <span class="origpage" title="英文原版第 252 页">252</span>
 
 要求出这两个系统的组合的态，取它们的张量积：
 
+<div class="displayeq" markdown="1">
+
 $$|\psi\rangle=|\psi_{1}\rangle\otimes|\psi_{2}\rangle=\left(\begin{matrix} \alpha\gamma \\ \alpha\delta \\ \beta\lambda \\ \beta\delta \end{matrix}\right).$$
+
+</div>
 
 它是一个 4 × 1 的向量，给出四种可能性的概率幅：两个量子比特都处于上态（都代表零）、第一个上而另一个下、第二个上而第一个下、以及两个都处于下态。正是每个量子比特都能表示 0 和 1 的叠加这一能力，使量子计算机具有如此巨大的潜在威力，因为它们可以同时进行多重计算。你可以从一个事实感受到这种威力：在一个 *n* 量子比特的系统中，张量积将有 2<sup>*n*</sup> 个复数分量。哪怕量子比特的数量相对不多，同时被处理的 0 和 1 也已经非常可观了。[^ch11n14]
 
@@ -127,7 +159,11 @@ $$|\psi\rangle=|\psi_{1}\rangle\otimes|\psi_{2}\rangle=\left(\begin{matrix} \alp
 
 表示量子态的列向量被称为“右矢”，对任意的态记作 |*A*〉，而行向量则被称为“左矢（bra）”，记作 〈*A*|。这是因为当你把一个左矢和一个右矢放在一起时——比如你取两个态 |*A*〉 和 |*B*〉 的标量积（即内积）时——你就把那个括号补齐了（“bra-ket”，左矢-右矢）：
 
+<div class="displayeq" markdown="1">
+
 $$\langle B|A\rangle.$$
+
+</div>
 
 标量积在态向量的“归一化（normalisation）”中是必需的，它确保 α 和 β 这类权重确实与测量结果的概率相对应——不过这里的要点在于，*B*〉 这个列向量的内容，现在正充当着一个左矢、或者说行向量 〈*B*|，作用在右矢 |*A*〉 上，给出标量积。这听起来很复杂（而且从技术上说，一个左矢是一个右矢的“对偶（dual）”，两者都栖居于复向量空间之中）——但你可以把它看成普通向量分析中一个结果的应用：在那里，向量可以扮演不同的角色，取决于你怎样书写它们。
 
@@ -137,9 +173,7 @@ $$\langle B|A\rangle.$$
 
 <div class="displayeq" markdown="1">
 
-
 ***a*** ∙ ***b*** = *a*<sub>1</sub>*b*<sub>1</sub> + *a*<sub>2</sub>*b*<sub>2</sub> + *a*<sub>3</sub>*b*<sub>3</sub> − *a*<sub>4</sub>*b*<sub>4</sub>，或者 ***a*** ∙ ***b*** = − *a*<sub>0</sub>*b*<sub>0</sub> + *a*<sub>1</sub>*b*<sub>1</sub> + *a*<sub>2</sub>*b*<sub>2</sub> + *a*<sub>3</sub>*b*<sub>3</sub>
-
 
 </div>
 
@@ -163,9 +197,7 @@ $$\langle B|A\rangle.$$
 
 <div class="displayeq" markdown="1">
 
-
 (2***a***) ∙ ***b*** = 2(***a*** ∙ ***b***) = ***a*** ∙ (2***b***)，以及 ***a*** ∙ (***u*** + ***v***) = ***a*** ∙ ***u*** + ***a*** ∙ ***v***
-
 
 </div>
 
@@ -179,9 +211,7 @@ $$\langle B|A\rangle.$$
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *dx*<sup>2</sup> + *dy*<sup>2</sup> + *dz*<sup>2</sup> − (*cdt*)<sup>2</sup>
-
 
 </div>
 
@@ -223,15 +253,17 @@ $$\langle B|A\rangle.$$
 
 <div class="displayeq" markdown="1">
 
-
 *x′* = *x* cos θ + *y* sin θ，*y′* = −*x* sin θ + *y* cos θ。
-
 
 </div>
 
 你可能已经注意到，它们是线性方程（它们只含 *x* 和 *y*，没有幂次或其他乘积），而且你可以把它们写成一个矩阵方程：
 
+<div class="displayeq" markdown="1">
+
 $$\left(\begin{matrix} x' \\ y' \end{matrix}\right)=\left(\begin{matrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{matrix}\right)\left(\begin{matrix} x \\ y \end{matrix}\right).$$
+
+</div>
 
 这是向量和矩阵在数学家想要表示和处理信息时反复冒出来的又一个例证。（你可能还注意到，这里的旋转矩阵与<a href="#fig-4-2">图 4.2</a> 中的那个相似，不过那里我们转动的是机械臂，而这里，就像在<a href="#fig-9-1">图 9.1</a> 中那样，向量保持不变，转动的是坐标轴本身。）
 
@@ -239,9 +271,7 @@ $$\left(\begin{matrix} x' \\ y' \end{matrix}\right)=\left(\begin{matrix} \cos\th
 
 <div class="displayeq" markdown="1">
 
-
 ***X′*** = *A**X***。
-
 
 </div>
 
@@ -251,25 +281,45 @@ $$\left(\begin{matrix} x' \\ y' \end{matrix}\right)=\left(\begin{matrix} \cos\th
 
 不同的作者使用不同的符号，不过在梳理和推广坐标变换的行为方式时，我将沿用当今张量分析教科书中广泛使用的那种记号。它与里奇的只有细微差别；特别是，逆变向量的分量*和*坐标都写成带上指标的形式，但里奇是把坐标写成我们在数学课上通常遇到的那种样子：*x*<sub>1</sub>、*x*<sub>2</sub>。所以，为了再深入一点探讨坐标旋转的结构——也为了摸清坐标变换一般是如何起作用的——首先，我用 *x*<sup>1</sup>、*x*<sup>2</sup> 表示原来的坐标 (*x, y*)，用 *x*<sup>1′</sup>、*x*<sup>2′</sup> 表示新的坐标 (*x′, y′*)。于是，原来的旋转变换方程 *x′* = *x* cos θ + *y* sin θ 可以这样推广：
 
+<div class="displayeq" markdown="1">
+
 $$x^{1}=A_{1}^{1}x^{1}+A_{2}^{1}x^{2},$$
+
+</div>
 
 在我们这个具体的旋转情形中，$A_{1}^{1'}=\cos\theta,A_{2}^{1'}=\sin\theta$。（对于表示坐标变换的矩阵元素，我用的是 $A_{1}^{1'}$ 等等，而不是线性代数里的 *a<sub>ij</sub>* 记号。你很快就会明白为什么。）类似地，变换方程 *y′* = −*x* sin θ + *y* cos θ 可以推广为
 
+<div class="displayeq" markdown="1">
+
 $$x^{2}=A_{1}^{2}x^{1}+A_{2}^{2}x^{2}.$$
+
+</div>
 
 <span class="origpage" title="英文原版第 261 页">261</span>
 
 这里的指标有一种模式：在这两个一般方程的每一个中，同一个带撇的上指标贯穿始终。这意味着你可以把这两个方程合并成一个，其中一般的上指标 μ′（读作“mu-撇”）被假定依次取值 1 和 2，因为在二维空间中有两个独立坐标：
 
+<div class="displayeq" markdown="1">
+
 $$x^{\mu'}=A_{1}^{\mu'}x^{1}+A_{2}^{\mu'}x^{2}.$$
+
+</div>
 
 还要注意，在右边和式的每一项里，矩阵分量上的下指标都有一个原坐标上的上指标与之相配；于是，用希腊字母 σ（sigma）和我在第 10 章末尾提示过的那个求和记法，你就可以把上面的表达式简化成：
 
+<div class="displayeq" markdown="1">
+
 $$x^{\mu'}=\sum_{\sigma=1}^{2}A_{\sigma}^{\mu'}x^{\sigma}.$$
+
+</div>
 
 一旦爱因斯坦把这一切都摸透了，他会把这个记号弄得更简单。他会说，看看这个模式，注意只要你遇到相同的上、下指标——在这个情形里，一个 σ 像这样出现两次——你就把所有那些项加起来。而既然你也知道自己是在几维中工作，那何不干脆把求和号整个省掉，让重复的指标来告诉你这是一个和式：
 
+<div class="displayeq" markdown="1">
+
 $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
+
+</div>
 
 今天，这个记号被称为爱因斯坦求和约定（Einstein summation convention）。
 
@@ -285,9 +335,7 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *a*<sup>1′</sup> = *a*<sup>1</sup> cos θ + *a*<sup>2</sup> sin θ，*a*<sup>2′</sup> = −*a*<sup>1</sup> sin θ + *a*<sup>2</sup> cos θ，
-
 
 </div>
 
@@ -295,9 +343,7 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *a*<sup>1′</sup>*b*<sup>1′</sup> + *a*<sup>2′</sup>*b*<sup>2′</sup> = *a*<sup>1</sup>*b*<sup>1</sup> + *a*<sup>2</sup>*b*<sup>2</sup>。
-
 
 </div>
 
@@ -313,9 +359,7 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 <div class="displayeq" markdown="1">
 
-
 ***X′*** = *A**X*** ⟹ *A***<sup>−1</sup>*X′*** = ***X***。
-
 
 </div>
 
@@ -335,9 +379,7 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 <div class="displayeq" markdown="1">
 
-
 ∇ ∙ ***E*** = 4πρ ∇ ∙ ***B*** = 0。
-
 
 </div>
 
@@ -357,9 +399,7 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *v*<sub>1</sub>*u*<sup>1</sup> + *v*<sub>2</sub>*u*<sup>2</sup> ≡ *v*<sub>μ</sub>*u*<sup>μ</sup>。
-
 
 </div>
 
@@ -385,9 +425,7 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *dx*<sup>2</sup> + *dy*<sup>2</sup> ≡ (*dx*<sup>1</sup>)<sup>2</sup> + (*dx*<sup>2</sup>)<sup>2</sup>
-
 
 </div>
 
@@ -395,9 +433,7 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *g*<sub>μν</sub>*u*<sup>μ</sup>*v*<sup>ν</sup> = *g*<sub>11</sub>*u*<sup>1</sup>*v*<sup>1</sup> + *g*<sub>12</sub>*u*<sup>1</sup>*v*<sup>2</sup> + *g*<sub>21</sub>*u*<sup>2</sup>*v*<sup>1</sup> + *g*<sub>22</sub>*u*<sup>2</sup>*v*<sup>2</sup> = *u*<sup>1</sup>*v*<sup>1</sup> + *u*<sup>2</sup>*v*<sup>2</sup>。
-
 
 </div>
 
@@ -413,9 +449,7 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 <div class="displayeq" markdown="1">
 
-
 *ds*<sup>2</sup> = *g*<sub>μν</sub>*dx*<sup>μ</sup>*dx*<sup>ν</sup>，
-
 
 </div>
 
@@ -433,7 +467,11 @@ $$x^{\mu'}=A_{\sigma}^{\mu'}x^{\sigma}.$$
 
 在我简要勾勒里奇最高的成就——张量导数——之前，还有最后一件东西我想展示给你。当我前面谈到各种形式的标量积 *v*<sub>1</sub>*u*<sub>1</sub> + *v*<sub>2</sub>*u*<sub>2</sub>、*v*<sub>**1**</sub>*u*<sup>1</sup> + *v*<sub>**2**</sub>*u*<sup>2</sup>，以及 *v*<sub>1</sub>*u*<sup>1</sup> + *v*<sub>2</sub>*u*<sup>2</sup> 时，我是在假定我们处在二维欧几里得空间中，那里的度规是 *ds*<sup>2</sup> = *dx*<sup>2</sup> + *dy*<sup>2</sup>。更一般地说，我们刚刚看到，在一个度规分量为 *g*<sub>μν</sub> 的空间中，两个（逆变的）向量 ***v*** 与 ***u*** 的标量积是 *g*<sub>μν</sub>*u*<sup>μ</sup>*v*<sup>ν</sup>。现在看看，如果我把指标的位置换一下、写成 *g*<sup>μν</sup>*v*<sub>μ</sub>*u*<sub>ν</sub>，会发生什么。这提示的是两个协变向量的标量积。可是 *g*<sup>μν</sup> 又是什么呢？里奇把 *g*<sup>μν</sup> 定义为具有一种非常特殊的性质：它“提升”一个协变张量的指标。我们稍早前看到，*T*<sub>μν</sub>*h*<sup>μσ</sup> 带着重复的（被缩并的）μ 指标，是一个双指标张量，就好像我们在把它们加起来时把那两个 μ “消掉”了。于是，里奇定义了这样一些特殊的缩并
 
+<div class="displayeq" markdown="1">
+
 $$g^{\mu v}g_{\mu\sigma}=g_{\sigma}^{v},\text{and}g^{\lambda\sigma}g_{\sigma}^{v}=g^{\lambda v}.$$
+
+</div>
 
 （实际上，里奇用的不是 *g*<sup>μν</sup> 而是 *a<sup>rs</sup>*，不过除此之外我用的都是他的定义。）换句话说，*g*<sup>μν</sup> 把 *g*<sub>μσ</sub> 变成了 $g_{\sigma}^{v}$。而 *g*<sup>μν</sup>*g*<sup>λσ</sup> 把 *g*<sub>μσ</sub> 变成了 *g*<sup>λν</sup>。反过来也成立：*g*<sub>μν</sub> 可以降低指标。（那是因为里奇实质上把度规分量 *g*<sub>μν</sub> 与 *g*<sup>μν</sup> 的矩阵表示定义成了互逆的。不过关键在于，这些*都是*定义。）
 
@@ -443,9 +481,7 @@ $$g^{\mu v}g_{\mu\sigma}=g_{\sigma}^{v},\text{and}g^{\lambda\sigma}g_{\sigma}^{v
 
 <div class="displayeq" markdown="1">
 
-
 *v*<sub>ν</sub> = *g*<sub>μν</sub>*v*<sup>μ</sup> = *g*<sub>1ν</sub>*v*<sup>1</sup> + *g*<sub>2ν</sub>*v*<sup>2</sup>，
-
 
 </div>
 
@@ -455,9 +491,7 @@ $$g^{\mu v}g_{\mu\sigma}=g_{\sigma}^{v},\text{and}g^{\lambda\sigma}g_{\sigma}^{v
 
 <div class="displayeq" markdown="1">
 
-
 *v*<sub>1</sub> = *g*<sub>11</sub>*v*<sup>1</sup> + *g*<sub>21</sub>*v*<sup>2</sup> = 1 × *v*<sup>1</sup> + 0 × *v*<sup>2</sup> = *v*<sup>1</sup>，
-
 
 </div>
 
@@ -473,11 +507,19 @@ $$g^{\mu v}g_{\mu\sigma}=g_{\sigma}^{v},\text{and}g^{\lambda\sigma}g_{\sigma}^{v
 
 对一个向量或张量的分量取偏导数，会给出它第二个指标——用以表明该分量是对哪个变量求导的。里奇表示向量的偏导数，用的只是简单地再添一个指标，但今天，那个新指标用一个逗号来标示，以表明它是导数。于是，*u*<sup>μ</sup> 的偏导数表示为
 
+<div class="displayeq" markdown="1">
+
 $$\frac{\partial u^{\mu}}{\partial x^{\lambda}}\equiv u^{\mu}_{,\lambda}.$$
+
+</div>
 
 分号常被用来表示*协变*导数：
 
+<div class="displayeq" markdown="1">
+
 $$u^{\mu}_{;\lambda}=u^{\mu}_{,\lambda}+\Gamma^{\mu}_{\sigma\lambda}u^{\sigma}.$$
+
+</div>
 
 我把这个方程写出来，只是想给你一个直观印象，所以细节并不重要——除了要说一句：它对任何张量、而不只是向量，都有自然的推广。关键在于它是一个张量——所以它的值在相关的坐标变换下是不变的。换句话说，当你变换到新坐标、并就 *x*<sup>λ′</sup> 对变换后的分量 *u*<sup>μ′</sup> 取协变导数时，你得到的是同一个结果。
 
@@ -492,7 +534,6 @@ $$u^{\mu}_{;\lambda}=u^{\mu}_{,\lambda}+\Gamma^{\mu}_{\sigma\lambda}u^{\sigma}.$
 1880 年代末，当里奇把自己几篇关于张量的论文送评意大利的皇家数学奖时，欧金尼奥·贝尔特拉米是评委之一。代表评审委员会发言时，他赞赏里奇的数学技艺，但他怀疑：为创造这套新微积分所付出的心血，是否终究能通过足够丰硕的应用得到回报——那些无法用现有方法做出的应用。[^ch11n24] 他似乎颇以为不然——就像威廉·汤姆森（William Thomson）和阿瑟·凯莱看不出整体向量分析比起分开的分量计算有什么好处一样。（就在欧金尼奥·贝尔特拉米在意大利对张量发表这番议论的同时，向量之战正在英国打得不可开交。）但正如麦克斯韦曾论证说，在物理学中，整体向量的重要性在于它们所提供的物理洞见，里奇后来也写道：当涉及理解弯曲的 *n* 维曲面和空间时，他的微积分及其记号“不仅有助益于论证与结论的优雅，也有助益于它们的敏捷与清晰”。[^ch11n25]
 
 不过回到 1880 年代，对里奇来说——他那时还没能晋升为教授——这一切必定像是：尽管他学生时代那么出色、前途无量，他永远也不会得到承认，也永远无法实现抱负。
-
 
 [^ch11n1]: 关于里奇的生平细节，包括政治背景，我在本章中始终参考 Judith Goodstein, *Einstein’s Italian Mathematicians*（Providence, RI: American Mathematical Society, 2018）。
 
@@ -528,10 +569,10 @@ $$u^{\mu}_{;\lambda}=u^{\mu}_{,\lambda}+\Gamma^{\mu}_{\sigma\lambda}u^{\sigma}.$
 
 [^ch11n17]: *里奇为晋升的长期奋斗*：Goodstein, *Einstein’s Italian Mathematicians*, 35–43, 59–61。
 
-[^ch11n18]: G. Ricci and T. Levi-Civita, “Méthodes de calcul différential absolu et leurs applications,” *Mathematische Annalen* 54 (1900): 125–201；关于学习新技能所需付出的努力与回报，见 128（我的译文）。
+[^ch11n18]: G. Ricci and T. Levi-Civita, “Méthodes de calcul différentiel absolu et leurs applications,” *Mathematische Annalen* 54 (1900): 125–201；关于学习新技能所需付出的努力与回报，见 128（我的译文）。
 
 [^ch11n19]: 例如，若按<a href="#fig-11-1">图 11.1</a> 由两个*逆变*向量 ***a*** 和 ***b*** 的张量积（外积）构成一个二阶张量 *T*，你就有变换法则
-    $T^{\mu'v'}\equiv a^{\mu'}b^{v'}=\left(A_{\sigma}^{\mu'}a^{\sigma}\right)\left(A_{\lambda}^{v'}a^{\lambda}\right)=A_{\sigma}^{\mu'}A_{\lambda}^{v'}a^{\sigma}a^{\lambda}\equiv A_{\sigma}^{\mu'}A_{\lambda}^{v'}T^{\sigma\lambda}.$
+    $T^{\mu'v'}\equiv a^{\mu'}b^{v'}=\left(A_{\sigma}^{\mu'}a^{\sigma}\right)\left(A_{\lambda}^{v'}b^{\lambda}\right)=A_{\sigma}^{\mu'}A_{\lambda}^{v'}a^{\sigma}b^{\lambda}\equiv A_{\sigma}^{\mu'}A_{\lambda}^{v'}T^{\sigma\lambda}.$
     别忘了，这里用于张量、变换矩阵系数和指标的字母都是任意的，就像代数里的 *x*。但它们提供了多么奇妙的灵活性——你可以如此轻易地挪动变换符号，从而给出你想要的任何种类张量的法则！
 
 [^ch11n20]: *昂鲁效应*：1976 年，加拿大物理学家威廉·昂鲁（William Unruh）借助量子理论发现，广义相对论预言温度并不完全像我在<a href="#fig-11-1">图 11.1</a> 中所说的那样是与坐标无关的标量。相反，加速运动的观测者所测得的时空温度，会与静止观测者测得的略有不同。这种“昂鲁效应”尚未被探测到——要测出一度的温度变化，你得接近光速旅行才行。但在 2022 年，由 James Quach 领导的阿德莱德大学团队发明了一种“量子温度计”，也许很快就能证明昂鲁、以及广义相对论是对的。
@@ -540,7 +581,7 @@ $$u^{\mu}_{;\lambda}=u^{\mu}_{,\lambda}+\Gamma^{\mu}_{\sigma\lambda}u^{\sigma}.$
 
 [^ch11n22]: *证明 *n* 维中标量积在坐标变换下的不变性*：用变换方程中矩阵系数的微分形式最容易看清。例如，二维旋转变换方程的第一个是 *x′* = *x* cosθ + *y* sin θ。用偏导数，这个方程的微分形式是
     $dx'=\frac{\partial x'}{\partial x}dx+\frac{\partial x'}{\partial y}dy,$
-    你可以看出 $\frac{\partial x'}{\partial x}=\cos\theta$，其余导数依此类推——所以这些导数正是我在叙述中标为 $A_{\sigma}^{\mu'}$ 的那些分量。对于列向量与行向量的数量（内）积，你会有（最后一项用链式法则得到）：
+    你可以看出 $\frac{\partial x'}{\partial x}=\cos\theta$，其余导数依此类推——所以这些导数正是我在叙述中标为 $A_{\sigma}^{\mu'}$ 的那些分量。对于列向量与行向量的标量积（或内积），你会有（最后一项用链式法则得到）：
     $u^{\mu'}v_{\mu'}=A_{\sigma}^{\mu'}A_{\mu'}^{\lambda}u^{\sigma}v_{\lambda}\equiv\frac{\partial x^{\mu'}}{\partial x^{\sigma}}\frac{\partial x^{\lambda}}{\partial x^{\mu'}}u^{\sigma}v_{\lambda}=\frac{\partial x^{\lambda}}{\partial x^{\sigma}}u^{\sigma}v_{\lambda}.$
     重复指标意味着右端是
     $\frac{\partial x^{\lambda}}{\partial x^{1}}u^{1}v_{\lambda}+\frac{\partial x^{\lambda}}{\partial x^{2}}u^{2}v_{\lambda}+\dots+\frac{\partial x^{\lambda}}{\partial x^{n}}u^{n}v_{\lambda}.$
@@ -555,4 +596,4 @@ $$u^{\mu}_{;\lambda}=u^{\mu}_{,\lambda}+\Gamma^{\mu}_{\sigma\lambda}u^{\sigma}.$
 
 [^ch11n24]: *欧金尼奥·贝尔特拉米论里奇的张量*：Goodstein, *Einstein’s Italian Mathematicians*, 49。
 
-[^ch11n25]: Ricci and Levi-Civita, “Méthodes de calcul différential absolu,” 128（我的译文）。
+[^ch11n25]: Ricci and Levi-Civita, “Méthodes de calcul différentiel absolu,” 128（我的译文）。

@@ -46,7 +46,7 @@
 
 然而自然既可以是美丽的，也可以是可怕的，而正是科学帮助我们理解并缓解了其中的一些恐怖。比如，它解释了曾经看似来自神明的凶险预兆的日食；它做出天气预报，帮助我们为洪水和火灾做准备；它带来电力，保护我们免于黑暗与寒冷。尽管生产这些电力所造成的影响如今已让自然变得更加可怕，但科学与技术已经成为对抗灾难性气候变化的关键武器，一个令人振奋、更加绿色的未来就在前方。当然，这个未来不可能全都关乎技术。我们还需要我们与自然的古老联结。尽管如此，这些新技术充满了人类巧思的绝妙例证，而这些巧思同时也把我们与自己的过去连接在一起。
 
-诚然，在数学与数学科学这一宏伟的智识创造之中，有着充裕的惊奇。我写这本书，正是为了与你分享其中的一些思想——也为了展示这个故事里的那些数学概念，是如何在穿越人类想象力的五千年多元文化之旅中演化的。这样一场奥德赛式的远行把我们与我们的先驱者连接在一起，正如同惊叹于繁星密布的夜空把我们与他们连接在一起一样。
+的确，数学与数学科学这一宏伟的智识创造中，不乏令人惊叹之处。我写这本书，正是为了与你分享其中的一些思想——也为了展示这个故事里的那些数学概念，是如何在穿越人类想象力的五千年多元文化之旅中演化的。这样一场奥德赛式的远行把我们与我们的先驱者连接在一起，正如同惊叹于繁星密布的夜空把我们与他们连接在一起一样。
 
 当爱因斯坦最终找到他的场方程时，他告诉一位朋友，他认为它们“美得无与伦比”。[^ch14n5] 在这个故事里，我们看到过一些美妙的方程诞生。爱因斯坦的方程是里奇张量分析的登峰造极之作，我们也看到过麦克斯韦方程组如何演化成它们优美的向量形式与张量形式。我们看到，哈密顿刻在布鲁姆桥上的四元数规则简洁得令人愉快，欧拉的方程就是优雅简洁本身，牛顿的定律惊人地简练而有力，还有许许多多。我认为，能够欣赏这种智识之美是很重要的，正如能够欣赏音乐与艺术之美同样重要。
 
@@ -54,8 +54,7 @@
 
 我们也遇见了一些引人入胜、倾心投入的人物。他们中的一些人主要是受解决实际问题的愿望所驱动——而尽管我们近来在技术上伸展得过远，我在这个故事里想要凸显的一点正是：数学思想是如何与这些实际需求携手演化的。另一方面，这些先驱中有许多人仅仅是被求知与理解的愿望驱动，或者是被追随一个耐人寻味的模式或证明时那种颤栗般的兴奋驱动。这个故事表明，这两种思想者我们都需要。真正令人敬畏的是，多亏了他们所有的人，我们人类不仅有可能过上安全、舒适而有趣的生活；我们还能理解如此之多关于我们这个广袤而匪夷所思的宇宙的事情。这就是数学的力量！
 
-
-[^ch14n1]: 粒子对撞机让物理学家得以建立描述物质及其与各种力相互作用的标准模型，CERN 指出，它除了科学收益之外还带来了社会效益：<https://home.cern/news/news/cern/society-benefits-investing-particle-physics>。不过，前粒子物理学家 Sabine Hossenfelder 是对科学收益持怀疑态度者之一；见，例如，她的博客文章 <https://backreaction.blogspot.com/2022/04/did-w-boson-just-break-standard-model.html>。同样，*Quora* 上的这篇帖子提出，大型强子对撞机的阴性结果（即未发现新粒子的结果）对科学至关重要，但这是在排除流行理论的意义上：<https://www.quora.com/Was-building-the-Large-Hadron-Collider-worth-it-Did-they-discover-anything-from-it>。另见，例如，Nick Scott, “CERN’s Grand Ambitions: Are Particle Accelerators Worth It?” *Varsity*（January 26, 2021）, <https://www.varsity.co.uk/science/20486>；Tom Hartsfield, “Please, Don’t Build Another Large Hadron Collider,” *Big Think*（June 6, 2022）, <https://bigthink.com/hard-science/large-hadron-collider-economics/>。
+[^ch14n1]: 粒子对撞机让物理学家得以建立描述物质及其与各种力相互作用的标准模型，CERN 指出，它除了科学收益之外还带来了社会效益：<https://home.cern/news/news/cern/society-benefits-investing-particle-physics>。不过，前粒子物理学家 Sabine Hossenfelder 是对科学收益持怀疑态度者之一；见，例如，她的博客文章 <https://backreaction.blogspot.com/2022/04/did-w-boson-just-break-standard-model.html>。同样，*Quora* 上的这篇帖子提出，大型强子对撞机的阴性结果对科学至关重要，但这是在排除流行理论的意义上：<https://www.quora.com/Was-building-the-Large-Hadron-Collider-worth-it-Did-they-discover-anything-from-it>。另见，例如，Nick Scott, “CERN’s Grand Ambitions: Are Particle Accelerators Worth It?” *Varsity*（January 26, 2021）, <https://www.varsity.co.uk/science/20486>；Tom Hartsfield, “Please, Don’t Build Another Large Hadron Collider,” *Big Think*（June 6, 2022）, <https://bigthink.com/hard-science/large-hadron-collider-economics/>。
 
 [^ch14n2]: 实际上，狄拉克用的是 *E* = *mc*<sup>2</sup> 的*平方*，它给出正解和负解：正解是爱因斯坦关于普通物质的方程；负解 *E* = −*mc*<sup>2</sup> 则指反物质。简要介绍见狄拉克 1933 年诺贝尔奖致辞的节录，in *The World Treasury of Physics, Astronomy and Mathematics*, ed. Timothy Ferris（Boston: Little, Brown, 1993）, 80–85。现代分析见 Luciano Maiani and Omar Benhar, *Relativistic Quantum Mechanics*（Boca Raton, FL: CRC Press, 2016）, 113–16。
 

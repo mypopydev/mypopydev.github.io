@@ -20,7 +20,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-1" markdown="1">
 
-<img src="../../assets/images/vector/fig3_1.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig3_1.jpg" style="width:50%">
 
 图 3.1　<a href="#fig-3-1">图 3.1</a>　把两个向量 ***A*** 与 ***B*** 相加。牛顿和使用平行四边形的其他早期先驱，在这里大概并没有想着要把向量或“线”相加，但我们今天正是这样理解的：***A*** 与 ***B*** 是合成向量 ***A*** + ***B*** 的分量。平行四边形法则的一个关键特征是，在这样的向量和中，两个分量各自独立地起作用，意思是每一个的表现都仿佛另一个并不在场。换句话说，当你用平行四边形法则把两个分量相加时，你并不改变它们原本的大小或方向，只是把它们平移过去，构成平行四边形的两条对边。
 {: .figcap }
@@ -61,7 +61,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-2" markdown="1">
 
-<img src="../../assets/images/vector/fig3_2.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig3_2.jpg" style="width:50%">
 
 图 3.2　<a href="#fig-3-2">图 3.2</a>　塔尔塔利亚等早期理论家如何构想抛射体路径的草图。
 {: .figcap }
@@ -88,7 +88,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-3" markdown="1">
 
-<img src="../../assets/images/vector/fig3_3.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig3_3.jpg" style="width:80%">
 
 图 3.3　<a href="#fig-3-3">图 3.3</a>　哈里奥特用平行四边形法则分析碰撞力学。手稿藏于西萨塞克斯档案局（West Sussex Record Office），编号 PHA HMC 241 Vol VIa, f23r。承蒙埃格雷蒙特勋爵（Rt. Hon. Lord Egremont）惠允，并致谢西萨塞克斯档案局郡档案管理员。
 {: .figcap }
@@ -107,9 +107,9 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 欧拉还给了我们表示指数（或欧拉）数的符号 *e*——我在下面给出了它的定义——并且他让威廉·琼斯（William Jones）的符号 π 普及开来。但正如琼斯的 π 一样，欧拉的 *i* 直到几十年后另一位杰出的数学家——德国人卡尔·弗里德里希·高斯（Carl Friedrich Gauss）——使用它，才真正流行起来。高斯还造出了“复数（complex number）”这个术语，用以指称我们今天写作 *a* + *ib* 或 *a* + *bi* 的那种实数与虚数的混合——*i* 写在前面还是后面都无所谓。不过“复数”这个说法也没有立刻就流行起来。所有这些都说明，创新思想的演化是多么缓慢——也说明如果你想要得到哪怕迟来的承认，发表是多么关键！
 
-顺便说一句，高斯还是自学成才的女性先驱索菲·热尔曼（Sophie Germain）那位不知不觉中的导师。和他那个时代的大多数男人一样，高斯认为女性没有能力从事高等数学；热尔曼谨慎起见，用一个化名“勒布朗先生（Monsieur Le Blanc）”给他写信，谈的是证明费马大定理的一个想法。当她最终透露自己是女性时，他大吃一惊，并且十分钦佩。
+顺便说一句，高斯还在不知情的情况下，成了自学成才的女性先驱索菲·热尔曼（Sophie Germain）的导师。和他那个时代的大多数男人一样，高斯认为女性没有能力从事高等数学；热尔曼谨慎起见，用一个化名“勒布朗先生（Monsieur Le Blanc）”给他写信，谈的是证明费马大定理的一个想法。当她最终透露自己是女性时，他大吃一惊，并且十分钦佩。
 
-可是 *i* 与向量有什么关系呢？这取决于*如何表示信息*这个问题——以及与之相关的问题：什么样的数的构造，通过服从明确的数学规则，才有资格成为数学研究的对象。
+可是 *i* 与向量有什么关系呢？这取决于*如何表示信息*这个问题——以及与之相关的问题：哪些数值构造遵循明确的数学规则，才有资格成为数学研究对象。
 
 就 *i* 而言，如果数学家打算认真对待这个数，他们该怎么去想它呢？把数轴向零的左边延长以表示负数，已经花了足够长的时间——这看似简单的一步，使得人们有可能把负数仅仅看作正数的对应物，同样真实。迈出这重要一步的是沃利斯——尽管他还认为负数必定比无穷大还要大，这说明即便是最出色的数学家，要把握负数（更不用说无穷）也有多困难。首先尝试为复数做类似事情的也是沃利斯，但他没有成功。[^ch03n11]
 
@@ -123,9 +123,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <div class="displayeq" markdown="1">
 
-
 (cos θ)<sup>2</sup> + (sin θ)<sup>2</sup> = 1.
-
 
 </div>
 
@@ -133,9 +131,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <div class="displayeq" markdown="1">
 
-
 (cos θ + *i* sin θ)(cos θ − *i* sin θ) = 1.
-
 
 </div>
 
@@ -143,9 +139,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <div class="displayeq" markdown="1">
 
-
 *e<sup>i</sup>*<sup>θ</sup> = cos θ + *i* sin θ.
-
 
 </div>
 
@@ -157,7 +151,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-4" markdown="1">
 
-<img src="../../assets/images/vector/fig3_4.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig3_4.jpg" style="width:50%">
 
 图 3.4　<a href="#fig-3-4">图 3.4</a>　利用毕达哥拉斯定理以及图中所示的 sin θ 与 cos θ 的定义，你会得到 (cos θ)<sup>2</sup> + (sin θ)<sup>2</sup> = 1。
 {: .figcap }
@@ -168,9 +162,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <div class="displayeq" markdown="1">
 
-
 *e<sup>i</sup>*<sup>π</sup> + 1 = 0.
-
 
 </div>
 
@@ -178,7 +170,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-5" markdown="1">
 
-<img src="../../assets/images/vector/fig3_5.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig3_5.jpg" style="width:50%">
 
 图 3.5　<a href="#fig-3-5">图 3.5</a>　*y* = sin θ 图像的草图。
 {: .figcap }
@@ -211,7 +203,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-6" markdown="1">
 
-<img src="../../assets/images/vector/fig3_6.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig3_6.jpg" style="width:50%">
 
 图 3.6　<a href="#fig-3-6">图 3.6</a>　阿尔冈平面即复平面，以实数轴为横轴、虚数轴为纵轴。此平面上的点 (*x, y*) 表示复数 *x* + *iy*。图中所示的是具体的复数 *a* + *ib*，表示为点 (*a, b*)。
 {: .figcap }
@@ -220,7 +212,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-7" markdown="1">
 
-<img src="../../assets/images/vector/fig3_7.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig3_7.jpg" style="width:50%">
 
 图 3.7　<a href="#fig-3-7">图 3.7</a>　乘以虚数，被设想为复平面中的旋转。
 {: .figcap }
@@ -239,9 +231,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <div class="displayeq" markdown="1">
 
-
 (*a* + *ib*) + (*c* + *id*) = (*a* + *c*) + *i*(*b* + *d*), (*a* + *ib*)(*c* + *id*) = (*ac* − *bd*) + *i*(*ad* + *bc*).
-
 
 </div>
 
@@ -253,9 +243,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <div class="displayeq" markdown="1">
 
-
 (*a, b*) + (*c, d*) = (*a* + *c, b* + *d*), (*a, b*) × (*c, d*) = (*ac* − *bd, ad* + *bc*).
-
 
 </div>
 
@@ -271,7 +259,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <span class="origpage" title="英文原版第 63 页">63</span>
 
-撇开诗意不谈——哈密顿从少年时代起就一直在写诗——在我们今天听来，他那套时间的代数是奇怪的，因为我们已经如此习惯于代数地摆弄任意的 *x* 和 *y*、*a* 和 *b*，或者随便我们选用什么符号。他那几位符号主义的同行也不喜欢它。但正如莱布尼茨等人早已指出的，我们关于时间（以及空间）的观念是关系性的——*这*件事发生在*那*件事之前，这件事正发生在*此刻*，如此等等。爱因斯坦后来会把这个想法推到它的逻辑终点，并在这一过程中冒出一些古怪的新思想：时间会变慢，“此刻”本身也是相对的；而在那之前，哈密顿意识到，时间的各个瞬间之间的这些关系，可以用代数表达式来表述。他的关注点是纯数学而非物理学——否则他也许会抢在爱因斯坦之前；而事实上，他引用的是牛顿：后者在描述事物如何变化时，诉诸增长的“瞬（moments）”和时间的“流（flux）”，这是他关于我们今天所称的导数、而他自己称之为“流数（fluxion）”的那个概念。哈密顿把这个时间类比带进了更基础的领地：他提出，如果你把数本身设想为有向线段上各个“瞬间”之间的那些心智上的“步子”，你就可以把算术定律“解释”为一门关于时间的科学。
+撇开诗意不谈——哈密顿从少年时代起就一直在写诗——在我们今天听来，他那套时间的代数是奇怪的，因为我们已经如此习惯于代数地摆弄任意的 *x* 和 *y*、*a* 和 *b*，或者随便我们选用什么符号。他那几位符号主义的同行也不喜欢它。但正如莱布尼茨等人早已指出的，我们关于时间（以及空间）的观念是关系性的——*这*件事发生在*那*件事之前，这件事正发生在*此刻*，如此等等。爱因斯坦后来会把这个想法推到它的逻辑终点，并在这一过程中冒出一些古怪的新思想：时间会变慢，“此刻”本身也是相对的；而在那之前，哈密顿意识到，时间的各个瞬间之间的这些关系，可以用代数表达式来表述。他的关注点是纯数学而非物理学——否则他也许会抢在爱因斯坦之前；而事实上，他引用的是牛顿：后者在描述事物如何变化时，诉诸增长的“瞬（moments）”和时间的“流（flux）”，这是他关于我们今天所称的导数、而他自己称之为“流数（fluxion）”的那个概念。哈密顿把这个时间类比带进了更基础的领地：他提出，如果你把数本身设想为有向线段（directed line segment）上各个“瞬间”之间的那些心智上的“步子”，你就可以把算术定律“解释”为一门关于时间的科学。
 
 这些“步子”相当玄奥，尽管后来他从时间中的瞬间转向了空间中的点，并把他的“步子”认定为向量；不管怎样，你可以从一个例子里领会他的意思：两个负数相乘得到一个正数，这个令人困惑却似乎无从回避的事实——比如说 (−3) × (−1) 等于 3。正如哈密顿所说，在他的哲学里，你可以这样解释这个古怪的结果：“两次连续的反转恢复了步子的方向。”这里要带回家的一点是方向在他的向量概念中的重要性：把一支箭头的方向反转两次，你就回到了出发的地方。这类似于说“我不会不去”——连续两个“不”彼此抵消，正如两个负号彼此抵消，或者说把我们“恢复”到正的方向。当你把两个各自都小于零的数相乘、结果却得到一个正数时，这确实有助于把事情讲通！[^ch03n20]
 
@@ -305,7 +293,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-8" markdown="1">
 
-<img src="../../assets/images/vector/fig3_8a.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig3_8a.jpg" style="width:50%">
 
 图 3.8　<a href="#fig-3-8">图 3.8</a>A　用旋转表示的复数乘法。
 {: .figcap }
@@ -314,7 +302,7 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 
 <figure id="fig-3-9" markdown="1">
 
-<img src="../../assets/images/vector/fig3_8b.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig3_8b.jpg" style="width:50%">
 
 图 3.9　<a href="#fig-3-8">图 3.8</a>B　如何通过旋转来计算乘法：利用极坐标和欧拉公式写出 *x* + *iy* = *r* cos θ + *ir* sin θ = *rei*<sup>θ</sup>，以及 *a* + *ib* = *s* cos α + *is* sin α = *sei*<sup>α</sup>；然后利用指数律，你会看到乘积是 *rsei*<sup>(θ+α)</sup>。所以，用 *a* + *ib* 去乘 *x* + *iy*，是把原向量的模拉长了，并把它旋转了 α 弧度。而单纯地把一个复数加到另一个上，则可以看作平面中的一次平移。
 {: .figcap }
@@ -328,7 +316,6 @@ $$F=\frac{d\left(mv\right)}{dt}$$.
 1841 年，他开始认真研究这个问题：当时他读到一篇论文，他的朋友德摩根在其中得出结论说，用代数的方式表示三维几何似乎根本不可能。虚数 *i* 已经在二维中施展了它那旋转的魔法，但德摩根主张，再没有这样的符号可用了——没有能够把几何从二维的纸面推进到整个空间的新代数思想。
 
 这正是哈密顿所需要的挑战。
-
 
 [^ch03n1]: *SI 单位*：Système international d'unités——国际单位制——在国际上缩写为 SI。
 

@@ -64,7 +64,7 @@
 
 <figure id="fig-6-1" markdown="1">
 
-<img src="../../assets/images/vector/p152.jpg" style="width:50%">
+<img src="../../../assets/images/vector/p152.jpg" style="width:50%">
 
 图 6.1　麦克斯韦与他的彩色陀螺。剑桥，三一学院，Add.P.270a；经剑桥三一学院院长与院士惠允使用。
 {: .figcap }
@@ -117,7 +117,7 @@ $$\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{
 
 仿佛静电学的这一整套新微积分还不够有挑战性似的，当奥斯特发现电磁现象的存在——它涉及在流动的电流中*运动*着的带电粒子——事情就变得复杂得多了。
 
-1821 年，安德烈-马里·安培（André-Marie Ampère）利用奥斯特那个奇怪的发现去开创电报——同时他也开始尝试先用实验量化电磁效应，再用数学把它们表达出来。他取得了惊人的进展，单枪匹马地开创了电磁学（或者按他的叫法，“电动力学（electrodynamics）”）的数学研究。麦克斯韦称他为“电学中的牛顿”，因为他既是如此了不起的实验家，*又是*如此了不起的数学理论家。特别是，他用线积分和面积分来量化在各种实验装置中电流与它所产生的磁力之间的关系——但当他 1836 年去世时，他仍然没能找到对电磁学的完全一般的描述。[^ch06n14]
+1821 年，安德烈-马里·安培（André-Marie Ampère）利用奥斯特那个奇怪的发现开创电报技术——同时他也开始尝试先用实验量化电磁效应，再用数学把它们表达出来。他取得了惊人的进展，单枪匹马地开创了电磁学（或者按他的叫法，“电动力学（electrodynamics）”）的数学研究。麦克斯韦称他为“电学中的牛顿”，因为他既是如此了不起的实验家，*又是*如此了不起的数学理论家。特别是，他用线积分和面积分来量化在各种实验装置中电流与它所产生的磁力之间的关系——但当他 1836 年去世时，他仍然没能找到对电磁学的完全一般的描述。[^ch06n14]
 
 <span class="origpage" title="英文原版第 129 页">129</span>
 
@@ -139,7 +139,7 @@ $$\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{
 
 <figure id="fig-6-2" markdown="1">
 
-<img src="../../assets/images/vector/fig6_1.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig6_1.jpg" style="width:50%">
 
 图 6.2　<a href="#fig-6-1">图 6.1</a>　流过一根管子的流体的通量。这里流体的速度（由箭头表示）是恒定的。它的方向垂直于（或者说“正交于”）管子末端所示的那个表面，所以在这种情况下，全部的水都流过那个表面。我在中间特意标出的那一小段圆柱形流体，体积为 *V* = *Ad*，即面积为 *A*（= π*r*<sup>2</sup>）的圆形底面乘以长度 *d*。于是，流体以 $A\frac{d}{t}$ 的速率（单位时间的体积）流过管子末端的阴影表面。但 $\frac{d}{t}$ 是距离／时间，也就是速率，所以速度向量就是这个速率、沿着所示的方向。这意味着，在给定时间内流过管子末端的流体量——即通量——是 *A**v***。这个公式说得通，因为流动越快、面积越大，在给定时间内穿过管子末端的流体体积（或分子数目）就越多。当管子的出口被部分堵住、或者与流向成一定角度时，情况就更为复杂。举例来说，如果流动方向与它所穿过的表面的（法线）成角度 θ，你就需要向量 ***v*** 在那个法线方向上的分量。这是因为通量是流过——也就是*穿过*——表面的流体量。于是，通量的公式就变成了标量积 ***A*** ∙ ***v***（= *Av* cos θ）。把 ***A*** 做成向量，意味着要规定：一个曲面的方向被定义为它的法线方向。然而，当你的表面是弯曲的或形状不规则时，你就需要用向量微积分来求面积。这时通量的一般公式是 $\int \int _{s}v\cdot dA$。不过我提这个只是为了完备起见——我们后面不会再用到它。（图内标注为英文：*fluid*＝流体；*Volume of fluid in shaded element = Ad*＝阴影部分流体的体积 = *Ad*；*Area A = πr²*＝面积 *A* = π*r*²。）
 {: .figcap }
@@ -152,7 +152,7 @@ $$\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{
 
 <figure id="fig-6-3" markdown="1">
 
-<img src="../../assets/images/vector/fig6_2.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig6_2.jpg" style="width:80%">
 
 图 6.3　<a href="#fig-6-2">图 6.2</a>　电动机与发电机：正如奥斯特发现的那样，电流可以产生磁力；而且人们早已知道两块磁铁会相互吸引或排斥（异极相吸）。所以，当一个载流线圈被置于一个外部磁“场”中——这里用磁极之间的箭头表示——它自身的磁场就会与外部磁场相互作用。这使线圈发生偏转并转动起来——而这种转动效应（力矩）在电动机中得到了利用。随着线圈转动，它与外部磁场所成的角度在变化——这意味着穿过线圈的磁通量在变化（参看<a href="#fig-6-1">图 6.1</a>）。所以，如果你先用机械方式转动这个环，那么穿过环的变化着的磁通量就会感生出产生电流所需的电磁场——而这正是发电机的基础。（图内标注为英文：*Magnet*＝磁铁；*Magnetic field*＝磁场；*axle*＝轴；*electric circuit*＝电路；*coil turns through the field*＝线圈在磁场中转动。）
 {: .figcap }
@@ -173,7 +173,7 @@ $$\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{
 
 <figure id="fig-6-4" markdown="1">
 
-<img src="../../assets/images/vector/fig6_3a.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig6_3a.jpg" style="width:80%">
 
 图 6.4　<a href="#fig-6-3">图 6.3</a>A　铁屑在一块磁铁周围排列成行。Newton Henry Black 与 Harvey N. Davis，《实用物理学》（*Practical Physics*）（纽约：Macmillan，1913 年）。维基共享资源，公有领域。
 {: .figcap }
@@ -192,7 +192,7 @@ $$\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{
 
 <figure id="fig-6-5" markdown="1">
 
-<img src="../../assets/images/vector/fig6_3b.jpg" style="width:80%">
+<img src="../../../assets/images/vector/fig6_3b.jpg" style="width:80%">
 
 图 6.5　<a href="#fig-6-3">图 6.3</a>B　使每一片铁屑（每一片都像一根小小的条形磁铁）排列起来的那些力。法拉第也对电做了同样的事情：在一个中心电荷周围的空间中各处放上一个小小的电“检验”电荷，并留意力在每个位置上如何作用。以这种方式，他构建出了电场与磁场的图景。（图内文字为英文，意为：铁屑的北极端被条形磁铁的北极推开，同时又被它的南极吸引；铁屑（放大后）的南极端被条形磁铁的北极吸引，同时又被它的南极推开。）
 {: .figcap }
@@ -231,7 +231,7 @@ $$\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{
 
 <figure id="fig-6-6" markdown="1">
 
-<img src="../../assets/images/vector/fig6_3c.jpg" style="width:50%">
+<img src="../../../assets/images/vector/fig6_3c.jpg" style="width:50%">
 
 图 6.6　<a href="#fig-6-3">图 6.3</a>C　事后看来，你可以看到<a href="#fig-6-3">图 6.3</a>a 中那些由铁屑构成的、物理上真实存在的线，怎样在数学上被表示为一个向量场。箭头指向该点上力的方向，而它们的长度表示力的强度——所以在靠近磁铁两极、力最强的地方，箭头更长。（图内文字为英文：*Sample vectors representing the magnetic field around a magnet*＝表示磁铁周围磁场的样本向量；*magnet*＝磁铁。）
 {: .figcap }
@@ -290,9 +290,7 @@ $$F=\left(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\par
 
 <div class="displayeq" markdown="1">
 
-
 ***F*** = ∇*V*,
-
 
 </div>
 
@@ -304,9 +302,7 @@ $$F=\left(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\par
 
 <div class="displayeq" markdown="1">
 
-
 ∇<sup>2</sup>*V* = 0,
-
 
 </div>
 
@@ -314,14 +310,13 @@ $$F=\left(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\par
 
 <span class="origpage" title="英文原版第 145 页">145</span>
 
-你也可以取纳布拉与另一个向量的标量积——也可以取向量的或者说叉的积。我们在下一章会看到更多这方面的内容。它将使泰特得以用这些纳布拉运算把斯托克斯定理和散度定理写成整体向量微积分的形式——而且他将是第一个这样做的人。不过首先，他一头扎进了哈密顿的书。他对四元数及其向量微积分算子能在物理学中扮演的角色如此兴奋，以至于他问哈密顿是否介意与他通信。哈密顿当然是欣喜地找到了一个数学上的知音。在 1858 年他们通信之初，他告诉泰特那个奇妙的日子——四元数的秘密在布鲁姆桥上闪电般显现的那一天；他还补充说，他的孩子们此后就把那座桥叫作“四元数桥（Quaternion Bridge）”。[^ch06n24]
+你也可以取纳布拉与另一个向量的标量积——也可以取向量积（叉积）。我们在下一章会看到更多这方面的内容。它将使泰特得以用这些纳布拉运算把斯托克斯定理和散度定理写成整体向量微积分的形式——而且他将是第一个这样做的人。不过首先，他一头扎进了哈密顿的书。他对四元数及其向量微积分算子能在物理学中扮演的角色如此兴奋，以至于他问哈密顿是否介意与他通信。哈密顿当然是欣喜地找到了一个数学上的知音。在 1858 年他们通信之初，他告诉泰特那个奇妙的日子——四元数的秘密在布鲁姆桥上闪电般显现的那一天；他还补充说，他的孩子们此后就把那座桥叫作“四元数桥（Quaternion Bridge）”。[^ch06n24]
 
 到 1859 年，哈密顿已经感到足够自在，可以与泰特分享相当私人的情感了，就像他与德摩根（De Morgan）那样——包括讲述他当初得知初恋凯瑟琳·迪斯尼（Catherine Disney）嫁给别人时所感到的绝望。（是多年之后，她才告诉哈密顿，她爱过的只有他，是她的父母逼她做了一桩更“合适”、最终却不幸的婚姻。）但正如他对泰特说的：“那些日子已经过去了：幸而？是的，就多了一点点理智、少了一点点情感而言。”[^ch06n25] 看来他读过简·奥斯汀（Jane Austen）的《理智与情感》（*Sense and Sensibility*）！无论如何，五十四岁的哈密顿是满足的。
 
 二十八岁的泰特似乎也很满足。他两年前与玛格丽特·波特（Margaret Porter）结了婚，而且他也陶醉在自己的工作之中。除了在贝尔法斯特的教学，他还在 1859 年发表了他的第一篇四元数论文（关于波）。随后在 1860 年，他赢得了晋升，成为他和麦克斯韦的母校爱丁堡大学的自然哲学教授。麦克斯韦也申请了这个职位，但无论对错，泰特被认为是一位更出色的讲演者。J. M. 巴里（J. M. Barrie）在因《彼得·潘》（*Peter Pan*）而成名之前是泰特的学生，他声称泰特是有史以来最了不起的演示者。他回忆说，上课时泰特“那双闪烁的小眼睛里有一种迷人的光芒……我曾见过一个人在泰特的目光下惊得往后倒退。”然而，巴里接着说，那双眼睛也能“像男孩子一样欢快”——尤其是当“他把一根水管对准一群学生时，那些学生非要挤得离一个实验太近不可”。不过麦克斯韦也有他的学生粉丝——比如未来的天文学家戴维·吉尔（David Gill）就描述过，麦克斯韦在课后会与感兴趣的学生一起留上好几个小时。至于泰特与麦克斯韦本人，从他们彼此的通信来判断，这种职业上的竞争对他们的友谊毫无影响。毕竟，他们从中学时代起就是朋友兼对手。[^ch06n26]
 
 我们会在下一章看到他们那古怪通信中的一些片段，因为泰特即将因他在四元数上的工作而成名，而麦克斯韦即将向他连珠炮似的发问。他会把这些答案用进他的《电磁通论》（*Treatise on Electricity and Magnetism*）——而这本非凡的书将为通向现代向量微积分的最后一步铺好场景。
-
 
 [^ch06n1]: 关于麦克斯韦生平与工作的通俗叙述，见我的 *Einstein's Heroes: Imagining the World through the Language of Mathematics* (St. Lucia: University of Queensland Press, 2003; New York: Oxford University Press, 2005)。
 
@@ -338,10 +333,12 @@ $$F=\left(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\par
 [^ch06n7]: *论斯托克斯定理*：麦克斯韦在他的 *A Treatise on Electricity and Magnetism* (Oxford: Clarendon Press, 1873), 1:27 中把证明归功于汤姆森和泰特（并提到它最早出现在史密斯奖考试中）。汤姆森很可能是该定理的提出者，因为他在 1850 年写给斯托克斯的信中就已包含它。Victor J. Katz（"The History of Stokes' Theorem," *Mathematics Magazine* [MAA] 52, no. 3 [1979 年 5 月]: 146–56）认为 Hermann Hankel 给出了第一个发表的证明（1861 年），但它不如汤姆森的（1867 年）那样具有一般性。
 
 [^ch06n8]: *作为面积分的圆的面积*：设想该圆所围曲面上的一个微小面元 *dS*，思路是对整个曲面积分 *dS* 以求面积。这里 *x* 轴和 *y* 轴表示定义该曲面的两个维度，所以你可以想象每个方向上的小线段 *dx* 和 *dy*，它们围出曲面的一个矩形面积元——因此在面积分中，你是对 *dS* = *dxdy* 积分。（因为这个曲面是平面，这其实只是二重积分而非面积分；在面积分中 *dS* 比 *dxdy* 复杂，因为需要用向量来求曲面的法线。）把它变换到极坐标（如<a href="#fig-2-2">图 2.2</a>a；原文如此，但<a href="#fig-2-2">图 2.2</a> 并无 a 分幅，疑应为<a href="#fig-2-3">图 2.3</a>a——译者注），并且别忘了坐标变换的雅可比因子，你就得到 *dS* = *dx dy* = *rdr d*θ。沿半径为 *R* 的圆积分：
-    $\text{Area}=\int _{0}^{2\pi}\int _{0}^{R}rdrd\theta=\int _{0}^{2x}\frac{1}{2}R^{2}d\theta=\pi R^{2}$.
+
+    $$\text{Area}=\int _{0}^{2\pi}\int _{0}^{R}rdrd\theta=\int _{0}^{2\pi}\frac{1}{2}R^{2}d\theta=\pi R^{2}.$$
+
     如果你不熟悉雅可比行列式，就极坐标而言，可以设想一个角度为 *d*θ、半径为 *r* 的微小扇形：扇形的弧长 *s* 是 *rd*θ（因为按弧度的定义，$\frac{s}{2\pi r}=\frac{d\theta}{2\pi}$），而径向元素长为 *dr*，所以面积元就是 *rdr d*θ。
 
-[^ch06n9]: 这片园地连同格伦莱尔宅邸及附属建筑的修复得以保存，主要归功于庄园现任主人邓肯·弗格森（Duncan Ferguson）上尉的努力。我有幸在格伦莱尔见到了邓肯，你可以在 <http://www.glenlair.org.uk> 上看到他和格伦莱尔信托为麦克斯韦与格伦莱尔所做的更多工作。
+[^ch06n9]: 这片园地得以保留、格伦莱尔宅邸及附属建筑得以修复，主要归功于庄园现任主人邓肯·弗格森（Duncan Ferguson）上尉的努力。我有幸在格伦莱尔见到了邓肯，你可以在 <http://www.glenlair.org.uk> 上看到他和格伦莱尔信托为麦克斯韦与格伦莱尔所做的更多工作。
 
 [^ch06n10]: *麦克斯韦在英国科学促进会会议上*，由 William Swan 回忆，见 Campbell and Garnett, *Life of Maxwell*, 236。
 
@@ -357,14 +354,16 @@ $$F=\left(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\par
 [^ch06n14]: *“电学中的牛顿”*：麦克斯韦，*Treatise on Electricity and Magnetism*, 2:175。
 
 [^ch06n15]: 这类只依赖于端点、而不依赖于两端之间路径性质的力，被称为“保守”力，因为它们导致能量守恒。例如，对于牛顿引力，运动是径向的，所以平方反比定律可以写成 $m\ddot{r}=-\frac{GmM}{r^{2}};$，写出 $\ddot{r}=\dot{r}d\dot{r}/dr$，积分即可求出该力把物体从点 1 移动到点 2 所做的功：
-    $m\int _{\dot{r}_{1}}^{\dot{r}_{2}}\dot{r}d\dot{r}=-GMm\int _{r_{1}}^{r_{2}}\frac{1}{r^{2}}dr\Rightarrow\frac{1}{2}m\dot{r}^{2}-\frac{GMm}{r}=\text{constant},$
+
+    $$m\int _{\dot{r}_{1}}^{\dot{r}_{2}}\dot{r}d\dot{r}=-GMm\int _{r_{1}}^{r_{2}}\frac{1}{r^{2}}dr\Rightarrow\frac{1}{2}m\dot{r}^{2}-\frac{GMm}{r}=\text{constant},$$
+
     这意味着动能与势能之和守恒；该常数由定积分的端点确定。
 
 [^ch06n16]: 麦克斯韦，*Lecture on Faraday's Lines of Force*，他于 1873 年发表的一次演讲，见他的文集 *The Scientific Letters and Papers of James Clerk Maxwell*, ed. P. M. Harman, 2 vols. (Cambridge: Cambridge University Press, 1990, 1995), 803。
 
 [^ch06n17]: *汤姆森与法拉第论场*：Ernan McMullin, "The Origins of the Field Concept in Physics," *Physics in Perspective* 4 (2002): 13–39（尤见 14）。这篇论文详细概述了场的概念及其演化，直至麦克斯韦给出第一个成熟的场论。
 
-[^ch06n18]: *马歇尔学院的教授职位*：Forfar 与 Pritchard（"Remarkable Story," 3–4）指出，学院的记录已不存在，但据信泰特是麦克斯韦所得那个职位的候选人之一——后来阿伯丁大学的 John S. Reid 在 "James Clerk Maxwell's Scottish Chair," *Philosophical Transactions of the Royal Society A* (2008), 366, 1661–84, DOI:10.1098/rsta.2007.2177 中确认泰特确为候选人。倘若如此，正如 Forfar 与 Pritchard 所指出的，麦克斯韦与泰特的通信表明二人之间并无芥蒂——无论是在 1856 年，还是在 1860 年（那一年泰特在爱丁堡的职位竞争中胜过了麦克斯韦）。*凯莱的申请*：Crilly, "Arthur Cayley: The Road Not Taken," 52。
+[^ch06n18]: *马歇尔学院的教授职位*：Forfar 与 Pritchard（"Remarkable Story," 3–4）指出，学院的记录已不存在，但据信泰特是麦克斯韦所得那个职位的候选人之一——后来阿伯丁大学的 John S. Reid 在 "James Clerk Maxwell's Scottish Chair," *Philosophical Transactions of the Royal Society A* (2008), 366, 1661–84, DOI:10.1098/rsta.2007.2177 中称泰特是候选人之一。倘若如此，正如 Forfar 与 Pritchard 所指出的，麦克斯韦与泰特的通信表明二人之间并无芥蒂——无论是在 1856 年，还是在 1860 年（那一年泰特在爱丁堡的职位竞争中胜过了麦克斯韦）。*凯莱的申请*：Crilly, "Arthur Cayley: The Road Not Taken," 52。
 
 [^ch06n19]: *麦克斯韦解释自己的语言选择*：他在 1865 年的论文开头有所暗示（J. Clerk Maxwell, "A Dynamical Theory of the Electromagnetic Field," *Philosophical Transactions of the Royal Society London* 155 [1865]: 459–512），并在他的 *Treatise on Electricity and Magnetism*, 1:98–99 (art. 95) 以及第 2 卷（第 3 版）176–77 (art. 529) 中作了充分解释。他说，普通积分以及在有限空间上的线积分与面积分适合超距作用的进路，而偏微分方程以及遍及整个空间的（体积）积分则是场的自然语言。
 
@@ -374,15 +373,25 @@ $$F=\left(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\par
     $\int _{a}^{b}f\left(x\right)dx=F\left(b\right)-F\left(a\right)$，其中 *F* (*x*) 是 *f* (*x*) 的反导数。
     换句话说，$f\left(x\right)=\frac{dF\left(x\right)}{dx}$，前提是相关函数可积／可微！这意味着你可以通过积分从 *f*(*x*) 走到 *F*(*x*)，或通过微分从 *F*(*x*) 走到 *f*(*x*)。*斯托克斯定理*就是这一思想的推广：你可以从（单重）线积分走到（二重）面积分，反之亦然。类似地，你也可以通过如今（在向量之后）称为“散度定理”的东西，从面积分走到体积（三重）积分并再走回来。例如，麦克斯韦就是这样推出静电与静磁的高斯定律的微分形式的（见他的 *Treatise on Electricity and Magnetism*, 1:68, 79, 98–99）：
     实验上已知，给定体积内所含的电荷量 *e* 可以写成电荷密度 ρ 的体积积分：
+
     *e* = ∫∫∫ρ *dx dy dz* ……我把这个方程称为 (1)。
+
     同样已知（由库仑定律）单位试探电荷对电荷 *e* 施加的力 *R* 是 *R* = *e*/*r*<sup>2</sup>，而穿过闭合曲面的电通量为
+
     ∫∫ *R* cos ε *dS* = 4π*e*, … (2)
+
     其中 ε 是力的方向角。麦克斯韦借用法拉第的说法，把 *R*cos ε*dS* 称为穿过曲面的“感应”。麦克斯韦把 *R* 的分量标记为 *X, Y, Z*，并把它们与下述定理联系起来（现在称为散度定理，但当时它没有名字，而且只以这里所示的分量形式为人们所知）：
-    $\iint R\cos\epsilon dS=\iiint\left(\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}\right)dxdydz$ … (3)
+
+    $$\iint R\cos\epsilon dS=\iiint\left(\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}\right)dxdydz$$ … (3)
+
     于是麦克斯韦把 (1) 乘以 4π，并令其与 (2) 相等，得到
+
     ∫∫ *R* cos ε *dS* = 4π ∫∫∫ ρ *dx dy dz*.... (4)
+
     最后，令 (3) 与 (4) 相等，并把 (3) 中的闭合曲面取作 (4) 中体积的一个体元，得到：
-    $\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}=4\pi\rho$...(5)
+
+    $$\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}=4\pi\rho$$...(5)
+
     如果你已经熟悉向量微积分，你会认出左端就是 *R* 的*散度*，不过我们要等到正文中泰特和麦克斯韦（以及亥维赛）把它写成向量形式时再讲。
     同时，正如麦克斯韦接着解释的，如果你能把电力写成势 *V* 的形式，那么 (5) 就变成泊松对拉普拉斯方程的推广。式 (5) 的向量形式，就是库仑定律在今天麦克斯韦方程组中的样子。静磁的结果可类似地推出。
     我在这里展示的麦克斯韦的推导，清楚地揭示了通量／面积分与散度之间的联系——它类似于麦克斯韦用斯托克斯定理把安培定律和法拉第定律表达为微分方程的方式（见 *Treatise on Electricity and Magnetism*, 2:29, 45, 147–48, 233, 251, 255）。其中涉及另一个向量微积分运算，不是散度而是*旋度*；这两个向量运算我们在下一章都会遇到。

@@ -6,9 +6,7 @@
 
 <div class="attribution" markdown="1">
 
-
 **――约瑟夫·马祖尔（Joseph Mazur），《时钟幻象：我们关于被度量时间的神话》（*The Clock Mirage: Our Myth of Measured Time*）作者**
-
 
 </div>
 
@@ -16,9 +14,7 @@
 
 <div class="attribution" markdown="1">
 
-
 ***――《书商》（The Bookseller）***
-
 
 </div>
 
@@ -26,9 +22,7 @@
 
 <div class="attribution" markdown="1">
 
-
 **――查尔斯·塞费（Charles Seife），《零：一个危险概念的传记》（*Zero: The Biography of a Dangerous Idea*）作者**
-
 
 </div>
 
@@ -38,9 +32,7 @@
 
 <div class="attribution" markdown="1">
 
-
 **――亚当·斯宾塞（Adam Spencer），《亚当·斯宾塞的数字大书：你想知道的关于 1 到 100 的一切》（*Adam Spencer's Big Book of Numbers*）作者**
-
 
 </div>
 
@@ -48,9 +40,7 @@
 
 <div class="attribution" markdown="1">
 
-
 **――玛乔丽·塞内沙尔（Marjorie Senechal），《数学信使》（*The Mathematical Intelligencer*）主编**
-
 
 </div>
 
@@ -58,9 +48,7 @@
 
 <div class="attribution" markdown="1">
 
-
 **――阿米尔·亚历山大（Amir Alexander），《无穷小：一个危险的数学理论如何塑造现代世界》（*Infinitesimal*）作者**
-
 
 </div>
 
@@ -68,8 +56,6 @@
 
 <div class="attribution" markdown="1">
 
-
 **――肖恩·卡罗尔（Sean Carroll），《宇宙中最宏大的思想》（*The Biggest Ideas in the Universe*）作者**
-
 
 </div>

@@ -12,7 +12,7 @@
 
 顺便说一句，这篇 1916 年的论文堪称里奇张量微积分的一堂大师课。由于这套语言对大多数物理学家和数学家来说仍然新鲜，爱因斯坦在陈述我们在第 11 章见过的那些张量规则时格外用心，既经济又清晰。
 
-1915 年 11 月，爱因斯坦最终得到了能量–动量守恒方程 *T* <sup>μν</sup><sub>;ν</sub> = 0，正如我们在上一章看到的那样。他是经由一条与希尔伯特不同的迂回路径走到这一步的，而 1916 年 5 月，他问希尔伯特是否认为他们这两条彼此独立的路数背后可能有某种深层的原理。希尔伯特回答说，他认为大概有，而且他已经请“诺特小姐”去研究这个问题了。希尔伯特、克莱因，以及爱因斯坦这样的同事们，都对诺特怀有极高的敬意；然而她的存在又是如此独特，以至于他们忍不住要称她“小姐”而不是“博士”。也许他们认为，这总比像他们彼此之间常做的那样直呼其姓氏要更礼貌一些。
+1915 年 11 月，爱因斯坦最终得到了能量–动量守恒方程 *T* <sup>μν</sup><sub>;ν</sub> = 0，正如我们在上一章看到的那样。他是经由一条与希尔伯特不同的迂回路径走到这一步的，而 1916 年 5 月，他问希尔伯特是否认为他们这两条彼此独立的路数背后可能有某种深层的原理。希尔伯特回答说，他认为大概有，而且他已经请“诺特小姐”去研究这个问题了。希尔伯特、克莱因，以及爱因斯坦这样的同事们，都对诺特怀有极高的敬意；然而她的身份又是如此特殊，以至于他们忍不住要称她“小姐”而不是“博士”。也许他们认为，这总比像他们彼此之间常做的那样直呼其姓氏要更礼貌一些。
 
 <span class="origpage" title="英文原版第 306 页">306</span>
 
@@ -28,21 +28,27 @@
 
 在普通力学——也就是研究物体在力的作用下如何运动——中，这种联系自拉格朗日以来就已为人所知。例如，我们已经看到，引力 ***F*** 可以用一个势 *V* 来表达：***F*** = ∇*V*。但既然牛顿第二定律说，作用在物体上的力等于该物体动量向量 ***p*** 的变化率，我们就得到，
 
+<div class="displayeq" markdown="1">
+
 $$F\frac{dp}{dt}=\nabla V\equiv\frac{\partial V}{\partial x}i+\frac{\partial V}{\partial y}j+\frac{\partial V}{\partial z}k.$$
+
+</div>
 
 用分量写出来，这个方程给出 $\frac{\partial p_{x}}{dt}=\frac{\partial V}{\partial x}$，*y* 与 *z* 分量同理。现在来看不变性，让我们考虑沿 *x* 方向作大小不一平移的那一族坐标变换。如果势在这些变换下是不变的，那么它就不发生变化——它在点 (*x, y, z*) 上的取值与它在 (*x* + *a, y, z*) 上的取值相同：
 
 <div class="displayeq" markdown="1">
 
-
 *V*(*x* + *a, y, z*) = *V*(*x, y, z*)，对 *a* 的每一个值都成立。
-
 
 </div>
 
 既然用哪一个 *x* 值都无所谓，*V* 就必定与 *x* 无关。这意味着 $\frac{\partial V}{\partial x}$，而这又意味着
 
+<div class="displayeq" markdown="1">
+
 $$\frac{\partial p_{x}}{dt}=\frac{\partial V}{\partial x}\Rightarrow p_{x}=C$$，其中 C 是积分常数。
+
+</div>
 
 而*这*就意味着动量的 *x*-分量是常数——它是守恒的。
 
@@ -62,7 +68,7 @@ $$\frac{\partial p_{x}}{dt}=\frac{\partial V}{\partial x}\Rightarrow p_{x}=C$$�
 
 <figure id="fig-13-1" markdown="1">
 
-<img src="../../assets/images/vector/p337.jpg" style="width:50%">
+<img src="../../../assets/images/vector/p337.jpg" style="width:50%">
 
 图 13.1　埃米·诺特，约 1900 年。摄影者不详。维基共享资源，公有领域。
 {: .figcap }
@@ -73,17 +79,29 @@ $$\frac{\partial p_{x}}{dt}=\frac{\partial V}{\partial x}\Rightarrow p_{x}=C$$�
 
 我们在第 12 章看到，引力场方程是：
 
+<div class="displayeq" markdown="1">
+
 $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
+
+</div>
 
 <span class="origpage" title="英文原版第 310 页">310</span>
 
 而我们在第 11 章遇到过协变导数，也遇到过这样一个事实：你可以升降张量指标而不改变它们的本质内容[^ch13n9]——所以我要用上标指标写出引力场方程，然后对两边取协变导数：
 
+<div class="displayeq" markdown="1">
+
 $$\left(R^{\mu v}-\frac{1}{2}g^{\mu v}R\right)_{;v}=kT^{\mu v}_{;v}.$$
+
+</div>
 
 现在，爱因斯坦和希尔伯特都发现，能量–动量守恒意味着方程的右边为零。这也就意味着左边也必须为零。而爱因斯坦和希尔伯特都不知道——克莱因和诺特也不知道——的是：左边为零，完全不依赖于那个守恒方程。这是因为所谓的“缩并的比安基恒等式（contracted Bianchi identities）”：
 
+<div class="displayeq" markdown="1">
+
 $$\left(R^{\mu v}-\frac{1}{2}g^{\mu v}R\right)_{;v}=0.$$
+
+</div>
 
 （之所以用复数，是因为这个“方程”其实是四个方程，对应 μ 的每一个值各一个。重复的指标 ν 表示求和。）数学上的“恒等式”是一个永远为真的方程——因为按照定义它必须为真。完整的比安基恒等式直接由黎曼张量的定义推出，这一点里奇在 1880 年代就已经知道，尽管率先发表这个结果的是他的宿敌路易吉·比安基（Luigi Bianchi）——他在 1902 年重新发现了这些恒等式。（比安基赢得了里奇在 1890 年代参评过的那个意大利皇家数学奖，而且当里奇在 1901 年再度参评时，比安基是一位毫无同情心的评委。）正如我们在第 12 章看到的，里奇张量是由缩并后的黎曼张量构成的，所以“缩并的”比安基恒等式就是这样引出这个方程的。[^ch13n10]
 
@@ -121,7 +139,11 @@ $$\left(R^{\mu v}-\frac{1}{2}g^{\mu v}R\right)_{;v}=0.$$
 
 黑洞与引力波都是广义相对论的预言，尽管爱因斯坦本人对它们是否真实存在态度暧昧。但这并不要紧：它们全都写在那些非同寻常的、小小的张量方程里，
 
+<div class="displayeq" markdown="1">
+
 $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
+
+</div>
 
 至少，对于那些知道怎样求解这些方程的人来说，它们就在那里；而今天这往往需要使用数值算法和计算机算力。像里奇张量与度规张量这样的张量处在问题的核心，尽管它们未必出现在数值方法本身之中。但对于我们这些研究精确解的人来说，那些张量指标以及它们的对称性，有助于减轻我们计算工作的负担。
 
@@ -131,7 +153,7 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
 
 <figure id="fig-13-2" markdown="1">
 
-<img src="../../assets/images/vector/fig13_1.jpg" style="width:60%">
+<img src="../../../assets/images/vector/fig13_1.jpg" style="width:60%">
 
 图 13.2　<a href="#fig-13-1">图 13.1</a>　把一个从点 *A* 出发时是竖直的向量作平行移动（parallel transport），在平坦空间中毫无问题——但在曲面上，这个概念必须被仔细定义。我在相关的知识框里对此多解释了一点。
 {: .figcap }
@@ -143,7 +165,6 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
 是列维-奇维塔在 1917 年弄明白了怎样沿着曲面“平行移动”向量——而且他是用张量做到的。他的“平行移动”方程（在知识框里）有助于说明，曲率在多大程度上使得两条初始平行的测地线彼此偏离——就像地球仪上那些收敛的经线。在诸如黑洞周围那样曲率极大的时空中，测地线收敛得如此之快、如此之剧烈，以至于你如果靠得太近就会被压碎。（平方反比定律表明，你同时也会被撕开，因为引力在你头顶到脚底这段距离上的变化实在太剧烈了！）
 
 <div class="infobox" markdown="1">
-
 
 **用平行移动来刻画曲率**
 
@@ -160,7 +181,6 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
 当你在普通向量分析中对向量求导时，直观地说，你是在比较两个邻近点上的向量，并除以它们之间的距离——而且你隐含地假定了：当你先算出它在一个点上的值、再算出它在另一个点上的值时，向量始终保持平行。所以，如果我们想弄明白在弯曲空间中怎样定义导数（也就是里奇所说的“协变”导数），向量就必须能够以某种平行的方式沿着一条曲线被移动或者说“输运”。那么，列维-奇维塔的平行移动想法把协变导数与曲率联系起来，也就不足为奇了。
 
 结果表明，向量 ***V*** 沿着一条以 ***U*** 为切向量的曲线作平行移动的定义是 *U*<sup>μ</sup>*V*<sup>ν</sup><sub>;μ</sub> = 0。（分号表示协变导数。）
-
 
 </div>
 
@@ -188,7 +208,6 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
 
 格罗斯曼也许从未意识到，在让张量登上舞台这件事上，他扮演了多么关键的角色。但自 1975 年以来，他在广义相对论中的这份遗产一直在马塞尔·格罗斯曼会议（Marcel Grossmann Meetings）上受到纪念：这个会议每三到四年举行一次，把来自世界各地的研究者聚到一起，讨论最新的进展。而在纪念格罗斯曼的同时，这些会议也纪念了——至少是含蓄地——里奇与列维-奇维塔的数学才华，以及爱因斯坦的天才。
 
-
 [^ch13n1]: *克莱因与希尔伯特谈诺特小姐*：转引自 Yvette Kosmann-Schwarzbach, translated by Bertram E. Schwarzbach, *The Noether Theorems: Invariance and Conservation Laws in the Twentieth Century*（New York: Springer, 2011）, 45, 66。
 
 [^ch13n2]: John Norton 在他 1993 年的论文 “General Covariance and the Foundations of General Relativity” 中，不仅精彩地讲述了爱因斯坦的挣扎，还讲述了其他人如何回应或重新解释他的协变性原理、相对性原理和等效原理。他用二十世纪教科书叙述的演变来说明这一点，并指出至今仍有争议或混乱。当然，正如我在上一章末尾所表明的，迄今的物理观测已经证实这些方程非常出色，无论其基础如何！
@@ -209,7 +228,7 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
 
 [^ch13n10]: 这四个缩并的比安基恒等式给出了关于里奇张量的额外信息，这意味着十个爱因斯坦方程中只有六个是独立的。这带来了任意选择四个坐标（参照系）的自由，确保每个观测者都推出相同的物理学定律。
 
-[^ch13n11]: T. Levi-Civita (1917), translated by S. Antoci and A. Loinger, “On the Analystic Expression That Must Be Given to the Gravitational Tensor in Einstein’s Theory,” <https://arxiv.org/pdf/physics/9906004.pdf>。*关于希尔伯特经由变分方法所作的曲折推导*，见 David E. Rowe, “Einstein’s Gravitational Field Equations and the Bianchi Identities,” *Mathematical Intelligencer* 24, no. 4 (2002): 57–66 的 p. 59；Ivan T. Todorov, “Einstein and Hilbert: The Creation of General Relativity,” arXiv:physics/0504179v1；David E. Rowe, “Emmy Noether on Energy Conservation in General Relativity,” December 4, 2019, 预印本线上见 <https://arxiv.org/pdf/1912.03269.pdf,> 21n32；Carlo Cattani and Michelangelo De Maria, “Conservation Laws and Gravitational Waves,” in *The Attraction of Gravitation: New Studies in the History of General Relativity*, ed. John Earman, Michel Janssen, and John D. Norton（Boston: Birkhäuser, 1993）, 67。
+[^ch13n11]: T. Levi-Civita (1917), translated by S. Antoci and A. Loinger, “On the Analytic Expression That Must Be Given to the Gravitational Tensor in Einstein’s Theory,” <https://arxiv.org/pdf/physics/9906004.pdf>。*关于希尔伯特经由变分方法所作的曲折推导*，见 David E. Rowe, “Einstein’s Gravitational Field Equations and the Bianchi Identities,” *Mathematical Intelligencer* 24, no. 4 (2002): 57–66 的 p. 59；Ivan T. Todorov, “Einstein and Hilbert: The Creation of General Relativity,” arXiv:physics/0504179v1；David E. Rowe, “Emmy Noether on Energy Conservation in General Relativity,” December 4, 2019, 预印本线上见 <https://arxiv.org/pdf/1912.03269.pdf,> 21n32；Carlo Cattani and Michelangelo De Maria, “Conservation Laws and Gravitational Waves,” in *The Attraction of Gravitation: New Studies in the History of General Relativity*, ed. John Earman, Michel Janssen, and John D. Norton（Boston: Birkhäuser, 1993）, 67。
 
 [^ch13n12]: 那将意味着标量 *R* 和 *T* 在整个宇宙中都是常数。这些标量反映的是曲率和质能，所以 *T* 在真空中应当与在物质中不同。
 
@@ -235,4 +254,4 @@ $$R_{\mu v}-\frac{1}{2}g_{\mu v}R=KT_{\mu v}.$$
 
 [^ch13n23]: 爱因斯坦与嘉当的引语分别出自 1929 年 12 月 8 日和 1930 年 2 月 17 日的通信，见 *Elie Cartan–Albert Einstein: Letters on Absolute Parallelism 1929–1930*, ed. Robert Debever（Princeton, NJ: Princeton University Press, 1979）。
 
-[^ch13n24]: *爱因斯坦致嘉当*：in *Elie Cartan-Albert Einstein*, ed. Debever, 203；*爱因斯坦致格罗斯曼夫人*：in Banesh Hoffmann, *Einstein*（Frogmore: Paladin, 1975, 36。
+[^ch13n24]: *爱因斯坦致嘉当*：in *Elie Cartan-Albert Einstein*, ed. Debever, 203；*爱因斯坦致格罗斯曼夫人*：in Banesh Hoffmann, *Einstein*（Frogmore: Paladin, 1975）, 36。
