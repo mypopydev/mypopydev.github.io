@@ -89,7 +89,7 @@ $$\left(\begin{matrix} u_{1} \\ u_{2} \end{matrix}\right)\left(v_{1}v_{2}\right)
 
 <div class="displayeq" markdown="1">
 
-$$\left(\begin{matrix} u_{1} \\ u_{2} \end{matrix}\right)\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right)=\left(\begin{matrix} u_{1}\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right) \\ u_{2}\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right) \end{matrix}\right)=\left(\begin{matrix} u_{1}a_{11} & u_{1}a_{12} \\ u_{1}a_{21} & u_{1}a_{22} \\ u_{2}a_{11} & u_{2}a_{12} \\ u_{2}a_{21} & u_{2}a_{22} \end{matrix}\right)$$.
+$$\left(\begin{matrix} u_{1} \\ u_{2} \end{matrix}\right)\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right)=\left(\begin{matrix} u_{1}\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right) \\ u_{2}\left(\begin{matrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right) \end{matrix}\right)=\left(\begin{matrix} u_{1}a_{11} & u_{1}a_{12} \\ u_{1}a_{21} & u_{1}a_{22} \\ u_{2}a_{11} & u_{2}a_{12} \\ u_{2}a_{21} & u_{2}a_{22} \end{matrix}\right).$$
 
 </div>
 

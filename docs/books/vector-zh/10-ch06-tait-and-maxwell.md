@@ -85,7 +85,7 @@
 
 今天，“电压（voltage，为纪念伏打而得名）”也许是电势的一个更为人熟悉的说法，它的作用类似于热学中的温度和流体中的压强。如果一根充满水的管子两端存在压强差，水就会从高压的一端流向低压的一端。类似地，热从较热的区域流向较冷的区域。当事情像这样变化时，导数就登场了，所以你不会惊讶地发现：如果 *V* 是与某个力相关联的势，那么这个力的分量就是：
 
-$$\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\partial V}{\partial z}$$.
+$$\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\partial V}{\partial z}.$$
 
 那些弯弯的 d 表示“偏”导数（partial derivative），它表明 *V* 是在整个空间中变化的，而不像我们熟悉的 $\frac{dy}{dx}$ 那样只沿一个方向变化。[^ch06n13]
 
@@ -382,7 +382,9 @@ $$F=\left(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\par
 
     其中 ε 是力的方向角。麦克斯韦借用法拉第的说法，把 *R*cos ε*dS* 称为穿过曲面的“感应”。麦克斯韦把 *R* 的分量标记为 *X, Y, Z*，并把它们与下述定理联系起来（现在称为散度定理，但当时它没有名字，而且只以这里所示的分量形式为人们所知）：
 
-    $$\iint R\cos\epsilon dS=\iiint\left(\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}\right)dxdydz$$ … (3)
+    $$\iint R\cos\epsilon dS=\iiint\left(\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}\right)dxdydz$$
+
+    … (3)
 
     于是麦克斯韦把 (1) 乘以 4π，并令其与 (2) 相等，得到
 
@@ -390,7 +392,9 @@ $$F=\left(\frac{\partial V}{\partial x},\frac{\partial V}{\partial y},\frac{\par
 
     最后，令 (3) 与 (4) 相等，并把 (3) 中的闭合曲面取作 (4) 中体积的一个体元，得到：
 
-    $$\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}=4\pi\rho$$...(5)
+    $$\frac{dX}{dx}+\frac{dY}{dy}+\frac{dZ}{dz}=4\pi\rho$$
+
+    ...(5)
 
     如果你已经熟悉向量微积分，你会认出左端就是 *R* 的*散度*，不过我们要等到正文中泰特和麦克斯韦（以及亥维赛）把它写成向量形式时再讲。
     同时，正如麦克斯韦接着解释的，如果你能把电力写成势 *V* 的形式，那么 (5) 就变成泊松对拉普拉斯方程的推广。式 (5) 的向量形式，就是库仑定律在今天麦克斯韦方程组中的样子。静磁的结果可类似地推出。

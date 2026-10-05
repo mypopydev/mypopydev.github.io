@@ -165,7 +165,9 @@
 
 <div class="displayeq" markdown="1">
 
-$$x'=\beta\left(x-vt\right),y'=y,z',\boldsymbol{t'}=\beta\left(\boldsymbol{t}-\frac{vx}{c^{2}}\right),$$ (2)
+$$x'=\beta\left(x-vt\right),y'=y,z',\boldsymbol{t'}=\beta\left(\boldsymbol{t}-\frac{vx}{c^{2}}\right),$$
+
+(2)
 
 </div>
 
@@ -173,7 +175,9 @@ $$x'=\beta\left(x-vt\right),y'=y,z',\boldsymbol{t'}=\beta\left(\boldsymbol{t}-\f
 
 <div class="displayeq" markdown="1">
 
-$$\beta=1/\sqrt{1-v^{2}/c^{2}}.$$ (3)
+$$\beta=1/\sqrt{1-v^{2}/c^{2}}.$$
+
+(3)
 
 </div>
 
@@ -195,7 +199,9 @@ $$\beta=1/\sqrt{1-v^{2}/c^{2}}.$$ (3)
 
 <div class="displayeq" markdown="1">
 
-$$x=\beta\left(x'+vt'\right),y=y',z=z',\boldsymbol{t}=\beta\left(\boldsymbol{t'}+\frac{vx'}{c^{2}}\right).$$ (4)
+$$x=\beta\left(x'+vt'\right),y=y',z=z',\boldsymbol{t}=\beta\left(\boldsymbol{t'}+\frac{vx'}{c^{2}}\right).$$
+
+(4)
 
 </div>
 

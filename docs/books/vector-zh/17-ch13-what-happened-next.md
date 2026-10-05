@@ -46,7 +46,7 @@ $$F\frac{dp}{dt}=\nabla V\equiv\frac{\partial V}{\partial x}i+\frac{\partial V}{
 
 <div class="displayeq" markdown="1">
 
-$$\frac{\partial p_{x}}{dt}=\frac{\partial V}{\partial x}\Rightarrow p_{x}=C$$，其中 C 是积分常数。
+$\frac{\partial p_{x}}{dt}=\frac{\partial V}{\partial x}\Rightarrow p_{x}=C$，其中 C 是积分常数。
 
 </div>
 

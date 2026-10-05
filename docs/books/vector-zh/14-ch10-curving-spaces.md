@@ -51,7 +51,7 @@ $$\sqrt{x^{2}+y^{2}+z^{2}}.$$
 
 我当时假定 *x, y, z* 是位置向量的分量，给出的是从原点到点 (*x, y, z*) 的直线距离；但是任意两点 (*x*<sub>1</sub>, *y*<sub>1</sub>, *z*<sub>1</sub>) 与 (*x*<sub>2</sub>, *y*<sub>2</sub>, *z*<sub>2</sub>) 之间的距离则由下式给出
 
-$$\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}+\left(z_{2}-z_{1}\right)^{2}}$$.
+$$\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}+\left(z_{2}-z_{1}\right)^{2}}.$$
 
 <span class="origpage" title="英文原版第 222 页">222</span>
 
@@ -72,7 +72,7 @@ $$\sqrt{x^{2}+y^{2}+z^{2}}\text{or}\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2
 
 高斯证明了，一般的距离量度或度规是
 
-$$ds=\sqrt{\left(dx\right)^{2}+\left(dy\right)^{2}+\left(dz\right)^{2}}$$,
+$$ds=\sqrt{\left(dx\right)^{2}+\left(dy\right)^{2}+\left(dz\right)^{2}},$$
 
 其中曲面上一条线的长度记作 *s*。这个表达式常被平方，而且在记号上做些变通、把括号省掉以便书写——于是这个曲面的欧几里得度规通常写成
 
