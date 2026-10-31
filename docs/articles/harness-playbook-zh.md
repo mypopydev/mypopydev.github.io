@@ -1487,7 +1487,7 @@ pi.on("agent_settled", async () => {
 });
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/git-checkpoint.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/git-checkpoint.mp4"></video>
 
 #### 2. 树导航不恢复状态：plan-mode/index.ts
 
@@ -1500,7 +1500,7 @@ const planModeEntry = entries
   .pop();
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/plan-mode.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/plan-mode.mp4"></video>
 
 #### 3. 计数器数不了历史：status-line.ts
 
@@ -1513,7 +1513,7 @@ pi.on("turn_start", async (_event, ctx) => {
   turnCount++;
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/status-line.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/status-line.mp4"></video>
 
 #### 4. 动态添加的工具熬过回退、又在恢复后消失：dynamic-tools.ts
 
@@ -1526,7 +1526,7 @@ registeredToolNames.add(name);
 pi.registerTool({
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/dynamic-tools.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/dynamic-tools.mp4"></video>
 
 #### 5. 死分支上的存档回来了：snake.ts
 
@@ -1539,7 +1539,7 @@ for (let i = entries.length - 1; i >= 0; i--) {
   if (entry.type === "custom" && entry.customType === SNAKE_SAVE_TYPE) {
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/snake.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/snake.mp4"></video>
 
 #### 6. “最后一条消息”指文件里最后一条：bookmark.ts
 
@@ -1552,7 +1552,7 @@ for (let i = entries.length - 1; i >= 0; i--) {
   if (entry.type === "message" && entry.message.role === "assistant") {
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/bookmark.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/bookmark.mp4"></video>
 
 #### 7. Calculator 在回退到早于发现点的轮次后仍然激活：kimi-deferred-tools.ts
 
@@ -1565,7 +1565,7 @@ if (added.length > 0) pi.setActiveTools([...active, ...added]);
 // Missing: session_tree → derive active tools from selected branch.
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/kimi-deferred-tools.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/kimi-deferred-tools.mp4"></video>
 
 #### 8. 切换会话提交工作树：auto-commit-on-exit.ts
 
@@ -1579,7 +1579,7 @@ pi.on("session_shutdown", async (_event, ctx) => {
 });
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/auto-commit-on-exit.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/auto-commit-on-exit.mp4"></video>
 
 #### 9. 实时状态与恢复状态不一致：tic-tac-toe.ts
 
@@ -1592,7 +1592,7 @@ if (msg.role !== "toolResult") continue;
 pi.appendEntry(SAVE_TYPE, getBoardDetails());
 ```
 
-<video controls muted src="../assets/videos/articles/harness-playbook/tic-tac-toe.mp4"></video>
+<video controls muted src="../../assets/videos/articles/harness-playbook/tic-tac-toe.mp4"></video>
 
 ## 附录 B：弹性投机槽位（Elastic Speculative Slots）
 

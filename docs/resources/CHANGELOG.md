@@ -11,6 +11,7 @@
 - 校对修订（逐章对照原文复核）：修正误译“实时代价”→“实时值”、“努力路径”→“尽力而为”路径；修正脱字“以为自己在于什么”→“在干什么”；`i`（intent）参数与 `force_tool("write")` 补代码标记；术语统一（fold→折叠、视口分配空间、“Bounded work”作“有界的工作”）；补全 2 张 mermaid 图遗漏标签（VM 内 driver 需自行托管网关、Claude 工具地图的 system-reminder 异步通知）；终端一节“wrapping”统一为“折行”、committed finals 统一为“最终快照（final）”、resize 统一为“调整大小（resize）”；命令与标识符（`/force`、`--help`、`/add-echo-tool`、`--continue`、`getBranch()`、`tool_search`、`session_shutdown` 等）补代码标记；页首去掉多余括注以对齐项目头部格式；42 个代码块逐字比对通过；术语表再补 best-effort / fold / candidate yield 3 行
 - 译者注 5 条：omp/omp²/Pi 背景、起源引擎与 .dem、异星工厂（Factorio）、TSA 安检隐喻、TLA+
 - 术语表追加 The Harness Playbook / Source Engine / journal / convar / Director / 设计包络 / 控制面 / 工具面 / 弹性投机槽位 等 25 条术语
+- 修复线上渲染：Mermaid 与 KaTeX 改为本地托管（`assets/javascripts/vendor/mermaid.min.js` 11.17.2、`assets/javascripts/vendor/katex*.js` 与 `assets/stylesheets/katex/` 0.16.11 含 woff2 字体），移除 jsdelivr 依赖，避免 CDN 不可达时图表/公式显示为源码；`mermaid.js` 改用 `document$` 订阅并显式 `run()`；修正附录 A 9 个视频相对路径（`../assets` → `../../assets`，此前被解析为 `/articles/assets/…` 而 404）
 
 ### 2026-10-09
 - 新增译文：Jev 带来了一种新形态的 LLM——System One，也就是决策模型（Jev introduces a new shape of LLM—System One, aka Decision Models，Simon Willison，2026-09-21，9-22 更新）
