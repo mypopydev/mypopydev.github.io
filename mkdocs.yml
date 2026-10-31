@@ -85,6 +85,7 @@ nav:
           - Ralph Wiggum 当"软件工程师"（Ralph Loop 技术）: articles/ralph-wiggum-zh.md
           - 软件工厂为何失败（Why Software Factories Fail）: articles/why-software-factories-fail-zh.md
           - 构建 AI 智能体实用指南（A practical guide to building agents）: articles/a-practical-guide-to-building-agents-zh.md
+          - Jev 带来了一种新形态的 LLM——System One，也就是决策模型: articles/jev-decision-models-zh.md
       - 核心原则:
           - 什么是智能体工程？: series/agentic-engineering-patterns/what_is_agentic_engineering_demo_zh.md
           - 现在，写代码很便宜: series/agentic-engineering-patterns/writing_code_is_cheap_now_demo_zh.md

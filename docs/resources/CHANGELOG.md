@@ -1,5 +1,14 @@
 # 更新记录
 
+### 2026-10-09
+- 新增译文：Jev 带来了一种新形态的 LLM——System One，也就是决策模型（Jev introduces a new shape of LLM—System One, aka Decision Models，Simon Willison，2026-09-21，9-22 更新）
+- 收录 Simon Willison 博客文章全文翻译，置于 `docs/articles/jev-decision-models-zh.md`
+- 导航：智能体工程 > 独立译文（新增一篇，紧接《构建 AI 智能体实用指南》）
+- 完整保真：保留全部链接（TypeSafe AI/Jev、GPT-5 Nano、llm-prices、Bernoulli 分布、Jev 1.13 jaggedness、jevchat、jev-leftpad 含行号锚点、jev-2048、Kev、JevBench、llm-typesafe README）与全部数字（$0.042/M Token、GPT-5 Nano $0.05/M、100 条 BM25 候选、0.8B/4B/9B、Qwen 3.5）
+- 代码块：`llm -m jev … -s …` Shell 示例原样保留
+- 译者注 6 条：System One 命名（不作断言）、Noul = Bernoulli 缩写、jaggedness、left-pad 事件、death crystal 出处、术语首现英文对照
+- 版权：原文页面正文、站脚与 `/about/` 均未标注开放许可，已按"保留所有权利"如实记录
+
 ### 2026-10-05
 - 新增译文：引导式解码在 vLLM 与 SGLang 上的性能（Guided Decoding Performance on vLLM and SGLang，Eunik Park / SqueezeBits，2025-09-16）
 - 收录 SqueezeBits Tech Blog 文章《Guided Decoding Performance on vLLM and SGLang》中文全文翻译，置于 `docs/articles/guided-decoding-performance-vllm-sglang-zh.md`
