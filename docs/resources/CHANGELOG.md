@@ -1,5 +1,17 @@
 # 更新记录
 
+### 2026-10-31
+- 新增译文：Harness 工程手册（The Harness Playbook，Can Bölük / Stencil，2026-09-02）
+- 收录 Stencil 博客长文《The Harness Playbook》中文全文翻译（9 章 + 2 附录，约 2600 行），置于 `docs/articles/harness-playbook-zh.md`；导航：智能体工程 > 独立译文（新增一篇，紧接 Jev 决策模型）；首页智能体工程区块新增入口
+- 配图本地化：下载原文全部 11 张图（meme、plan-goal-mutex、leaked-toolcall-wild、compaction-wait、compaction-async、component-model-lint、component-markup-render、theme-gradient-markup、tui-debug-tool、tui-flex、elastic-slots-p1）至 `docs/assets/images/articles/harness-playbook/`
+- 视频本地化：附录 A 全部 9 个 bug 复现视频（mp4，合计约 1.8MB）下载至 `docs/assets/videos/articles/harness-playbook/`，以 HTML5 `<video>` 嵌入
+- Mermaid：原文 11 张 SVG 图按原图文字标签重绘为 mermaid 代码块（基准测试条形图转写为 Markdown 数据表 + 保留图注）；mkdocs 启用 mermaid 渲染——`pymdownx.superfences` 加 `custom_fences`（fence_div_format）+ mermaid@11 CDN + `assets/javascripts/mermaid.js` 初始化脚本，仿 KaTeX 先例；原文 CPU profile treemap 为交互式 canvas，无法静态保存，以图注 + 原文链接代替
+- 完整保真：保留全部链接（Dijkstra EWD498、Ousterhout 讲义、复杂性守恒定律、ConVar wiki、ANSI 注入 4 条 CVE/issue 链接、9 条 Pi 扩展源码行号锚点、pi-mono PR #1084、minutiae 前文、image-models、Snapcompact、TLA+ 主页、elastic-slots.pdf、X 帖）与全部数字（86.2/59.5/45.4/36.6/42.2/37.0s、25.1k/20.6k/15.1k/9.6–12.3k/5.6k tok、267s→90ms、13%、98.7s、78/60/17/2、880/977/1776 行、dd57045396 等）
+- 代码：全部 42 个代码块（TypeScript/Python/bash/KDL/cfg/控制台命令/XML）从原站 HTML 原样提取注入，未做任何改写；附录 B 完整保留 ElasticSlots.tla（TLA+，约 1020 行，代码原样不译）；另 1 个 ASCII 栈示意（candidate yield 流程）按原图结构译为中文
+- 校对修订（逐章对照原文复核）：修正误译“实时代价”→“实时值”、“努力路径”→“尽力而为”路径；修正脱字“以为自己在于什么”→“在干什么”；`i`（intent）参数与 `force_tool("write")` 补代码标记；术语统一（fold→折叠、视口分配空间、“Bounded work”作“有界的工作”）；补全 2 张 mermaid 图遗漏标签（VM 内 driver 需自行托管网关、Claude 工具地图的 system-reminder 异步通知）；终端一节“wrapping”统一为“折行”、committed finals 统一为“最终快照（final）”、resize 统一为“调整大小（resize）”；命令与标识符（`/force`、`--help`、`/add-echo-tool`、`--continue`、`getBranch()`、`tool_search`、`session_shutdown` 等）补代码标记；页首去掉多余括注以对齐项目头部格式；42 个代码块逐字比对通过；术语表再补 best-effort / fold / candidate yield 3 行
+- 译者注 5 条：omp/omp²/Pi 背景、起源引擎与 .dem、异星工厂（Factorio）、TSA 安检隐喻、TLA+
+- 术语表追加 The Harness Playbook / Source Engine / journal / convar / Director / 设计包络 / 控制面 / 工具面 / 弹性投机槽位 等 25 条术语
+
 ### 2026-10-09
 - 新增译文：Jev 带来了一种新形态的 LLM——System One，也就是决策模型（Jev introduces a new shape of LLM—System One, aka Decision Models，Simon Willison，2026-09-21，9-22 更新）
 - 收录 Simon Willison 博客文章全文翻译，置于 `docs/articles/jev-decision-models-zh.md`

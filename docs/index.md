@@ -21,6 +21,7 @@ Simon Willison《Agentic Engineering Patterns》系列的 15 篇中文译文，�
 - [如何与 AI 协作并实现复利增长（Working with AI）](./articles/working-with-ai-zh.md)
 - [智能体循环详解：从 ReAct 到循环工程（Agentic Loops Explained）](./articles/agentic-loops-explained-zh.md)
 - [Ralph Wiggum 当"软件工程师"（Ralph Loop 技术）](./articles/ralph-wiggum-zh.md)
+- [Harness 工程手册（The Harness Playbook）](./articles/harness-playbook-zh.md)
 
 ### 🧠 深度学习
 

@@ -176,6 +176,33 @@
 | value function | 价值函数（value function） | — | 首现括注 | 评估状态或动作长期累积回报的函数 | 苦涩的教训 |
 | Hidden Markov Model (HMM) | 隐马尔可夫模型（Hidden Markov Model，HMM） | — | 保留缩写 | 基于统计的序列建模方法 | 苦涩的教训 |
 | meta-method | 元方法（meta-method） | — | 首现括注 | 能发现并捕获任意复杂性的通用算法框架 | 苦涩的教训 |
+| The Harness Playbook | Harness 工程手册 | — | 保留英文 Playbook | 本文主题，首现“Harness 工程手册（The Harness Playbook）” | Harness Playbook |
+| Source Engine | 起源引擎（Source Engine） | — | 首现括注 | Valve 游戏引擎，全文架构类比的来源；.dem 为其录像格式 | Harness Playbook |
+| entity / entity list | 实体 / 实体列表 | — | 首现括注 | Source 网络同步与状态的基本单位 | Harness Playbook |
+| event sourcing | 事件溯源（event sourcing） | — | 首现括注 | 状态必须仅凭事件即可派生 | Harness Playbook |
+| journal | journal | 日志 | 保留英文 | 会话事件日志（append-only），与 log 区分 | Harness Playbook |
+| rewind / fork / resume | 回退 / 分叉 / 恢复 | — | 首现括注 | 会话三大操作 | Harness Playbook |
+| materialized session | 物化会话（materialized session） | — | 首现括注 | 会话整体物化为一棵 DOM | Harness Playbook |
+| convar | convar | 控制台变量 | 保留英文 | Source/omp² 配置原语，标志声明作用域/持久化/继承/复制 | Harness Playbook |
+| Director | Director | — | 保留英文 | 跨轮持有循环控制权、拦截让渡的原语 | Harness Playbook |
+| design envelope | 设计包络（design envelope） | — | 首现括注 | 四种运行模式构成的约束空间 | Harness Playbook |
+| control plane | 控制面（control plane） | — | 首现括注 | values / behaviors 两类控制所在层 | Harness Playbook |
+| tool surface | 工具面（tool surface） | — | 首现括注 | 面向模型的工具暴露层 | Harness Playbook |
+| forced tool call | 强制工具调用（forced tool call） | — | 首现括注 | tool_choice 一类能力，需软提示 + 原生标志策略 | Harness Playbook |
+| strict sampling | 严格采样 | 受约束采样 | 首现括注 | 文法约束的受约束采样 | Harness Playbook |
+| grammar dialect | 语法方言（grammar dialect） | — | 首现括注 | LARK 等提供商特定文法 | Harness Playbook |
+| corrective inference | 纠错推理 | — | 首现括注 | 修畸形 JSON、复读循环、方言泄漏成 tool_call | Harness Playbook |
+| compaction | （上下文）压缩 | — | 一般不保留 | Claude 语境的会话历史压缩 | Harness Playbook |
+| speculative compaction | 投机压缩 | — | 首现括注 | 限额前约 10% 投机启动压缩 | Harness Playbook |
+| Elastic Speculative Slots | 弹性投机槽位（Elastic Speculative Slots） | — | 首现括注 | 附录 B 形式化验证的渲染协议 | Harness Playbook |
+| transcript | 会话记录（transcript） | — | 首现括注 | 规范化输出块列表（块/终端/resize 协议） | Harness Playbook |
+| scrollback | 回滚区（scrollback） | — | 首现括注 | 终端原生只追加缓冲 | Harness Playbook |
+| viewport | 视口（viewport） | — | 首现括注 | 终端可见区域 | Harness Playbook |
+| client prediction | 客户端预测 | — | 一般不保留 | Source 网络同步机制，派生而非权威 | Harness Playbook |
+| Factorio（模式） | 异星工厂（Factorio） | — | 首现括注 | 指无人值守全自动软件工厂形态 | Harness Playbook |
+| best-effort | 尽力而为 | — | 一般不保留 | 如 “best-effort path” 译作“尽力而为”路径 | Harness Playbook |
+| fold（prompt fold） | 折叠 | — | 一般不保留 | 提示词历史按条目折叠，UI 仍显示全部 | Harness Playbook |
+| candidate yield | 候选让渡 | — | 一般不保留 | Director 拦截的让渡候选；yield 译作让渡 | Harness Playbook |
 
 ## 五、文风总原则
 
