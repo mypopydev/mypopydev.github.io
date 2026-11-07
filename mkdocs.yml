@@ -133,6 +133,7 @@ nav:
       - 理解 NumPy 的 einsum（Understanding Numpy's einsum）: articles/understanding-numpys-einsum-zh.md
       - 什么是扩散模型？: articles/what-are-diffusion-models-zh.md
       - Diffusion Transformer（DiT）模型：初学者指南: articles/diffusion-transformer-models-beginners-guide-zh.md
+      - 用 SynthID 标记 AI 生成图像（Tagging AI-generated images with SynthID）: articles/tagging-ai-generated-images-with-synthid-zh.md
   - 浮点与芯片设计:
       - 从零实现浮点运算：困难模式: articles/floating-point-from-scratch-hard-mode-zh.md
   - 研究论文:
