@@ -1,5 +1,15 @@
 # 更新记录
 
+### 2026-11-07
+- 新增译文：用 SynthID 标记 AI 生成图像（Tagging AI-generated images with SynthID，Radosław Kołacki，2026-01-21）
+- 收录 kolacki.eu 英文版长文全文翻译（导语 + 7 章 + 9 条脚注 + 译者注），置于 `docs/articles/tagging-ai-generated-images-with-synthid-zh.md`
+- 导航：深度学习（新增一篇，紧随《Diffusion Transformer（DiT）模型：初学者指南》）
+- 配图本地化：下载原文全部 6 张图（封面、原始照片、4×4 区域截图、微改动示意、Comfy 工作流、黑色方块色阶校正）至 `docs/assets/images/articles/synthid/`，并保留两张原文图注
+- 完整保真：两段 4×4 HEX 矩阵原样保留（原始 / 玩具演示加水印后）、`#C6B19C → #C7B09C` 通道分析（R +1 / G −1 / B 不变）、`#000000`、超过 100 亿张图像与视频帧、2023 年三级置信度、arXiv:2510.09263 / 2305.20030 / 2303.15435、DOI 10.48550/arXiv.2510.09263、C2PA v1.3 等
+- 脚注：9 条全部保留；正文实际引用 1/2/3/4/9，5–8 仅在列表中出现；原文正文 [^4] 指向 SynthID Detector、脚注 [^4] 却是 C2PA 规范，编号按原样保留并在译者注说明
+- 译者注 6 条：波兰语连接词残留（i / a）、"youngest bit"= 最低有效位、MathML `vol` 与 TeX `x_t` 不一致及原句缺主语、脚注编号错位、toy demo 性质、术语与数据清单
+- 版权：原文页面与站脚仅标"©2026"，无开放许可声明，按保留所有权利如实记录
+
 ### 2026-10-31
 - 新增译文：Harness 工程手册（The Harness Playbook，Can Bölük / Stencil，2026-09-02）
 - 收录 Stencil 博客长文《The Harness Playbook》中文全文翻译（9 章 + 2 附录，约 2600 行），置于 `docs/articles/harness-playbook-zh.md`；导航：智能体工程 > 独立译文（新增一篇，紧接 Jev 决策模型）；首页智能体工程区块新增入口
