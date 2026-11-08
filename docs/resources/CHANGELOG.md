@@ -12,6 +12,7 @@
 - 首页补齐：`docs/index.md` 的「专题阅读」为手工维护列表，此前只更新导航与 CHANGELOG、未同步首页，累计缺 13 篇文章链接；本次按 `mkdocs.yml` nav 分组顺序全部补齐
 - 首页区块调整：智能体工程 +4（软件工厂为何失败、构建 AI 智能体实用指南、Jev 决策模型、大象金鱼）、深度学习 +5（苦涩的教训、引导式解码、两篇 einsum、SynthID），另新增 4 个板块——训练系统与集群、编程语言与 AI、智能时代（Intelligence Age）、数学与 AI（各 1 篇）
 - 校验：首页正文文章链接数由 22 → 35，与 nav 中 `articles/` 条目数一致；`mkdocs build --strict` 通过
+- 首页新增《向量（中译本）》入口：📘 区块置于「数学考证」之后，含整书简介、落地页按钮（`books/vector-zh/index.md`）与 A4 330 页 PDF 下载链接；此前该书仅在导航有专门板块、首页无入口
 
 ### 2026-11-07
 - 新增译文：用 SynthID 标记 AI 生成图像（Tagging AI-generated images with SynthID，Radosław Kołacki，2026-01-21）

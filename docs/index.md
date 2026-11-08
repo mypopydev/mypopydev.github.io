@@ -88,6 +88,14 @@ AI 对纯数学研究影响的讨论。
 
 - ["齐次"是怎么成为中文数学术语的？](./articles/homogeneous-chinese-translation-etymology-zh.md)
 
+### 📘 向量（中译本）
+
+Robyn Arianrhod《Vector: A Surprising Story of Space, Time, and Mathematical Transformation》全书中译，23 篇、26.3 万字：从巴比伦泥板到四元数、张量与时空，含 57 张配图、公式、注释与索引。
+
+[开始阅读 :octicons-arrow-right-24:](./books/vector-zh/index.md){ .md-button }
+
+- [PDF 版下载（A4，330 页，8.4 MB）](./assets/pdf/vector-cn.pdf)
+
 ---
 
 ## 关于这个站
