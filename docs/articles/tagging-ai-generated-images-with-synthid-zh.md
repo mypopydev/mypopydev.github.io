@@ -98,9 +98,14 @@ SynthID-Image 区别于许多流行水印描述的第二个特点是 **payload�
 
 这里值得补一条提醒：SynthID-Image 的抵抗力主要是针对典型的传播变换（压缩、缩放、裁剪）设计的，但另有一类操作不属于普通的图像编辑，而是**生成式重新渲染（generative re-rendering）**——重复、受控的再合成，保留场景的语义与构图，同时可以覆盖掉承载水印的底层像素"层"。在 *SynthID-Bypass* 仓库里[^9]，作者描述了一个概念验证：这样的处理会降低标记的可检测性，并展示了一个用 Comfy 做的有意思的"诊断"步骤。
 
-![试图降低标记可检测性的 Comfy 工作流示例，来源 https://github.com/00quebec/Synthid-Bypass](../assets/images/articles/synthid/04-comfy-workflow.png)
+<figure id="fig-comfy-workflow" markdown="1">
 
-*Comfy 工作流示例，试图降低标记的可检测性，来源 https://github.com/00quebec/Synthid-Bypass*
+[![Comfy 工作流示例：通过生成式重新渲染降低水印标记的可检测性](../assets/images/articles/synthid/04-comfy-workflow.png){: width="100%" }](../assets/images/articles/synthid/04-comfy-workflow.png)
+
+Comfy 工作流示例，试图降低标记的可检测性。来源：[Synthid-Bypass](https://github.com/00quebec/Synthid-Bypass)。点击图片查看原图。
+{: .figcap }
+
+</figure>
 
 我在下面准备的例子里也能看到非常相似的直觉：生成一个 `#000000` 的黑色方块后，通过对色阶做操作、使用激进的色调校正，可以把文件里带有编码元素的结构"提取"出来——它在常规预览中不可见，却存在于像素的微差异里。当然，这并不是要"推翻" SynthID，只是想把边界说清楚：SynthID-Image 是一种面向互联网尺度、面向特定"威胁模型"的水印；遇到主动的对手（尤其是用生成式手段"洗"内容的），必须考虑到检出率可能下降——这与 SynthID-Image 那篇论文里关于安全性与折中（保真度 / 鲁棒性 / 安全性，fidelity/robustness/security）的讨论直接相关。
 
