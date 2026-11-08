@@ -1,5 +1,15 @@
 # 更新记录
 
+### 2026-11-08
+- 新增译文：大象、金鱼与软件工程的黄金新时代（Elephants, Goldfish and the New Golden Age of Software Engineering，Dave Rensin，2026-04-27，2026-10-21 更新）
+- 收录 Medium 长文（标注 27 min read）全文翻译，置于 `docs/articles/elephants-goldfish-model-zh.md`；含 3 个部分、4 个阶段、Step 1–9、10 余段完整 Prompt、6 条译者注
+- 导航：智能体工程 > 独立译文（新增一篇，紧接《Harness 工程手册》）
+- 配图本地化：原文正文唯一配图（大象 / 金鱼封面插画）下载至 `docs/assets/images/articles/elephants-goldfish/00-cover.jpeg`；作者头像属页面装饰，未本地化
+- 完整保真：全部示例 Prompt 译为中文且保留 `<INSERT …>` 占位符、`— — — — — —` 分隔符、`README.md` / `auth.py` / `AUTH.md` / `sizeof(docs) << sizeof(code)` 等标识符；保留全部链接（egm.dev、Coursera 人员管理课程、Jevons 维基百科）与数字（10x、15–20 分钟 ×2、2–3 页 ×2、20–30 分钟、2–3 天、100,000 名 Googler、30 秒、30%、70%–80%、50%、5–10 分钟、约一周、3–5 人、30–45 分钟、2 小时、10K、连续 10 行无注释、100% 覆盖率）
+- 抓取说明：原站返回 Cloudflare 403，经阅读器代理取得正文；代理输出中夹带的 Medium 订阅组件文字已剔除，紧随其后的正文段落完整保留
+- 译者注 6 条：抓取方式、Prompt 处理与规范 URL（不插入 `?sk=`）、原文笔误与排版、术语（EGM / 设计就是新的代码 / shift left / slop / Jevons 悖论等）、数据清单、外部链接
+- 版权：Medium 页面未声明开放许可，按保留所有权利如实记录
+
 ### 2026-11-07
 - 新增译文：用 SynthID 标记 AI 生成图像（Tagging AI-generated images with SynthID，Radosław Kołacki，2026-01-21）
 - 收录 kolacki.eu 英文版长文全文翻译（导语 + 7 章 + 9 条脚注 + 译者注），置于 `docs/articles/tagging-ai-generated-images-with-synthid-zh.md`

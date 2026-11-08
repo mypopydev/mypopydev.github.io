@@ -96,6 +96,7 @@ nav:
           - 构建 AI 智能体实用指南（A practical guide to building agents）: articles/a-practical-guide-to-building-agents-zh.md
           - Jev 带来了一种新形态的 LLM——System One，也就是决策模型: articles/jev-decision-models-zh.md
           - Harness 工程手册（The Harness Playbook）: articles/harness-playbook-zh.md
+          - 大象、金鱼与软件工程的黄金新时代（EGM）: articles/elephants-goldfish-model-zh.md
       - 核心原则:
           - 什么是智能体工程？: series/agentic-engineering-patterns/what_is_agentic_engineering_demo_zh.md
           - 现在，写代码很便宜: series/agentic-engineering-patterns/writing_code_is_cheap_now_demo_zh.md
