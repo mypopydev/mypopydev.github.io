@@ -9,6 +9,9 @@
 - 抓取说明：原站返回 Cloudflare 403，经阅读器代理取得正文；代理输出中夹带的 Medium 订阅组件文字已剔除，紧随其后的正文段落完整保留
 - 译者注 6 条：抓取方式、Prompt 处理与规范 URL（不插入 `?sk=`）、原文笔误与排版、术语（EGM / 设计就是新的代码 / shift left / slop / Jevons 悖论等）、数据清单、外部链接
 - 版权：Medium 页面未声明开放许可，按保留所有权利如实记录
+- 首页补齐：`docs/index.md` 的「专题阅读」为手工维护列表，此前只更新导航与 CHANGELOG、未同步首页，累计缺 13 篇文章链接；本次按 `mkdocs.yml` nav 分组顺序全部补齐
+- 首页区块调整：智能体工程 +4（软件工厂为何失败、构建 AI 智能体实用指南、Jev 决策模型、大象金鱼）、深度学习 +5（苦涩的教训、引导式解码、两篇 einsum、SynthID），另新增 4 个板块——训练系统与集群、编程语言与 AI、智能时代（Intelligence Age）、数学与 AI（各 1 篇）
+- 校验：首页正文文章链接数由 22 → 35，与 nav 中 `articles/` 条目数一致；`mkdocs build --strict` 通过
 
 ### 2026-11-07
 - 新增译文：用 SynthID 标记 AI 生成图像（Tagging AI-generated images with SynthID，Radosław Kołacki，2026-01-21）
