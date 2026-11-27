@@ -4,20 +4,24 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.event.pull_request.number) || 'pages' }}
   cancel-in-progress: true
 
 # 固定 runner 标签以避开 ubuntu-latest 迁移公告；下列 actions 均为 node24 版本
 jobs:
   build:
+    permissions:
+      contents: read
+      pages: read
     runs-on: ubuntu-26.04
     steps:
       - name: Checkout
@@ -31,18 +35,27 @@ jobs:
       - name: Install docs dependencies
         run: pip install -r requirements-docs.txt
 
+      - name: Check homepage article links
+        run: python scripts/check_homepage_links.py
+
       - name: Build site
         run: mkdocs build --strict
 
       - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v6
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
   deploy:
+    if: github.event_name != 'pull_request'
+    permissions:
+      pages: write
+      id-token: write
     needs: build
     runs-on: ubuntu-26.04
     environment:

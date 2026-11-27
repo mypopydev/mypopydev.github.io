@@ -19,6 +19,10 @@ mkdocs serve
 
 打开 http://127.0.0.1:8000 预览。
 
+## 首页文章链接检查
+
+在 `mkdocs.yml` 导航中新增 `articles/` 下的文章时，也请在 `docs/index.md` 的「专题阅读」中加入链接。可在本地运行 `python scripts/check_homepage_links.py`，也可查看 PR 的构建结果。检查只覆盖文章，不要求把系列或书籍的各章节列在首页。
+
 ## 技术栈
 
 - [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) — 静态站生成
